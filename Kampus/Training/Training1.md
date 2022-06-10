@@ -4,19 +4,31 @@ theme: uncover
 paginate: true
 ---
 
-<!--header: Kampus-training-->
+<!--header: "**Kampus-training**"-->
 <!--footer: yduprat@gmail.com-->
-# FormationPython BNC 
+# Formation Python BNC 
 
 Juillet/Septembre 2022
 
 
 ![w:600](https://www.python.org/static/community_logos/python-logo-generic.svg)
 
-
+---
 # Sommaire
 
-## organisation
+---
+## Organisation de la formation
 
-## programme
+![w:600](/Users/yves/)
+
+---
+## Programme
+* Présentation du lanage Python
+* Langage interprété vs Langage compilé
+* Typage fort, dynmanique, le `duck` typing
+* La structuration d'un programme en Python
+* Premiers exemples
+*  
+---
+
 
