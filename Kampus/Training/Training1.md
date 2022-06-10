@@ -2,7 +2,7 @@
 marp: true
 theme: uncover # gaia
 paginate: true
-header: "**Kampus-training**"
+header: '**Kampus-training**'
 footer: yduprat@gmail.com
 ---
 
