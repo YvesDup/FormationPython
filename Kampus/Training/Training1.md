@@ -31,4 +31,10 @@ Juillet/Septembre 2022
 * Explorations des types en Python
 ---
 
+### Présentation du langage Python
+
+Un peu d'histoire
+
+---
+
 
