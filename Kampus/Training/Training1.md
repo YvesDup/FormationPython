@@ -19,16 +19,16 @@ Juillet/Septembre 2022
 ---
 ## Organisation de la formation
 
-![w:600](img/Scheduled.png)
+![w:880](img/Scheduled.png)
 
 ---
 ## Programme
 * Présentation du langage Python
 * Langage interprété vs Langage compilé
-* Typage fort, dynamnique, le `duck` typing
+* Typage fort, dynmanique, le `duck` typing
 * La structuration d'un programme en Python
 * Premiers exemples
-* Explorations des types en Python 
+* Explorations des types en Python
 ---
 
 
