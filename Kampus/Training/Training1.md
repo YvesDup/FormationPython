@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: uncover # gaia
+theme: uncover
 paginate: true
 header: '**Kampus-training**'
 footer: yduprat@gmail.com
