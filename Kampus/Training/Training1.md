@@ -1,12 +1,12 @@
 ---
 marp: true
-theme: gaia
-paginate: uncover
+theme: uncover # gaia
+paginate: true
 header: "**Kampus-training**"
 footer: yduprat@gmail.com
 ---
 
-# Formation Python BNC 
+# Formation Python BNC
 
 Juillet/Septembre 2022
 
