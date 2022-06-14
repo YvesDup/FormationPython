@@ -33,9 +33,9 @@ _
 
 3 chapîtres sont définis:
 
-* Les structures de base du langage.
-* La programmation `objet`.
-* Le développement avancé.
++ Les structures de base du langage.
++ La programmation `objet`.
++ Le développement avancé.
 
 **A noter:** Les principales bibliothèques internes seront utilisées à travers les exercices.
 
@@ -43,10 +43,10 @@ _
 ### Les structures de base du langage.
 
 * Les types de données simples.
-* Les types évolués: listes, tuples, dictionnaires et ensemble.
+* Les types évolués: listes, tuples, dictionnaires et ensembles.
 * Les branchements conditionnels et les boucles.
 * Les fonctions en Python.
-* La documentation
+* La documentation.
 * La structure d’un fichier Python.
 * Les notations en compréhension.
 * La gestion des bibliothèques externes.
@@ -110,14 +110,14 @@ Depuis la v3.9, publication annuelle d'une nouvelle version: la v3.11 est progra
   font-size: 30px;
 }
 </style>
-* langage compilé:
-  * plusieurs phases pour construire son programme
-  * programme exécuté par le système d'exploitation.
++ langage compilé:
+  + plusieurs phases pour construire son programme
+  + programme exécuté par le système d'exploitation.
 
-* langage interprété:
-  * le programme est exécutée au fur et à mesure de la lecture des instructions par un programme: l'interpréteur.
++ langage interprété:
+  + le programme est exécutée au fur et à mesure de la lecture des instructions par un programme: l'interpréteur.
 
-En Python, il existe un mécanisme de transformation en 'bytecode' d'un source Python.  C'est ce 'bytecode' qui est lu l'interpréteur.
+En Python, il existe un mécanisme de transformation en 'bytecode' d'un source Python. C'est ce 'bytecode' qui est lu l'interpréteur.
 
 **Note:** La bibliothèque [`dis`](https://docs.python.org/fr/3.9/library/dis.html) de Python permet de voir le 'bytecode' produit.
 
@@ -202,7 +202,7 @@ Types composés:
 ---
 ### Exploration des types en Python
 
-Répartition des types composés
+Répartition des types composés via:
 
 * conteneurs
 * collections
