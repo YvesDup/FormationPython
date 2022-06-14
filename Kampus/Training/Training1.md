@@ -35,22 +35,38 @@ _
 
 1. Structure de base du langage.
 1. La programmation `objet`.
-1. Syntaxe avancée.
+1. Développement avancé.
 
 **A noter:** Les principales bibliothèques internes seront utilisées à travers les exercices.
 
 ---
 ### Structure de base du langage.
-* 
-* 
-* 
+* Les types de données simples.
+* Les types évolués: listes, tuples, dictionnaires et ensemble.
+* Les branchements conditionnels et les boucles.
+* Les fonctions en Python.
+* La documentation
+* La structure d’un fichier Python.
+* Les notations en compréhension.
 
 ---
 ### La programmation `objet`.
+* Rappel sur le modèle objet : classe, objet, attribut, méthode. 
+* Les constructeurs et destructeurs.
+* Le paramètre `self`.
+* Les noms et fonctions internes des classes et objets.
+* Les méthodes magiques, fonctionnelles.
+* La visibilité des attributs et méthodes: public, privée.
+* Les mécanismes d'héritage.
 
 ---
-### Syntaxe avancée.
-
+### Développement avancé.
+* L’unpacking et l’opérateur `splat`.
+* Les fonctions internes `map`, `filter`, `zip`.
+* Les itérateurs, les générateurs.
+* Les bibliothèques `collections`, `itertools` et `functools`.
+* L’utilisation de décorateurs.
+* L’utilisation de gestionnaire de contexte.
 
 ---
 ## Le programme du jour (issu du chapître 1).
