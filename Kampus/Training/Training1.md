@@ -25,20 +25,21 @@ _
 ---
 ## Organisation de la formation
 
-![w:880](img/Scheduled.png)
+![center, h:450](img/Scheduled.png)
 
 ---
 ## Le contenu de la formation
 
-3 parties ditinctes:
+3 chapîtres:
 
-* Structure de base du langage.
-* La programmation objet.
-* Syntaxe avancée.
+1. Structure de base du langage.
+1. La programmation objet.
+1. Syntaxe avancée.
 
+**A noter:** Les principales bibliothèques internes seront utilisées à travers les exercices.
 
 ---
-## Le programme du jour
+## Le programme du jour (issu du chapître 1)
 
 * Présentation du langage Python
 * Langage interprété vs Langage compilé.
@@ -76,9 +77,11 @@ Depuis la v3.9, publication annuelle d'une nouvelle version: La v3.11 est progra
 
 * langage interprété:
   * le programme est exécutée au fur et à mesure de la lecture des instructions.
-  * Il existe un mécanisme de transformation en `bytecode` d'un fichier source Python.  C'est ce `bytecode` qui passé à l'interpréteur.
 
-  (Voir la bibliothèque [`dis`](https://docs.python.org/fr/3.9/library/dis.html) de Python).
+En Python, il existe un mécanisme de transformation en `bytecode` d'un source Python.  C'est ce `bytecode` qui passé à l'interpréteur.
+
+Voir la bibliothèque [`dis`](https://docs.python.org/fr/3.9/library/dis.html) de Python.
+
 ---
 ### L'interpréteur Python
 <style scoped> {
