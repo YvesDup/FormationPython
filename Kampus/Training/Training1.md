@@ -10,6 +10,7 @@ footer: yduprat@gmail.com
 Juin/Septembre 2022
 
 
+.
 
 ![80%: center](https://www.python.org/static/community_logos/python-logo-generic.svg)
 
@@ -32,27 +33,26 @@ Juin/Septembre 2022
 
 3 parties ditinctes:
 
-* Structure de base du langage
-* La programmation objet
-* Syntaxe avancée
+* Structure de base du langage.
+* La programmation objet.
+* Syntaxe avancée.
 
 
 ---
 ## Le programme du jour
 
 * Présentation du langage Python
-* Langage interprété vs Langage compilé
-* Typage fort, dynmanique, le `duck` typing
-* La structuration d'un programme en Python
-* L'interpréteur Python
-* Explorations des types en Python
-* Introduction aux fonctions
+* Langage interprété vs Langage compilé.
+* Typage fort, dynmanique, le `duck` typing.
+* La structuration d'un programme en Python.
+* L'interpréteur Python.
+* Explorations des types en Python.
+* Introduction aux fonctions.
 
 ---
 ### Présentation du langage Python
-<style scoped>
-pre {
-  font-size: 80%p;
+<style scoped> {
+  font-size: 30px;
 }
 </style>
 
@@ -64,6 +64,9 @@ Un peu d'histoire, cela commence à la fin des années 1980 (le dernier milléna
 Depuis la v3.9, publication annuelle d'une nouvelle version: La v3.11 est programmée pour le 3 octobre 2022.
 
 [voir le langage Python sur wikipedia](https://fr.wikipedia.org/wiki/Python_(langage))
+
+---
+### Langage interprété vs Langage compilé.
 
 
 ---
@@ -108,4 +111,5 @@ python3 -m cProfile -o result.cprof setup.py
 yves@MacBook-Pro-de-yves cpython %
 ```
 
-
+---
+### Test
