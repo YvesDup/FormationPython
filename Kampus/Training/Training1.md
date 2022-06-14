@@ -70,10 +70,12 @@ _
 }
 </style>
 
-Un peu d'histoire, cela commence à la fin des années 1980 (le dernier millénaire)
+Le langage Python est un langage interprété, procédural et objet. Il est multi-plateforme et a été développé par Guido Van Rossum. 
+
+Le début du développement commence à la fin des années 1980 (le dernier millénaire)
 * v1 en fév 1992 :smile:
 * v2 en octobre 2000, la v2.7 est la dernière
-* v3 en decembre 2008
+* v3 en décembre 2008
 
 Depuis la v3.9, publication annuelle d'une nouvelle version: La v3.11 est programmée pour le 3 octobre 2022.
 
