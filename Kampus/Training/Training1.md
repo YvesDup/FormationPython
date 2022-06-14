@@ -73,10 +73,10 @@ _
 
 * Présentation du langage Python
 * Langage interprété vs Langage compilé.
-* Typage fort, dynmanique, le `duck` typing.
+* Typage fort, dynamique, le `duck` typing.
 * La structuration d'un programme en Python.
 * L'interpréteur Python.
-* Explorations des types en Python.
+* Exploration des types en Python.
 * Introduction aux fonctions.
 
 ---
@@ -173,3 +173,52 @@ pour chaque script python, on distingue 3 parties, dans cet ordre :
 * le point d'entrée principal du script `__name__ == '__main__'`.
 
 **Note**: chaque script Python est candidat pour être passé à l'interpréteur, ou pour être utilisé comme une bibliothèque locale via l'instruction `import`
+
+---
+### Exploration des types en Python
+
+---
+### Structuration conditionnelle et répétition
+<style scoped> {
+  font-size: 28px;
+}
+</style>
+
+La notion de bloc en Python est toujours rattachée à des instructions ou des définitions. Le bloc démarre dès le symbole `:`. Toutes les instructions du bloc seront positionnés avec le même retrait (4 espacecs en génral). Les instructions concernées sont: 
+* if, elif, else,
+* for, while,
+* with
+
+```py
+if x == 0: # début de bloc
+    x += 1
+    y = -y
+# fin de bloc
+d = ...
+```
+
+---
+<style scoped> {
+  font-size: 28px;
+}
+</style>
+* définitions:
+   * fonctions ou méthode
+   * générateur
+   * classe 
+```py
+def somme_des_opposes(a, b ,c): # debut de bloc
+    """Ceci est une docstring
+    """
+    tout = a + b + c
+    return -tout
+
+# fin de bloc
+x = somme_des_opposes(10, 2, -5)
+```
+
+Naturellement dans une fonction ou une méthode, des instructions contiennent leur propre bloc.
+
+---
+### Introduction aux fonctions
+
