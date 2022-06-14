@@ -59,7 +59,7 @@ _
 * Les noms et fonctions internes des classes et objets.
 * Les méthodes magiques, fonctionnelles.
 * La visibilité des attributs et méthodes: public, privée.
-* Attributs et méthodes de classe
+* Attributs et méthodes de classe.
 * Les mécanismes d'héritage.
 
 ---
@@ -75,7 +75,7 @@ _
 * L’utilisation de gestionnaire de contexte.
 
 ---
-## Le programme du jour (issu du chapître 1).
+## Le programme du jour (début du chapître 1).
 
 * Présentation du langage Python
 * Langage interprété vs Langage compilé.
