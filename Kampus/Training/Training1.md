@@ -124,6 +124,16 @@ En Python, il existe un mécanisme de transformation en 'bytecode' d'un source P
 ---
 ### Typage fort, dynamique, le `duck typing`
 
+Chaque variable en Python devient typée dynamiquement à chaque affectation
+```py
+a = 10 # a est un entier
+a = 'string' # a est maintenant une chaine
+```
+
+Ce n'est pas ce que tu es qui est intéressant, c'est ce que tu peux faire.
+Une variable est parcourable (iterable), appellable, 
+Cela correspond au `duck typing`
+
 
 ---
 ### L'interpréteur Python
@@ -200,10 +210,10 @@ Pour chaque script python, on distingue 3 parties, dans cet ordre :
 
 Types composés | Exemples|
 |-------|----|
-| listes  | []  [10, True, "string", 1.22]|
-| tuples | ("un",)  (10, True, "string", 1.22)|
-| ensembles | {10, "20", 30.0}  { (1,"un), 'I' }|
-|dictionnaires| {"dix":10, 20:"XX"}  {(1,100), (2,"deux cents")}|
+| listes  | [], [10, True, "string", 1.22]|
+| tuples | ("un",),  (10, True, "string", 1.22)|
+| ensembles | {10, "20", 30.0},  {(1,"un), 'I'}|
+|dictionnaires| {"dix":10, 20:"XX"}|
 
 ---
 ### Exploration des types en Python
