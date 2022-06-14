@@ -124,13 +124,14 @@ En Python, il existe un mécanisme de transformation en 'bytecode' d'un source P
 ---
 ### Typage fort, dynamique, le `duck typing`
 
-+ Chaque variable en Python devient typée dynamiquement à chaque affectation
++ Chaque variable en Python devient typée dynamiquement à chaque affectation. Dans ce cas
 ```py
 a = 10 # a est un entier
 a = 'string' # a est maintenant une chaine
+print(type(a)) # <type 'str'>
 ```
 
-+ Ce n'est pas ce que tu es qui est intéressant, c'est ce que tu peux faire. Une variable est parcourable (iterable), appellable (fonction), serialisable (pickle) . Cela correspond au `duck typing`.
++ "Ce n'est pas ce que tu es qui est intéressant, c'est ce que tu peux faire". Une variable (objet) peut être parcourable (iterable), appellable (fonction), serialisable (pickle). C'est cela le `duck typing`.
 
 
 ---
