@@ -9,10 +9,9 @@ footer: (c) yduprat@gmail.com
 
 Juin/Septembre 2022
 
+_
 
-.
-
-![80%: center](https://www.python.org/static/community_logos/python-logo-generic.svg)
+![h:250](https://www.python.org/static/community_logos/python-logo-generic.svg)
 
 
 
@@ -57,7 +56,7 @@ Juin/Septembre 2022
 </style>
 
 Un peu d'histoire, cela commence à la fin des années 1980 (le dernier millénaire)
-* v1 en fév 1992
+* v1 en fév 1992 :smile:
 * v2 en octobre 2000, la v2.7 est la dernière
 * v3 en decembre 2008
 
