@@ -3,7 +3,7 @@ marp: true
 theme: gaia
 paginate: true
 header: '**Kampus-training**'
-footer: yduprat@gmail.com
+footer: (c) yduprat@gmail.com
 ---
 # Formation Python BNC
 
@@ -77,9 +77,9 @@ Depuis la v3.9, publication annuelle d'une nouvelle version: La v3.11 est progra
 
 * langage interprété:
   * le programme est exécutée au fur et à mesure de la lecture des instructions.
-  * Il existe un mécanisme de transformation en `bytecode` d'un fichier source Python.  C'est ce `bytecode` qui passé à l'interpréteur 
-  
-  (Voir la bibliothèque [`dis`](https://docs.python.org/fr/3.9/library/dis.html) de Python). 
+  * Il existe un mécanisme de transformation en `bytecode` d'un fichier source Python.  C'est ce `bytecode` qui passé à l'interpréteur.
+
+  (Voir la bibliothèque [`dis`](https://docs.python.org/fr/3.9/library/dis.html) de Python).
 ---
 ### L'interpréteur Python
 <style scoped> {
