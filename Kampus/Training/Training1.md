@@ -67,12 +67,27 @@ Depuis la v3.9, publication annuelle d'une nouvelle version: La v3.11 est progra
 
 ---
 ### Langage interprété vs Langage compilé.
+<style scoped> {
+  font-size: 30px;
+}
+</style>
+* langage compilé:
+  * plusieurs phases pour construire son programme
+  * programme exécuté par le système d'exploitation.
 
-
+* langage interprété:
+  * le programme est exécutée au fur et à mesure de la lecture des instructions.
+  * Il existe un mécanisme de transformation en `bytecode` d'un fichier source Python.  C'est ce `bytecode` qui passé à l'interpréteur 
+  
+  (Voir la bibliothèque [`dis`](https://docs.python.org/fr/3.9/library/dis.html) de Python). 
 ---
 ### L'interpréteur Python
+<style scoped> {
+  font-size: 32px;
+}
+</style>
 
-Dans un terminal:
+Dans un terminal, lancement de l'interpreteur Python:
 ```zsh
 yves@MacBook-Pro-de-yves cpython % python3
 Python 3.10.1 (v3.10.1:2cd268a3a9, Dec  6 2021, 14:28:59) [Clang 13.0.0 (clang-1300.0.29.3)] on darwin
@@ -80,12 +95,18 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> exit() or Ctrl+D, to quit
 ```
 
-La commande `python3 --help` permet de découvrir toutes les options. 
+La commande `python3 setup.py` execute le script `setup.py`
 
+```zsh
+yves@MacBook-Pro-de-yves cpython % python3 hello.py
+"Hello Guido !!!"
+yves@MacBook-Pro-de-yves cpython %
+```
 ---
-
-Quelques options intéressantes:
-
+<style scoped> {
+  font-size: 31px;
+}
+</style>
 Afficher la version de Python
 
 ```zsh
@@ -102,9 +123,7 @@ python3 -c 'import os; print(os.getcwd())'
 yves@MacBook-Pro-de-yves cpython %
 ```
 
----
-
-Lancer le profiler sur un script Python `setup.py`
+Lancer le module `cProfile` sur un script Python `setup.py`
 
 ```zsh
 python3 -m cProfile -o result.cprof setup.py
@@ -112,4 +131,11 @@ yves@MacBook-Pro-de-yves cpython %
 ```
 
 ---
-### Test
+### Structuration d'un script Python
+
+pour chaque script python, on distingue 3 parties, dans cet ordre :
+* les `import` de bibliothèques, les constantes `SIZE=10` et les variables globales `items = []`.
+* les fonctions `def xxx(): ...`, les classes `class Obj: ...`.
+* le point d'entrée principal du script `__name__ == '__main__'`.
+
+**Note**: chaque script Python est candidat pour être passé à l'interpréteur, ou pour être utilisé comme une bibliothèque locale via l'instruction `import`
