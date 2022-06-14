@@ -2,6 +2,7 @@
 marp: true
 theme: gaia
 paginate: true
+_paginate: false
 header: '**Kampus-training**'
 footer: (c) yduprat@gmail.com
 ---
@@ -18,12 +19,12 @@ _
 ---
 # Sommaire
 
-* L'organisation de la formation
+* Calendrier de la formation
 * Le contenu de cette formation
 * Le programme du jour
 
 ---
-## Organisation de la formation
+## Calendrier de la formation
 
 ![center, h:450](img/Scheduled.png)
 
@@ -33,13 +34,26 @@ _
 3 chapîtres:
 
 1. Structure de base du langage.
-1. La programmation objet.
+1. La programmation `objet`.
 1. Syntaxe avancée.
 
 **A noter:** Les principales bibliothèques internes seront utilisées à travers les exercices.
 
 ---
-## Le programme du jour (issu du chapître 1)
+### Structure de base du langage.
+* 
+* 
+* 
+
+---
+### La programmation `objet`.
+
+---
+### Syntaxe avancée.
+
+
+---
+## Le programme du jour (issu du chapître 1).
 
 * Présentation du langage Python
 * Langage interprété vs Langage compilé.
@@ -78,9 +92,9 @@ Depuis la v3.9, publication annuelle d'une nouvelle version: La v3.11 est progra
 * langage interprété:
   * le programme est exécutée au fur et à mesure de la lecture des instructions.
 
-En Python, il existe un mécanisme de transformation en `bytecode` d'un source Python.  C'est ce `bytecode` qui passé à l'interpréteur.
+En Python, il existe un mécanisme de transformation en 'bytecode' d'un source Python.  C'est ce 'bytecode' qui passé à l'interpréteur.
 
-Voir la bibliothèque [`dis`](https://docs.python.org/fr/3.9/library/dis.html) de Python.
+La bibliothèque [`dis`](https://docs.python.org/fr/3.9/library/dis.html) de Python permet de voir le 'bytecode' produit.
 
 ---
 ### L'interpréteur Python
