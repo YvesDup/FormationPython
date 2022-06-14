@@ -48,6 +48,7 @@ _
 * La documentation
 * La structure d’un fichier Python.
 * Les notations en compréhension.
+* La gestion des bibliothèques externes
 
 ---
 ### La programmation `objet`.
@@ -61,6 +62,7 @@ _
 
 ---
 ### Développement avancé.
+* Les environnements virtuels
 * L’unpacking et l’opérateur `splat`.
 * Les fonctions internes `map`, `filter`, `zip`.
 * Les itérateurs, les générateurs.
