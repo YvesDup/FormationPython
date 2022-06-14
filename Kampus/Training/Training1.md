@@ -188,31 +188,37 @@ Pour chaque script python, on distingue 3 parties, dans cet ordre :
 ---
 ### Exploration des types en Python
 <style scoped> {
-  font-size: 28px;
+  font-size: 26px;
 }
 </style>
-Types simples:
-* nombres entiers
-* nombres à virgule
-* chaines de caractéres
-* autres
+|Types simples | Exemples |
+|-------|----|
+|nombres entiers| 10, 10_000_000, True|
+|nombres à virgule| -3.14, 1.21e-19|
+|chaines de caractéres|'Hello', "world"|
+|autres| None, 2j + 3|
 
-Types composés:
-* listes
-* tuples
-* ensembles
-* dictionnaires
+Types composés | Exemples|
+|-------|----|
+| listes  | []  [10, True, "string", 1.22]|
+| tuples | ("un",)  (10, True, "string", 1.22)|
+| ensembles | {10, "20", 30.0}  { (1,"un), 'I' }|
+|dictionnaires| {"dix":10, 20:"XX"}  {(1,100), (2,"deux cents")}|
 
 ---
 ### Exploration des types en Python
+<style scoped> {
+  font-size: 32px;
+}
+</style>
+Classification des types composés
 
-Répartition des types composés via:
-
-|<-- Type de données | Questions | Exemples |
-| conteneurs | 
-| collections |
-| séquences|
-| tableaux associatifs |
+|Type de données | Questions / Actions  |   Exemples  |
+|--------| ------- | -------|
+| conteneurs | existe, parcourable | | 
+| collections | combien d'élements | ensemble  |
+| séquences| accessible directement, inversable, triable | liste, tuple| 
+| tableaux associatifs | accessible directement | dictionnaire|
 
 
 ---
