@@ -4,14 +4,16 @@ theme: gaia
 paginate: true
 header: '**Kampus-training**'
 footer: yduprat@gmail.com
-
 ---
 # Formation Python BNC
 
-Juillet/Septembre 2022
+Juin/Septembre 2022
 
 
-![h:400w:600](https://www.python.org/static/community_logos/python-logo-generic.svg)
+
+![80%: center](https://www.python.org/static/community_logos/python-logo-generic.svg)
+
+
 
 ---
 # Sommaire
@@ -28,14 +30,16 @@ Juillet/Septembre 2022
 ---
 ## Le contenu de la formation
 
-4 parties ditinctes
-* 
-* 
+3 parties ditinctes:
+
+* Structure de base du langage
 * La programmation objet
 * Syntaxe avancée
 
+
 ---
 ## Le programme du jour
+
 * Présentation du langage Python
 * Langage interprété vs Langage compilé
 * Typage fort, dynmanique, le `duck` typing
@@ -47,8 +51,8 @@ Juillet/Septembre 2022
 ---
 ### Présentation du langage Python
 <style scoped>
-table {
-  font-size: 9px;
+pre {
+  font-size: 80%p;
 }
 </style>
 
@@ -59,10 +63,9 @@ Un peu d'histoire, cela commence à la fin des années 1980 (le dernier milléna
 
 Depuis la v3.9, publication annuelle d'une nouvelle version: La v3.11 est programmée pour le 3 octobre 2022.
 
-[voir le langage Pythonsur wikipedia](https://fr.wikipedia.org/wiki/Python_(langage))
+[voir le langage Python sur wikipedia](https://fr.wikipedia.org/wiki/Python_(langage))
 
----
-### 
+
 ---
 ### L'interpréteur Python
 
