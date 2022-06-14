@@ -96,9 +96,9 @@ Le langage Python est un langage interprété, procédural et objet. Il est mult
 
 Le début du développement commence à la fin des années 1980 (le dernier millénaire)
 
-+ v1 en fév 1992 :smile:
-+ v2 en octobre 2000, la v2.7 est la dernière
-+ v3 en décembre 2008
++ v1 en fév 1992.
++ v2 en octobre 2000, la v2.7 est la dernière.
++ v3 en décembre 2008.
 
 Depuis la v3.9, publication annuelle d'une nouvelle version: la v3.11 est programmée pour le 3 octobre 2022.
 
