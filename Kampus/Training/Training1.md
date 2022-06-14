@@ -4,11 +4,7 @@ theme: gaia
 paginate: true
 header: '**Kampus-training**'
 footer: yduprat@gmail.com
-<style>
-{
-  font-size: 15px
-}
-</style>
+
 ---
 # Formation Python BNC
 
