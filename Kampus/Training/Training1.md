@@ -100,7 +100,7 @@ Le début du développement commence à la fin des années 1980 (le dernier mill
 + v2 en octobre 2000, la v2.7 est la dernière
 + v3 en décembre 2008
 
-Depuis la v3.9, publication annuelle d'une nouvelle version: La v3.11 est programmée pour le 3 octobre 2022.
+Depuis la v3.9, publication annuelle d'une nouvelle version: la v3.11 est programmée pour le 3 octobre 2022.
 
 [Python sur wikipedia](https://fr.wikipedia.org/wiki/Python_(langage))
 
@@ -174,7 +174,7 @@ yves@MacBook-Pro-de-yves cpython %
 ---
 ### Structuration d'un script Python
 
-pour chaque script python, on distingue 3 parties, dans cet ordre :
+Pour chaque script python, on distingue 3 parties, dans cet ordre :
 * les `import` de bibliothèques, les constantes `SIZE=10` et les variables globales `items = []`.
 * les fonctions `def xxx(): ...`, les classes `class Obj: ...`.
 * le point d'entrée principal du script `__name__ == '__main__'`.
