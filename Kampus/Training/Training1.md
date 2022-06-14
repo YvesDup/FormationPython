@@ -29,7 +29,7 @@ Juillet/Septembre 2022
 
 4 parties ditinctes
 * 
-*  
+* 
 * La programmation objet
 * Syntaxe avancée
 
@@ -41,12 +41,24 @@ Juillet/Septembre 2022
 * La structuration d'un programme en Python
 * L'interpréteur Python
 * Explorations des types en Python
-* Quelques fonctions
+* Introduction aux fonctions
 
 ---
 ### Présentation du langage Python
+<style scoped>
+table {
+  font-size: 9px;
+}
+</style>
 
-Un peu d'histoire
+Un peu d'histoire, cela commence à la fin des années 1980 (le dernier millénaire)
+* v1 en fév 1992
+* v2 en octobre 2000, la v2.7 est la dernière
+* v3 en decembre 2008
+
+Depuis la v3.9, publication annuelle d'une nouvelle version: La v3.11 est programmée pour le 3 octobre 2022.
+
+[voir le langage Pythonsur wikipedia](https://fr.wikipedia.org/wiki/Python_(langage))
 
 ---
 ### 
