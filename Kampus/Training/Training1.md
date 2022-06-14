@@ -122,6 +122,10 @@ En Python, il existe un mécanisme de transformation en 'bytecode' d'un source P
 **Note:** La bibliothèque [`dis`](https://docs.python.org/fr/3.9/library/dis.html) de Python permet de voir le 'bytecode' produit.
 
 ---
+### Typage fort, dynamique, le `duck typing`
+
+
+---
 ### L'interpréteur Python
 <style scoped> {
   font-size: 32px;
