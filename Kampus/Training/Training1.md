@@ -213,12 +213,14 @@ Types composés | Exemples|
 </style>
 Classification des types composés
 
-|Type de données | Questions / Actions  |   Exemples  |
+|Type de données | Questions sur les éléments  |   Exemples  |
 |--------| ------- | -------|
-| conteneurs | existe, parcourable | | 
-| collections | combien d'élements | ensemble  |
-| séquences| accessible directement, inversable, triable | liste, tuple| 
-| tableaux associatifs | accessible directement | dictionnaire|
+| conteneurs | existe, parcourable | |
+| collections | combien | ensemble  |
+|||
+| **séquences**| accessible directement, inversable, triable | liste, tuple|
+|||
+| **tableaux associatifs** | accessible directement | dictionnaire|
 
 
 ---
