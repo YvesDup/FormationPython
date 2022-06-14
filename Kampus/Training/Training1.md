@@ -208,10 +208,11 @@ Types composés:
 
 Répartition des types composés via:
 
-* conteneurs
-* collections
-* séquences
-* tableaux associatifs
+|<-- Type de données | Questions | Exemples |
+| conteneurs | 
+| collections |
+| séquences|
+| tableaux associatifs |
 
 
 ---
