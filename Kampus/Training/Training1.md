@@ -207,7 +207,6 @@ Pour chaque script python, on distingue 3 parties, dans cet ordre :
   font-size: 22 px;
 }
 </style>
-
 |Types simples | Exemples |
 |-------|----|
 |nombres entiers| 10, 10_000_000|
@@ -219,7 +218,10 @@ Pour chaque script python, on distingue 3 parties, dans cet ordre :
 |valeur nulle| None |
 
 ---
-.
+<style scoped> {
+  font-size: 22 px;
+}
+</style>
 Types composés | Exemples|
 |-------|----|
 | listes  | [], [10, True, "string", 1.22]|
@@ -227,6 +229,11 @@ Types composés | Exemples|
 | ensembles | {10, "20", 30.0},  {(1,"un), 'I'}|
 |dictionnaires| {"dix":10, 20:"XX"}|
 | ensembles gelés | frozenset({1, 2, 3})} |
+
+Type spécial | Exemples |
+|-------|----|
+| slice  | utilisé pour les séquences |
+
 ---
 <style scoped> {
   font-size: 22 px;
