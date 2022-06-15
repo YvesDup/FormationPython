@@ -348,7 +348,7 @@ else:
 ---
 #### Les répétitions
 <style scoped> {
-  font-size: 28px;
+  font-size: 27px;
 }
 </style>
 Il existe 2 types de boucles en langage Python
@@ -365,8 +365,25 @@ Il existe 2 types de boucles en langage Python
     print(a**2)
     a -= 1
   ```
++ Les instructions `break`et `continue` existent en Python.
++ Il existe une clause `else` pour `for`et `while``
 
-  Les instructions `break`et `continue` existent en Python.
+---
+La clause `else` des boucles
+
+```py
+x = mystere
+for i in range(1, x+1):
+  print(i)
+  if i % 12 == 0:
+    break
+else:
+  print("pas de break, cool")
+```
+
++ si `mystere` vaut 10, `'Pas de break, cool !!!` sera affiché
+
++ si `mystere` vaut 100, `'Pas de break, cool !!!` ne sera pas affiché
 
 ---
 ### Introduction aux fonctions
@@ -382,7 +399,9 @@ def fct1(a, b):
   """Documentation de la fonction fct1
   """
   return a * b
-
+```
+si on exécute dans l'interpréteur:
+```py
 help(fct1)
 
 Help on function fct1 in module __main__:
@@ -398,12 +417,12 @@ fct1(a, b)
 </style>
 Exécution de la fonction `fct1``
 ```py
-fct1(10, 3)
-fct1(3.5, 2)
-fct1("test", 3)
-fct1([1, 2, 3], 2)
-fct1((1,2), 1000)
-fct1(2j+3, 6)
+fct1(10, 3)         #
+fct1(3.5, 2)        #
+fct1("test", 3)     #
+fct1([1, 2, 3], 2)  #
+fct1((1,2), 1000)   #
+fct1(2j+3, 6)       #
 
 fct1("z", "z") # provoque une erreur
 fct1(1, 2, 4)  # provoque une erreur
@@ -412,7 +431,7 @@ Ici on remarque que:
 * Pas de contrôle de type en entrée de la fonction. Ce qui nous importe c'est que le premier argument soit d'un type 'multipliable'.
 * La valeur retournée est toujours du type du premier argument
 
-**Note:** Une fonction qui ne contient aucun `return`renvoie `None`
+**Note:** Une fonction qui ne contient aucun `return` renvoie `None`
 
 ---
 #### Fonctions internes pour le travail sur les types:
