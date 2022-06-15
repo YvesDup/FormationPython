@@ -270,7 +270,7 @@ Classification des types composés/avancés
 </style>
 
 #### Les blocs
-La notion de bloc en Python est toujours rattachée à des instructions ou des définitions. Le bloc démarre dès le symbole `:`. Les instructions du bloc seront positionnés avec le même retrait (4 espaces). Les instructions concernées sont: 
+La notion de bloc en Python est toujours rattachée à des instructions ou des définitions. Le bloc démarre dès le symbole `:`. Les instructions du bloc seront positionnées avec le même retrait (4 espaces). Les instructions concernées sont: 
 + if, elif, else,
 + for, while,
 + with
