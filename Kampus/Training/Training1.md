@@ -49,7 +49,7 @@ Tous les documents, exemples et exercices sont accessibles [here](https://github
 * Les branchements conditionnels et les boucles.
 * Les fonctions en Python.
 * La documentation.
-* La structure d’un fichier Python.
+* La structure d'un script Python.
 * Les notations en compréhension.
 * La gestion des bibliothèques externes.
 
@@ -81,7 +81,7 @@ Tous les documents, exemples et exercices sont accessibles [here](https://github
 
 * Présentation du langage Python
 * Langage interprété vs Langage compilé.
-* Typage dynamique et fort, le `duck typing`.
+* Typage dynamique, typage fort, le `duck typing`.
 * La structuration d'un programme en Python.
 * L'interpréteur Python.
 * Exploration des types en Python.
@@ -94,7 +94,7 @@ Tous les documents, exemples et exercices sont accessibles [here](https://github
 }
 </style>
 
-Le langage Python est un langage interprété, procédural et objet. Il est multi-plateforme et a été développé par Guido Van Rossum. 
+Le langage Python est un langage interprété, procédural et objet. Il est multi-plateforme et a été développé par Guido Van Rossum.
 
 Le début du développement commence à la fin des années 1980 (le dernier millénaire)
 
@@ -124,7 +124,7 @@ En Python, il existe un mécanisme de transformation en 'bytecode' d'un source P
 **Note:** La bibliothèque interne [`dis`](https://docs.python.org/fr/3.9/library/dis.html) de Python permet de voir le 'bytecode' produit.
 
 ---
-### Typage dynamique, fort, le `duck typing`
+### Typage dynamique, typage fort, le `duck typing`
 <style scoped> {
   font-size: 30px;
 }
@@ -192,7 +192,7 @@ yves@MacBook-Pro-de-yves cpython %
 ```
 
 ---
-### Structuration d'un script Python
+### Structure d'un script Python
 
 Pour chaque script python, on distingue 3 parties, dans cet ordre :
 * les `import` de bibliothèques, les constantes `SIZE=10` et les variables globales `items = []`.
