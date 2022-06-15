@@ -320,7 +320,7 @@ En python, une variable définie dans un bloc est disponible aussi pour le bloc 
     if a == 10:
         b = a + 5
         c = fff(b)
-    print(b, c) # risqué ....
+    print(b, c) # risqué, non ?
 ```
 
 ---
@@ -339,11 +339,10 @@ elif <autre_condition2>:
 else:
     pass
 ```
-Il n'y a pas d'instruction "switch' en python. Il existe un opérateur ternaire: `a = 10 if x > 10 else -10`
-
-Les opérateurs logiques dans les conditions sont: `and`, `or`et `not`.
-
-les opérateurs de comparaison sont classiques, le `in`a été rajouté.
+**A noter:** 
++ il n'y a pas d'instruction "switch' en python. Il existe un opérateur ternaire: `a = 10 if x > 10 else -10`
++ les opérateurs logiques dans les conditions sont: `and`, `or`et `not`.
++ les opérateurs de comparaison sont classiques, le `in`a été rajouté.
 
 ---
 #### Les répétitions
