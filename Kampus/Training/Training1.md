@@ -211,7 +211,7 @@ Pour chaque script python, on distingue 3 parties, dans cet ordre :
 |nombres entiers| 10, 10_000_000|
 |booléens| True, False |
 |nombres à virgule| -3.14, 1.21e-19|
-|Nombres complexes| 2j + 9|
+|nombres complexes| 2j + 9|
 |chaines de caractéres|'Hello', "world"|
 |tableaux d'octets| bytearray('hello'), |
 |non valeur| None |
@@ -233,14 +233,14 @@ Types composés/avancés | Exemples|
 |-------|----|
 | fonctions, méthodes| def f(a, b, c): pass, lambda x: x+1 |
 |range| range(10), range(1, 20, 3)|
-|générateur| fonction avec instruction `yield`, notation en compréhension|
+|générateur| fonction avec instruction `yield`, forme en compréhension|
 |itérateur| it = iter(list) |
 |object| object()|
 
 ---
 ### Exploration des types en Python (suite)
 <style scoped> {
-  font-size: 32px;
+  font-size: 29px;
 }
 </style>
 Classification des types composés/avancés
@@ -248,9 +248,10 @@ Classification des types composés/avancés
 |Type de données | Questions sur les éléments  |   Exemples  |
 |--------| ------- | -------|
 | conteneurs | existe, parcourable | générateur, itérateur|
-| collections | combien | ensemble  |
 |||
-| **séquences**| accessible directement, inversable, triable | liste, tuple|
+| collections | combien | ensemble, ensemble  |
+|||
+| **séquences**| accessible directement, inversable, triable | liste, tuple, str, bytearray|
 |||
 | **tableaux associatifs** | accessible directement | dictionnaire|
 
@@ -262,16 +263,17 @@ Classification des types composés/avancés
 }
 </style>
 
-La notion de bloc en Python est toujours rattachée à des instructions ou des définitions. Le bloc démarre dès le symbole `:`. Toutes les instructions du bloc seront positionnés avec le même retrait (4 espacecs en génral). Les instructions concernées sont: 
+La notion de bloc en Python est toujours rattachée à des instructions ou des définitions. Le bloc démarre dès le symbole `:`.
+Toutes les instructions du bloc seront positionnés avec le même retrait (4 espacecs en génral). Les instructions concernées sont: 
 + if, elif, else,
 + for, while,
 + with
 
 ```py
-if x == 0: # début de bloc
+if x == 0: #--- début de bloc
     x += 1
     y = -y
-# fin de bloc
+#--- fin de bloc
 d = ...
 ```
 
@@ -285,17 +287,21 @@ définitions:
 + générateur
 + classe 
 ```py
-def somme_des_opposes(a, b ,c): # debut de bloc
+def somme_des_opposes(a, b ,c): #-- debut de bloc
     """Ceci est une docstring
     """
     tout = a + b + c
     return -tout
-
-# fin de bloc
+#--- fin de bloc
 x = somme_des_opposes(10, 2, -5)
 ```
 
-Naturellement dans une fonction ou une méthode, des instructions contiennent leur propre bloc.
+Naturellement dans une fonction ou une méthode, des instructions comme celles citées dans l'exemple précédent contiennent leur propre bloc.
+
+---
+Portée des variables.
+
+La portée d'une variable en Python est limitée à la zone dans laquelle elle est définie.
 
 ---
 ### Introduction aux fonctions
