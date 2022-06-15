@@ -111,11 +111,11 @@ Depuis la v3.9, publication annuelle d'une nouvelle version: la v3.11 est progra
 }
 </style>
 + langage compilé:
-  + plusieurs phases pour construire son programme
-  + programme exécuté par le système d'exploitation.
+  + il existe plusieurs phases pour construire son programme.
+  + le programme est lancé par le système d'exploitation.
 
 + langage interprété:
-  + le programme est exécutée au fur et à mesure de la lecture des instructions par un programme: l'interpréteur.
+  + le programme est exécuté au fur et à mesure de la lecture des instructions par un programme: l'interpréteur.
 
 En Python, il existe un mécanisme de transformation en 'bytecode' d'un source Python. C'est ce 'bytecode' qui est exécuté par l'interpréteur.
 
