@@ -136,7 +136,7 @@ print(type(a)) # <type 'str'>
 a += 10 # TypeError: cannot concatenate 'str' and 'int' objects
 ```
 + Le typage fort permet de contrôler les opérations sur les variables.
-+ "Ce n'est pas ce que tu es qui est intéressant, c'est ce que tu peux faire". Une variable (objet) peut être parcourable (iterable), appellable (fonction), serialisable (pickle). Voici le principe du `duck typing`.
++ "Ce n'est pas ce que tu es qui qui m'importe, c'est ce que tu peux faire". Une variable (objet) peut être parcourable, appellable comme une fonction, serialisable (pickle). Voici le principe du [`duck typing`](https://fr.wikipedia.org/wiki/Duck_typing).
 
 
 ---
@@ -201,15 +201,17 @@ Pour chaque script python, on distingue 3 parties, dans cet ordre :
 ---
 ### Exploration des types en Python
 <style scoped> {
-  font-size: 26px;
+  font-size: 24 px;
 }
 </style>
+
 |Types simples | Exemples |
 |-------|----|
 |nombres entiers| 10, 10_000_000, True|
 |nombres à virgule| -3.14, 1.21e-19|
 |chaines de caractéres|'Hello', "world"|
-|autres| None, 2j + 3|
+|autres| None, 2j + 3, range(10) |
+
 
 Types composés | Exemples|
 |-------|----|
@@ -217,6 +219,7 @@ Types composés | Exemples|
 | tuples | ("un",),  (10, True, "string", 1.22)|
 | ensembles | {10, "20", 30.0},  {(1,"un), 'I'}|
 |dictionnaires| {"dix":10, 20:"XX"}|
+| autres | ensembles gelés, fonction, slices|
 
 ---
 ### Exploration des types en Python
