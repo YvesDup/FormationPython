@@ -209,17 +209,28 @@ Pour chaque script python, on distingue 3 parties, dans cet ordre :
 |-------|----|
 |nombres entiers| 10, 10_000_000, True|
 |nombres à virgule| -3.14, 1.21e-19|
+|Nombres complexes| 2j + 9|
 |chaines de caractéres|'Hello', "world"|
-|autres| None, 2j + 3, range(10) |
+|tableaux d'octets| bytearray('hello'), |
+|non valeur| None |
 
-
-Types composés | Exemples|
+---
+<style scoped> {
+  font-size: 24 px;
+}
+</style>
+Types composés/avancés | Exemples|
 |-------|----|
 | listes  | [], [10, True, "string", 1.22]|
 | tuples | ("un",),  (10, True, "string", 1.22)|
 | ensembles | {10, "20", 30.0},  {(1,"un), 'I'}|
 |dictionnaires| {"dix":10, 20:"XX"}|
-| autres | ensembles gelés, fonction, slices|
+| ensembles gelés | frozenset({1, 2, 3})} |
+| fonctions, méthodes| def f(a, b, c): pass, lambda x: x+1 |
+|range| range(10), range(1, 20, 3)|
+|générateur||
+|itérateur| it = iter(list) |
+|objects| object()|
 
 ---
 ### Exploration des types en Python
