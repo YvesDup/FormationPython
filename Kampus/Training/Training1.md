@@ -315,9 +315,11 @@ fct1(a, b)
     Documentation de la fonction fct1
 ```
 ---
-
+<style scoped> {
+  font-size: 28px;
+}
+</style>
 Tests de la fonction `fct1``
-
 ```py
 fct1(10, 3)
 fct1(3.5, 2)
@@ -329,6 +331,8 @@ fct1(2j+3, 6)
 Ici on remarque que: 
 * Pas de contrôle de type en entrée de la fonction. Ce qui nous importe c'est le prmier argument soit d'un type 'multipliable'.
 * La valeur retournée est toujours du type du premier argument
+
+**Note:** Une fonction qui ne renvoie rien spécifiquement renvoie `None`
 
 ---
 Fonctions internes pour le travail sur les types:
