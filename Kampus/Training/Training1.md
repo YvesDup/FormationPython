@@ -79,7 +79,7 @@ _
 
 * Présentation du langage Python
 * Langage interprété vs Langage compilé.
-* Typage fort, dynamique, le `duck` typing.
+* Typage dynamique et fort, le `duck` typing.
 * La structuration d'un programme en Python.
 * L'interpréteur Python.
 * Exploration des types en Python.
@@ -117,17 +117,17 @@ Depuis la v3.9, publication annuelle d'une nouvelle version: la v3.11 est progra
 + langage interprété:
   + le programme est exécutée au fur et à mesure de la lecture des instructions par un programme: l'interpréteur.
 
-En Python, il existe un mécanisme de transformation en 'bytecode' d'un source Python. C'est ce 'bytecode' qui est lu l'interpréteur.
+En Python, il existe un mécanisme de transformation en 'bytecode' d'un source Python. C'est ce 'bytecode' qui est exécuté par l'interpréteur.
 
-**Note:** La bibliothèque [`dis`](https://docs.python.org/fr/3.9/library/dis.html) de Python permet de voir le 'bytecode' produit.
+**Note:** La bibliothèque interne [`dis`](https://docs.python.org/fr/3.9/library/dis.html) de Python permet de voir le 'bytecode' produit.
 
 ---
-### Typage fort, dynamique, le `duck typing`
+### Typage dynamique et fort, le `duck typing`
 <style scoped> {
   font-size: 30px;
 }
 </style>
-+ Chaque variable en Python devient typée dynamiquement lors de l'affectation. Par example:
++ Chaque variable en Python devient typée dynamiquement lors de l'affectation. Par exemple:
 ```py
 a = 10 # a est un entier
 print(type(a)) # <type 'int'>
@@ -135,8 +135,8 @@ a = 'string' # a est maintenant une chaine
 print(type(a)) # <type 'str'>
 a += 10 # TypeError: cannot concatenate 'str' and 'int' objects
 ```
-
-+ "Ce n'est pas ce que tu es qui est intéressant, c'est ce que tu peux faire". Une variable (objet) peut être parcourable (iterable), appellable (fonction), serialisable (pickle). C'est cela le `duck typing`.
++ Le typage fort permet de contrôler les opérations sur les variables.
++ "Ce n'est pas ce que tu es qui est intéressant, c'est ce que tu peux faire". Une variable (objet) peut être parcourable (iterable), appellable (fonction), serialisable (pickle). Voici le principe du `duck typing`.
 
 
 ---
