@@ -443,10 +443,10 @@ Ici on remarque que:
   font-size: 27px;
 }
 </style>
-* `type(variable)`: type(1), type(None), type(type)
-* `isinstance(variable, type | énumaration de type)`: isinstance(12.4, float), 
++ `type(variable)`: type(1), type(None), type(type)
++ `isinstance(variable, type | énumaration de type)`: isinstance(12.4, float), 
 isinstance(x, (int, float))
-* `issubclass(type, autre type)`: issubclass(bool, int)
++ `issubclass(type, autre type)`: issubclass(bool, int)
 
 Comment contrôler les types sur les paramètres ?
 
@@ -459,3 +459,15 @@ def xxxx(arg1, arg2):
   ...
 
 ```
+
+---
+## Training2
+
+Il aura lieu à la rentrée. Les thèmes abordés seront:
+
+* les bonnes pratiques, la PEP8, les linters.
+* les annotations de types.
+* la gestion des erreurs.
+* les environnements virtuels.
+
+Puis les W3 et W4 s'enchaineront.
