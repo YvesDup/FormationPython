@@ -394,7 +394,7 @@ else:
 ```
 
 + si `mystere` vaut 10, `'Pas de break, cool !!!` sera affiché
-+ si `mystere` vaut 100, `'Pas de break, cool !!!` ne sera pas affiché
++ si `mystere` vaut 100, `'Pas de break, cool !!!` ne sera pas affiché car quand vaudra 12, l'instruction `break` sera invoquée.
 
 ---
 ### Introduction aux fonctions
@@ -402,7 +402,7 @@ else:
   font-size: 28px;
 }
 </style>
-#### Définiition de la fonction
+#### Définition de la fonction
 Un premier exemple de fonction:
 
 ```py
@@ -439,7 +439,7 @@ fct1("z", "z") # provoque une erreur
 fct1(1, 2, 4)  # provoque une erreur
 ```
 Ici on remarque que:
-* auncun de contrôle de type en entrée de la fonction. Ce qui nous importe c'est que le premier argument soit d'un type 'multipliable'.
+* aucun de contrôle de type en entrée de la fonction. Ce qui nous importe c'est que le premier argument soit d'un type 'multipliable'.
 * La valeur retournée est toujours du type du premier argument
 
 **Note:** Une fonction qui ne contient aucun `return` renvoie `None`.
@@ -467,6 +467,9 @@ def xxxx(arg1, arg2):
 
 ```
 La suite sur les fonctions sera abordée sur le W2.
+
+---
+## Des questions
 
 ---
 ## Training2
