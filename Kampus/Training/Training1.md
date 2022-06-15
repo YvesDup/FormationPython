@@ -340,9 +340,10 @@ else:
   pass
 ```
 **A noter:** 
-+ il n'y a pas d'instruction "switch' en python. Il existe un opérateur ternaire: `a = 10 if x > 10 else -10`
-+ les opérateurs logiques dans les conditions sont: `and`, `or`et `not`.
-+ les opérateurs de comparaison sont classiques, le `in`a été rajouté.
+* il n'y a pas d'instruction "switch' en python. 
+* Il existe un opérateur ternaire: `a = 10 if x > 10 else -10`
+*+* les opérateurs logiques dans les conditions sont: `and`, `or`et `not`.
+*+* les opérateurs de comparaison sont classiques, le `in` a été rajouté.
 
 ---
 #### Les répétitions
