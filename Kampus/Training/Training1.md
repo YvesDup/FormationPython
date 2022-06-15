@@ -154,7 +154,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> exit() or Ctrl+D, to quit
 ```
 
-La commande `python3 hello.py Guido` execute le script `hello.py` et passe la valeur 'Guido' comme paramètre au script
+La commande `python3 hello.py Guido` exécute le script `hello.py` et passe la valeur 'Guido' comme paramètre au script
 
 ```zsh
 yves@MacBook-Pro-de-yves cpython % python3 hello.py Guido
