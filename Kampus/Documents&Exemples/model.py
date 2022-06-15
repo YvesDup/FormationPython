@@ -11,11 +11,13 @@ def function1():
     """
     """
     x = 10
+    x += 1
 
 def main():
     """
     """
-    function1()
+    for i in range(100):
+        function1()
 
 # ------------- PART III: MAIN ENTRY ----------
 if __name__ == "__main__":
