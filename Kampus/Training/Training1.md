@@ -207,7 +207,8 @@ Pour chaque script python, on distingue 3 parties, dans cet ordre :
 
 |Types simples | Exemples |
 |-------|----|
-|nombres entiers| 10, 10_000_000, True|
+|nombres entiers| 10, 10_000_000|
+|booléens| True, False |
 |nombres à virgule| -3.14, 1.21e-19|
 |Nombres complexes| 2j + 9|
 |chaines de caractéres|'Hello', "world"|
@@ -226,23 +227,26 @@ Types composés/avancés | Exemples|
 | ensembles | {10, "20", 30.0},  {(1,"un), 'I'}|
 |dictionnaires| {"dix":10, 20:"XX"}|
 | ensembles gelés | frozenset({1, 2, 3})} |
+---
+Types composés/avancés | Exemples|
+|-------|----|
 | fonctions, méthodes| def f(a, b, c): pass, lambda x: x+1 |
 |range| range(10), range(1, 20, 3)|
-|générateur||
+|générateur| fonction avec instruction `yield`, notation en compréhension|
 |itérateur| it = iter(list) |
-|objects| object()|
+|object| object()|
 
 ---
-### Exploration des types en Python
+### Exploration des types en Python (suite)
 <style scoped> {
   font-size: 32px;
 }
 </style>
-Classification des types composés
+Classification des types composés/avancés
 
 |Type de données | Questions sur les éléments  |   Exemples  |
 |--------| ------- | -------|
-| conteneurs | existe, parcourable | |
+| conteneurs | existe, parcourable | générateur, itérateur|
 | collections | combien | ensemble  |
 |||
 | **séquences**| accessible directement, inversable, triable | liste, tuple|
@@ -258,9 +262,9 @@ Classification des types composés
 </style>
 
 La notion de bloc en Python est toujours rattachée à des instructions ou des définitions. Le bloc démarre dès le symbole `:`. Toutes les instructions du bloc seront positionnés avec le même retrait (4 espacecs en génral). Les instructions concernées sont: 
-* if, elif, else,
-* for, while,
-* with
++ if, elif, else,
++ for, while,
++ with
 
 ```py
 if x == 0: # début de bloc
@@ -275,10 +279,10 @@ d = ...
   font-size: 28px;
 }
 </style>
-* définitions:
-   * fonctions ou méthode
-   * générateur
-   * classe 
+définitions:
++ fonctions ou méthode
++ générateur
++ classe 
 ```py
 def somme_des_opposes(a, b ,c): # debut de bloc
     """Ceci est une docstring
@@ -295,3 +299,40 @@ Naturellement dans une fonction ou une méthode, des instructions contiennent le
 ---
 ### Introduction aux fonctions
 
+Voici un premier exemple de fonction:
+
+```py
+def fct1(a, b):
+  """Documentation de la fonction fct1
+  """
+  return a * b
+
+help(fct1)
+
+Help on function fct1 in module __main__:
+
+fct1(a, b)
+    Documentation de la fonction fct1
+```
+---
+
+Tests de la fonction `fct1``
+
+```py
+fct1(10, 3)
+fct1(3.5, 2)
+fct1("test", 3)
+fct1([1, 2, 3], 2)
+fct1((1,2), 1000)
+fct1(2j+3, 6)
+```
+Ici on remarque que: 
+* Pas de contrôle de type en entrée de la fonction. Ce qui nous importe c'est le prmier argument soit d'un type 'multipliable'.
+* La valeur retournée est toujours du type du premier argument
+
+---
+Fonctions internes pour le travail sur les types:
+* `type(variable)`: type(1), type(None)
+* `isinstance(variable, type | énumaration de type)`: isinstance(12.4, float), 
+isinstance(x, (int, float))
+* `issubclass(type, autre type)`: issubclass(bool, int)
