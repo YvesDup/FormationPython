@@ -40,7 +40,7 @@ _
 **A noter:** Les principales bibliothèques internes seront utilisées à travers les exercices.
 
 ---
-### Les structures de base du langage.
+### Les structures de base du langage (WS1&2).
 
 * Les types de données simples.
 * Les types évolués: listes, tuples, dictionnaires et ensembles.
@@ -52,7 +52,7 @@ _
 * La gestion des bibliothèques externes.
 
 ---
-### La programmation `objet`.
+### La programmation `objet` (WS3).
 * Rappel sur le modèle objet : classe, objet, attribut, méthode. 
 * Les constructeurs et destructeurs.
 * Le paramètre `self`.
@@ -63,7 +63,7 @@ _
 * Les mécanismes d'héritage.
 
 ---
-### Le développement avancé.
+### Le développement avancé (WS4).
 * Les bonnes pratiques.
 * La gestion des erreurs.
 * Les environnements virtuels.
