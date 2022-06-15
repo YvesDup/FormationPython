@@ -7,8 +7,6 @@ results = []
 class Test:
     pass
 
-function1()
-
 def function1():
     """
     """
