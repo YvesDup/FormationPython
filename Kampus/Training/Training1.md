@@ -77,7 +77,7 @@ Tous les documents, exemples et exercices sont accessibles [here](https://github
 * L’utilisation de gestionnaire de contexte.
 
 ---
-## Le programme du jour (début du chapître 1).
+## Le Training1 (début du chapître 1).
 
 * Présentation du langage Python
 * Langage interprété vs Langage compilé.
@@ -195,9 +195,9 @@ yves@MacBook-Pro-de-yves cpython %
 ### Structure d'un script Python
 
 Pour chaque script python, on distingue 3 parties, dans cet ordre :
-* les `import` de bibliothèques, les constantes `SIZE=10` et les variables globales `items = []`.
-* les fonctions `def xxx(): ...`, les classes `class Obj: ...`.
-* le point d'entrée principal du script `__name__ == '__main__'`.
++ les `import` de bibliothèques, les constantes `SIZE=10` et les variables globales `items = []`.
++ les fonctions `def xxx(): ...`, les classes `class Obj: ...`.
++ le point d'entrée principal du script `__name__ == '__main__'`.
 
 **Note**: tout script en Python est candidat pour être passé à l'interpréteur, ou pour être utilisé comme une bibliothèque locale via l'instruction `import`.
 
