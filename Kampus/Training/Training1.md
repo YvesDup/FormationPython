@@ -282,10 +282,11 @@ d = ...
   font-size: 28px;
 }
 </style>
-définitions:
-+ fonctions ou méthode
-+ générateur
-+ classe 
+Les définitions sont:
++ fonctions ou méthodes
++ générateurs
++ classes
+
 ```py
 def somme_des_opposes(a, b ,c): #-- debut de bloc
     """Ceci est une docstring
@@ -299,9 +300,32 @@ x = somme_des_opposes(10, 2, -5)
 Naturellement dans une fonction ou une méthode, des instructions comme celles citées dans l'exemple précédent contiennent leur propre bloc.
 
 ---
-Portée des variables.
+Portée des variables dans un bloc.
 
-La portée d'une variable en Python est limitée à la zone dans laquelle elle est définie.
+En python, une variable définie dans un bloc est disponible aussi pour le bloc englobant. Par exemple:
+```py
+  if retour:
+    c = None
+    if a == 10:
+        b = a + 5
+        c = fff(b)
+    print(b, c) # risqué ....
+```
+---
+### Les structures conditionnelles
+```py
+if <condition>:
+    pass
+elif <autre_condition1>:
+    pass
+elif <autre_condition2>:
+    pass
+elif <autre_condition3>:
+    pass
+else:
+    pass
+```
+Il n'y a pas d'instruction "switch' en python. Il existe un opérateur ternaire: `a = 10 if x > 10 else -10`
 
 ---
 ### Introduction aux fonctions
