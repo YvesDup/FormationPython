@@ -459,6 +459,7 @@ def xxxx(arg1, arg2):
   ...
 
 ```
+La suite sur les fonctions sera abordée sur le W2.
 
 ---
 ## Training2
