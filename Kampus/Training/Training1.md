@@ -351,7 +351,7 @@ else:
 ```
 **A noter:** 
 * il n'y a pas d'instruction '__switch__' en python. 
-* Il existe un opérateur ternaire: `a = x*10 if x > 10 else -1`
+* Il existe un opérateur ternaire: `a = x*10 if x > 10 else -1`.
 * les opérateurs logiques dans les conditions sont: `and`, `or` et `not`.
 * les opérateurs de comparaison sont standards, le `in` a été rajouté.
 * la notation suivante est possible et acceptée: `0 <= x <= 10`.
@@ -362,7 +362,7 @@ else:
   font-size: 27px;
 }
 </style>
-Il existe 2 types de boucles en langage Python
+Il existe 2 types de boucles en langage Python:
 
 + l'instruction `for`:
   ```py
@@ -370,7 +370,7 @@ Il existe 2 types de boucles en langage Python
       print(item)
   print(item) # défini dans le bloc du `for`
   ```
-+ L'instruction `while`:
++ l'instruction `while`:
   ```py
   a = 10
   while a >= 0:
