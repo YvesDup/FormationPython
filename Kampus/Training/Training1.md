@@ -202,7 +202,7 @@ Pour chaque script python, on distingue 3 parties, dans cet ordre :
 ---
 ### Exploration des types en Python
 <style scoped> {
-  font-size: 24 px;
+  font-size: 22 px;
 }
 </style>
 
