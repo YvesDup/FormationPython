@@ -137,7 +137,7 @@ a += 10 # TypeError: cannot concatenate 'str' and 'int' objects
 a = None
 ```
 + Le typage fort permet de contrôler les opérations sur les variables.
-+ "Ce n'est pas ce que tu es qui qui m'importe, c'est ce que tu peux faire". Une variable (objet) peut être parcourable, appellable comme une fonction, serialisable (pickle). Voici le principe du [`duck typing`](https://fr.wikipedia.org/wiki/Duck_typing).
++ "Ce n'est pas ce que tu es qui qui m'importe, c'est ce que tu peux faire". Une variable (objet) peut être parcourable, appelable comme une fonction, serialisable ou 'indiçable'. Voici le principe du [`duck typing`](https://fr.wikipedia.org/wiki/Duck_typing).
 
 
 ---
