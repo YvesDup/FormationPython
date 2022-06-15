@@ -20,5 +20,5 @@ def main():
 # ------------- PART III: MAIN ENTRY ----------
 if __name__ == "__main__":
     print(sys.version)
-    print("name est", __name__, f"file is {__file__}")
+    print("name est", repr(__name__), f"file is '{__file__}'")
     main()
