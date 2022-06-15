@@ -214,15 +214,12 @@ Pour chaque script python, on distingue 3 parties, dans cet ordre :
 |booléens| True, False |
 |nombres à virgule| -3.14, 1.21e-19|
 |nombres complexes| 2j + 9|
-|chaines de caractéres|'Hello', "world"|
-|tableaux d'octets| bytearray('hello'), |
-|non valeur| None |
+|chaines de caractères|'Hello', "world", """\thep\ntoi!!"""|
+|tableau d'octets| bytearray('hello'), |
+|valeur nulle| None |
 
 ---
-<style scoped> {
-  font-size: 24 px;
-}
-</style>
+.
 Types composés/avancés | Exemples|
 |-------|----|
 | listes  | [], [10, True, "string", 1.22]|
@@ -231,13 +228,20 @@ Types composés/avancés | Exemples|
 |dictionnaires| {"dix":10, 20:"XX"}|
 | ensembles gelés | frozenset({1, 2, 3})} |
 ---
+<style scoped> {
+  font-size: 22 px;
+}
+</style>
+
 Types composés/avancés | Exemples|
 |-------|----|
 | fonctions, méthodes| def f(a, b, c): pass, lambda x: x+1 |
 |range| range(10), range(1, 20, 3)|
-|générateur| fonction avec instruction `yield`, forme en compréhension|
-|itérateur| it = iter(list) |
-|object| object()|
+|générateurs| fonction avec instruction `yield`, forme en compréhension|
+|itérateurs| it = iter(list) |
+|object de base| object()|
+
+Pour chaque type géré, la notion de mutabilité et d'immutabilité sera examinée
 
 ---
 ### Exploration des types en Python (suite)
