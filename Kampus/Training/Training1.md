@@ -365,12 +365,16 @@ Il existe 2 types de boucles en langage Python
     a -= 1
   ```
 
-  Les instructions `break`et `continue` existent en Python. 
+  Les instructions `break`et `continue` existent en Python.
 
 ---
 ### Introduction aux fonctions
-
-Voici un premier exemple de fonction:
+<style scoped> {
+  font-size: 28px;
+}
+</style>
+#### Définiition de la fonction
+Un premier exemple de fonction:
 
 ```py
 def fct1(a, b):
@@ -385,12 +389,13 @@ Help on function fct1 in module __main__:
 fct1(a, b)
     Documentation de la fonction fct1
 ```
+
 ---
 <style scoped> {
   font-size: 28px;
 }
 </style>
-Tests de la fonction `fct1``
+Exécution de la fonction `fct1``
 ```py
 fct1(10, 3)
 fct1(3.5, 2)
@@ -398,6 +403,9 @@ fct1("test", 3)
 fct1([1, 2, 3], 2)
 fct1((1,2), 1000)
 fct1(2j+3, 6)
+
+fct1("z", "z") # provoque une erreur
+fct1(1, 2, 4)  # provoque une erreur
 ```
 Ici on remarque que: 
 * Pas de contrôle de type en entrée de la fonction. Ce qui nous importe c'est que le premier argument soit d'un type 'multipliable'.
