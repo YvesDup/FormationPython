@@ -199,7 +199,7 @@ Pour chaque script python, on distingue 3 parties, dans cet ordre :
 * les fonctions `def xxx(): ...`, les classes `class Obj: ...`.
 * le point d'entrée principal du script `__name__ == '__main__'`.
 
-**Note**: tout fichier script en Python est candidat pour être passé à l'interpréteur, ou pour être utilisé comme une bibliothèque locale via l'instruction `import`.
+**Note**: tout script en Python est candidat pour être passé à l'interpréteur, ou pour être utilisé comme une bibliothèque locale via l'instruction `import`.
 
 ---
 ### Exploration des types en Python
