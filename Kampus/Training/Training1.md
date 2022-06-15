@@ -314,14 +314,18 @@ Naturellement dans une fonction ou une méthode, des instructions comme celles c
 #### Portée des variables dans un bloc.
 
 En python, une variable définie dans un bloc est disponible aussi pour le bloc englobant. Par exemple:
+
 ```py
   if retour:
-    c = None
     if a == 10:
         b = a + 5
         c = fff(b)
-    print(b, c) # risqué pour `b`,n'est ce pas ?
+    else:
+      c = None
+    print(b, c) # risqué pour `b`, n'est ce pas ?
 ```
+
+Ici, la variable `c` aura toujours une valeur, alors que la variable `b` n'aura été créée que si la condition `a == 10` est vraie. Donc bien que déclarée dans un sous-bloc, la variable `c` reste disponible pour le reste du bloc.
 
 ---
 #### Les structures conditionnelles
@@ -453,5 +457,5 @@ def xxxx(arg1, arg2):
   if not isinstance(arg2, int):
     return "ERRRRRROR" 
   ...
-  
+
 ```
