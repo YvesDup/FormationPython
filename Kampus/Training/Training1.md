@@ -345,8 +345,8 @@ else:
 **A noter:** 
 * il n'y a pas d'instruction "switch' en python. 
 * Il existe un opérateur ternaire: `a = 10 if x > 10 else -10`
-*+* les opérateurs logiques dans les conditions sont: `and`, `or` et `not`.
-*+* les opérateurs de comparaison sont standards, le `in` a été rajouté.
+* les opérateurs logiques dans les conditions sont: `and`, `or` et `not`.
+* les opérateurs de comparaison sont standards, le `in` a été rajouté.
 
 ---
 #### Les répétitions
@@ -386,7 +386,6 @@ else:
 ```
 
 + si `mystere` vaut 10, `'Pas de break, cool !!!` sera affiché
-
 + si `mystere` vaut 100, `'Pas de break, cool !!!` ne sera pas affiché
 
 ---
@@ -431,8 +430,8 @@ fct1(2j+3, 6)       #
 fct1("z", "z") # provoque une erreur
 fct1(1, 2, 4)  # provoque une erreur
 ```
-Ici on remarque que: 
-* Pas de contrôle de type en entrée de la fonction. Ce qui nous importe c'est que le premier argument soit d'un type 'multipliable'.
+Ici on remarque que:
+* auncun de contrôle de type en entrée de la fonction. Ce qui nous importe c'est que le premier argument soit d'un type 'multipliable'.
 * La valeur retournée est toujours du type du premier argument
 
 **Note:** Une fonction qui ne contient aucun `return` renvoie `None`.
