@@ -329,7 +329,7 @@ Ici, la variable `c` aura toujours une valeur, alors que la variable `b` n'aura 
 ---
 #### Les structures conditionnelles
 <style scoped> {
-  font-size: 28px;
+  font-size: 27px;
 }
 </style>
 ```py
@@ -343,10 +343,11 @@ else:
   pass
 ```
 **A noter:** 
-* il n'y a pas d'instruction "switch' en python. 
-* Il existe un opérateur ternaire: `a = 10 if x > 10 else -10`
+* il n'y a pas d'instruction '__switch__' en python. 
+* Il existe un opérateur ternaire: `a = x*10 if x > 10 else -1`
 * les opérateurs logiques dans les conditions sont: `and`, `or` et `not`.
 * les opérateurs de comparaison sont standards, le `in` a été rajouté.
+* la notation suivante est possible et acceptée: `0 <= x <= 10`.
 
 ---
 #### Les répétitions
