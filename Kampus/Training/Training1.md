@@ -220,7 +220,7 @@ Pour chaque script python, on distingue 3 parties, dans cet ordre :
 
 ---
 .
-Types composés/avancés | Exemples|
+Types composés | Exemples|
 |-------|----|
 | listes  | [], [10, True, "string", 1.22]|
 | tuples | ("un",),  (10, True, "string", 1.22)|
@@ -233,7 +233,7 @@ Types composés/avancés | Exemples|
 }
 </style>
 
-Types composés/avancés | Exemples|
+Types avancés | Exemples|
 |-------|----|
 | fonctions, méthodes| def f(a, b, c): pass, lambda x: x+1 |
 |range| range(10), range(1, 20, 3)|
@@ -241,7 +241,7 @@ Types composés/avancés | Exemples|
 |itérateurs| it = iter(list) |
 |object de base| object()|
 
-Pour chaque type géré, la notion de mutabilité et d'immutabilité sera examinée
+Pour chaque type en Python, la notion de mutabilité et d'immutabilité sera examinée.
 
 ---
 ### Exploration des types en Python (suite)
@@ -251,13 +251,13 @@ Pour chaque type géré, la notion de mutabilité et d'immutabilité sera examin
 </style>
 Classification des types composés/avancés
 
-|Type de données | Questions sur les éléments  |   Exemples  |
+|Type de données | Questions/Actions sur les éléments  |   Exemples  |
 |--------| ------- | -------|
 | conteneurs | existe, parcourable | générateur, itérateur|
 |||
-| collections | combien | ensemble, ensemble  |
+| collections | combien | ensemble, ensemble gelé  |
 |||
-| **séquences**| accessible directement, inversable, triable | liste, tuple, str, bytearray|
+| **séquences**| accessible directement, inversable, triable* | liste, tuple, str, bytearray|
 |||
 | **tableaux associatifs** | accessible directement | dictionnaire|
 
@@ -265,13 +265,12 @@ Classification des types composés/avancés
 ---
 ### Structuration conditionnelle et répétition
 <style scoped> {
-  font-size: 26px;
+  font-size: 28px;
 }
 </style>
 
 #### Les blocs
-La notion de bloc en Python est toujours rattachée à des instructions ou des définitions. Le bloc démarre dès le symbole `:`.
-Toutes les instructions du bloc seront positionnés avec le même retrait (4 espacecs en génral). Les instructions concernées sont: 
+La notion de bloc en Python est toujours rattachée à des instructions ou des définitions. Le bloc démarre dès le symbole `:`. Les instructions du bloc seront positionnés avec le même retrait (4 espaces). Les instructions concernées sont: 
 + if, elif, else,
 + for, while,
 + with
@@ -308,7 +307,11 @@ x = somme_des_opposes(10, 2, -5)
 Naturellement dans une fonction ou une méthode, des instructions comme celles citées dans l'exemple précédent contiennent leur propre bloc.
 
 ---
-##### Portée des variables dans un bloc.
+<style scoped> {
+  font-size: 28px;
+}
+</style>
+#### Portée des variables dans un bloc.
 
 En python, une variable définie dans un bloc est disponible aussi pour le bloc englobant. Par exemple:
 ```py
@@ -321,7 +324,7 @@ En python, une variable définie dans un bloc est disponible aussi pour le bloc 
 ```
 
 ---
-### Les structures conditionnelles
+#### Les structures conditionnelles
 <style scoped> {
   font-size: 28px;
 }
