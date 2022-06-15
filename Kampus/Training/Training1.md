@@ -77,7 +77,7 @@ Tous les documents, exemples et exercices sont accessibles [here](https://github
 * L’utilisation de gestionnaire de contexte.
 
 ---
-## Le Training1 (début du chapître 1).
+## Training1 (début du chapître 1).
 
 * Présentation du langage Python
 * Langage interprété vs Langage compilé.
