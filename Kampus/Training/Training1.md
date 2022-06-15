@@ -431,7 +431,7 @@ Ici on remarque que:
 * Pas de contrôle de type en entrée de la fonction. Ce qui nous importe c'est que le premier argument soit d'un type 'multipliable'.
 * La valeur retournée est toujours du type du premier argument
 
-**Note:** Une fonction qui ne contient aucun `return` renvoie `None`
+**Note:** Une fonction qui ne contient aucun `return` renvoie `None`.
 
 ---
 #### Fonctions internes pour le travail sur les types:
@@ -439,7 +439,7 @@ Ici on remarque que:
   font-size: 27px;
 }
 </style>
-* `type(variable)`: type(1), type(None)
+* `type(variable)`: type(1), type(None), type(type)
 * `isinstance(variable, type | énumaration de type)`: isinstance(12.4, float), 
 isinstance(x, (int, float))
 * `issubclass(type, autre type)`: issubclass(bool, int)
@@ -453,4 +453,5 @@ def xxxx(arg1, arg2):
   if not isinstance(arg2, int):
     return "ERRRRRROR" 
   ...
+  
 ```
