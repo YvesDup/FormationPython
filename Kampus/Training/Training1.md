@@ -331,13 +331,13 @@ En python, une variable définie dans un bloc est disponible aussi pour le bloc 
 </style>
 ```py
 if <condition>:
-    pass
+  pass
 elif <autre_condition1>:
-    pass
+  pass
 elif <autre_condition2>:
-    pass
+  pass
 else:
-    pass
+  pass
 ```
 **A noter:** 
 + il n'y a pas d'instruction "switch' en python. Il existe un opérateur ternaire: `a = 10 if x > 10 else -10`
@@ -392,7 +392,7 @@ fct1(a, b)
 
 ---
 <style scoped> {
-  font-size: 28px;
+  font-size: 27px;
 }
 </style>
 Exécution de la fonction `fct1``
@@ -411,11 +411,26 @@ Ici on remarque que:
 * Pas de contrôle de type en entrée de la fonction. Ce qui nous importe c'est que le premier argument soit d'un type 'multipliable'.
 * La valeur retournée est toujours du type du premier argument
 
-**Note:** Une fonction qui ne renvoie rien spécifiquement renvoie `None`
+**Note:** Une fonction qui ne contient aucun `return`renvoie `None`
 
 ---
-Fonctions internes pour le travail sur les types:
+#### Fonctions internes pour le travail sur les types:
+<style scoped> {
+  font-size: 27px;
+}
+</style>
 * `type(variable)`: type(1), type(None)
 * `isinstance(variable, type | énumaration de type)`: isinstance(12.4, float), 
 isinstance(x, (int, float))
 * `issubclass(type, autre type)`: issubclass(bool, int)
+
+Comment contrôler les types sur les paramètres ?
+
+```py
+def xxxx(arg1, arg2):
+  """exemple de contrôle
+  """
+  if not isinstance(arg2, int):
+    return "ERRRRRROR" 
+  ...
+```
