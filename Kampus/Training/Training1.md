@@ -360,6 +360,7 @@ Il existe 2 types de boucles en langage Python
   ```py
   for item in (10, 20, 'Hello'):
       print(item)
+  print(item) # défini dans le bloc du `for`
   ```
 + Le `while`:
   ```py
@@ -369,7 +370,7 @@ Il existe 2 types de boucles en langage Python
     a -= 1
   ```
 + Les instructions `break`et `continue` existent en Python.
-+ Il existe une clause `else` pour `for`et `while``
++ Il existe une clause `else` pour `for`et `while`
 
 ---
 La clause `else` des boucles
