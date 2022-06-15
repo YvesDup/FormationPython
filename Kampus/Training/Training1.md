@@ -238,10 +238,10 @@ Types avancés | Exemples|
 | fonctions, méthodes| def f(a, b, c): pass, lambda x: x+1 |
 |range| range(10), range(1, 20, 3)|
 |générateurs| fonction avec instruction `yield`, forme en compréhension|
-|itérateurs| it = iter(list) |
+|itérateurs| it = iter(list), it = map(lambda x: x**2 ,nums) |
 |object de base| object()|
 
-Pour chaque type en Python, la notion de mutabilité et d'immutabilité sera examinée.
+Pour chaque type en Python, la notion de mutabilité et d'immutabilité sera examinée (appronfondie pendant les WS).
 
 ---
 ### Exploration des types en Python (suite)
