@@ -79,7 +79,7 @@ _
 
 * Présentation du langage Python
 * Langage interprété vs Langage compilé.
-* Typage dynamique et fort, le `duck` typing.
+* Typage dynamique et fort, le `duck typing`.
 * La structuration d'un programme en Python.
 * L'interpréteur Python.
 * Exploration des types en Python.
@@ -115,14 +115,14 @@ Depuis la v3.9, publication annuelle d'une nouvelle version: la v3.11 est progra
   + le programme est lancé par le système d'exploitation.
 
 + langage interprété:
-  + le programme est exécuté au fur et à mesure de la lecture des instructions par un programme: l'interpréteur.
+  + le fichier source non transformé est exécuté au fur et à mesure de la lecture des instructions par un programme: l'interpréteur.
 
 En Python, il existe un mécanisme de transformation en 'bytecode' d'un source Python. C'est ce 'bytecode' qui est exécuté par l'interpréteur.
 
 **Note:** La bibliothèque interne [`dis`](https://docs.python.org/fr/3.9/library/dis.html) de Python permet de voir le 'bytecode' produit.
 
 ---
-### Typage dynamique et fort, le `duck typing`
+### Typage dynamique, fort, le `duck typing`
 <style scoped> {
   font-size: 30px;
 }
@@ -134,6 +134,7 @@ print(type(a)) # <type 'int'>
 a = 'string' # a est maintenant une chaine
 print(type(a)) # <type 'str'>
 a += 10 # TypeError: cannot concatenate 'str' and 'int' objects
+a = None
 ```
 + Le typage fort permet de contrôler les opérations sur les variables.
 + "Ce n'est pas ce que tu es qui qui m'importe, c'est ce que tu peux faire". Une variable (objet) peut être parcourable, appellable comme une fonction, serialisable (pickle). Voici le principe du [`duck typing`](https://fr.wikipedia.org/wiki/Duck_typing).
