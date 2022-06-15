@@ -320,7 +320,7 @@ En python, une variable définie dans un bloc est disponible aussi pour le bloc 
     if a == 10:
         b = a + 5
         c = fff(b)
-    print(b, c) # risqué, non ?
+    print(b, c) # risqué pour `b`,n'est ce pas ?
 ```
 
 ---
