@@ -364,21 +364,21 @@ else:
 </style>
 Il existe 2 types de boucles en langage Python
 
-+ Le `for`:
++ l'instruction `for`:
   ```py
   for item in (10, 20, 'Hello'):
       print(item)
   print(item) # défini dans le bloc du `for`
   ```
-+ Le `while`:
++ L'instruction `while`:
   ```py
   a = 10
   while a >= 0:
     print(a**2)
     a -= 1
   ```
-+ Les instructions `break`et `continue` existent en Python.
-+ Il existe une clause `else` pour `for`et `while`
++ les instructions `break`et `continue` existent en Python.
++ il existe une clause `else` pour `for`et `while`
 
 ---
 La clause `else` des boucles
