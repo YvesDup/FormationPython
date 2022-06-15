@@ -139,7 +139,7 @@ a += 10 # TypeError: cannot concatenate 'str' and 'int' objects
 a = None
 ```
 + Le typage fort permet de contrôler les opérations sur les variables.
-+ "Ce n'est pas ce que tu es qui qui m'importe, c'est ce que tu peux faire". Une variable (objet) peut être parcourable, appelable comme une fonction, serialisable ou 'indiçable'. Voici le principe du [`duck typing`](https://fr.wikipedia.org/wiki/Duck_typing).
++ "Ce n'est pas ce que tu es qui m'importe, c'est ce que tu peux faire". Une variable, un objet peut être parcourable, appelable comme une fonction, sérialisable ou 'indiçable'. Voici le principe du [`duck typing`](https://fr.wikipedia.org/wiki/Duck_typing).
 
 
 ---
@@ -187,7 +187,7 @@ yves@MacBook-Pro-de-yves cpython %
 Lancer le module `cProfile` sur un script Python `model.py`, vers un fichier resultat avec l'option `-o result.cprof`.
 
 ```zsh
-python3 -m cProfile setup.py
+python3 -m cProfile model.py
 yves@MacBook-Pro-de-yves cpython %
 ```
 
