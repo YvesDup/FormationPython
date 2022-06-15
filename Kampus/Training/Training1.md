@@ -438,9 +438,9 @@ fct1(2j+3, 6)       #
 fct1("z", "z") # provoque une erreur
 fct1(1, 2, 4)  # provoque une erreur
 ```
-Ici on remarque que:
-* aucun de contrôle de type en entrée de la fonction. Ce qui nous importe c'est que le premier argument soit d'un type 'multipliable'.
-* La valeur retournée est toujours du type du premier argument
+Dans cet exemple, on remarque que:
++ aucun de contrôle de type en entrée de la fonction. Ce qui nous importe c'est que le premier argument soit d'un type 'multipliable'.
++ La valeur retournée est toujours du type du premier argument
 
 **Note:** Une fonction qui ne contient aucun `return` renvoie `None`.
 
