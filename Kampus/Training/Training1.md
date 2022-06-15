@@ -163,7 +163,7 @@ yves@MacBook-Pro-de-yves cpython %
 ```
 ---
 <style scoped> {
-  font-size: 31px;
+  font-size: 29px;
 }
 </style>
 Afficher la version de Python
@@ -182,10 +182,10 @@ python3 -c 'import os; print(os.getcwd())'
 yves@MacBook-Pro-de-yves cpython %
 ```
 
-Lancer le module `cProfile` sur un script Python `setup.py`
+Lancer le module `cProfile` sur un script Python `model.py`, vers un fichier resultat avec l'option `-o result.cprof`.
 
 ```zsh
-python3 -m cProfile -o result.cprof setup.py
+python3 -m cProfile setup.py
 yves@MacBook-Pro-de-yves cpython %
 ```
 
@@ -197,7 +197,7 @@ Pour chaque script python, on distingue 3 parties, dans cet ordre :
 * les fonctions `def xxx(): ...`, les classes `class Obj: ...`.
 * le point d'entrée principal du script `__name__ == '__main__'`.
 
-**Note**: chaque script Python est candidat pour être passé à l'interpréteur, ou pour être utilisé comme une bibliothèque locale via l'instruction `import`
+**Note**: tout fichier script en Python est candidat pour être passé à l'interpréteur, ou pour être utilisé comme une bibliothèque locale via l'instruction `import`.
 
 ---
 ### Exploration des types en Python
