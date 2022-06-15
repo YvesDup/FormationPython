@@ -123,12 +123,17 @@ En Python, il existe un mécanisme de transformation en 'bytecode' d'un source P
 
 ---
 ### Typage fort, dynamique, le `duck typing`
-
-+ Chaque variable en Python devient typée dynamiquement à chaque affectation. Dans ce cas
+<style scoped> {
+  font-size: 30px;
+}
+</style>
++ Chaque variable en Python devient typée dynamiquement lors de l'affectation. Par example:
 ```py
 a = 10 # a est un entier
+print(type(a)) # <type 'int'>
 a = 'string' # a est maintenant une chaine
 print(type(a)) # <type 'str'>
+a += 10 # TypeError: cannot concatenate 'str' and 'int' objects
 ```
 
 + "Ce n'est pas ce que tu es qui est intéressant, c'est ce que tu peux faire". Une variable (objet) peut être parcourable (iterable), appellable (fonction), serialisable (pickle). C'est cela le `duck typing`.
@@ -140,8 +145,7 @@ print(type(a)) # <type 'str'>
   font-size: 32px;
 }
 </style>
-
-Dans un terminal, lancement de l'interpreteur Python:
+Après installation de [Python](www.python.org) sur le poste de travail, dans un terminal, lancement de l'interpreteur Python:
 ```zsh
 yves@MacBook-Pro-de-yves cpython % python3
 Python 3.10.1 (v3.10.1:2cd268a3a9, Dec  6 2021, 14:28:59) [Clang 13.0.0 (clang-1300.0.29.3)] on darwin
