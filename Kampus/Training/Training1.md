@@ -259,10 +259,11 @@ Classification des types composés/avancés
 ---
 ### Structuration conditionnelle et répétition
 <style scoped> {
-  font-size: 28px;
+  font-size: 26px;
 }
 </style>
 
+#### Les blocs
 La notion de bloc en Python est toujours rattachée à des instructions ou des définitions. Le bloc démarre dès le symbole `:`.
 Toutes les instructions du bloc seront positionnés avec le même retrait (4 espacecs en génral). Les instructions concernées sont: 
 + if, elif, else,
@@ -282,6 +283,7 @@ d = ...
   font-size: 28px;
 }
 </style>
+
 Les définitions sont:
 + fonctions ou méthodes
 + générateurs
@@ -300,7 +302,7 @@ x = somme_des_opposes(10, 2, -5)
 Naturellement dans une fonction ou une méthode, des instructions comme celles citées dans l'exemple précédent contiennent leur propre bloc.
 
 ---
-Portée des variables dans un bloc.
+##### Portée des variables dans un bloc.
 
 En python, une variable définie dans un bloc est disponible aussi pour le bloc englobant. Par exemple:
 ```py
@@ -311,8 +313,13 @@ En python, une variable définie dans un bloc est disponible aussi pour le bloc 
         c = fff(b)
     print(b, c) # risqué ....
 ```
+
 ---
 ### Les structures conditionnelles
+<style scoped> {
+  font-size: 28px;
+}
+</style>
 ```py
 if <condition>:
     pass
@@ -320,12 +327,37 @@ elif <autre_condition1>:
     pass
 elif <autre_condition2>:
     pass
-elif <autre_condition3>:
-    pass
 else:
     pass
 ```
 Il n'y a pas d'instruction "switch' en python. Il existe un opérateur ternaire: `a = 10 if x > 10 else -10`
+
+Les opérateurs logiques dans les conditions sont: `and`, `or`et `not`.
+
+les opérateurs de comparaison sont classiques, le `in`a été rajouté.
+
+---
+#### Les répétitions
+<style scoped> {
+  font-size: 28px;
+}
+</style>
+Il existe 2 types de boucles en langage Python
+
++ Le `for`:
+  ```py
+  for item in (10, 20, 'Hello'):
+      print(item)
+  ```
++ Le `while`:
+  ```py
+  a = 10
+  while a >= 0:
+    print(a**2)
+    a -= 1
+  ```
+
+  Les instructions `break`et `continue` existent en Python. 
 
 ---
 ### Introduction aux fonctions
@@ -360,7 +392,7 @@ fct1((1,2), 1000)
 fct1(2j+3, 6)
 ```
 Ici on remarque que: 
-* Pas de contrôle de type en entrée de la fonction. Ce qui nous importe c'est le prmier argument soit d'un type 'multipliable'.
+* Pas de contrôle de type en entrée de la fonction. Ce qui nous importe c'est que le premier argument soit d'un type 'multipliable'.
 * La valeur retournée est toujours du type du premier argument
 
 **Note:** Une fonction qui ne renvoie rien spécifiquement renvoie `None`
