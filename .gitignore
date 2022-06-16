@@ -1,3 +1,12 @@
 .DS_Store
-.pyc
-__pycache__/
+.ipynb_checkpoints
+*.prof
+*.cprof
+__pycache__
+dist/
+build/
+*.egg-info
+*.pyc
+venv/
+.idea/
+.tox/
