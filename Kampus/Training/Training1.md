@@ -226,7 +226,7 @@ Types composés | Exemples|
 |-------|----|
 | listes  | [], [10, True, "string", 1.22]|
 | tuples | ("un",),  (10, True, "string", 1.22)|
-| ensembles | {10, "20", 30.0},  {(1,"un), 'I'}|
+| ensembles | {10, "20", 30.0},  {(1,"un"), 'I'}|
 |dictionnaires| {"dix":10, 20:"XX"}|
 | ensembles gelés | frozenset({1, 2, 3})} |
 
