@@ -381,7 +381,13 @@ Il existe 2 types de boucles en langage Python:
 + il existe une clause `else` pour `for`et `while`
 
 ---
+<style scoped> {
+  font-size: 27px;
+}
+</style>
 La clause `else` des boucles
+
+**Régle:** si la boucle est complètement exécutée, alors le bloc du `else` est exécutée.  Si un `break` est rencontré, pas d'exécution de ce bloc `else`.
 
 ```py
 x = mystere
@@ -394,7 +400,7 @@ else:
 ```
 
 + si `mystere` vaut 10, `'Pas de break, cool !!!` sera affiché
-+ si `mystere` vaut 100, `'Pas de break, cool !!!` ne sera pas affiché car quand vaudra 12, l'instruction `break` sera invoquée.
++ si `mystere` vaut 100, `'Pas de break, cool !!!` ne sera pas affiché car quand `i` vaudra 12, l'instruction `break` sera exécutée.
 
 ---
 ### Introduction aux fonctions
@@ -426,20 +432,20 @@ fct1(a, b)
   font-size: 27px;
 }
 </style>
-Exécution de la fonction `fct1``
+Exécution de la fonction `fct1`
 ```py
-fct1(10, 3)         #
-fct1(3.5, 2)        #
-fct1("test", 3)     #
-fct1([1, 2, 3], 2)  #
-fct1((1,2), 1000)   #
-fct1(2j+3, 6)       #
+fct1(10, 3)         # 30
+fct1(3.5, 2)        # 7.0
+fct1("test", 3)     # "testtesttest"
+fct1([1, 2, 3], 2)  # [1, 2, 3, 1, 2, 3]
+fct1((1,2), 1000)   # (1, 2, 1, 2, ..996 fois.. 1, 2)
+fct1(2j+3, 6)       # (12j + 18)
 
-fct1("z", "z") # provoque une erreur
-fct1(1, 2, 4)  # provoque une erreur
+fct1("z", "z")      # provoque une erreur
+fct1(1, 2, 4)       # provoque une erreur
 ```
 Dans cet exemple, on remarque que:
-+ aucun de contrôle de type en entrée de la fonction. Ce qui nous importe c'est que le premier argument soit d'un type 'multipliable'.
++ aucun contrôle de type en entrée de la fonction. Ce qui nous importe c'est que le premier argument soit d'un type 'multipliable'.
 + La valeur retournée est toujours du type du premier argument
 
 **Note:** Une fonction qui ne contient aucun `return` renvoie `None`.
