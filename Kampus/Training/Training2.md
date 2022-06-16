@@ -6,7 +6,7 @@ _paginate: false
 header: '**Kampus-training**'
 footer: (c) yduprat@gmail.com
 ---
-# Formation Python BNC
+# Formation Python pour ![w:200](img/logo_bnc.png)
 
 Juin/Septembre 2022
 
