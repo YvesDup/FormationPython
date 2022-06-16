@@ -39,7 +39,7 @@ _
 
 **A noter:** Les principales bibliothèques internes seront utilisées à travers les exercices.
 
-Tous les documents, exemples et exercices sont accessibles [here](https://github.com/YvesDup/FormationPython/tree/main/Kampus/Documents%26Exemples)
+Tous les documents, exemples et exercices sont accessibles [ici](https://github.com/YvesDup/FormationPython/tree/main/Kampus/Documents%26Exemples)
 
 ---
 ### Les structures de base du langage (WS1&2).
