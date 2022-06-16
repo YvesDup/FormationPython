@@ -3,10 +3,10 @@ marp: true
 theme: gaia
 paginate: true
 _paginate: false
-header: '**Kampus-training**'
+header: ![w:150](img/logo_kampus.png)
 footer: (c) yduprat@gmail.com
 ---
-# Formation Python pour ![w:200](img/logo_bnc.png)
+# Formation Python - ![h:100 w:280](img/logo_bnc.png)
 
 Juin/Septembre 2022
 
