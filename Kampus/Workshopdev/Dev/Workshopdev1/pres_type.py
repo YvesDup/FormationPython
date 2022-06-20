@@ -49,8 +49,11 @@ encore"""
     print(s4[-len(s4)])
     print("slicing")
     start = 0
-    stop = len(s4)
-    step = 1 
+    stop = len(s4) # borne haute exclue quant à sa valeur
+    step = 1  # pas
     print(s4[start:stop:step])
+    step = 3  # pas
+    print(s4[start:stop:step])
+    print(s4[0:2])
 
 type_simple()
