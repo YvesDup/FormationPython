@@ -166,7 +166,9 @@ def type_avance():
     d = {} # dictionnaire 
     d = { "1": 10, "2": [10, 20] , 4: "quatre" }
     print(f'{d = }')
-    # print(f'{4 in d = }')
+    print(f'{4 in d = }')
+    print(f'{d[4] = }')
+    d[4] = 4
     print(f'{d[4] = }')
 
 # type_simple()
