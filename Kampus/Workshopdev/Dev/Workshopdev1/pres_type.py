@@ -87,6 +87,8 @@ def type_avance():
     l.insert(2, "Hooper")
     print(f'{l = }')
     print(False in l)
+    l.remove(10)
+    print(f'{l = }')
 
     # ensemble
     
