@@ -57,5 +57,6 @@ encore"""
     print(s4[0:2])
     print(s4[2:None])
     print(s4[1:3])
+    print(s4[::-1])
 
 type_simple()
