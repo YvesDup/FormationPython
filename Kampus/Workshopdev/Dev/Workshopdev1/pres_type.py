@@ -97,12 +97,17 @@ def type_avance():
         if isinstance(item, str):
             print(item)
     print("---")
-    
+
     print(l[::-1])
     l1 = [10, 0, -5, True, 2.89, -1.2e-19]
     print(l1)
     l1.sort()
     print(l1)
+
+    print("extend".center(60))
+    l1.extend(l)
+    print(l1)
+
 
     # ensemble
     
