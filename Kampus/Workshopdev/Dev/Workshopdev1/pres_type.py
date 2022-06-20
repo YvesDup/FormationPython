@@ -11,7 +11,11 @@ def type_simple():
     print(al)
     b = a 
     print(f'{b = }')
-
     print(id(a), id(b))
+    print('je modifie b'.center(60, '-'))
+    b += 10
+    print(f'{b = }')
+    print(id(a), id(b))
+
 
 type_simple()
