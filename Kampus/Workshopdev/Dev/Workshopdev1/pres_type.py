@@ -152,6 +152,7 @@ def type_avance():
     print(f'{s2 - s1 = }')
     print({10, 20}.issubset(s1))
     print({100, 25}.isdisjoint(s1))
+    print({10, 20, 40, 50}.issuperset(s1))
 
      
     # dictionnaire
