@@ -77,6 +77,7 @@ encore"""
 def type_avance():
     """
     """
+    """    
     # liste
     print('liste')
     l = []
@@ -158,9 +159,13 @@ def type_avance():
     print(l)
     l = list(set(l))
     print(l)
-
-     
+    # un set vide
+    sss = set()
+"""
     # dictionnaire
+    d = {} # dictionnaire 
+    d = { "1": 10, "2": [10, 20] , 4: "quatre" }
+    print(f'{d = }')
 
 # type_simple()
 type_avance()
