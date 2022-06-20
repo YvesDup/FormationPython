@@ -55,5 +55,6 @@ encore"""
     step = 3  # pas
     print(s4[start:stop:step])
     print(s4[0:2])
+    print(s4[2:None])
 
 type_simple()
