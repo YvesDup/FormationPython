@@ -174,6 +174,8 @@ def type_avance():
     print(d.keys())
     print(d.values())
     print(d.items())
+    for k in d.keys():
+        print(k, '->', d[k])
 
 
 # type_simple()
