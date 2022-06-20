@@ -58,5 +58,6 @@ encore"""
     print(s4[2:None])
     print(s4[1:3])
     print(s4[::-1])
+    print(s4[-2:])
 
 type_simple()
