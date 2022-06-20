@@ -67,7 +67,7 @@ encore"""
     s4 = s4.replace('e', 'E')
     print(s4)
     s = 'hello la compagnie'
-    print(f'{type(s) = }, {isinstance(s, (str)) = }')
+    print(f'{s = }, {type(s) = }, {isinstance(s, (str)) = }')
     print("10-")
 
 type_simple()
