@@ -37,5 +37,7 @@ def type_simple():
 salut,             yyyyy
 encore"""
     print(s3)
+    s4 = s1
+    print(f'{s1}, {s4}')
 
 type_simple()
