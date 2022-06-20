@@ -27,8 +27,15 @@ def type_simple():
     print("complexe")
     cplx = 2j + 9
     print(cplx)
-    print("valeur null")
+    print("valeur nulle")
     n = None
     print(f'{n = } - {type(None)}')
+    print("string")
+    s1 = "hello"
+    s2 = 'world !!'
+    s3 = """hello
+salut,             yyyyy
+encore"""
+    print(s3)
 
 type_simple()
