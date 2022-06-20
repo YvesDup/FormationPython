@@ -10,6 +10,6 @@ def type_simple():
     print(a)
     print(al)
     b = a 
-    print(b)
+    print(f'{b = }')
 
 type_simple()
