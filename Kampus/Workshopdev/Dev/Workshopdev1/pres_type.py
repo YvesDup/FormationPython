@@ -171,6 +171,9 @@ def type_avance():
     d[4] = 4
     print(f'{d[4] = }')
     print(f'{d.get(5, "Pas de key") = }')
+    print(d.keys())
+    print(d.values())
+    print(d.items())
 
 
 # type_simple()
