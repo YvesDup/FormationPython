@@ -150,6 +150,9 @@ def type_avance():
     print(f'{s1 ^ s2 = }')
     print(f'{s1 - s2 = }')
     print(f'{s2 - s1 = }')
+    print({10, 20}.issubset(s1))
+    print({100, 25}.isdisjoint(s1))
+
      
     # dictionnaire
 
