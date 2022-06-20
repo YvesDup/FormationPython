@@ -177,6 +177,9 @@ def type_avance():
     for k in d.keys():
         print(k, '->', d[k])
 
+    for item in d.items():
+        print(item[0], '->', item[1])
+
 
 # type_simple()
 type_avance()
