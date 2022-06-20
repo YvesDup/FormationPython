@@ -139,6 +139,9 @@ def type_avance():
     for item in s1:
         print(item)
 
+    s1.remove(80)
+    print(f'{s1=}')
+
     # dictionnaire
 
 # type_simple()
