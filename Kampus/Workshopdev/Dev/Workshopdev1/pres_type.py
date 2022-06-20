@@ -83,6 +83,9 @@ def type_avance():
     print(f'{l = }, {type(l) = }')
     l = [10, "vingt", 20.000 , None]
     print(f'{l = }')
+    l.append(False)
+    l.insert(2, "Hooper")
+    print(f'{l = }')
 
     # ensemble
     
