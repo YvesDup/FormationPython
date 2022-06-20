@@ -59,5 +59,8 @@ encore"""
     print(s4[1:3])
     print(s4[::-1])
     print(s4[-2:])
+    x = slice(start, stop, step)
+    print(x)
+    print(s4[x])
 
 type_simple()
