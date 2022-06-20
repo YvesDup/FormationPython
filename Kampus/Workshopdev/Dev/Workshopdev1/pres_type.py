@@ -91,6 +91,8 @@ def type_avance():
     print(f'{l = }')
     for item in l:
         print(item)
+
+    print("juste les chaines de caractères")
     for item in l:
         if isinstance(item, str):
             print(item)
