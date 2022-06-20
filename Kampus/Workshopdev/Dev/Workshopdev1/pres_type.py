@@ -147,6 +147,7 @@ def type_avance():
     print(f'{s2=}')
     print(f'{s1 & s2 = }')
     print(f'{s1 | s2 = }')
+    print(f'{s1 ^ s2 = }')
      
     # dictionnaire
 
