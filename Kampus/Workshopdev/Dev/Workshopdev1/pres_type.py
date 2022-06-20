@@ -175,7 +175,7 @@ def type_avance():
     print(d.values())
     print(d.items())
     print("___"*20)
-    for k in d.keys():
+    for k in d:  # d.keys(): 
         print(k, '->', d[k])
 
     print("___"*20)
@@ -184,7 +184,12 @@ def type_avance():
     print("___"*20)
     for k, v in d.items():
         print(k, '->', v)
+    
+    del d[2]
+    v = d.pop(4)
+    print(v)
 
+    print(d)
 
 # type_simple()
 type_avance()
