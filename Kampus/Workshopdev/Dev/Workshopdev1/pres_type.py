@@ -111,9 +111,14 @@ def type_avance():
     l1.append(l)
     print("------", id(l), id(l1[-1]))
     print(l1)
-    l.remove(None)
-    l.remove(20.0)
+    l.remove(None) # l1[-1].remove(None)
+    l.remove(20.0) # l1[-1].remove(20.0)
     print(l1)
+
+    # copy
+    import copy
+    lc = copy.copy(l1)
+    print(f'{id(l1) = } , {id(lc) = }')
 
 
     # ensemble
