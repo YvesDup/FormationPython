@@ -190,6 +190,9 @@ def type_avance():
     print(v)
 
     print(d)
+    dd = { 5:"cinq", '1':["un", "I", 1], True:"VRAI !!"}
+    d.update(dd) 
+    print(d)
 
 # type_simple()
 type_avance()
