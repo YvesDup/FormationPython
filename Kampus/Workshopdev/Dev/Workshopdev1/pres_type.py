@@ -12,4 +12,6 @@ def type_simple():
     b = a 
     print(f'{b = }')
 
+    print(id(a), id(b))
+
 type_simple()
