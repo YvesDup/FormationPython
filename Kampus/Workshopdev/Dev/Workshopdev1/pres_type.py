@@ -47,5 +47,10 @@ encore"""
     print(f'{s4[0]=}', f'{s4[len(s4)-1] = }', f'{s4[-1] = }')
     # print(s4[10])
     print(s4[-len(s4)])
+    print("slicing")
+    start = 0
+    stop = len(s4)
+    step = 1 
+    print(s4[start:stop:step])
 
 type_simple()
