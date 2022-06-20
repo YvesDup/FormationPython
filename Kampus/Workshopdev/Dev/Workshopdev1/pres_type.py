@@ -16,6 +16,9 @@ def type_simple():
     b += 10
     print(f'{b = }')
     print(f'{id(a) = }, {id(b) =}')
+    print('floattant')
+    f = 0.5 
+    print(f'{f=}')
 
 
 type_simple()
