@@ -92,6 +92,8 @@ def type_avance():
     for item in l:
         print(item)
 
+    print(l[::-1])
+
     # ensemble
     
     # dictionnaire
