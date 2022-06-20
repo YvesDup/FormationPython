@@ -93,6 +93,8 @@ def type_avance():
         print(item)
 
     print(l[::-1])
+    l1 = [10, 0, -5, 2.89, -1.2e-19]
+    print(l1)
 
     # ensemble
     
