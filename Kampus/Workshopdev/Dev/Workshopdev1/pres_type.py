@@ -140,7 +140,7 @@ def type_avance():
         print(item)
 
     s1.remove(80)
-    print(f'{s1=}')
+    # print(f'{s1=}')
 
     #operation ensembliste
     print(f'{s1=}')
