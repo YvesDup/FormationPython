@@ -89,6 +89,8 @@ def type_avance():
     print(False in l)
     l.remove(10)
     print(f'{l = }')
+    for item in l:
+        print(item)
 
     # ensemble
     
