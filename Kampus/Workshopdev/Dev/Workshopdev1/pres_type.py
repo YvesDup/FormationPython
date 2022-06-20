@@ -45,6 +45,7 @@ encore"""
     s4 = 'Yves'
     print(f'{s1}, {s4}')
     print(f'{s4[0]=}', f'{s4[len(s4)-1] = }', f'{s4[-1] = }')
-    print(s4[10])
+    # print(s4[10])
+    print(s4[-len(s4)])
 
 type_simple()
