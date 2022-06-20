@@ -80,7 +80,10 @@ def type_avance():
     # liste
     print('liste')
     l = []
-    print(f'{l = }, {type(l) =}')
+    print(f'{l = }, {type(l) = }')
+    l = [10, "vingt", 20.000 , None]
+    print(f'{l = }')
+
     # ensemble
     
     # dictionnaire
