@@ -174,12 +174,14 @@ def type_avance():
     print(d.keys())
     print(d.values())
     print(d.items())
+    print("___"*20)
     for k in d.keys():
         print(k, '->', d[k])
 
+    print("___"*20)
     for item in d.items():
         print(item[0], '->', item[1])
-
+    print("___"*20)
     for k, v in d.items():
         print(k, '->', v)
 
