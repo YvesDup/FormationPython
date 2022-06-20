@@ -119,6 +119,8 @@ def type_avance():
     import copy
     lc = copy.copy(l1)
     print(f'{id(l1) = } , {id(lc) = }')
+    print(f'{id(l1[-1]) = } , {id(lc[-1]) = }')
+
 
 
     # ensemble
