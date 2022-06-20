@@ -142,6 +142,12 @@ def type_avance():
     s1.remove(80)
     print(f'{s1=}')
 
+    #operation ensembliste
+    print(f'{s1=}')
+    print(f'{s2=}')
+    print(f'{s1 & s2 = }')
+    print(f'{s1 | s2 = }')
+     
     # dictionnaire
 
 # type_simple()
