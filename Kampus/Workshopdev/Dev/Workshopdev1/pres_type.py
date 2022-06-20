@@ -29,6 +29,6 @@ def type_simple():
     print(cplx)
     print("valeur null")
     n = None
-    print(f'{n = }')
+    print(f'{n = } - {type(None)}')
 
 type_simple()
