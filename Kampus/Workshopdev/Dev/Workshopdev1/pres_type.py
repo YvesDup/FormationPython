@@ -96,7 +96,8 @@ def type_avance():
     for item in l:
         if isinstance(item, str):
             print(item)
-
+    print("---")
+    
     print(l[::-1])
     l1 = [10, 0, -5, True, 2.89, -1.2e-19]
     print(l1)
