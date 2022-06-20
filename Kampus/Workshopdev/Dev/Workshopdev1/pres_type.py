@@ -72,6 +72,6 @@ encore"""
     print(f'8 - {s = }, {type(s) = }, {isinstance(s, (str)) = }')
     print(f"10 - {s[2:7:2] = }")
     sl = slice(2, 7, 2)
-    print(f"10bis - {s[x] = }")
+    print(f"10bis - {s[sl] = }")
 
 type_simple()
