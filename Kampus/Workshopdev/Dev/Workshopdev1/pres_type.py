@@ -185,7 +185,7 @@ def type_avance():
     for k, v in d.items():
         print(k, '->', v)
     
-    del d[2]
+    del d["2"]
     v = d.pop(4)
     print(v)
 
