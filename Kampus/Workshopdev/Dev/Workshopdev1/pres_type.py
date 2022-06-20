@@ -63,7 +63,7 @@ encore"""
     print(x)
     print(s4[x])
     print(f'{s4.startswith("Yv") = }')
-    s4[2] = 'E'
+    # s4[2] = 'E'
     s4 = s4.replace('e', 'E')
     print(s4)
 
