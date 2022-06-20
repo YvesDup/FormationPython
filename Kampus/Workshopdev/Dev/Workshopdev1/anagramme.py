@@ -12,7 +12,7 @@ def anagramme(words):
 def test_anagramme():
 	"""
 	"""
-	tests = (
+	tests = ( # words														res
 			(("ecrue", "uni", "nue") , 									[]),
 			(("les", "sel", "sell"), 									[["les", "sel"]]),
 			(("line", "steres", "tresse", "tres", "lien", "restes"), 	[["lien", "line"], ["restes", "steres", "tresse"]])
