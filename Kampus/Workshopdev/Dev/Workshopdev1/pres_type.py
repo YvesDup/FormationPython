@@ -44,5 +44,6 @@ encore"""
     print(s1 is s4) # id(s1) == id(4)
     s4 = 'Yves'
     print(f'{s1}, {s4}')
+    print(s4[0], s4[len(s4)-1])
 
 type_simple()
