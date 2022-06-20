@@ -41,6 +41,8 @@ encore"""
     print(f'{s1}, {s4}')
     print('h' in s1)
     print(s1 == s4)
-    print(s1 is s4)
+    print(s1 is s4) # id(s1) == id(4)
+    s4 = 'Yves'
+    print(f'{s1}, {s4}')
 
 type_simple()
