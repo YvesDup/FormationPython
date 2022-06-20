@@ -74,4 +74,16 @@ encore"""
     sl = slice(2, 7, 2)
     print(f"10bis - {s[sl] = }")
 
-type_simple()
+def type_avance():
+    """
+    """
+    # liste
+    print('liste')
+    l = []
+    print(f'{l = }, {type(l) =}')
+    # ensemble
+    
+    # dictionnaire
+
+# type_simple()
+type_avance()
