@@ -136,6 +136,8 @@ def type_avance():
     # print(s1[1])
     s1.add(10)
     print(f'{s1=}')
+    for item in s1:
+        print(item)
 
     # dictionnaire
 
