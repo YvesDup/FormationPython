@@ -40,5 +40,7 @@ encore"""
     s4 = s1
     print(f'{s1}, {s4}')
     print('h' in s1)
+    print(s1 == s4)
+    print(s1 is s4)
 
 type_simple()
