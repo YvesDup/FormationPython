@@ -125,10 +125,14 @@ def type_avance():
     print(f'DC {id(l1) = } , {id(lc) = }')
     print(f'DC {id(l1[-1]) = } , {id(lc[-1]) = }')
 
-
-
     # ensemble
-    
+    s1 = {10, 20, 40}
+    print(f'{s1=}')
+    s2 = {20, 30, 60, 60}
+    # print(f'{s2=}')
+    s1.add(80)
+    print(f'{s1=}')
+
     # dictionnaire
 
 # type_simple()
