@@ -110,7 +110,9 @@ def type_avance():
     print(l1)
     l1.append(l)
     print(l1)
-
+    l.remove(None)
+    l.remove(20.0)
+    print(l1)
 
 
     # ensemble
