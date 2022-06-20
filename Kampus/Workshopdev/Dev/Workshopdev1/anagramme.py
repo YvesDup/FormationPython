@@ -15,7 +15,7 @@ def test_anagramme():
 	tests = (
 			(("ecrue", "uni", "nue") , 									[]),
 			(("les", "sel", "sell"), 									[["les", "sel"]]),
-			(("line", "steres", "stress", "tres", "lien", "restes"), 	[["lien", "line"], ["restes", "steres", "stress"]])
+			(("line", "steres", "stress", "tres", "lien", "restes"), 	[["lien", "line"], ["restes", "steres"]])
 	)
 	for words, res in tests:
 		print(anagramme(words) == res) 
