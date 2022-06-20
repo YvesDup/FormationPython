@@ -105,7 +105,8 @@ def type_avance():
     print(l1)
 
     print("extend".center(60))
-    l1.extend(l)
+    s = "hello"
+    l1.extend(s)
     print(l1)
 
 
