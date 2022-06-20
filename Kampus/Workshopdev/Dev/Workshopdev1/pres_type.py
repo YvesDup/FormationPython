@@ -63,5 +63,6 @@ encore"""
     print(x)
     print(s4[x])
     print(f'{s4.startswith("Yv") = }')
+    s4[2] = 'E'
 
 type_simple()
