@@ -116,10 +116,14 @@ def type_avance():
     print(l1)
 
     # copy
+    print("copy")
     import copy
-    lc = copy.copy(l1)
+    lc = copy.copy(l1) # copy.deepcopy() copie profonde
     print(f'{id(l1) = } , {id(lc) = }')
     print(f'{id(l1[-1]) = } , {id(lc[-1]) = }')
+    lc = copy.deepcopy(l1) # copy.deepcopy() copie profonde
+    print(f'DC {id(l1) = } , {id(lc) = }')
+    print(f'DC {id(l1[-1]) = } , {id(lc[-1]) = }')
 
 
 
