@@ -16,9 +16,13 @@ def type_simple():
     b += 10
     print(f'{b = }')
     print(f'{id(a) = }, {id(b) =}')
-    print('floattant')
+    print('flottant')
     f = 0.5 
     print(f'{f=}')
-
+    fl = f 
+    print("booléen")
+    bot = True
+    bof = False
+    print(f'{bot = }, {bof = }')
 
 type_simple()
