@@ -133,7 +133,9 @@ def type_avance():
     s1.add(80)
     print(f'{s1=}')
     print(80 in s1)
-    print(s1[1])
+    # print(s1[1])
+    s1.add(10)
+    print(f'{s1=}')
 
     # dictionnaire
 
