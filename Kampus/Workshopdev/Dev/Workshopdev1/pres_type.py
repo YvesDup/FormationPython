@@ -67,7 +67,11 @@ encore"""
     s4 = s4.replace('e', 'E')
     print(s4)
     s = 'hello la compagnie'
-    print(f'{s = }, {type(s) = }, {isinstance(s, (str)) = }')
-    print("10-")
+    print("6 - ", s.count('e'))
+    print("7 - ", 'o l' in s)
+    print(f'8 - {s = }, {type(s) = }, {isinstance(s, (str)) = }')
+    print(f"10 - {s[2:7:2] = }")
+    sl = slice(2, 7, 2)
+    print(f"10bis - {s[x] = }")
 
 type_simple()
