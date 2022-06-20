@@ -180,6 +180,9 @@ def type_avance():
     for item in d.items():
         print(item[0], '->', item[1])
 
+    for k, v in d.items():
+        print(k, '->', v)
+
 
 # type_simple()
 type_avance()
