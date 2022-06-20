@@ -24,5 +24,11 @@ def type_simple():
     bot = True
     bof = False
     print(f'{bot = }, {bof = }')
+    print("complexe")
+    cplx = 2j + 9
+    print(cplx)
+    print("valeur null")
+    n = None
+    print(f'{n = }')
 
 type_simple()
