@@ -106,8 +106,11 @@ def type_avance():
 
     print("extend".center(60))
     s = "hello"
-    l1.extend(s)
+    l1.extend(s) # l += s
     print(l1)
+    l1.append(l)
+    print(l1)
+
 
 
     # ensemble
