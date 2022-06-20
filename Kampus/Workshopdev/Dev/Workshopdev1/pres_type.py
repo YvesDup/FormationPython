@@ -62,5 +62,6 @@ encore"""
     x = slice(start, stop, step)
     print(x)
     print(s4[x])
+    print(f'{s4.startswith("Yv") = }')
 
 type_simple()
