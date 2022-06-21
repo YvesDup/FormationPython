@@ -16,7 +16,7 @@ def type_simple():
         print('je modifie b'.center(60, '-'))
         b += 10
         print(f'{a = }, {b = }')
-        print(f'{id(a) = }, {id(b) =}')
+        print(f'{id(a) = }, {id(b) = }')
 
     def type_bool():
         print("booléen")
@@ -27,10 +27,10 @@ def type_simple():
     def type_float():
         print('flottant')
         f = 0.5
-        print(f'{f =}')
-        fl = f
-        print(f'{fl =}')
-        print(f'Conversion vers un entier: {int(f)}')
+        print(f'{f = }')
+        f2 = 1.21e-19
+        print(f'{f2 = }')
+        print(f'Conversion vers un entier: {int(f) = }')
 
     def type_cplx():
         print("complexe")
