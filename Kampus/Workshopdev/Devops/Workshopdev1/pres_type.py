@@ -88,8 +88,8 @@ def type_simple():
         sl = slice(2, 7, 2)
         print(f"10bis - {s[sl] = }")
 
-    type_int()
-    # type_bool()
+    # type_int()
+    type_bool()
     # type_float()
     # type_cplx()
     # type_none()
