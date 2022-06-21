@@ -295,7 +295,7 @@ La méthode `extend` prend un `iterable` en entrée et ajoute tous ses élément
 
 ---
 <style scoped> {
-  font-size: 28px;
+  font-size: 25px;
 }
 </style>
 
