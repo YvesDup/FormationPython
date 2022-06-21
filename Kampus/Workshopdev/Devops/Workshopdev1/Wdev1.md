@@ -78,8 +78,8 @@ Je modifie `b`
     print(f'{id(a) = }, {id(b) =}')
 ```
 
-Les 'ìd' de chaque sont différents. il s'agit donc de 2 zones mémoires différentes. 
-Ce comportement est lié à une caractéristique associée au type (ici les `int`) qui est la notion de **mutabilité** (ou caractére muable) ou pas.
+Les 'id' de chaque objets sont différents. il s'agit donc de 2 zones mémoires différentes. 
+Ce comportement est lié à une caractéristique associée au type (ici les `int`) qui se nomme: la **mutabilité** et sa négation, l' **immutabilitée**.
 
 Les `int` sont des variables **immutables** (ou **immuable**), cad que le contenu est constant. Toute modification du contenu entraine la mise en place d'une nouvelle zone mémoire.
 
