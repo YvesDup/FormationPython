@@ -145,12 +145,13 @@ def type_avance():
         l1.sort()
 
         print("append a list")
+        l1 = [-5,  -1.2e-19,, 0, True, 2.89, 10]
         print(l1)
         l = [True, 20.0, "Allez", None]
         print(l)
         l1.append(l)
-        print("------", id(l1), id(l), id(l1[-1]))
         print(l1)
+        print("------", id(l1), id(l), id(l1[-1]))
         l.remove(None) # l1[-1].remove(None)
         l.remove(20.0) # l1[-1].remove(20.0)
         print(l1)
