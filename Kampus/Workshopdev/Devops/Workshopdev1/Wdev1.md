@@ -286,3 +286,5 @@ Les modifications de liste peuvent se faire comme suit:
         l.extend('ABC')
         print(f'{l = }')
 ```
+
+---
