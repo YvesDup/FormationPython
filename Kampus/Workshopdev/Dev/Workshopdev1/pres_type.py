@@ -16,10 +16,13 @@ def type_simple():
     b += 10
     print(f'{b = }')
     print(f'{id(a) = }, {id(b) =}')
+
     print('flottant')
-    f = 0.5 
+    f = 0.5
     print(f'{f=}')
-    fl = f 
+    fl = f
+    print(f'{int(f)}')
+    
     print("booléen")
     bot = True
     bof = False
@@ -30,6 +33,7 @@ def type_simple():
     print("valeur nulle")
     n = None
     print(f'{n = } - {type(None)}')
+
     print("string")
     s1 = "hello"
     s2 = 'world !!'
@@ -184,7 +188,7 @@ def type_avance():
     print("___"*20)
     for k, v in d.items():
         print(k, '->', v)
-    
+
     del d["2"]
     v = d.pop(4)
     print(v)
