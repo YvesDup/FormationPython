@@ -239,4 +239,4 @@ def type_avance():
 #    type_dict()
 #    type_tuple()
 
-# type_avance()
+type_avance()
