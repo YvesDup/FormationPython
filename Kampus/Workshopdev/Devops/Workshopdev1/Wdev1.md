@@ -518,12 +518,12 @@ Il existe principalement 2 façons de procéder:
 
 ---
 <style scoped> {
-  font-size: 30px;
+  font-size: 28px;
 }
 </style>
 ### Les ensembles
 
-Les ensembles sont des collections particulières qui ne contiennent que des objets **immutables** sans doublons. Ils mettent à disposition les opérations ensemblistes:
+Les ensembles sont des collections particulières qui ne contiennent que des objets **immutables** sans doublons. Ils mettent à disposition les opérations ensemblistes suivantes:
 
 + Union
 + Intersection
@@ -532,3 +532,4 @@ Les ensembles sont des collections particulières qui ne contiennent que des obj
 + Sur-ensemble
 + Sous-ensemble
 * Ensembles disjoints
+
