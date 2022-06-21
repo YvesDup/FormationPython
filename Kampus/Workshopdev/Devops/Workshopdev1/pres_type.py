@@ -96,7 +96,7 @@ def type_simple():
     # type_none()
     # type_string()
 
-type_simple()
+# type_simple()
 
 
 
@@ -122,7 +122,7 @@ def type_avance():
         print(f'{l = }')
         l.extend('ABC')
         print(f'{l = }')
-
+        return 
         print("parcours de la liste")
         for item in l:
             print(item)
