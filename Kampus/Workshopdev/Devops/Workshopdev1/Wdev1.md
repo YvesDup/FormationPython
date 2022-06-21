@@ -361,7 +361,7 @@ Une instruction `while` peut aussi s'utiliser ici mais sera de la même efficaci
         print(l1)
 ```
 
-Ici la liste `l` est ajoutée telle quelle à la fin de la liste `l1` 
+Ici la liste `l` est ajoutée telle quelle à la fin de la liste `l1`. Cet ajout 
 
 ---
 <style scoped> {
