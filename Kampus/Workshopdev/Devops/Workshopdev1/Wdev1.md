@@ -411,6 +411,8 @@ Les dictionnaires représentent une structure de données enregistrées sous la 
         print(f'{4 in d = }')
 
 ```
+Les `DICT` sont des variables **muable**. un dictionnaire n'est pas ue séquence mais un tableau associatif.
+
 Les clès d'un dictionnaire sont hétéroclites en terme de type et chaque valeur de clé doit être d'un type '**immuable**'.
 
 ---
