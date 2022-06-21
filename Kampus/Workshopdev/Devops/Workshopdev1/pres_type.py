@@ -94,125 +94,133 @@ def type_simple():
     type_none()
     type_string()
 
+type_simple()
+
+
+
 def type_avance():
     """
     """
-    """    
-    # liste
-    print('liste')
-    l = []
-    print(f'{l = }, {type(l) = }')
-    l = [10, "vingt", 20.000 , None]
-    print(f'{l = }')
-    l.append(False)
-    l.insert(2, "Hooper")
-    print(f'{l = }')
-    print(False in l)
-    l.remove(10)
-    print(f'{l = }')
-    for item in l:
-        print(item)
-
-    print("juste les chaines de caractères")
-    for item in l:
-        if isinstance(item, str):
+    def type_liste():
+        # liste
+        print('liste')
+        l = []
+        print(f'{l = }, {type(l) = }')
+        l = [10, "vingt", 20.000 , None]
+        print(f'{l = }')
+        l.append(False)
+        l.insert(2, "Hooper")
+        print(f'{l = }')
+        print(False in l)
+        l.remove(10)
+        print(f'{l = }')
+        for item in l:
             print(item)
-    print("---")
 
-    print(l[::-1])
-    l1 = [10, 0, -5, True, 2.89, -1.2e-19]
-    print(l1)
-    l1.sort()
-    print(l1)
+        print("juste les chaines de caractères")
+        for item in l:
+            if isinstance(item, str):
+                print(item)
+        print("---")
 
-    print("extend".center(60))
-    s = "hello"
-    # l1.extend(s) # l += s
-    print(l1)
-    l1.append(l)
-    print("------", id(l), id(l1[-1]))
-    print(l1)
-    l.remove(None) # l1[-1].remove(None)
-    l.remove(20.0) # l1[-1].remove(20.0)
-    print(l1)
+        print(l[::-1])
+        l1 = [10, 0, -5, True, 2.89, -1.2e-19]
+        print(l1)
+        l1.sort()
+        print(l1)
 
-    # copy
-    print("copy")
-    import copy
-    lc = copy.copy(l1) # copy.deepcopy() copie profonde
-    print(f'{id(l1) = } , {id(lc) = }')
-    print(f'{id(l1[-1]) = } , {id(lc[-1]) = }')
-    lc = copy.deepcopy(l1) # copy.deepcopy() copie profonde
-    print(f'DC {id(l1) = } , {id(lc) = }')
-    print(f'DC {id(l1[-1]) = } , {id(lc[-1]) = }')
+        print("extend".center(60))
+        s = "hello"
+        # l1.extend(s) # l += s
+        print(l1)
+        l1.append(l)
+        print("------", id(l), id(l1[-1]))
+        print(l1)
+        l.remove(None) # l1[-1].remove(None)
+        l.remove(20.0) # l1[-1].remove(20.0)
+        print(l1)
+
+        # copy
+        print("copy")
+        import copy
+        lc = copy.copy(l1) # copy.deepcopy() copie profonde
+        print(f'{id(l1) = } , {id(lc) = }')
+        print(f'{id(l1[-1]) = } , {id(lc[-1]) = }')
+        lc = copy.deepcopy(l1) # copy.deepcopy() copie profonde
+        print(f'DC {id(l1) = } , {id(lc) = }')
+        print(f'DC {id(l1[-1]) = } , {id(lc[-1]) = }')
 
     # ensemble
-    s1 = {10, 20, 40}
-    print(f'{s1=}')
-    s2 = {20, 30, 60, 60}
-    # print(f'{s2=}')
-    s1.add(80)
-    print(f'{s1=}')
-    print(80 in s1)
-    # print(s1[1])
-    s1.add(10)
-    print(f'{s1=}')
-    for item in s1:
-        print(item)
+    def type_set():
+        s1 = {10, 20, 40}
+        print(f'{s1=}')
+        s2 = {20, 30, 60, 60}
+        # print(f'{s2=}')
+        s1.add(80)
+        print(f'{s1=}')
+        print(80 in s1)
+        # print(s1[1])
+        s1.add(10)
+        print(f'{s1=}')
+        for item in s1:
+            print(item)
 
-    s1.remove(80)
-    # print(f'{s1=}')
+        s1.remove(80)
+        # print(f'{s1=}')
 
-    #operation ensembliste
-    print(f'{s1=}')
-    print(f'{s2=}')
-    print(f'{s1 & s2 = }')
-    print(f'{s1 | s2 = }')
-    print(f'{s1 ^ s2 = }')
-    print(f'{s1 - s2 = }')
-    print(f'{s2 - s1 = }')
-    print({10, 20}.issubset(s1))
-    print({100, 25}.isdisjoint(s1))
-    print({10, 20, 40, 50}.issuperset(s1))
+        #operation ensembliste
+        print(f'{s1=}')
+        print(f'{s2=}')
+        print(f'{s1 & s2 = }')
+        print(f'{s1 | s2 = }')
+        print(f'{s1 ^ s2 = }')
+        print(f'{s1 - s2 = }')
+        print(f'{s2 - s1 = }')
+        print({10, 20}.issubset(s1))
+        print({100, 25}.isdisjoint(s1))
+        print({10, 20, 40, 50}.issuperset(s1))
 
-    l = [10, 20, 30, 10, 20, 40, 10, 0, 0, 0]
-    print(l)
-    l = list(set(l))
-    print(l)
-    # un set vide
-    sss = set()
-"""
-    # dictionnaire
-    d = {} # dictionnaire 
-    d = { "1": 10, "2": [10, 20] , 4: "quatre" }
-    print(f'{d = }')
-    print(f'{4 in d = }')
-    print(f'{d[4] = }')
-    d[4] = 4
-    print(f'{d[4] = }')
-    print(f'{d.get(5, "Pas de key") = }')
-    print(d.keys())
-    print(d.values())
-    print(d.items())
-    print("___"*20)
-    for k in d:  # d.keys(): 
-        print(k, '->', d[k])
+        l = [10, 20, 30, 10, 20, 40, 10, 0, 0, 0]
+        print(l)
+        l = list(set(l))
+        print(l)
+        # un set vide
+        sss = set()
+    def type_dict():
+        # dictionnaire
+        d = {} # dictionnaire 
+        d = { "1": 10, "2": [10, 20] , 4: "quatre" }
+        print(f'{d = }')
+        print(f'{4 in d = }')
+        print(f'{d[4] = }')
+        d[4] = 4
+        print(f'{d[4] = }')
+        print(f'{d.get(5, "Pas de key") = }')
+        print(d.keys())
+        print(d.values())
+        print(d.items())
+        print("___"*20)
+        for k in d:  # d.keys(): 
+            print(k, '->', d[k])
 
-    print("___"*20)
-    for item in d.items():
-        print(item[0], '->', item[1])
-    print("___"*20)
-    for k, v in d.items():
-        print(k, '->', v)
+        print("___"*20)
+        for item in d.items():
+            print(item[0], '->', item[1])
+        print("___"*20)
+        for k, v in d.items():
+            print(k, '->', v)
 
-    del d["2"]
-    v = d.pop(4)
-    print(v)
+        del d["2"]
+        v = d.pop(4)
+        print(v)
 
-    print(d)
-    dd = { 5:"cinq", '1':["un", "I", 1], True:"VRAI !!"}
-    d.update(dd) 
-    print(d)
+        print(d)
+        dd = { 5:"cinq", '1':["un", "I", 1], True:"VRAI !!"}
+        d.update(dd) 
+        print(d)
 
-type_simple()
+    type_liste()
+    type_set()
+    type_dict()
+
 type_avance()
