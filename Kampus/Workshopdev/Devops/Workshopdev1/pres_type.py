@@ -247,4 +247,4 @@ def type_avance():
     # type_set()
 #    type_tuple()
 
-# type_avance()
+type_avance()
