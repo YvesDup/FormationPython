@@ -9,6 +9,8 @@ def exo2():
     fres = res * 3.14159
     print(f'2 - {fres = } , {type(fres) = }')
 
-    print(f'{1 + True = }')
+    print(f'3 - {1 + True = }')
+
+    print(f'{10.4 / None}')
 
 exo2()
