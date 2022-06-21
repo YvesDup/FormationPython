@@ -410,9 +410,10 @@ Les dictionnaires représentent une structure de données enregistrées sous la 
         d = { "1": 10, "2": [10, 20] , 4: "quatre" }
         print(f'{d = }')
         print(f'{4 in d = }')
+        print(f'{d["1"] = }')
 
 ```
-Les `DICT` sont des variables **muable**. un dictionnaire n'est pas ue séquence mais un tableau associatif.
+Les `dict sont des variables **mutable**. Un dictionnaire n'est pas ue séquence mais un tableau associatif.
 
 Les clès d'un dictionnaire sont hétéroclites en terme de type et chaque valeur de clé doit être d'un type '**immuable**'.
 
