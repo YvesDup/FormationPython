@@ -560,3 +560,25 @@ Voici un exemple d'ensemble:
 + `80 in s1` ppur savoir si `80`esty dans s1.
 
 un ensemble est parcourable avec une instruction `for`.
+
+---
+<style scoped> {
+  font-size: 27px;
+}
+</style>
+#### Les opérations ensemblistes
+
+```py
+   #operation ensembliste
+        print(f'{s1=}')
+        print(f'{s2=}')
+        print(f'{s1 & s2 = }')
+        print(f'{s1 | s2 = }')
+        print(f'{s1 ^ s2 = }')
+        print(f'{s1 - s2 = }')
+        print(f'{s2 - s1 = }')
+        print({10, 20}.issubset(s1))
+        print({100, 25}.isdisjoint(s1))
+        print({10, 20, 40, 50}.issuperset(s1))
+
+```
