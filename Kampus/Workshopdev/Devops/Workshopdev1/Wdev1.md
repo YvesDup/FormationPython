@@ -16,21 +16,35 @@ _
 
 ---
 
-# Training2
+# Workshopdev #1
 
 Voici les thèmes abordés:
 
-* les bonnes pratiques, la PEP8, les linters.
-* les annotations de types.
-* la gestion des erreurs.
-* les environnements virtuels.
+* les types simples.
+* les types avancés, composés.
 
 ---
-## Les bonnes pratiques
+## Les type simples
+
+|Types simples | Exemples |
+|-------|----|
+|nombres entiers| 10, 10_000_000|
+|booléens| True, False |
+|nombres à virgule| -3.14, 1.21e-19|
+|nombres complexes| 2j + 9|
+|chaines de caractères|'Hello', "world", """\thep\ntoi!!"""|
+|tableau d'octets| bytearray('hello'), |
+|valeur nulle| None |
+
+---
+### Réference
+
+---
+### Mutabilité (muable) / Immutabilité (immuable)
 
 
 ---
-## Les annotations de types
+## les types avancés, composés.
 
 
 ---
