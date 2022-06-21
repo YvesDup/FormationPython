@@ -108,22 +108,38 @@ def type_avance():
         print(f'{l = }, {type(l) = }')
         l = [10, "vingt", 20.000 , None]
         print(f'{l = }')
+
+        print("modification")
         l.append(False)
         l.insert(2, "Hooper")
         print(f'{l = }')
         print(False in l)
         l.remove(10)
         print(f'{l = }')
+        l[2] *=10
+        print(f'{l = }')
+        l.extend('ABC')
+        print(f'{l = }')
+
+        print("parcours de la liste")
         for item in l:
             print(item)
+        print("---")
 
         print("juste les chaines de caractères")
         for item in l:
             if isinstance(item, str):
                 print(item)
         print("---")
+        print("possible mais moins efficace")
+        for i in range(len(l)):
+            print(l[i])
+        print("---")
 
+        print("Inverser une liste")
         print(l[::-1])
+
+        print("Trier une liste")
         l1 = [10, 0, -5, True, 2.89, -1.2e-19]
         print(l1)
         l1.sort()
@@ -219,8 +235,13 @@ def type_avance():
         d.update(dd) 
         print(d)
 
-    type_liste()
-    type_set()
-    type_dict()
+    def type_tuple():
+        """
+        """
 
-type_avance()
+    type_liste()
+#    type_set()
+#    type_dict()
+#    type_tuple()
+
+# type_avance()

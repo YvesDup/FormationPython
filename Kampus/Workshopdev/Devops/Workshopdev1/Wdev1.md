@@ -311,7 +311,7 @@ Le parcours d'une liste peut se faire avec l'instruction `for`:
                 print(item)
         print("---")
 
-        print("possible mais mon efficace")
+        print("possible mais moins efficace")
         for i in range(len(l)):
             print(l[i])
         print("---")
