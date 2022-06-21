@@ -229,7 +229,7 @@ Le mécanisme du slicing se fait via une classe `slice` qui peut utilisée via u
 * `s.split(sep)`: produit une liste de sous-chaîne.
 * `s.find('xyz')`: cherche la positon de la chaine 'xyz' dans s.
 * `s.upper()`, `s.lower()`, `s.title()`: modifie la casse de la chaine.
-* `s.starswith('ab')`: indique si la chaine démarre avec la chaine 'ab'. Il existe aussi la méthode `endswith`.
+* `s.startswith('ab')`: indique si la chaine démarre avec la chaine 'ab'. Il existe aussi la méthode `endswith`.
 
 
 ---
@@ -516,3 +516,19 @@ Il existe principalement 2 façons de procéder:
         print(v)
 ```
 
+---
+<style scoped> {
+  font-size: 30px;
+}
+</style>
+### Les ensembles
+
+Les ensembles sont des collections particulières qui ne contiennent que des objets **immuables** sans doublons. Ils mettent à disposition les opérations ensemblistes:
+
++ Union
++ Intersection
++ Différence
++ Différence asymétrique
++ Sur-ensemble
++ Sous-ensemble
+* Ensembles disjoints
