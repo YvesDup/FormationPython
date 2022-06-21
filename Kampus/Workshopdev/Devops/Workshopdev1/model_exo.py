@@ -1,5 +1,4 @@
-
-
+import sys
 
 def exo2():
     """Exercice XX
