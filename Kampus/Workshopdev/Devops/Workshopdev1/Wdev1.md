@@ -431,3 +431,23 @@ Les clès d'un dictionnaire sont hétéroclites en terme de type et chaque valeu
  L'accès à une valeur se fait via sa clé, 2 manières possibles:
  * `d[4]`: ici la clé doit exister
  * `d.get(5, "Pas de clé")`: si la clé, n'existe pas, la valeur "pas de clé" est renvoyée.
+
+---
+<style scoped> {
+  font-size: 28px;
+}
+</style>
+
+#### Accès globaux aux données
+
+Il existe 2 méthodes d'accès aux données d'un dictionnaire:
+
+```py
+        print("accès globaux aux donnés")
+        print(d.keys())
+        print(d.values())
+        print(d.items())
+```
++ `d.keys()` : renvoie toutes les clés.
++ `d.values()` : renvoie toutes les valeurs.
++ `d.items()` : renvoie tous les couples (tuple à 2 éléments) clé, valeur.
