@@ -589,8 +589,14 @@ Un ensemble est parcourable avec une instruction `for`. Il n'y pas d'accès dire
 ---
 ### Les tuples
 
-Les tuples sont des objets qui se comportent comme des listes mais qui 
+### Les listes
 
+Les tuples sont des objets qui se comportent comme des listes mais qui sont **immutables**. 
+
+```py
+    l = (10, "hello", True, None)
+    print(f'{t = } - {type(t)})
+```
 ---
 ### Conversions (cast) entre objets avancés
 
