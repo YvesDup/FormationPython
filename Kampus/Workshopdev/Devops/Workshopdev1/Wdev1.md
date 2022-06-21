@@ -401,7 +401,7 @@ Dans la mesure où une liste peut contenir d'autres objets **muables**, la copie
 </style>
 ### Les dictionnaires
 
-Les dictionnaires représentent une structure de données enregistrées sous la forme d'une clé et d'une valeur associée. L'accès à la valeur se fait toujours par la clé. Exemple
+Les dictionnaires représentent une structure de données enregistrées sous la forme d'une clé et d'une valeur associée. L'accès à la valeur se fait toujours par la clé. Exemple:
 
 ```py
     def type_dict():
@@ -410,7 +410,7 @@ Les dictionnaires représentent une structure de données enregistrées sous la 
         d = { "1": 10, "2": [10, 20] , 4: "quatre" }
         print(f'{d = }')
         print(f'{4 in d = }')
-        print(f'{d["1"] = }')
+        print(f'{d["1"] = }') # accès à la valeur de la clé "1"
 
 ```
 Les `dict` sont des variables **mutable**. Un dictionnaire n'est pas ue séquence mais un tableau associatif.
