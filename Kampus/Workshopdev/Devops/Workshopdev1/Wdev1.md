@@ -134,7 +134,19 @@ La valeur `None` est un singleton **imumable**.
 ---
 ### Les chaines de caractéres
 
+Les chaines de caractère en Python sont en 'Unicode'. Python supporte donc tous les alphabets existants (environ 150).
 ```py
+   def type_string():
+        print("string")
+        s1 = "hello"
+        s2 = 'world !!'
+        s3 = """hello
+    salut,             yyyyy
+    encore"""
+        print(f'{s3 = }')
+        s4 = s1
+        print(f'{s1 = }, {s4 = }')
+ 
 ```
 
 les `str` sont des variables **immuable**.
