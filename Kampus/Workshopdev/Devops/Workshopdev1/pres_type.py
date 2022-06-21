@@ -207,6 +207,7 @@ def type_avance():
         print(l)
         # un set vide
         sss = set()
+
     def type_dict():
         # dictionnaire
         d = {} # dictionnaire 
@@ -217,6 +218,8 @@ def type_avance():
         d[4] = 4
         print(f'{d[4] = }')
         print(f'{d.get(5, "Pas de clé") = }')
+        return 
+
         print("accès globaux aux donnés")
         print(d.keys())
         print(d.values())
@@ -245,8 +248,8 @@ def type_avance():
         """
         """
 
-    type_liste()
-    # type_dict()
+    # type_liste()
+    type_dict()
     # type_set()
 #    type_tuple()
 
