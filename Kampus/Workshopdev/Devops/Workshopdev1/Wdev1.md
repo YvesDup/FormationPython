@@ -243,14 +243,14 @@ Types composés | Exemples|
 | ensembles | {10, "20", 30.0},  {(1,"un"), 'I'}|
 | tuples | ("un",),  (10, True, "string", 1.22)|
 
+.
 
 ---
-### Les listes
-
 <style scoped> {
   font-size: 22 px;
 }
 </style>
+### Les listes
 
 Les listes correspondent à un tableau dont le contenu est hétéroclite en terme de type. Par exemple:
 
@@ -262,7 +262,27 @@ Les listes correspondent à un tableau dont le contenu est hétéroclite en term
         l = [10, "vingt", 20.000 , None]
         print(f'{l = }')
 ```
-Les `list` sont des variables **muable**. Cela implique que la modification du contenu de la liste n'entraine pas la création d'une nouvelle liste.
+Les `list` sont des variables **muable**.
+
 
 ---
+<style scoped> {
+  font-size: 22 px;
+}
+</style>
 
+Les modifications de liste peuvent se faire comme suit:
+
+```py
+        print("modification")
+        l.append(False)
+        l.insert(2, "Hooper")
+        print(f'{l = }')
+        print(False in l)
+        l.remove(10)
+        print(f'{l = }')
+        l[2] *=10
+        print(f'{l = }')
+        l.extend('ABC')
+        print(f'{l = }')
+```
