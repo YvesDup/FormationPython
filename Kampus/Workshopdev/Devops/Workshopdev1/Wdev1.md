@@ -350,11 +350,14 @@ Une instruction `while` peut aussi s'utiliser ici mais sera de la même efficaci
 #### Cas d'une liste contenant une autre liste (ou un autre objet muable)
 
 ```py
+        print("append a list")
         l1 = [-5,  -1.2e-19,, 0, True, 2.89, 10]
         print(l1)
-        l1.append(l) 
-        print("------", id(l1), id(l), id(l1[-1]))
+        l = [True, 20.0, "Allez", None]
+        print(l)
+        l1.append(l)
         print(l1)
+        print("------", id(l1), id(l), id(l1[-1]))
         l.remove(None) # l1[-1].remove(None)
         l.remove(20.0) # l1[-1].remove(20.0)
         print(l1)
