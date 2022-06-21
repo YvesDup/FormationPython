@@ -457,7 +457,6 @@ La mise à jour d'un dictionnaire peut se faire à partir d'un autre dictionnair
         print(dd)
         d.update(dd) 
         print(d)
-
 ```
 
 ---
@@ -494,11 +493,12 @@ Le parcours d'un dictionnaire se fait toujours via l'une de ses 3 méthodes.
        print("___"*20)
         for k in d:  # <=> d.keys(): 
             print(k, '->', d[k])
-
         print("___"*20)
+
         for item in d.items():
             print(item[0], '->', item[1])
         print("___"*20)
+
         for k, v in d.items():
             print(k, '->', v)
 ```
@@ -516,6 +516,7 @@ Il existe principalement 2 façons de procéder:
 ```py
         del d[2.01]
         v = d.pop(4)
+        d.pop(5)
         print(v)
 ```
 
@@ -540,7 +541,7 @@ Les ensembles sont des objets **mutable**.
 
 ---
 <style scoped> {
-  font-size: 27px;
+  font-size: 26px;
 }
 </style>
 #### La gestion des ensembles
@@ -559,9 +560,9 @@ Voici un exemple d'ensemble:
 ```
 + `s1.add` pour ajouter un élément
 + `s1.remove` pour supprimer un élément
-+ `80 in s1` ppur savoir si `80`esty dans s1.
++ `80 in s1` ppur savoir si `80`est dans s1.
 
-un ensemble est parcourable avec une instruction `for`.
+Un ensemble est parcourable avec une instruction `for`. Il n'y pas d'accès direct à un élément de l'ensemble: `s1[0]` provoque une erreur
 
 ---
 <style scoped> {
