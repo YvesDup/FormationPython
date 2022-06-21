@@ -292,3 +292,28 @@ Les modifications de liste peuvent se faire comme suit:
 ```
 
 ---
+<style scoped> {
+  font-size: 29px;
+}
+</style>
+
+Le parcours d'une liste peut se faire avec l'instruction `for`:
+
+```py
+        print("parcours de la liste")
+        for item in l:
+            print(item)
+        print("---")
+
+        print("affiche juste les chaines de caractères")
+        for item in l:
+            if isinstance(item, str):
+                print(item)
+        print("---")
+
+        print("possible mais mon efficace")
+        for i in range(len(l)):
+            print(l[i])
+        print("---")
+
+```
