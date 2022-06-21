@@ -218,8 +218,8 @@ def type_avance():
         d[4] = 4
         print(f'{d[4] = }')
         print(f'{d.get(5, "Pas de clé") = }')
-        return 
 
+        """
         print("accès globaux aux donnés")
         print(d.keys())
         print(d.values())
@@ -238,7 +238,7 @@ def type_avance():
         del d[2.01]
         v = d.pop(4)
         print(v)
-
+        """
         print(d)
         dd = { 5:"cinq", '1':["un", "I", 1], True:"VRAI !!"}
         d.update(dd) 
