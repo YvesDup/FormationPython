@@ -144,7 +144,8 @@ def type_avance():
         print("Trier une liste")
         l1 = [10, 0, -5, True, 2.89, -1.2e-19]
         print(l1)
-        l1.sort()
+        l1.sort(reverse=True)
+        print(l1)
 
         return
         print("append a list")
