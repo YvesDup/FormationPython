@@ -269,6 +269,8 @@ Les listes correspondent à un tableau dont le contenu est hétéroclite en term
 ```
 Les `list` sont des variables **muable**. La liste étant une séquence, toutes les manipulations vues au niveau des `str` peuvent s'utiliser ici.
 
+Les clés des listes sont stockées sous forme de _hash code_.
+
 
 ---
 <style scoped> {
@@ -415,7 +417,7 @@ Les dictionnaires représentent une structure de données enregistrées sous la 
 ```
 Les `dict` sont des variables **mutable**. Un dictionnaire n'est pas une séquence mais un tableau associatif.
 
-Les clès d'un dictionnaire sont hétéroclites en terme de type et chaque clé doit être d'un type **immutable**.
+Les clès d'un dictionnaire sont hétéroclites en terme de type, chaque clé doit être d'un type **immutable**.
 
 ---
 <style scoped> {
@@ -527,7 +529,7 @@ Il existe principalement 2 façons de procéder:
 </style>
 ### Les ensembles
 
-Les ensembles sont des collections particulières qui ne contiennent que des objets **immutables** sans doublons. Ils permettent la mise en oeuvre des opérations ensemblistes suivantes:
+Les ensembles sont des collections particulières qui ne contiennent que des objets **immutables** sans doublons. Ces objets sont stockées sous forme de _hash code_. Ils permettent la mise en oeuvre des opérations ensemblistes suivantes:
 
 + Union
 + Intersection
@@ -590,7 +592,7 @@ Un ensemble est parcourable avec une instruction `for`. Il n'y pas d'accès dire
 
 ---
 <style scoped> {
-  font-size: 29px;
+  font-size: 26px;
 }
 </style>
 ### Les tuples
@@ -603,9 +605,10 @@ Les tuples sont des objets qui se comportent comme des listes mais qui sont **im
 ```
 Les tuples sont des séquences. Ainsi tous les comportements génériques des listes et des chaines de caractères s'appliquent.
 
-Un tuple peut être clé d'un dictionnaire ou être insérer dans un ensemble à condition que tous ses éléments soient **immutables**.
+Un tuple peut être clé d'un dictionnaire ou être insérer dans un ensemble à condition que tous ses éléments soient **immutables**. Par exemple: 
+`t = (10, 20, ["et", "paf", "le"])`. Ici ce tuple contient une liste et donc ne pourra pas être clé d'un dictionnaire.
 
-Par exemple
+*_Note_*: Ici la liste peut être mofifiée via le tuple, en accèdant à son dernier élément comme ceci: `t[-1].append("chien")`.
 
 
 ---
