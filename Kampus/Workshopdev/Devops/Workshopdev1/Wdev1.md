@@ -25,6 +25,10 @@ Voici les thèmes abordés:
 
 ---
 ## Les type simples
+<style scoped> {
+  font-size: 30px;
+}
+</style>
 
 |Types simples | Exemples |
 |-------|----|
@@ -41,7 +45,7 @@ Voici les thèmes abordés:
 ### Les entiers
 
 ```py
-print("entiers")
+    print("entiers")
     a = 10 # a est un entier
     al = 10_000_000_000_000_000
     print(a)
@@ -49,20 +53,29 @@ print("entiers")
     b = a
     print(f'{b = }')
     print(f'{id(a) = }, {id(b) = }')
+```
+Ici au moment de l'affectation `b = a`, a et b sont 2 **références** qui pointent vers la même zone mémoire.
+Les 'id' respectifs de chaque variable (ou objet) sont identiques
+
+---
+Je modifie `b`
+
+```py
     print('je modifie b'.center(60, '-'))
     b += 10
-    print(f'{b = }')
+    print(f'{a = }, {b = }')
     print(f'{id(a) = }, {id(b) =}')
-
 ```
 
+Les 'ìd' de chaque sont différents. il s'agit donc de 2 zones mémoires différentes. 
+Ce comportement est lié à une caractéristique associée au type (ici les `int`) qui est la notion de **mutabilité** (ou caractére muable).
+
+---
 ### les nombres à virgule
 
 ```py
 ```
 
----
-### Réference
 
 ---
 ### Mutabilité (muable) / Immutabilité (immuable)
@@ -72,11 +85,5 @@ print("entiers")
 ## les types avancés, composés.
 
 
----
-## La gestion des erreurs
-
-
----
-## Les environnements virtuels
 
 

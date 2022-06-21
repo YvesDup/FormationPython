@@ -18,18 +18,19 @@ def type_simple():
         print(f'{a = }, {b = }')
         print(f'{id(a) = }, {id(b) =}')
 
-    def type_float():
-        print('flottant')
-        f = 0.5
-        print(f'{f=}')
-        fl = f
-        print(f'{int(f)}')
-
     def type_bool():
         print("booléen")
         bot = True
         bof = False
         print(f'{bot = }, {bof = }')
+
+    def type_float():
+        print('flottant')
+        f = 0.5
+        print(f'{f =}')
+        fl = f
+        print(f'{fl =}')
+        print(f'Conversion vers un entier: {int(f)}')
 
     def type_cplx():
         print("complexe")
@@ -87,8 +88,8 @@ def type_simple():
         print(f"10bis - {s[sl] = }")
 
     type_int()
-    type_float()
     type_bool()
+    type_float()
     type_cplx()
     type_none()
     type_string()
