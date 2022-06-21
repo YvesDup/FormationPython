@@ -162,7 +162,7 @@ Les `str` sont des séquences. C'est à dire qu'il est possible de:
 + savoir si élément est contenu dans la chaine: `'x' in s`
 + parcourir ses éléments: `for item in s: print(item)`
 + d'avoir un accès direct à l'un des éléments via un indice: `s[0]` ou `s[-2]`.
-+ extraire des sous-chaine avec le mécanisme du `slicing`.
++ extraire des sous-chaines avec le mécanisme du `slicing`.
 
 ---
 #### le slicing
@@ -171,7 +171,7 @@ Les `str` sont des séquences. C'est à dire qu'il est possible de:
 }
 </style>
 
-Le `slicing`est un mécanisme qui permet d'extraire des sous-séquences d'une séquence en spécifiant, un intervalle et un pas, comme suit avec le tryptique:
+Le `slicing` est un mécanisme qui permet d'extraire des sous-séquences d'une séquence en spécifiant, un intervalle et un pas, comme suit avec le tryptique:
 + start: indique la position de départ,
 + stop: qui indique la position de fin, exclue,
 + step: qui indique dans cet interval la fréquence des caractères conservés
@@ -180,7 +180,6 @@ Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: 
 ```py
     s = 'rodondindron'
     print(f'{s = }, {s[1:5:2] = }') # -> 'oo'
-```
 
 ---
 <style scoped> {
@@ -189,6 +188,7 @@ Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: 
 </style>
 
 **Slicing suite (1/2)**
+```
 
 Quand une des valeurs de l'intervalle est omise, la valeur retenue est alors `None`. La valeur par défaut pour le pas est `1`.
 
@@ -291,7 +291,7 @@ Les modifications de liste peuvent se faire comme suit:
         l.extend('ABC')
         print(f'{l = }')
 ```
-La méthode `extend` prend un `iterable` en entrée et ajoute tous ses éléments 1 par 1 en fin de liste. Cela correpond à une concaténation de liste.
+La méthode `extend` prend un `iterable` en entrée et ajoute tous ses éléments 1 par 1 en fin de liste. Cela correpond à une concaténation de listes.
 
 ---
 <style scoped> {
