@@ -219,7 +219,7 @@ def type_avance():
         print(f'{d[4] = }')
         print(f'{d.get(5, "Pas de clé") = }')
 
-        """
+
         print("accès globaux aux donnés")
         print(d.keys())
         print(d.values())
@@ -234,16 +234,16 @@ def type_avance():
         print("___"*20)
         for k, v in d.items():
             print(k, '->', v)
-
+        """
         del d[2.01]
         v = d.pop(4)
         print(v)
-        """
 
         dd = { 5:"cinq", '1':["un", "I", 1], True:"VRAI !!"}
         print(dd)
         d.update(dd) 
         print(d)
+        """
 
     def type_tuple():
         """
