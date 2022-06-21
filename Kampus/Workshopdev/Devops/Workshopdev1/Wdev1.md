@@ -343,7 +343,7 @@ Une instruction `while` peut aussi s'utiliser ici mais sera de la même efficaci
 
 ---
 <style scoped> {
-  font-size: 28px;
+  font-size: 27px;
 }
 </style>
 
@@ -358,22 +358,76 @@ Une instruction `while` peut aussi s'utiliser ici mais sera de la même efficaci
         l1.append(l)
         print(l1)
         print("------", id(l1), id(l), id(l1[-1]))
-        l.remove(None) # l1[-1].remove(None)
-        l.remove(20.0) # l1[-1].remove(20.0)
-        print(l1)
 ```
 
-Ici la liste `l` est ajoutée telle quelle à la fin de la liste `l1`. 
-Cet ajout 
+Ici la liste `l` est ajoutée telle quelle à la fin de la liste `l1`. Cet ajout ne se fait pas sous la forme d'une copie de la liste `l`, mais sur l'ajout d'une référence à `l`.
 
 ```py
         l.remove(None) # l1[-1].remove(None)
         l.remove(20.0) # l1[-1].remove(20.0)
         print(l1)
 ```
+Comme `l` est modifiée, cela sera impacté dans la liste `l1`.
+
+---
+<style scoped> {
+  font-size: 27px;
+}
+</style>
+#### Copie d'une liste (ou d'un ovjet muable)
+
+Dans la mesure où une liste peut contenir d'autres objets **muables**, la copie d'une liste peut se faire de 2 façons:
+
++ une copie en surface où seul le premier niveau d'éléments est dupliqué.
++ une copie profonde où chaque élément contenu est dupliqué, ansi que ses sous-éléments. Voici donc ci-dessous, les 2 modes:
+```py
+    # copy
+        print("copy")
+        import copy
+        lc = copy.copy(l1) # copy.copy() copie de surface
+        print(f'{id(l1) = } , {id(lc) = }')
+        print(f'{id(l1[-1]) = } , {id(lc[-1]) = }')
+        lc = copy.deepcopy(l1) # copy.deepcopy() copie profonde
+        print(f'DC {id(l1) = } , {id(lc) = }')
+        print(f'DC {id(l1[-1]) = } , {id(lc[-1]) = }')
+
+```
+
 ---
 <style scoped> {
   font-size: 28px;
 }
 </style>
-#### Copie d'une liste
+### Les dictionnaires
+
+Les dictionnaires représentent une structure de données enregistrées sous la forme d'une clé et d'une valeur associée. L'accès à la valeur se fait toujours par la clé. Exemple
+
+```py
+    def type_dict():
+        # dictionnaire
+        d = {} # dictionnaire 
+        d = { "1": 10, "2": [10, 20] , 4: "quatre" }
+        print(f'{d = }')
+        print(f'{4 in d = }')
+
+```
+Les clès d'un dictionnaire sont hétéroclites en terme de type et chaque valeur de clé doit être d'un type '**immuable**'.
+
+---
+<style scoped> {
+  font-size: 28px;
+}
+</style>
+#### Accès aux valeurs d'un dictionnaire
+
+```py
+        print(f'{4 in d = }')
+        print(f'{d[4] = }')
+        d[4] = 4
+        print(f'{d[4] = }')
+        print(f'{d.get(5, "Pas de clé") = }')
+```
+ Pour savoir si une clé existe, l'opérateur `in` est utilisable. 
+ L'accès à une valeur se fait via sa clé, 2 manières possibles:
+ * `d[4]`: ici la clé doit exister
+ * `d.get(5, "Pas de clé")`: si la clé, n'existe pas, la valeur "pas de clé" est renvoyée.
