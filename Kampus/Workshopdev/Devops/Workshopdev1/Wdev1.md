@@ -190,7 +190,6 @@ Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: 
 </style>
 
 **Slicing suite (1/2)**
-```
 
 Quand une des valeurs de l'intervalle est omise, la valeur retenue est alors `None`. La valeur par défaut pour le pas est `1`.
 
