@@ -105,7 +105,8 @@ def type_float():
     print(f'{f = }')
     f2 = 1.21e-19
     print(f'{f2 = }')
-    print(f'Conversion vers un entier: {int(f) = Ò}')
+    x = int(f)
+    print(f'Conversion vers un entier: {x = }, {type(x) = }')
 
 ```
 Les `float` sont des variables **immuable**.
