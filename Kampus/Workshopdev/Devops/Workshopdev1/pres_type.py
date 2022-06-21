@@ -239,7 +239,7 @@ def type_avance():
         v = d.pop(4)
         print(v)
         """
-        print(d)
+        print(dd)
         dd = { 5:"cinq", '1':["un", "I", 1], True:"VRAI !!"}
         d.update(dd) 
         print(d)
