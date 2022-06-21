@@ -122,7 +122,7 @@ def type_avance():
         print(f'{l = }')
         l.extend('ABC')
         print(f'{l = }')
-        return 
+
         print("parcours de la liste")
         for item in l:
             print(item)
@@ -146,6 +146,7 @@ def type_avance():
         print(l1)
         l1.sort()
 
+        return
         print("append a list")
         l1 = [-5, -1.2e-19, 0, True, 2.89, 10]
         print(l1)
