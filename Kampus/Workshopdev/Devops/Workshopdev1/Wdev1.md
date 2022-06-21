@@ -604,10 +604,10 @@ Les tuples sont des objets qui se comportent comme des listes mais qui sont **im
 ```
 Les tuples sont des séquences. Ainsi tous les comportements génériques des listes et des chaines de caractères s'appliquent.
 
-Un tuple peut être clé d'un dictionnaire ou être insérer dans un ensemble à condition que tous ses éléments soient **immutables**. Par exemple: 
-`t = (10, 20, ["et", "paf", "le"])`. Ici ce tuple contient une liste et donc ne pourra pas être clé d'un dictionnaire.
+Un tuple peut être clé d'un dictionnaire ou être insérer dans un ensemble à condition que tous ses éléments soient **immutables**. 
+Par exemple:`t = (10, 20, ["et", "paf", "le"])` contient une liste et donc ne pourra pas être clé d'un dictionnaire.
 
-**Note**: Ici la liste peut être mofifiée via le tuple, en accèdant à son dernier élément comme ceci: `t[-1].append("chien")`.
+**Note**: Ici la liste peut être mofifiée via le tuple, en accèdant à son dernier élément comme ceci: `t[-1].append("chien")`. Ce qui donne pour cette liste un élément supplémentaire.
 
 
 ---
@@ -626,7 +626,7 @@ Le tuple étant **immutable**, la modification du tuple se fait en recréant un 
     t = t[:1] + ("vingt",) + t[2:]
     print(f'{t = }')
 ```
-L'expression ` ("vingt",)` correpond à un tuple avec 1 élément.
+L'expression `("vingt",)` correpond à un tuple avec 1 élément.
 
 ---
 <style scoped> {
