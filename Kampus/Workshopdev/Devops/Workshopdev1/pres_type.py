@@ -200,7 +200,7 @@ def type_avance():
         print({10, 20}.issubset(s1))
         print({100, 25}.isdisjoint(s1))
         print({10, 20, 40, 50}.issuperset(s1))
-        return
+    
 
         l = [10, 20, 30, 10, 20, 40, 10, 0, 0, 0]
         print(l)
