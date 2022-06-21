@@ -12,7 +12,6 @@ def test(argument):
     return argument
 
 
-
 for arg in (3, [10, 20], "chaine"):
     print('---'*20)
     print(f'{arg = }, {id(arg) = }')

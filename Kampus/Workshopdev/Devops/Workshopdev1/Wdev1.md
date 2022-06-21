@@ -518,7 +518,8 @@ Il existe principalement 2 façons de procéder:
 
 ---
 <style scoped> {
-  font-size: 28px;
+  font-size: 28
+  px;
 }
 </style>
 ### Les ensembles
@@ -533,3 +534,29 @@ Les ensembles sont des collections particulières qui ne contiennent que des obj
 + Sous-ensemble
 * Ensembles disjoints
 
+Les ensembles sont des objets **mutables**.
+
+---
+<style scoped> {
+  font-size: 27px;
+}
+</style>
+#### La gestion des ensembles
+
+Voici un exemple d'ensemble:
+
+```py
+        s1 = {10, 20, 40}
+        print(f'{s1 = }')
+        s1.add(80)
+        print(f'{s1 = }')
+        print(80 in s1)
+        s1.add(10)
+        print(f'{s1 = }')
+        s1.remove(80)
+```
++ `s1.add` pour ajouter un élément
++ `s1.remove` pour supprimer un élément
++ `80 in s1` ppur savoir si `80`esty dans s1.
+
+un ensemble est parcourable avec une instruction `for`.
