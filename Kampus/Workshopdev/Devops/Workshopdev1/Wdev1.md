@@ -375,7 +375,7 @@ Comme `l` est modifiée, cela sera impacté dans la liste `l1`.
   font-size: 27px;
 }
 </style>
-#### Copie d'une liste (ou d'un ovjet muable)
+#### Copie d'une liste (ou d'un objet muable)
 
 Dans la mesure où une liste peut contenir d'autres objets **muables**, la copie d'une liste peut se faire de 2 façons:
 
@@ -445,7 +445,7 @@ Les clès d'un dictionnaire sont hétéroclites en terme de type et chaque valeu
 La modification d'une valeur pour une clé déjà existante, donc avec déjà une valeur associée, se fait avec l'opérateur d'affection `=`.
 C'est l'exemple ci-dessus `d[4] = 4`.
 
-L'ajout d'un nouveau couple se fait par l'instruction suivante:
+L'ajout d'un nouveau couple se fait avec l'instruction suivante:
 `d["x"] = [] # liste vide`
 
 La mise à jour d'un dictionnaire peut se faire à partir d'un autre dictionnaire avec la méthode `update` comme suit:
