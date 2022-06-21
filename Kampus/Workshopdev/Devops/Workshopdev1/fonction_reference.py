@@ -12,16 +12,10 @@ def test(argument):
     return argument
 
 
-"""
-arg = 3 
-print(f'{arg = }, {id(arg) = }')
-new_arg = test(arg)
-print(f'{arg = }, {id(arg) = }')
-print(f'{new_arg = }, {id(new_arg) = }')
-"""
 
-arg  = [10, 20]
-print(f'{arg = }, {id(arg) = }')
-new_arg = test(arg)
-print(f'{arg = }, {id(arg) = }')
-print(f'{new_arg = }, {id(new_arg) = }')
+for arg in (3, [10, 20], "chaine"):
+    print('---'*20)
+    print(f'{arg = }, {id(arg) = }')
+    new_arg = test(arg)
+    print(f'{arg = }, {id(arg) = }')
+    print(f'{new_arg = }, {id(new_arg) = }')
