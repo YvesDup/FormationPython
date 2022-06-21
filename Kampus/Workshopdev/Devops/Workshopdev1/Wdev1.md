@@ -413,9 +413,9 @@ Les dictionnaires représentent une structure de données enregistrées sous la 
         print(f'{d["1"] = }') # accès à la valeur de la clé "1"
 
 ```
-Les `dict` sont des variables **mutable**. Un dictionnaire n'est pas ue séquence mais un tableau associatif.
+Les `dict` sont des variables **mutable**. Un dictionnaire n'est pas une séquence mais un tableau associatif.
 
-Les clès d'un dictionnaire sont hétéroclites en terme de type et chaque valeur de clé doit être d'un type '**immuable**'.
+Les clès d'un dictionnaire sont hétéroclites en terme de type et chaque clé doit être d'un type **immutable**.
 
 ---
 <style scoped> {
@@ -431,10 +431,10 @@ Les clès d'un dictionnaire sont hétéroclites en terme de type et chaque valeu
         print(f'{d[4] = }')
         print(f'{d.get(5, "Pas de clé") = }')
 ```
- Pour savoir si une clé existe, l'opérateur `in` est utilisable. 
+ Pour savoir si une clé existe, l'opérateur `in` est utilisable.
  L'accès à une valeur se fait via sa clé, 2 manières possibles:
  * `d[4]`: ici la clé doit exister
- * `d.get(5, "Pas de clé")`: si la clé, n'existe pas, la valeur "pas de clé" est renvoyée.
+ * `d.get(5, "Pas de clé")`: si la clé n'existe pas, la valeur `"Pas de clé"` est renvoyée.
 
 ---
 <style scoped> {
@@ -451,6 +451,7 @@ L'ajout d'un nouveau couple se fait avec l'instruction suivante:
 
 La mise à jour d'un dictionnaire peut se faire à partir d'un autre dictionnaire avec la méthode `update` comme suit:
 ```py
+        d = {'1': 10, 2.01: [10, 20], 4: 'quatre'}
         print(d)
         dd = {5:"cinq", '1':["un", "I", 1], True:"VRAI !!"}
         print(dd)
