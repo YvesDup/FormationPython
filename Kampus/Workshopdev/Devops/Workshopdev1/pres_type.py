@@ -36,7 +36,7 @@ def type_simple():
         cplx = 2j + 9
         print(cplx)
 
-    def type_none()
+    def type_none():
         print("valeur nulle")
         n = None
         print(f'{n = } - {type(None)}')
@@ -58,7 +58,7 @@ def type_simple():
         print(f'{s1}, {s4}')
         print(f'{s4[0]=}', f'{s4[len(s4)-1] = }', f'{s4[-1] = }')
         print(s4[-len(s4)])
-        
+
         print("slicing")
         start = 0
         stop = len(s4) # borne haute exclue quant à sa valeur
@@ -213,5 +213,5 @@ def type_avance():
     d.update(dd) 
     print(d)
 
-# type_simple()
+type_simple()
 type_avance()
