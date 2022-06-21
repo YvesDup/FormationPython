@@ -105,7 +105,7 @@ def type_float():
     print(f'{f = }')
     f2 = 1.21e-19
     print(f'{f2 = }')
-    print(f'Conversion vers un entier: {int(f)}')
+    print(f'Conversion vers un entier: {int(f) = Ò}')
 
 ```
 Les `float` sont des variables **immuable**.
@@ -117,7 +117,7 @@ Les `float` sont des variables **immuable**.
     def type_cplx():
         print("complexe")
         cplx = 2j + 9
-        print(cplx)
+        print(f'{cplx = }, {type(cplx) = }')
 ```
 Les `complex` sont des variables **immuable**.
 
