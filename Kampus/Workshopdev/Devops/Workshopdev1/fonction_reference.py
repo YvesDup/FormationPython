@@ -7,10 +7,10 @@ def test(argument):
     """
     print(f'\t{argument = }, {id(argument) = }')
 
-    argument *= 3
-    # if isinstance(arg, list):
-    #     for i in range(3):
-    #         argument.append('tt')
+    if isinstance(arg, list):
+        argument *= 3
+        # for i in range(3):
+        #     argument.append('tt')
     else:
         argument =  argument * 3
 
