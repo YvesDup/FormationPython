@@ -88,11 +88,11 @@ def type_simple():
         print(f"10bis - {s[sl] = }")
 
     type_int()
-    type_bool()
-    type_float()
-    type_cplx()
-    type_none()
-    type_string()
+    # type_bool()
+    # type_float()
+    # type_cplx()
+    # type_none()
+    # type_string()
 
 type_simple()
 
@@ -241,8 +241,8 @@ def type_avance():
         """
 
     type_liste()
-    type_dict()
-    type_set()
+    # type_dict()
+    # type_set()
 #    type_tuple()
 
-type_avance()
+# type_avance()
