@@ -251,7 +251,7 @@ Types composés | Exemples|
 
 ---
 <style scoped> {
-  font-size: 22 px;
+  font-size: 30px;
 }
 </style>
 ### Les listes
@@ -266,12 +266,12 @@ Les listes correspondent à un tableau dont le contenu est hétéroclite en term
         l = [10, "vingt", 20.000 , None]
         print(f'{l = }')
 ```
-Les `list` sont des variables **muable**.
+Les `list` sont des variables **muable**. La liste étant une séquence, toutes les manipulations vues au niveau des `str` peuvent s'utiliser ici.
 
 
 ---
 <style scoped> {
-  font-size: 22 px;
+  font-size: 30px;
 }
 </style>
 
@@ -290,10 +290,11 @@ Les modifications de liste peuvent se faire comme suit:
         l.extend('ABC')
         print(f'{l = }')
 ```
+La méthode `extend` prend un `iterable` en entrée et ajoute tous ses éléments 1 par 1 en fin de liste. Cela correpond à une concaténation de liste.
 
 ---
 <style scoped> {
-  font-size: 29px;
+  font-size: 28px;
 }
 </style>
 
@@ -316,3 +317,23 @@ Le parcours d'une liste peut se faire avec l'instruction `for`:
             print(l[i])
         print("---")
 ```
+Une instruction `while` peut aussi s'utiliser ici mais sera de la même efficacité que le dernière proposition ci-dessus.
+
+---
+<style scoped> {
+  font-size: 28px;
+}
+Inverser ou trier une liste
+
+</style>
+```py
+        print("Inverser une liste")
+        print(l[::-1])
+
+        print("Trier une liste")
+        l1 = [10, 0, -5, True, 2.89, -1.2e-19]
+        print(l1)
+        l1.sort()
+        print(l1)
+```
+
