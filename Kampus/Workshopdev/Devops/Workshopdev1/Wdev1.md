@@ -451,3 +451,5 @@ Il existe 2 méthodes d'accès aux données d'un dictionnaire:
 + `d.keys()` : renvoie toutes les clés.
 + `d.values()` : renvoie toutes les valeurs.
 + `d.items()` : renvoie tous les couples (tuple à 2 éléments) clé, valeur.
+
+Le parcours d'un dictionnaire se fait toujours via l'une de ses 3 méthodes
