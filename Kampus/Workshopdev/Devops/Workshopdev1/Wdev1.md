@@ -36,6 +36,31 @@ Voici les thèmes abordés:
 |tableau d'octets| bytearray('hello'), |
 |valeur nulle| None |
 
+
+---
+### Les entiers
+
+```py
+print("entiers")
+    a = 10 # a est un entier
+    al = 10_000_000_000_000_000
+    print(a)
+    print(al)
+    b = a
+    print(f'{b = }')
+    print(f'{id(a) = }, {id(b) = }')
+    print('je modifie b'.center(60, '-'))
+    b += 10
+    print(f'{b = }')
+    print(f'{id(a) = }, {id(b) =}')
+
+```
+
+### les nombres à virgule
+
+```py
+```
+
 ---
 ### Réference
 
