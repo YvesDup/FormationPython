@@ -133,8 +133,13 @@ La valeur `None` est un singleton **imumable**.
 
 ---
 ### Les chaines de caractéres
+<style scoped> {
+  font-size: 29px;
+}
+</style>
 
-Les chaines de caractère en Python sont en 'Unicode'. Python supporte donc tous les alphabets existants (environ 150).
+Les chaines de caractère en Python sont enregistrées en 'Unicode'. Python supporte donc tous les alphabets existants (environ 150).
+
 ```py
    def type_string():
         print("string")
@@ -146,10 +151,64 @@ Les chaines de caractère en Python sont en 'Unicode'. Python supporte donc tous
         print(f'{s3 = }')
         s4 = s1
         print(f'{s1 = }, {s4 = }')
- 
+```
+les `str` sont des variables **immuable**. cela implique la modification d'une chaine entraine la création d'une nouvelle chaine de caractères. 
+
+---
+#### Opérations sur les chaines
+
+Les `str` sont des séquences. C'est à dire qu'il est possible:
++ connaitre sa longueur: `len(s)`.
++ savoir si élément est contenu dans la chaine: `'x' in s`
++ parcourir ses éléments: `for item in s: print(item)`
++ d'avoir un accès direct à l'un des éléments via un indice: `s[0]` ou `s[-2]`.
++ extraire des sous-chaine avec le mécanisme du `slicing`.
+
+---
+#### le slicing
+<style scoped> {
+  font-size: 29px;
+}
+</style>
+
+Le `slicing`est un mécanisme qui permet d'extraire des sous-séquences d'une séquence en spécifiant, un intervalle et un pas, comme suit avec le tryptique:
++ start: indique la position de départ,
++ stop: qui indique la position de fin, exclue 
++ step: qui indique dans cet interval la fréquence des caractères conservés
+
+Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:`comme suit: `start:stop:step`. Par exemple la sous-chaine suivante va prendre à partir du 2° caractére, jusqu'a 5° inclus, 1 caractère sur 2. 
+```py 
+    s = 'rodondindron'
+    print(f'{s = }, {s[1:5:2] = }') # -> 'oo'
 ```
 
-les `str` sont des variables **immuable**.
+---
+Slicing suite (1/2)
+
+Quand une des valeurs de l'intervalle est omise, la valeur retenue est alors `None`. La valeur par défaut pour le pas est `1`.
+
+Quelques exemples de slicing:
+
++ `s[::2]`: la sous-chaine contient 1 caractère sur 2 provenant de `s`.
++ `s[3:]`: la sous-chaine de `s` qui démarre au 4° caractére.
++ `s[:3]`: la sous-chaine de `s` qui contient les 3 premiers caractéres.
+
+---
+Slicing suite (2/2)
+
+Comme pour les accès directs, des indices négatifs peuvent être utilisés dans les valeurs du tryptique
+
++ `s[-2:]`: les 2 derniers caractéres de `s`.
++ `s[::-1]`: la chaine `s` est inversée.
++ `s[-2:0:1]`: une chaine vide.
+---
+#### Quelques méthodes sur les chaines
+
+* `s.count('a')` : compte les occurrences de 'a' sans s.
+* `s.split(sep)`: produit une liste de sous-chaîne.
+* `s.find('xyz')`: cherche la positon de la chaine 'xyz' dans s.
+* `s.upper()`, `s.lower()`, `s.title()`: modifie la casse de la chaine.
+* `s.starswith('ab')`: indique si la chaine démarre avec la chaine 'ab'. Il existe aussi la méthode `endswith`.
 
 ---
 ## Les types avancés, composés.
