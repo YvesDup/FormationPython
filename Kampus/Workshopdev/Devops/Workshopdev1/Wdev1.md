@@ -563,15 +563,15 @@ un ensemble est parcourable avec une instruction `for`.
 
 ---
 <style scoped> {
-  font-size: 27px;
+  font-size: 28px;
 }
 </style>
 #### Les opérations ensemblistes
 
 ```py
    #operation ensembliste
-        print(f'{s1=}')
-        print(f'{s2=}')
+        print(f'{s1=}')     # s1 = {10, 20, 40}
+        print(f'{s2=}')     # s2 = {20, 30, 60, 60}
         print(f'{s1 & s2 = }')
         print(f'{s1 | s2 = }')
         print(f'{s1 ^ s2 = }')
