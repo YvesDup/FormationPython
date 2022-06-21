@@ -240,8 +240,8 @@ def type_avance():
         """
 
     type_liste()
-#    type_set()
-#    type_dict()
+    type_dict()
+    type_set()
 #    type_tuple()
 
 type_avance()
