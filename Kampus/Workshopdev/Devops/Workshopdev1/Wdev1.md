@@ -152,7 +152,7 @@ Les chaines de caractère en Python sont enregistrées en 'Unicode'. Python supp
         s4 = s1
         print(f'{s1 = }, {s4 = }')
 ```
-les `str` sont des variables **immuable**. cela implique la modification d'une chaine entraine la création d'une nouvelle chaine de caractères. 
+Les `str` sont des variables **immuable**. cela implique la modification d'une chaine entraine la création d'une nouvelle chaine de caractères. 
 
 ---
 #### Opérations sur les chaines
@@ -201,6 +201,7 @@ Comme pour les accès directs, des indices négatifs peuvent être utilisés dan
 + `s[-2:]`: les 2 derniers caractéres de `s`.
 + `s[::-1]`: la chaine `s` est inversée.
 + `s[-2:0:1]`: une chaine vide.
+
 ---
 #### Quelques méthodes sur les chaines
 
@@ -213,6 +214,25 @@ Comme pour les accès directs, des indices négatifs peuvent être utilisés dan
 ---
 ## Les types avancés, composés.
 
+<style scoped> {
+  font-size: 22 px;
+}
+</style>
+
+Types composés | Exemples|
+|-------|----|
+| listes  | [], [10, True, "string", 1.22]|
+| tuples | ("un",),  (10, True, "string", 1.22)|
+| ensembles | {10, "20", 30.0},  {(1,"un"), 'I'}|
+|dictionnaires| {"dix":10, 20:"XX"}|
+
+---
+### Les listes
+
+les listes correspondent à un tableau dont le contenu est hétéroclite en terme de type.
 
 
+
+
+Les `list` sont des variables **muable**. Cela implique que la modification du contenu de la lsite n'entraine pas la création d'une nouvelle liste. 
 
