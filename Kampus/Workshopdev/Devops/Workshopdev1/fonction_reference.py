@@ -15,5 +15,6 @@ def test(argument):
 
 arg = 3 
 print(f'{arg = }, {id(arg) = }')
-test(arg)
+new_arg = test(arg)
 print(f'{arg = }, {id(arg) = }')
+print(f'{new_arg = }, {id(new_arg) = }')
