@@ -129,7 +129,7 @@ def type_avance():
         print("---")
 
         print("juste les chaines de caractères")
-        for item in l:
+        for item in l[::-1]:
             if isinstance(item, str):
                 print(item)
         print("---")
