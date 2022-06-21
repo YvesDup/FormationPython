@@ -176,8 +176,8 @@ Le `slicing`est un mécanisme qui permet d'extraire des sous-séquences d'une s�
 + stop: qui indique la position de fin, exclue 
 + step: qui indique dans cet interval la fréquence des caractères conservés
 
-Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:`comme suit: `start:stop:step`. Par exemple la sous-chaine suivante va prendre à partir du 2° caractére, jusqu'a 5° inclus, 1 caractère sur 2. 
-```py 
+Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:`comme suit: `start:stop:step`. Par exemple la sous-chaine suivante va prendre à partir du 2° caractére, jusqu'a 5° inclus, 1 caractère sur 2.
+```py
     s = 'rodondindron'
     print(f'{s = }, {s[1:5:2] = }') # -> 'oo'
 ```
@@ -245,10 +245,12 @@ Types composés | Exemples|
 | ensembles | {10, "20", 30.0},  {(1,"un"), 'I'}|
 |dictionnaires| {"dix":10, 20:"XX"}|
 
+
 ---
 ### Les listes
+
 <style scoped> {
-  font-size: 24 px;
+  font-size: 4 px;
 }
 </style>
 
@@ -263,6 +265,6 @@ les listes correspondent à un tableau dont le contenu est hétéroclite en term
         print(f'{l = }')
 ```
 
-Les `list` sont des variables **muable**. Cela implique que la modification du contenu de la lsite n'entraine pas la création d'une nouvelle liste. 
+Les `list` sont des variables **muable**. Cela implique que la modification du contenu de la liste n'entraine pas la création d'une nouvelle liste.
 
 ---
