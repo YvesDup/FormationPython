@@ -89,8 +89,8 @@ def type_simple():
         print(f"10bis - {s[sl] = }")
 
     # type_int()
-    type_bool()
-    # type_float()
+    # type_bool()
+    type_float()
     # type_cplx()
     # type_none()
     # type_string()
