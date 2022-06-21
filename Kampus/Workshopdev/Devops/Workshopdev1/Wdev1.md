@@ -233,6 +233,10 @@ Le mécanisme du slicing se fait via une classe `slice` qui peut utilisée via u
 
 ---
 ## Les types avancés, composés
+<style scoped> {
+  font-size: 29px;
+}
+</style>
 
 Voici un rappel de ces types
 
@@ -243,7 +247,7 @@ Types composés | Exemples|
 | ensembles | {10, "20", 30.0},  {(1,"un"), 'I'}|
 | tuples | ("un",),  (10, True, "string", 1.22)|
 
-.
+
 
 ---
 <style scoped> {
