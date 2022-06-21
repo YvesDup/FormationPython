@@ -3,7 +3,10 @@ import sys
 def exo2():
     """Exercice XX
     """
-    x = 3 + 234
-    print(f'{x = }')
+    res = 3 + 234
+    print(f'1 - {res = }')
+
+    fres = res * 3.14159
+    print(f'2 - {fres = } , {type(fres) = }')
 
 exo2()
