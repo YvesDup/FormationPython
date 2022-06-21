@@ -183,6 +183,11 @@ Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:`comme suit: `
 ```
 
 ---
+<style scoped> {
+  font-size: 29px;
+}
+</style>
+
 Slicing suite (1/2)
 
 Quand une des valeurs de l'intervalle est omise, la valeur retenue est alors `None`. La valeur par défaut pour le pas est `1`.
@@ -194,6 +199,11 @@ Quelques exemples de slicing:
 + `s[:3]`: la sous-chaine de `s` qui contient les 3 premiers caractéres.
 
 ---
+<style scoped> {
+  font-size: 29px;
+}
+</style>
+
 Slicing suite (2/2)
 
 Comme pour les accès directs, des indices négatifs peuvent être utilisés dans les valeurs du tryptique
@@ -201,6 +211,8 @@ Comme pour les accès directs, des indices négatifs peuvent être utilisés dan
 + `s[-2:]`: les 2 derniers caractéres de `s`.
 + `s[::-1]`: la chaine `s` est inversée.
 + `s[-2:0:1]`: une chaine vide.
+
+Le mécanisme du slicing se fait via une classe `slice` qui peut utilisée via une instance à la place de la syntaxe `[1:5:1]` comme ceci: `s[slice(1, 5, 1)]`
 
 ---
 #### Quelques méthodes sur les chaines
