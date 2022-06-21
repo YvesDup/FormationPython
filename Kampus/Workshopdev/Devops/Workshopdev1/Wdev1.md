@@ -396,7 +396,7 @@ Dans la mesure où une liste peut contenir d'autres objets **muables**, la copie
 
 ---
 <style scoped> {
-  font-size: 28px;
+  font-size: 26px;
 }
 </style>
 ### Les dictionnaires
@@ -413,7 +413,7 @@ Les dictionnaires représentent une structure de données enregistrées sous la 
         print(f'{d["1"] = }')
 
 ```
-Les `dict sont des variables **mutable**. Un dictionnaire n'est pas ue séquence mais un tableau associatif.
+Les `dict` sont des variables **mutable**. Un dictionnaire n'est pas ue séquence mais un tableau associatif.
 
 Les clès d'un dictionnaire sont hétéroclites en terme de type et chaque valeur de clé doit être d'un type '**immuable**'.
 
