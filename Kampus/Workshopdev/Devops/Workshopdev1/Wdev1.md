@@ -445,7 +445,7 @@ C'est l'exemple ci-dessus `d[4] = 4`.
 L'ajout d'un nouveau couple se fait par l'instruction suivante:
 `d["x"] = [] # liste vide`
 
-La mise à jour d'un dictionnaire à partir d'un autre peut se faire avec la méthode `update` comme suit:
+La mise à jour d'un dictionnaire peut se faire à partir d'un autre dictionnaire avec la méthode `update` comme suit:
 ```py
         print(d)
         dd = { 5:"cinq", '1':["un", "I", 1], True:"VRAI !!"}
