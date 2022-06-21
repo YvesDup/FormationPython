@@ -35,7 +35,7 @@ def type_simple():
     def type_cplx():
         print("complexe")
         cplx = 2j + 9
-        print(cplx)
+        print(f'{cplx = }, {type(cplx) = }')
 
     def type_none():
         print("valeur nulle")
