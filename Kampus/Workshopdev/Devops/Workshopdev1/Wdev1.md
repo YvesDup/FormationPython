@@ -152,7 +152,7 @@ Les chaines de caractère en Python sont enregistrées en 'Unicode'. Python supp
         s4 = s1
         print(f'{s1 = }, {s4 = }')
 ```
-Les `str` sont des variables **immuable**. cela implique la modification d'une chaine entraine la création d'une nouvelle chaine de caractères. 
+Les `str` sont des variables **immuable**. cela implique la modification d'une chaine entraine la création d'une nouvelle chaine de caractères.
 
 ---
 #### Opérations sur les chaines
@@ -173,10 +173,10 @@ Les `str` sont des séquences. C'est à dire qu'il est possible:
 
 Le `slicing`est un mécanisme qui permet d'extraire des sous-séquences d'une séquence en spécifiant, un intervalle et un pas, comme suit avec le tryptique:
 + start: indique la position de départ,
-+ stop: qui indique la position de fin, exclue 
++ stop: qui indique la position de fin, exclue,
 + step: qui indique dans cet interval la fréquence des caractères conservés
 
-Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:`comme suit: `start:stop:step`. Par exemple la sous-chaine suivante va prendre à partir du 2° caractére, jusqu'a 5° inclus, 1 caractère sur 2.
+Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: `start:stop:step`. Par exemple la sous-chaine suivante va prendre à partir du 2° caractére, jusqu'a 5° inclus, 1 caractère sur 2.
 ```py
     s = 'rodondindron'
     print(f'{s = }, {s[1:5:2] = }') # -> 'oo'
@@ -188,7 +188,7 @@ Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:`comme suit: `
 }
 </style>
 
-Slicing suite (1/2)
+**Slicing suite (1/2)**
 
 Quand une des valeurs de l'intervalle est omise, la valeur retenue est alors `None`. La valeur par défaut pour le pas est `1`.
 
@@ -204,7 +204,7 @@ Quelques exemples de slicing:
 }
 </style>
 
-Slicing suite (2/2)
+**Slicing suite (2/2)**
 
 Comme pour les accès directs, des indices négatifs peuvent être utilisés dans les valeurs du tryptique
 
@@ -232,32 +232,27 @@ Le mécanisme du slicing se fait via une classe `slice` qui peut utilisée via u
 
 
 ---
-## Les types avancés, composés.
-
-<style scoped> {
-  font-size: 26 px;
-}
-</style>
+## Les types avancés, composés
 
 Voici un rappel de ces types
 
 Types composés | Exemples|
 |-------|----|
 | listes  | [], [10, True, "string", 1.22]|
-| tuples | ("un",),  (10, True, "string", 1.22)|
-| ensembles | {10, "20", 30.0},  {(1,"un"), 'I'}|
 |dictionnaires| {"dix":10, 20:"XX"}|
+| ensembles | {10, "20", 30.0},  {(1,"un"), 'I'}|
+| tuples | ("un",),  (10, True, "string", 1.22)|
 
 
 ---
 ### Les listes
 
 <style scoped> {
-  font-size: 24 px;
+  font-size: 22 px;
 }
 </style>
 
-les listes correspondent à un tableau dont le contenu est hétéroclite en terme de type. Par exemple:
+Les listes correspondent à un tableau dont le contenu est hétéroclite en terme de type. Par exemple:
 
 ```py
         # liste
@@ -268,4 +263,6 @@ les listes correspondent à un tableau dont le contenu est hétéroclite en term
         print(f'{l = }')
 ```
 Les `list` sont des variables **muable**. Cela implique que la modification du contenu de la liste n'entraine pas la création d'une nouvelle liste.
+
+---
 
