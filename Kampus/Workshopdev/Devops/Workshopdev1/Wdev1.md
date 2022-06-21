@@ -437,10 +437,23 @@ Les clès d'un dictionnaire sont hétéroclites en terme de type et chaque valeu
   font-size: 28px;
 }
 </style>
+#### Insertion et modification des couples clé, valeur
 
-#### Accès globaux aux données
+La modification d'une valeur pour une clé déjà existante, donc avec déjà une valeur associée, se fait avec l'opérateur d'affection `=`.
+C'est l'exemple ci-dessus `d[4] = 4`.
 
-Il existe 2 méthodes d'accès aux données d'un dictionnaire:
+L'ajout d'un nouveau couple se fait par l'instruction suivante:
+
+
+---
+<style scoped> {
+  font-size: 28px;
+}
+</style>
+
+#### Accès à la totaleité des données
+
+Il existe 3 méthodes d'accès aux données d'un dictionnaire:
 
 ```py
         print("accès globaux aux donnés")
@@ -450,6 +463,44 @@ Il existe 2 méthodes d'accès aux données d'un dictionnaire:
 ```
 + `d.keys()` : renvoie toutes les clés.
 + `d.values()` : renvoie toutes les valeurs.
-+ `d.items()` : renvoie tous les couples (tuple à 2 éléments) clé, valeur.
++ `d.items()` : renvoie tous les couples 'clé, valeur' sous la forme d'une liste de tuple à 2 valeurs.
 
-Le parcours d'un dictionnaire se fait toujours via l'une de ses 3 méthodes
+Le parcours d'un dictionnaire se fait toujours via l'une de ses 3 méthodes.
+
+---
+<style scoped> {
+  font-size: 28px;
+}
+</style>
+
+#### Parcours d'un dictionnaire
+
+```py
+       print("___"*20)
+        for k in d:  # <=> d.keys(): 
+            print(k, '->', d[k])
+
+        print("___"*20)
+        for item in d.items():
+            print(item[0], '->', item[1])
+        print("___"*20)
+        for k, v in d.items():
+            print(k, '->', v)
+```
+
+Il n'est pas possible de parcourir un dictionnaire avec une boucle `while`.
+
+---
+<style scoped> {
+  font-size: 28px;
+}
+</style>
+#### Suppression d'une clé
+
+Il existe principalement 2 façons de procéder:
+```py
+        del d[2.01]
+        v = d.pop(4)
+        print(v)
+```
+
