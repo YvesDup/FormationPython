@@ -274,6 +274,7 @@ Les `list` sont des variables **muable**. La liste étant une séquence, toutes 
   font-size: 30px;
 }
 </style>
+#### Opérations sur les listes
 
 Les modifications de liste peuvent se faire comme suit:
 
@@ -298,6 +299,8 @@ La méthode `extend` prend un `iterable` en entrée et ajoute tous ses élément
 }
 </style>
 
+#### Parcourir une liste 
+
 Le parcours d'une liste peut se faire avec l'instruction `for`:
 
 ```py
@@ -321,11 +324,12 @@ Une instruction `while` peut aussi s'utiliser ici mais sera de la même efficaci
 
 ---
 <style scoped> {
-  font-size: 28px;
+  font-size: 29px;
 }
-Inverser ou trier une liste
-
 </style>
+
+#### Inverser ou trier une liste
+
 ```py
         print("Inverser une liste")
         print(l[::-1])
@@ -337,3 +341,18 @@ Inverser ou trier une liste
         print(l1)
 ```
 
+---
+<style scoped> {
+  font-size: 28px;
+}
+</style>
+
+#### Cas d'une liste contenant une autre liste
+
+
+---
+<style scoped> {
+  font-size: 28px;
+}
+</style>
+#### Copie d'une liste
