@@ -145,7 +145,7 @@ def type_avance():
         l1.sort()
 
         print("append a list")
-        l1 = [-5,  -1.2e-19,, 0, True, 2.89, 10]
+        l1 = [-5, -1.2e-19, 0, True, 2.89, 10]
         print(l1)
         l = [True, 20.0, "Allez", None]
         print(l)
@@ -159,7 +159,7 @@ def type_avance():
         # copy
         print("copy")
         import copy
-        lc = copy.copy(l1) # copy.deepcopy() copie profonde
+        lc = copy.copy(l1) # copy.copy() copie de surface
         print(f'{id(l1) = } , {id(lc) = }')
         print(f'{id(l1[-1]) = } , {id(lc[-1]) = }')
         lc = copy.deepcopy(l1) # copy.deepcopy() copie profonde
