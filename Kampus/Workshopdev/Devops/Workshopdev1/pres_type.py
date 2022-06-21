@@ -211,7 +211,8 @@ def type_avance():
         print(f'{d[4] = }')
         d[4] = 4
         print(f'{d[4] = }')
-        print(f'{d.get(5, "Pas de key") = }')
+        print(f'{d.get(5, "Pas de clé") = }')
+        print("accès globaux aux donnés")
         print(d.keys())
         print(d.values())
         print(d.items())
