@@ -440,7 +440,7 @@ Les clès d'un dictionnaire sont hétéroclites en terme de type et chaque valeu
   font-size: 28px;
 }
 </style>
-#### Insertion et modification des couples clé, valeur
+#### Insertion et modification des couples (clé, valeur)
 
 La modification d'une valeur pour une clé déjà existante, donc avec déjà une valeur associée, se fait avec l'opérateur d'affection `=`.
 C'est l'exemple ci-dessus `d[4] = 4`.
@@ -451,7 +451,8 @@ L'ajout d'un nouveau couple se fait par l'instruction suivante:
 La mise à jour d'un dictionnaire peut se faire à partir d'un autre dictionnaire avec la méthode `update` comme suit:
 ```py
         print(d)
-        dd = { 5:"cinq", '1':["un", "I", 1], True:"VRAI !!"}
+        dd = {5:"cinq", '1':["un", "I", 1], True:"VRAI !!"}
+        print(dd)
         d.update(dd) 
         print(d)
 
@@ -463,7 +464,7 @@ La mise à jour d'un dictionnaire peut se faire à partir d'un autre dictionnair
 }
 </style>
 
-#### Accès à la totaleité des données
+#### Accès à la totalité des données
 
 Il existe 3 méthodes d'accès aux données d'un dictionnaire:
 
@@ -475,7 +476,7 @@ Il existe 3 méthodes d'accès aux données d'un dictionnaire:
 ```
 + `d.keys()` : renvoie toutes les clés.
 + `d.values()` : renvoie toutes les valeurs.
-+ `d.items()` : renvoie tous les couples 'clé, valeur' sous la forme d'une liste de tuple à 2 valeurs.
++ `d.items()` : renvoie tous les couples 'clé, valeur' sous la forme d'une liste de tuples à 2 entrées.
 
 Le parcours d'un dictionnaire se fait toujours via l'une de ses 3 méthodes.
 
@@ -518,8 +519,7 @@ Il existe principalement 2 façons de procéder:
 
 ---
 <style scoped> {
-  font-size: 28
-  px;
+  font-size: 27px;
 }
 </style>
 ### Les ensembles
@@ -532,9 +532,9 @@ Les ensembles sont des collections particulières qui ne contiennent que des obj
 + Différence asymétrique
 + Sur-ensemble
 + Sous-ensemble
-* Ensembles disjoints
++ Ensembles disjoints
 
-Les ensembles sont des objets **mutables**.
+Les ensembles sont des objets **mutable**.
 
 ---
 <style scoped> {
