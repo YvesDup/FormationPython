@@ -589,6 +589,8 @@ Un ensemble est parcourable avec une instruction `for`. Il n'y pas d'accès dire
 ---
 ### Les tuples
 
+Les tuples sont des objets qui se comportent comme des listes mais qui 
+
 ---
 ### Conversions (cast) entre objets avancés
 
