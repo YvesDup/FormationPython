@@ -230,13 +230,16 @@ Le mécanisme du slicing se fait via une classe `slice` qui peut utilisée via u
 * `s.upper()`, `s.lower()`, `s.title()`: modifie la casse de la chaine.
 * `s.starswith('ab')`: indique si la chaine démarre avec la chaine 'ab'. Il existe aussi la méthode `endswith`.
 
+
 ---
+## Les types avancés, composés.
+
 <style scoped> {
   font-size: 26 px;
 }
 </style>
 
-## Les types avancés, composés.
+Voici un rappel de ces types
 
 Types composés | Exemples|
 |-------|----|
@@ -250,7 +253,7 @@ Types composés | Exemples|
 ### Les listes
 
 <style scoped> {
-  font-size: 4 px;
+  font-size: 24 px;
 }
 </style>
 
@@ -264,7 +267,5 @@ les listes correspondent à un tableau dont le contenu est hétéroclite en term
         l = [10, "vingt", 20.000 , None]
         print(f'{l = }')
 ```
-
 Les `list` sont des variables **muable**. Cela implique que la modification du contenu de la liste n'entraine pas la création d'une nouvelle liste.
 
----
