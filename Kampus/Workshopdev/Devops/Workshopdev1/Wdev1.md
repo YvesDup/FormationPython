@@ -523,7 +523,7 @@ Il existe principalement 2 façons de procéder:
 </style>
 ### Les ensembles
 
-Les ensembles sont des collections particulières qui ne contiennent que des objets **immuables** sans doublons. Ils mettent à disposition les opérations ensemblistes:
+Les ensembles sont des collections particulières qui ne contiennent que des objets **immutables** sans doublons. Ils mettent à disposition les opérations ensemblistes:
 
 + Union
 + Intersection
