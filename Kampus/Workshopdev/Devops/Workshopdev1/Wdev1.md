@@ -491,7 +491,7 @@ Le parcours d'un dictionnaire se fait toujours via l'une de ses 3 méthodes.
 
 ```py
        print("___"*20)
-        for k in d:  # <=> d.keys(): 
+        for k in d:  # <=> d.keys():
             print(k, '->', d[k])
         print("___"*20)
 
@@ -527,7 +527,7 @@ Il existe principalement 2 façons de procéder:
 </style>
 ### Les ensembles
 
-Les ensembles sont des collections particulières qui ne contiennent que des objets **immutables** sans doublons. Ils mettent à disposition les opérations ensemblistes suivantes:
+Les ensembles sont des collections particulières qui ne contiennent que des objets **immutables** sans doublons. Ils permettent la mise en oeuvre des opérations ensemblistes suivantes:
 
 + Union
 + Intersection
@@ -589,6 +589,10 @@ Un ensemble est parcourable avec une instruction `for`. Il n'y pas d'accès dire
 + le `-` est utilisé pour les différences asymétriques.
 
 ---
+<style scoped> {
+  font-size: 29px;
+}
+</style>
 ### Les tuples
 
 Les tuples sont des objets qui se comportent comme des listes mais qui sont **immutables**. 
@@ -598,6 +602,29 @@ Les tuples sont des objets qui se comportent comme des listes mais qui sont **im
     print(f'{t = } - {type(t)})
 ```
 Les tuples sont des séquences. Ainsi tous les comportements génériques des listes et des chaines de caractères s'appliquent.
+
+Un tuple peut être clé d'un dictionnaire ou être insérer dans un ensemble à condition que tous ses éléments soient **immutables**.
+
+Par exemple
+
+
+---
+<style scoped> {
+  font-size: 32px;
+}
+</style>
+#### Modification d'un tuple
+
+Le tuple étant **immutable**, la modification du tuple se fait en recréant un nouveau tuple. Par exemple:
+
+```py
+    t = (10, "20", 30.00, False)
+    print(f'{t = }')
+    # je voudrais remplacer le "20" par "vingt"
+    t = t[:1] + ("vingt",) + t[2:]
+    print(f'{t = }')
+```
+L'expression ` ("vingt",)` correpond à un tuple avec 1 élément.
 
 ---
 ### Conversions (cast) entre objets avancés
