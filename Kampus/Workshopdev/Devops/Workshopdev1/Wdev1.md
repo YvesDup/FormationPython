@@ -638,7 +638,7 @@ L'expression ` ("vingt",)` correpond à un tuple avec 1 élément.
 
 Ces conversions sont disponibles en Python et sont abondemment utilisées
 
-+ tuple, list
++ tuple, liste
    + tuple(list)            / list(tuple)
    + tuple(set)             / list(set)
    + tuple(dict)            / list(dict)
@@ -654,13 +654,13 @@ Ces conversions sont disponibles en Python et sont abondemment utilisées
 
 **La suite des conversions**
 
-+ set - Attention les doublons sont éléminés
++ ensemble - Attention les doublons sont éléminés
    + set(list)
    + set(tuple)
    + set(dict.values())
    + set(dict.items())
 
 
-+ dict - les éléments doivent contenir des couples (clé, valeur)
++ dictionnaire - les éléments doivent contenir des couples (clé, valeur)
     + dict(tuple)
     + dict(list)
