@@ -286,7 +286,7 @@ Les modifications de liste peuvent se faire comme suit:
         print(False in l)
         l.remove(10)
         print(f'{l = }')
-        l[2] *=10
+        l[1] *=10
         print(f'{l = }')
         l.extend('ABC')
         print(f'{l = }')
@@ -350,19 +350,24 @@ Une instruction `while` peut aussi s'utiliser ici mais sera de la même efficaci
 #### Cas d'une liste contenant une autre liste (ou un autre objet muable)
 
 ```py
-        l1 = [10, 0, -5, True, 2.89, -1.2e-19]
-        l1.sort()
+        l1 = [-5,  -1.2e-19,, 0, True, 2.89, 10]
         print(l1)
         l1.append(l) 
-        print("------", id(l), id(l1[-1]))
+        print("------", id(l1), id(l), id(l1[-1]))
         print(l1)
         l.remove(None) # l1[-1].remove(None)
         l.remove(20.0) # l1[-1].remove(20.0)
         print(l1)
 ```
 
-Ici la liste `l` est ajoutée telle quelle à la fin de la liste `l1`. Cet ajout 
+Ici la liste `l` est ajoutée telle quelle à la fin de la liste `l1`. 
+Cet ajout 
 
+```py
+        l.remove(None) # l1[-1].remove(None)
+        l.remove(20.0) # l1[-1].remove(20.0)
+        print(l1)
+```
 ---
 <style scoped> {
   font-size: 28px;

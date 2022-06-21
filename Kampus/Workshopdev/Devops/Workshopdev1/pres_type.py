@@ -116,7 +116,7 @@ def type_avance():
         print(False in l)
         l.remove(10)
         print(f'{l = }')
-        l[2] *=10
+        l[1] *=10
         print(f'{l = }')
         l.extend('ABC')
         print(f'{l = }')
@@ -144,13 +144,8 @@ def type_avance():
         print(l1)
         l1.sort()
         print(l1)
-
-        print("extend".center(60))
-        s = "hello"
-        # l1.extend(s) # l += s
-        print(l1)
         l1.append(l)
-        print("------", id(l), id(l1[-1]))
+        print("------", id(l1), id(l), id(l1[-1]))
         print(l1)
         l.remove(None) # l1[-1].remove(None)
         l.remove(20.0) # l1[-1].remove(20.0)
