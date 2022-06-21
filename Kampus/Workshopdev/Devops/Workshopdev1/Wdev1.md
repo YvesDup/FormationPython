@@ -315,5 +315,4 @@ Le parcours d'une liste peut se faire avec l'instruction `for`:
         for i in range(len(l)):
             print(l[i])
         print("---")
-
 ```
