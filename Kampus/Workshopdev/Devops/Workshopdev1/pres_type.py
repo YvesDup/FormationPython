@@ -205,7 +205,7 @@ def type_avance():
     def type_dict():
         # dictionnaire
         d = {} # dictionnaire 
-        d = { "1": 10, "2": [10, 20] , 4: "quatre" }
+        d = { "1": 10, 2.01: [10, 20] , 4: "quatre" }
         print(f'{d = }')
         print(f'{4 in d = }')
         print(f'{d[4] = }')
@@ -226,7 +226,7 @@ def type_avance():
         for k, v in d.items():
             print(k, '->', v)
 
-        del d["2"]
+        del d[2.01]
         v = d.pop(4)
         print(v)
 
