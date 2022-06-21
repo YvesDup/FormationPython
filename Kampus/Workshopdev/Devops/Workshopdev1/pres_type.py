@@ -143,7 +143,11 @@ def type_avance():
         l1 = [10, 0, -5, True, 2.89, -1.2e-19]
         print(l1)
         l1.sort()
+
+        print("append a list")
         print(l1)
+        l = [True, 20.0, "Allez", None]
+        print(l)
         l1.append(l)
         print("------", id(l1), id(l), id(l1[-1]))
         print(l1)
