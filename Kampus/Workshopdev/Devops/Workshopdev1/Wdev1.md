@@ -43,8 +43,13 @@ Voici les thèmes abordés:
 
 ---
 ### Les entiers
+<style scoped> {
+  font-size: 32px;
+}
+</style>
 
 ```py
+def type_int():
     print("entiers")
     a = 10 # a est un entier
     al = 10_000_000_000_000_000
@@ -53,11 +58,17 @@ Voici les thèmes abordés:
     b = a
     print(f'{b = }')
     print(f'{id(a) = }, {id(b) = }')
+    ...
 ```
 Ici au moment de l'affectation `b = a`, a et b sont 2 **références** qui pointent vers la même zone mémoire.
 Les 'id' respectifs de chaque variable (ou objet) sont identiques
 
 ---
+<style scoped> {
+  font-size: 32px;
+}
+</style>
+
 Je modifie `b`
 
 ```py
@@ -68,21 +79,48 @@ Je modifie `b`
 ```
 
 Les 'ìd' de chaque sont différents. il s'agit donc de 2 zones mémoires différentes. 
-Ce comportement est lié à une caractéristique associée au type (ici les `int`) qui est la notion de **mutabilité** (ou caractére muable).
+Ce comportement est lié à une caractéristique associée au type (ici les `int`) qui est la notion de **mutabilité** (ou caractére muable) ou pas.
+
+les `int` sont des variables **immutables** (ou **immuable**), cad que le contenu est constant. Toute modification du contenu entraine la mise en place d'une nouvelle zone mémoire.
 
 ---
-### les nombres à virgule
+### Les booléens
+
+```py
+def type_bool():
+    print("booléen")
+    bot = True
+    bof = False
+    print(f'{bot = }, {bof = }')
+```
+les `bool` sont des variables **immuable**. Les 2 valeurs possibles sont des 'singletons', cad des valeurs uniques dns l'interpréteur Python.
+
+---
+### Les nombres à virgule
+
+```py
+def type_float():
+    print('flottant')
+    f = 0.5
+    print(f'{f =}')
+    f2 = 1.21e-19
+    print(f'{f2 =}')
+    print(f'Conversion vers un entier: {int(f)}')
+
+```
+
+les `float` sont des variables **immuable**.
+
+---
+### Les chaines de caractéres
 
 ```py
 ```
 
+les `str` sont des variables **immuable**.
 
 ---
-### Mutabilité (muable) / Immutabilité (immuable)
-
-
----
-## les types avancés, composés.
+## Les types avancés, composés.
 
 
 
