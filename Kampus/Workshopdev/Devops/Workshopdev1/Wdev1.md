@@ -349,6 +349,19 @@ Une instruction `while` peut aussi s'utiliser ici mais sera de la même efficaci
 
 #### Cas d'une liste contenant une autre liste (ou un autre objet muable)
 
+```py
+        l1 = [10, 0, -5, True, 2.89, -1.2e-19]
+        l1.sort()
+        print(l1)
+        l1.append(l) 
+        print("------", id(l), id(l1[-1]))
+        print(l1)
+        l.remove(None) # l1[-1].remove(None)
+        l.remove(20.0) # l1[-1].remove(20.0)
+        print(l1)
+```
+
+Ici la liste `l` est ajoutée telle quelle à la fin de la liste `l1` 
 
 ---
 <style scoped> {
