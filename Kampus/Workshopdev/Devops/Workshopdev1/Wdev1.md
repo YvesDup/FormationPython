@@ -152,12 +152,12 @@ Les chaines de caractère en Python sont enregistrées en 'Unicode'. Python supp
         s4 = s1
         print(f'{s1 = }, {s4 = }')
 ```
-Les `str` sont des variables **immuable**. cela implique la modification d'une chaine entraine la création d'une nouvelle chaine de caractères.
+Les `str` sont des variables **immuable**. Cela implique que la modification d'une chaine entraine la création d'une nouvelle chaine de caractères.
 
 ---
 #### Opérations sur les chaines
 
-Les `str` sont des séquences. C'est à dire qu'il est possible:
+Les `str` sont des séquences. C'est à dire qu'il est possible de:
 + connaitre sa longueur: `len(s)`.
 + savoir si élément est contenu dans la chaine: `'x' in s`
 + parcourir ses éléments: `for item in s: print(item)`
