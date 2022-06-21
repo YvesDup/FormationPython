@@ -27,7 +27,7 @@ def type_simple():
 
     def type_float():
         print('flottant')
-        f = 0.5
+        f = 0.51
         print(f'{f = }')
         f2 = 1.21e-19
         print(f'{f2 = }')
