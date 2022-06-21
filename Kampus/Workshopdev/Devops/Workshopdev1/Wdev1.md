@@ -212,9 +212,16 @@ Comme pour les accès directs, des indices négatifs peuvent être utilisés dan
 + `s[::-1]`: la chaine `s` est inversée.
 + `s[-2:0:1]`: une chaine vide.
 
-Le mécanisme du slicing se fait via une classe `slice` qui peut utilisée via une instance à la place de la syntaxe `[1:5:1]` comme ceci: `s[slice(1, 5, 1)]`
+Le mécanisme du slicing se fait via une classe `slice` qui peut utilisée via une instance à la place de la syntaxe `s[1:5:1]` comme ceci:
++ `s[slice(1, 5, 1)]`
++ `sl = slice(1, 5, 1); s[sl]`
 
 ---
+<style scoped> {
+  font-size: 29px;
+}
+</style>
+
 #### Quelques méthodes sur les chaines
 
 * `s.count('a')` : compte les occurrences de 'a' sans s.
@@ -224,12 +231,12 @@ Le mécanisme du slicing se fait via une classe `slice` qui peut utilisée via u
 * `s.starswith('ab')`: indique si la chaine démarre avec la chaine 'ab'. Il existe aussi la méthode `endswith`.
 
 ---
-## Les types avancés, composés.
-
 <style scoped> {
-  font-size: 22 px;
+  font-size: 26 px;
 }
 </style>
+
+## Les types avancés, composés.
 
 Types composés | Exemples|
 |-------|----|
@@ -240,11 +247,22 @@ Types composés | Exemples|
 
 ---
 ### Les listes
+<style scoped> {
+  font-size: 24 px;
+}
+</style>
 
-les listes correspondent à un tableau dont le contenu est hétéroclite en terme de type.
+les listes correspondent à un tableau dont le contenu est hétéroclite en terme de type. Par exemple:
 
-
-
+```py
+        # liste
+        print('liste')
+        l = []
+        print(f'{l = }, {type(l) = }')
+        l = [10, "vingt", 20.000 , None]
+        print(f'{l = }')
+```
 
 Les `list` sont des variables **muable**. Cela implique que la modification du contenu de la lsite n'entraine pas la création d'une nouvelle liste. 
 
+---
