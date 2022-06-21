@@ -566,7 +566,7 @@ Un ensemble est parcourable avec une instruction `for`. Il n'y pas d'accès dire
 
 ---
 <style scoped> {
-  font-size: 28px;
+  font-size: 29px;
 }
 </style>
 #### Les opérations ensemblistes
@@ -583,13 +583,13 @@ Un ensemble est parcourable avec une instruction `for`. Il n'y pas d'accès dire
         print({10, 20}.issubset(s1))
         print({100, 25}.isdisjoint(s1))
         print({10, 20, 40, 50}.issuperset(s1))
-
 ```
++ Le `&` correspond à l'intersection, le `|` à l'union.
++ le `^` correspond à la différence symétrique.
++ le `-` est utilisé pour les différences asymétriques.
 
 ---
 ### Les tuples
-
-### Les listes
 
 Les tuples sont des objets qui se comportent comme des listes mais qui sont **immutables**. 
 
@@ -597,6 +597,8 @@ Les tuples sont des objets qui se comportent comme des listes mais qui sont **im
     l = (10, "hello", True, None)
     print(f'{t = } - {type(t)})
 ```
+Les tuples sont des séquences. Ainsi tous les comportements génériques des listes et des chaines de caractères s'appliquent.
+
 ---
 ### Conversions (cast) entre objets avancés
 
