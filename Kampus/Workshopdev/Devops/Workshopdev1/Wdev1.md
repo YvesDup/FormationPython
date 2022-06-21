@@ -181,6 +181,7 @@ Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: 
 ```py
     s = 'rodondindron'
     print(f'{s = }, {s[1:5:2] = }') # -> 'oo'
+```
 
 ---
 <style scoped> {
