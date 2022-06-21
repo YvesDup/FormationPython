@@ -347,7 +347,7 @@ Une instruction `while` peut aussi s'utiliser ici mais sera de la même efficaci
 }
 </style>
 
-#### Cas d'une liste contenant une autre liste
+#### Cas d'une liste contenant une autre liste (ou un autre objet muable)
 
 
 ---
