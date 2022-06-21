@@ -171,18 +171,18 @@ def type_avance():
         s1 = {10, 20, 40}
         print(f'{s1=}')
         s2 = {20, 30, 60, 60}
-        # print(f'{s2=}')
         s1.add(80)
         print(f'{s1=}')
         print(80 in s1)
-        # print(s1[1])
         s1.add(10)
         print(f'{s1=}')
+        s1.remove(80)
+        # print(f'{s1=}')
+
+        print("parcours d'un set")
         for item in s1:
             print(item)
 
-        s1.remove(80)
-        # print(f'{s1=}')
 
         #operation ensembliste
         print(f'{s1=}')
