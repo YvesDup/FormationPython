@@ -630,5 +630,37 @@ Le tuple étant **immutable**, la modification du tuple se fait en recréant un 
 L'expression ` ("vingt",)` correpond à un tuple avec 1 élément.
 
 ---
+<style scoped> {
+  font-size: 29px;
+}
+</style>
 ### Conversions (cast) entre objets avancés
 
+Ces conversions sont disponibles en Python et sont abondemment utilisées
+
++ tuple, list
+   + tuple(list)            / list(tuple)
+   + tuple(set)             / list(set)
+   + tuple(dict)            / list(dict)
+   + tuple(dict.keys())     / list(dict.keys())
+   + tuple(dict.values())   / list(dict.values())
+   + tuple(dict.items())    / list(dict.items())
+
+---
+<style scoped> {
+  font-size: 29px;
+}
+</style>
+
+**La suite des conversions**
+
++ set - Attention les doublons sont éléminés
+   + set(list)
+   + set(tuple)
+   + set(dict.values())
+   + set(dict.items())
+
+
++ dict - les éléments doivent contenir des couples (clé, valeur)
+    + dict(tuple)
+    + dict(list)
