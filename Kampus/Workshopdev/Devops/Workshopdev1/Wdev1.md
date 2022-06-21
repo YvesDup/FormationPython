@@ -81,7 +81,7 @@ Je modifie `b`
 Les 'ìd' de chaque sont différents. il s'agit donc de 2 zones mémoires différentes. 
 Ce comportement est lié à une caractéristique associée au type (ici les `int`) qui est la notion de **mutabilité** (ou caractére muable) ou pas.
 
-les `int` sont des variables **immutables** (ou **immuable**), cad que le contenu est constant. Toute modification du contenu entraine la mise en place d'une nouvelle zone mémoire.
+Les `int` sont des variables **immutables** (ou **immuable**), cad que le contenu est constant. Toute modification du contenu entraine la mise en place d'une nouvelle zone mémoire.
 
 ---
 ### Les booléens
@@ -102,14 +102,34 @@ les `bool` sont des variables **immuable**. Les 2 valeurs possibles sont des 'si
 def type_float():
     print('flottant')
     f = 0.5
-    print(f'{f =}')
+    print(f'{f = }')
     f2 = 1.21e-19
-    print(f'{f2 =}')
+    print(f'{f2 = }')
     print(f'Conversion vers un entier: {int(f)}')
 
 ```
+Les `float` sont des variables **immuable**.
 
-les `float` sont des variables **immuable**.
+---
+### Les complexes
+
+```py
+    def type_cplx():
+        print("complexe")
+        cplx = 2j + 9
+        print(cplx)
+```
+Les `complex` sont des variables **immuable**.
+
+---
+### la valeur nulle
+```py
+    def type_none():
+        print("valeur nulle")
+        n = None
+        print(f'{n = } - {type(None)}')
+```
+La valeur `None` est un singleton **imumable**.
 
 ---
 ### Les chaines de caractéres
