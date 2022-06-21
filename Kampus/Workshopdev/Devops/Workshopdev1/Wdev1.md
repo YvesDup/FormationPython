@@ -518,7 +518,6 @@ Il existe principalement 2 façons de procéder:
 ```py
         del d[2.01]
         v = d.pop(4)
-        d.pop(5)
         print(v)
 ```
 
@@ -608,7 +607,7 @@ Les tuples sont des séquences. Ainsi tous les comportements génériques des li
 Un tuple peut être clé d'un dictionnaire ou être insérer dans un ensemble à condition que tous ses éléments soient **immutables**. Par exemple: 
 `t = (10, 20, ["et", "paf", "le"])`. Ici ce tuple contient une liste et donc ne pourra pas être clé d'un dictionnaire.
 
-*_Note_*: Ici la liste peut être mofifiée via le tuple, en accèdant à son dernier élément comme ceci: `t[-1].append("chien")`.
+**Note**: Ici la liste peut être mofifiée via le tuple, en accèdant à son dernier élément comme ceci: `t[-1].append("chien")`.
 
 
 ---
