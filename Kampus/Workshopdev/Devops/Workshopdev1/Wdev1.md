@@ -562,7 +562,7 @@ Voici un exemple d'ensemble:
 + `s1.remove` pour supprimer un élément
 + `80 in s1` ppur savoir si `80`est dans s1.
 
-Un ensemble est parcourable avec une instruction `for`. Il n'y pas d'accès direct à un élément de l'ensemble: `s1[0]` provoque une erreur
+Un ensemble est parcourable avec une instruction `for`. Il n'y pas d'accès direct à un élément de l'ensemble: `s1[0]` provoque une erreur.
 
 ---
 <style scoped> {
@@ -585,3 +585,10 @@ Un ensemble est parcourable avec une instruction `for`. Il n'y pas d'accès dire
         print({10, 20, 40, 50}.issuperset(s1))
 
 ```
+
+---
+### Les tuples
+
+---
+### Conversions (cast) entre objets avancés
+
