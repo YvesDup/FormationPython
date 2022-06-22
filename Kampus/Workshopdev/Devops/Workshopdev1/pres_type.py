@@ -53,7 +53,7 @@ def type_simple():
         s3 = """hello
     salut,             yyyyy
     encore"""
-        print(f'{s3 = }')
+        print(f'{s3}')
         s4 = s1
         print(f'{s1 = }, {s4 = }')
         return 
