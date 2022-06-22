@@ -418,7 +418,7 @@ Les dictionnaires représentent une structure de données enregistrées sous la 
         print(f'{d["1"] = }') # accès à la valeur de la clé "1"
 
 ```
-Les `dict` sont des variables **mutable**. Un dictionnaire n'est pas une séquence mais un tableau associatif.
+Les `dict` sont des variables **mutables**. Un dictionnaire n'est pas une séquence mais un tableau associatif.
 
 Les clès d'un dictionnaire sont hétéroclites en terme de type, chaque clé doit être d'un type **immutable**.
 
