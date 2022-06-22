@@ -406,7 +406,8 @@ Dans la mesure où une liste peut contenir d'autres objets **mutables**, la copi
 </style>
 ### Les dictionnaires
 
-Les dictionnaires sont une structure de données qui contient des données sous la forme d'une liste non ordonée de couple (clé, valeur).
+Les dictionnaires sont une structure de données qui contient des données sous la 
+forme d'une liste non ordonée de couple (clé, valeur).
 ```py
     def type_dict():
         # dictionnaire
