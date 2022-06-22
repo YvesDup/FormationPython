@@ -81,7 +81,7 @@ Je modifie `b`
 Les 'id' de chaque objets sont différents. il s'agit donc de 2 zones mémoires différentes. 
 Ce comportement est lié à une caractéristique associée au type (ici les `int`) qui se nomme: la **mutabilité** et sa négation, l' **immutabilité**.
 
-Les `int` sont des variables **immutable** (ou **immuable**), cad que le contenu est constant. Toute modification du contenu entraine la mise en place d'une nouvelle zone mémoire.
+Les `int` sont des variables **immutables** (ou **immuables**), cad que le contenu est constant. Toute modification du contenu entraine la mise en place d'une nouvelle zone mémoire.
 
 ---
 ### Les booléens
@@ -93,7 +93,7 @@ def type_bool():
     bof = False
     print(f'{bot = }, {bof = }')
 ```
-les `bool` sont des variables **immuable**. Les 2 valeurs possibles sont des 'singletons', cad des valeurs uniques dns l'interpréteur Python.
+les `bool` sont des variables **immuables**. Les 2 valeurs possibles sont des 'singletons', cad des valeurs uniques dns l'interpréteur Python.
 
 ---
 ### Les nombres à virgule
@@ -109,7 +109,7 @@ def type_float():
     print(f'Conversion vers un entier: {x = }, {type(x) = }')
 
 ```
-Les `float` sont des variables **immuable**.
+Les `float` sont des variables **immuables**.
 
 ---
 ### Les complexes
@@ -120,7 +120,7 @@ Les `float` sont des variables **immuable**.
         cplx = 2j + 9
         print(f'{cplx = }, {type(cplx) = }')
 ```
-Les `complex` sont des variables **immuable**.
+Les `complex` sont des variables **immuables**.
 
 ---
 ### la valeur nulle
@@ -130,7 +130,7 @@ Les `complex` sont des variables **immuable**.
         n = None
         print(f'{n = } - {type(None)}')
 ```
-La valeur `None` est un singleton **imumable**.
+La valeur `None` est un singleton **immuable**. Aucune opération n'est possible avec cet objet.
 
 ---
 ### Les chaines de caractéres
@@ -153,7 +153,7 @@ Les chaines de caractère en Python sont enregistrées en 'Unicode'. Python supp
         s4 = s1
         print(f'{s1 = }, {s4 = }')
 ```
-Les `str` sont des variables **immuable**. Cela implique que la modification d'une chaine entraine la création d'une nouvelle chaine de caractères.
+Les `str` sont des variables **immuables**. Cela implique que la modification d'une chaine entraine la création d'une nouvelle chaine de caractères.
 
 ---
 #### Opérations sur les chaines
