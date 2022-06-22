@@ -550,7 +550,7 @@ Les ensembles sont des objets **mutables**.
 </style>
 #### La gestion des ensembles
 
-Voici un exemple d'ensemble:
+Voici un exemple d'ensembles:
 
 ```py
         s1 = {10, 20, 40}
@@ -562,8 +562,8 @@ Voici un exemple d'ensemble:
         print(f'{s1 = }')
         s1.remove(80)
 ```
-+ `s1.add` pour ajouter un élément
-+ `s1.remove` pour supprimer un élément
++ `s1.add` pour ajouter un élément.
++ `s1.remove` pour supprimer un élément.
 + `80 in s1` ppur savoir si `80`est dans s1.
 
 Un ensemble est parcourable avec une instruction `for`. Il n'y pas d'accès direct à un élément de l'ensemble: `s1[0]` provoque une erreur.
@@ -607,7 +607,7 @@ Les tuples sont des objets qui se comportent comme des listes mais qui sont **im
 ```
 Les tuples sont des séquences. Ainsi tous les comportements génériques des listes et des chaines de caractères s'appliquent.
 
-Un tuple peut être clé d'un dictionnaire ou être insérer dans un ensemble à condition que tous ses éléments soient **immutables**. 
+Un tuple peut être clé d'un dictionnaire ou être inséré dans un ensemble à condition que tous ses éléments soient **immutables**. 
 Par exemple:`t = (10, 20, ["et", "paf", "le"])` contient une liste et donc ne pourra pas être clé d'un dictionnaire.
 
 **Note**: Ici la liste peut être mofifiée via le tuple, en accèdant à son dernier élément comme ceci: `t[-1].append("chien")`. Ce qui donne pour cette liste un élément supplémentaire.
