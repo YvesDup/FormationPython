@@ -268,7 +268,7 @@ Les listes correspondent à un tableau dont le contenu est hétéroclite en term
         l = [10, "vingt", 20.000 , None]
         print(f'{l = }')
 ```
-Les `list` sont des variables **muable**. La liste étant une séquence, toutes les manipulations vues au niveau des `str` peuvent s'utiliser ici.
+Les `list` sont des variables **muables**. La liste étant une séquence, toutes les manipulations vues au niveau des `str` peuvent s'utiliser ici.
 
 Les clés des listes sont stockées sous forme de _hash code_.
 
@@ -351,7 +351,7 @@ Une instruction `while` peut aussi s'utiliser ici mais sera de la même efficaci
 }
 </style>
 
-#### Cas d'une liste contenant une autre liste (ou un autre objet muable)
+#### Cas d'une liste contenant une autre liste (ou un autre objet mutable)
 
 ```py
         print("append a list")
@@ -378,9 +378,9 @@ Comme `l` est modifiée, cela sera impacté dans la liste `l1`.
   font-size: 27px;
 }
 </style>
-#### Copie d'une liste (ou d'un objet muable)
+#### Copie d'une liste (ou d'un objet mutable)
 
-Dans la mesure où une liste peut contenir d'autres objets **muables**, la copie d'une liste peut se faire de 2 façons:
+Dans la mesure où une liste peut contenir d'autres objets **mutables**, la copie d'une liste peut se faire de 2 façons:
 
 + une copie en surface où seul le premier niveau d'éléments est dupliqué.
 + une copie profonde où chaque élément contenu est dupliqué, ansi que ses sous-éléments. Voici donc ci-dessous, les 2 modes:
@@ -539,7 +539,7 @@ Les ensembles sont des collections particulières qui ne contiennent que des obj
 + Sous-ensemble
 + Ensembles disjoints
 
-Les ensembles sont des objets **mutable**.
+Les ensembles sont des objets **mutables**.
 
 ---
 <style scoped> {
