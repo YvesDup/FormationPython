@@ -13,6 +13,11 @@ def exo2():
 
     print(f'5 - {type(None) = }')
 
+    n = None
+    print(f'{n is None = }')
+
     print(f'4 - {10.4 / None}')
+
+
 
 exo2() 
