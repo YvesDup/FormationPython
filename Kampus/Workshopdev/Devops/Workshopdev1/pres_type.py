@@ -56,6 +56,7 @@ def type_simple():
         print(f'{s3 = }')
         s4 = s1
         print(f'{s1 = }, {s4 = }')
+        return 
         print('h' in s1)
         print(s1 == s4)
         print(s1 is s4) # id(s1) == id(4)
