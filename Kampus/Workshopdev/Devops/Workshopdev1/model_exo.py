@@ -1,8 +1,16 @@
+import sys
 
 def exo2():
-    """Exercice 2 - ceci est une docstring 
+    """Exercice XX
     """
-    res = 2 + 100
+    res = 3 + 234
     print(f'1 - {res = }')
 
-exo2() 
+    fres = res * 3.14159
+    print(f'2 - {fres = } , {type(fres) = }')
+
+    print(f'3 - {1 + True = }')
+
+    print(f'{10.4 / None}')
+
+exo2()
