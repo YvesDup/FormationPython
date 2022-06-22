@@ -81,7 +81,7 @@ Je modifie `b`
 Les 'id' de chaque objets sont différents. il s'agit donc de 2 zones mémoires différentes. 
 Ce comportement est lié à une caractéristique associée au type (ici les `int`) qui se nomme: la **mutabilité** et sa négation, l' **immutabilité**.
 
-Les `int` sont des variables **immutable** (ou **immuable**), cad que le contenu est constant. Toute modification du contenu entraine la mise en place d'une nouvelle zone mémoire.
+Les `int` sont des variables **immutables** (ou **immuables**), cad que le contenu est constant. Toute modification du contenu entraine la mise en place d'une nouvelle zone mémoire.
 
 ---
 ### Les booléens
@@ -93,7 +93,7 @@ def type_bool():
     bof = False
     print(f'{bot = }, {bof = }')
 ```
-les `bool` sont des variables **immuable**. Les 2 valeurs possibles sont des 'singletons', cad des valeurs uniques dns l'interpréteur Python.
+les `bool` sont des variables **immuables**. Les 2 valeurs possibles sont des 'singletons', cad des valeurs uniques dans l'interpréteur Python.
 
 ---
 ### Les nombres à virgule
@@ -101,15 +101,16 @@ les `bool` sont des variables **immuable**. Les 2 valeurs possibles sont des 'si
 ```py
 def type_float():
     print('flottant')
-    f = 0.5
+    f = 0.51
     print(f'{f = }')
     f2 = 1.21e-19
     print(f'{f2 = }')
     x = int(f)
     print(f'Conversion vers un entier: {x = }, {type(x) = }')
+    print(f'{round(f) = }')
 
 ```
-Les `float` sont des variables **immuable**.
+Les `float` sont des variables **immuables**.
 
 ---
 ### Les complexes
@@ -120,7 +121,7 @@ Les `float` sont des variables **immuable**.
         cplx = 2j + 9
         print(f'{cplx = }, {type(cplx) = }')
 ```
-Les `complex` sont des variables **immuable**.
+Les `complex` sont des variables **immuables**.
 
 ---
 ### la valeur nulle
@@ -130,7 +131,7 @@ Les `complex` sont des variables **immuable**.
         n = None
         print(f'{n = } - {type(None)}')
 ```
-La valeur `None` est un singleton **imumable**.
+La valeur `None` est un singleton **immuable**. Aucune opération n'est possible avec cet objet.
 
 ---
 ### Les chaines de caractéres
@@ -153,7 +154,7 @@ Les chaines de caractère en Python sont enregistrées en 'Unicode'. Python supp
         s4 = s1
         print(f'{s1 = }, {s4 = }')
 ```
-Les `str` sont des variables **immuable**. Cela implique que la modification d'une chaine entraine la création d'une nouvelle chaine de caractères.
+Les `str` sont des variables **immuables**. Cela implique que la modification d'une chaine entraine la création d'une nouvelle chaine de caractères.
 
 ---
 #### Opérations sur les chaines
@@ -177,7 +178,7 @@ Le `slicing` est un mécanisme qui permet d'extraire des sous-séquences d'une s
 + stop: qui indique la position de fin, exclue,
 + step: qui indique dans cet interval la fréquence des caractères conservés
 
-Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: `start:stop:step`. Par exemple la sous-chaine suivante va prendre à partir du 2° caractére, jusqu'a 5° inclus, 1 caractère sur 2.
+Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: `start:stop:step`. Par exemple la sous-chaine suivante sera produite à partir de 2° caractére, jusqu'a 5° inclus, 1 caractère sur 2 de la chaine `s`.
 ```py
     s = 'rodondindron'
     print(f'{s = }, {s[1:5:2] = }') # -> 'oo'
@@ -191,7 +192,11 @@ Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: 
 
 **Slicing suite (1/2)**
 
-Quand une des valeurs de l'intervalle est omise, la valeur retenue est alors `None`. La valeur par défaut pour le pas est `1`.
+Quand une des valeurs de l'intervalle est omise:
++ Si c'est `start` qui est omis, alors le début de chaine est la référence. 
++ Si c'est `stop` alors la fin de chaine est la référence. 
+
+La valeur par défaut pour le pas est `1`.
 
 Quelques exemples de slicing:
 
@@ -211,22 +216,22 @@ Comme pour les accès directs, des indices négatifs peuvent être utilisés dan
 
 + `s[-2:]`: les 2 derniers caractéres de `s`.
 + `s[::-1]`: la chaine `s` est inversée.
-+ `s[-2:0:1]`: une chaine vide.
++ `s[-2:0:1]`: une chaine vide, pourquoi ?
 
-Le mécanisme du slicing se fait via une classe `slice` qui peut utilisée via une instance à la place de la syntaxe `s[1:5:1]` comme ceci:
-+ `s[slice(1, 5, 1)]`
-+ `sl = slice(1, 5, 1); s[sl]`
+Le mécanisme du slicing se fait via une classe `slice` qui peut utilisée via un objet à la place de la syntaxe `s[1:5:1]` comme ceci:
++ `s[slice(1, 5, 1)]` ou, 
++ `sl = slice(1, 5, 1); s[sl]`.
 
 ---
 <style scoped> {
-  font-size: 29px;
+  font-size: 28px;
 }
 </style>
 
 #### Quelques méthodes sur les chaines
 
 * `s.count('a')` : compte les occurrences de 'a' sans s.
-* `s.split(sep)`: produit une liste de sous-chaîne.
+* `s.split(sep)`: découpe une chaine via un sépateur 'sep' en produisant une liste de sous-chaînes. Par exemple `'rr xx zz'.split(' ')` produit `['rr', 'xx', 'zz']`
 * `s.find('xyz')`: cherche la positon de la chaine 'xyz' dans s.
 * `s.upper()`, `s.lower()`, `s.title()`: modifie la casse de la chaine.
 * `s.startswith('ab')`: indique si la chaine démarre avec la chaine 'ab'. Il existe aussi la méthode `endswith`.
@@ -267,9 +272,7 @@ Les listes correspondent à un tableau dont le contenu est hétéroclite en term
         l = [10, "vingt", 20.000 , None]
         print(f'{l = }')
 ```
-Les `list` sont des variables **muable**. La liste étant une séquence, toutes les manipulations vues au niveau des `str` peuvent s'utiliser ici.
-
-Les clés des listes sont stockées sous forme de _hash code_.
+Les `list` sont des variables **muables**. La liste étant une séquence, toutes les manipulations vues au niveau des `str` peuvent s'utiliser ici.
 
 
 ---
@@ -323,7 +326,7 @@ Le parcours d'une liste peut se faire avec l'instruction `for`:
             print(l[i])
         print("---")
 ```
-Une instruction `while` peut aussi s'utiliser ici mais sera de la même efficacité que le dernière proposition ci-dessus.
+Une instruction `while` peut aussi s'utiliser ici mais sera de la même efficacité que la dernière proposition ci-dessus.
 
 ---
 <style scoped> {
@@ -350,7 +353,7 @@ Une instruction `while` peut aussi s'utiliser ici mais sera de la même efficaci
 }
 </style>
 
-#### Cas d'une liste contenant une autre liste (ou un autre objet muable)
+#### Cas d'une liste contenant une autre liste (ou un autre objet mutable)
 
 ```py
         print("append a list")
@@ -377,9 +380,9 @@ Comme `l` est modifiée, cela sera impacté dans la liste `l1`.
   font-size: 27px;
 }
 </style>
-#### Copie d'une liste (ou d'un objet muable)
+#### Copie d'une liste (ou d'un objet mutable)
 
-Dans la mesure où une liste peut contenir d'autres objets **muables**, la copie d'une liste peut se faire de 2 façons:
+Dans la mesure où une liste peut contenir d'autres objets **mutables**, la copie d'une liste peut se faire de 2 façons:
 
 + une copie en surface où seul le premier niveau d'éléments est dupliqué.
 + une copie profonde où chaque élément contenu est dupliqué, ansi que ses sous-éléments. Voici donc ci-dessous, les 2 modes:
@@ -403,8 +406,8 @@ Dans la mesure où une liste peut contenir d'autres objets **muables**, la copie
 </style>
 ### Les dictionnaires
 
-Les dictionnaires représentent une structure de données enregistrées sous la forme d'une clé et d'une valeur associée. L'accès à la valeur se fait toujours par la clé. Exemple:
-
+Les dictionnaires sont une structure de données qui contient des données sous la 
+forme d'une liste non ordonée de couple (clé, valeur).
 ```py
     def type_dict():
         # dictionnaire
@@ -415,9 +418,9 @@ Les dictionnaires représentent une structure de données enregistrées sous la 
         print(f'{d["1"] = }') # accès à la valeur de la clé "1"
 
 ```
-Les `dict` sont des variables **mutable**. Un dictionnaire n'est pas une séquence mais un tableau associatif.
+Les `dict` sont des variables **mutables**. Un dictionnaire n'est pas une séquence mais un tableau associatif.
 
-Les clès d'un dictionnaire sont hétéroclites en terme de type, chaque clé doit être d'un type **immutable**.
+Les clès d'un dictionnaire sont hétéroclites en terme de type, chaque clé doit être d'un type **immutable**. Les valeurs peuvent être également de types différents.
 
 ---
 <style scoped> {
@@ -538,7 +541,7 @@ Les ensembles sont des collections particulières qui ne contiennent que des obj
 + Sous-ensemble
 + Ensembles disjoints
 
-Les ensembles sont des objets **mutable**.
+Les ensembles sont des objets **mutables**.
 
 ---
 <style scoped> {
@@ -547,7 +550,7 @@ Les ensembles sont des objets **mutable**.
 </style>
 #### La gestion des ensembles
 
-Voici un exemple d'ensemble:
+Voici un exemple d'ensembles:
 
 ```py
         s1 = {10, 20, 40}
@@ -559,9 +562,9 @@ Voici un exemple d'ensemble:
         print(f'{s1 = }')
         s1.remove(80)
 ```
-+ `s1.add` pour ajouter un élément
-+ `s1.remove` pour supprimer un élément
-+ `80 in s1` ppur savoir si `80`est dans s1.
++ `s1.add` pour ajouter un élément.
++ `s1.remove` pour supprimer un élément.
++ `80 in s1` pour savoir si `80`est dans s1.
 
 Un ensemble est parcourable avec une instruction `for`. Il n'y pas d'accès direct à un élément de l'ensemble: `s1[0]` provoque une erreur.
 
@@ -604,10 +607,10 @@ Les tuples sont des objets qui se comportent comme des listes mais qui sont **im
 ```
 Les tuples sont des séquences. Ainsi tous les comportements génériques des listes et des chaines de caractères s'appliquent.
 
-Un tuple peut être clé d'un dictionnaire ou être insérer dans un ensemble à condition que tous ses éléments soient **immutables**. 
+Un tuple peut être la clé d'un dictionnaire ou être inséré dans un ensemble à condition que tous ses éléments soient **immutables**. 
 Par exemple:`t = (10, 20, ["et", "paf", "le"])` contient une liste et donc ne pourra pas être clé d'un dictionnaire.
 
-**Note**: Ici la liste peut être mofifiée via le tuple, en accèdant à son dernier élément comme ceci: `t[-1].append("chien")`. Ce qui donne pour cette liste un élément supplémentaire.
+**Note**: Ici la liste peut être modifiée via le tuple, en accèdant à son dernier élément comme ceci: `t[-1].append("chien")`. Ce qui donne pour cette liste un élément supplémentaire.
 
 
 ---
@@ -635,7 +638,7 @@ L'expression `("vingt",)` correpond à un tuple avec 1 élément.
 </style>
 ### Conversions (cast) entre objets avancés
 
-Ces conversions sont disponibles en Python et sont abondemment utilisées
+Ces conversions sont disponibles en Python et sont abondemment utilisées.
 
 + tuple, liste
    + tuple(list)            / list(tuple)
