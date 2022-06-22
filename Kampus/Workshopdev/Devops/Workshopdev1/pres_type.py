@@ -154,7 +154,7 @@ def type_avance():
         l1.sort(reverse=True)
         print(l1)
         return
-        
+
         print("append a list")
         l1 = [-5, -1.2e-19, 0, True, 2.89, 10]
         print(l1)
@@ -250,7 +250,6 @@ def type_avance():
         print(dd)
         d.update(dd) 
         print(d)
-        """
 
     def type_tuple():
         """
