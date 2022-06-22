@@ -610,7 +610,7 @@ Les tuples sont des séquences. Ainsi tous les comportements génériques des li
 Un tuple peut être clé d'un dictionnaire ou être inséré dans un ensemble à condition que tous ses éléments soient **immutables**. 
 Par exemple:`t = (10, 20, ["et", "paf", "le"])` contient une liste et donc ne pourra pas être clé d'un dictionnaire.
 
-**Note**: Ici la liste peut être mofifiée via le tuple, en accèdant à son dernier élément comme ceci: `t[-1].append("chien")`. Ce qui donne pour cette liste un élément supplémentaire.
+**Note**: Ici la liste peut être modifiée via le tuple, en accèdant à son dernier élément comme ceci: `t[-1].append("chien")`. Ce qui donne pour cette liste un élément supplémentaire.
 
 
 ---
