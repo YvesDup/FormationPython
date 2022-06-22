@@ -153,8 +153,8 @@ def type_avance():
         print(l1)
         l1.sort(reverse=True)
         print(l1)
-
-        """
+        return
+        
         print("append a list")
         l1 = [-5, -1.2e-19, 0, True, 2.89, 10]
         print(l1)
@@ -241,7 +241,7 @@ def type_avance():
         print("___"*20)
         for k, v in d.items():
             print(k, '->', v)
-        """
+
         del d[2.01]
         v = d.pop(4)
         print(v)
