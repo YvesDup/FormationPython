@@ -420,7 +420,7 @@ forme d'une liste non ordonée de couple (clé, valeur).
 ```
 Les `dict` sont des variables **mutables**. Un dictionnaire n'est pas une séquence mais un tableau associatif.
 
-Les clès d'un dictionnaire sont hétéroclites en terme de type, chaque clé doit être d'un type **immutable**.
+Les clès d'un dictionnaire sont hétéroclites en terme de type, chaque clé doit être d'un type **immutable**. Les valeurs peuvent être également de types différents.
 
 ---
 <style scoped> {
