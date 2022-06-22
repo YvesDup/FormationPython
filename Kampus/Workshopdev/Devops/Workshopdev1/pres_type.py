@@ -165,6 +165,8 @@ def type_avance():
         l1.append(l)
         print(l1)
         print("------", id(l1), id(l), id(l1[-1]))
+        return
+
         l.remove(None) # l1[-1].remove(None)
         l.remove(20.0) # l1[-1].remove(20.0)
         print(l1)
