@@ -326,7 +326,7 @@ Le parcours d'une liste peut se faire avec l'instruction `for`:
             print(l[i])
         print("---")
 ```
-Une instruction `while` peut aussi s'utiliser ici mais sera de la même efficacité que le dernière proposition ci-dessus.
+Une instruction `while` peut aussi s'utiliser ici mais sera de la même efficacité que la dernière proposition ci-dessus.
 
 ---
 <style scoped> {
