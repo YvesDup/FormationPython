@@ -34,6 +34,7 @@ def type_simple():
         print(f'{f2 = }')
         x = int(f)
         print(f'Conversion vers un entier: {x = }, {type(x) = }')
+        print(f'{round(f) = }')
 
     def type_cplx():
         print("complexe")
