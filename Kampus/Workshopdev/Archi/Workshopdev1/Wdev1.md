@@ -224,7 +224,7 @@ Le mécanisme du slicing se fait via une classe `slice` qui peut utilisée via u
 
 ---
 <style scoped> {
-  font-size: 29px;
+  font-size: 28px;
 }
 </style>
 
