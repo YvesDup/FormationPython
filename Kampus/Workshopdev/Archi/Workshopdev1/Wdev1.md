@@ -216,7 +216,7 @@ Comme pour les accès directs, des indices négatifs peuvent être utilisés dan
 
 + `s[-2:]`: les 2 derniers caractéres de `s`.
 + `s[::-1]`: la chaine `s` est inversée.
-+ `s[-2:0:1]`: une chaine vide.
++ `s[-2:0:1]`: une chaine vide, pourquoi ?
 
 Le mécanisme du slicing se fait via une classe `slice` qui peut utilisée via un objet à la place de la syntaxe `s[1:5:1]` comme ceci:
 + `s[slice(1, 5, 1)]` ou, 
@@ -231,7 +231,7 @@ Le mécanisme du slicing se fait via une classe `slice` qui peut utilisée via u
 #### Quelques méthodes sur les chaines
 
 * `s.count('a')` : compte les occurrences de 'a' sans s.
-* `s.split(sep)`: produit une liste de sous-chaîne.
+* `s.split(sep)`: découpe une chaine via un sépateur 'sep' en produisant une liste de sous-chaîne. Par exemple `'rr xx zz'.split(' ')` produit `['rr', 'xx', 'zz']`
 * `s.find('xyz')`: cherche la positon de la chaine 'xyz' dans s.
 * `s.upper()`, `s.lower()`, `s.title()`: modifie la casse de la chaine.
 * `s.startswith('ab')`: indique si la chaine démarre avec la chaine 'ab'. Il existe aussi la méthode `endswith`.
