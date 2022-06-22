@@ -274,8 +274,6 @@ Les listes correspondent à un tableau dont le contenu est hétéroclite en term
 ```
 Les `list` sont des variables **muables**. La liste étant une séquence, toutes les manipulations vues au niveau des `str` peuvent s'utiliser ici.
 
-Les clés des listes sont stockées sous forme de _hash code_.
-
 
 ---
 <style scoped> {
