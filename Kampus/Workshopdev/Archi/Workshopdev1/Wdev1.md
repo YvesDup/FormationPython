@@ -607,7 +607,7 @@ Les tuples sont des objets qui se comportent comme des listes mais qui sont **im
 ```
 Les tuples sont des séquences. Ainsi tous les comportements génériques des listes et des chaines de caractères s'appliquent.
 
-Un tuple peut être clé d'un dictionnaire ou être inséré dans un ensemble à condition que tous ses éléments soient **immutables**. 
+Un tuple peut être la clé d'un dictionnaire ou être inséré dans un ensemble à condition que tous ses éléments soient **immutables**. 
 Par exemple:`t = (10, 20, ["et", "paf", "le"])` contient une liste et donc ne pourra pas être clé d'un dictionnaire.
 
 **Note**: Ici la liste peut être modifiée via le tuple, en accèdant à son dernier élément comme ceci: `t[-1].append("chien")`. Ce qui donne pour cette liste un élément supplémentaire.
@@ -638,7 +638,7 @@ L'expression `("vingt",)` correpond à un tuple avec 1 élément.
 </style>
 ### Conversions (cast) entre objets avancés
 
-Ces conversions sont disponibles en Python et sont abondemment utilisées
+Ces conversions sont disponibles en Python et sont abondemment utilisées.
 
 + tuple, liste
    + tuple(list)            / list(tuple)
