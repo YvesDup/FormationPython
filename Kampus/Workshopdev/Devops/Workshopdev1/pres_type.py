@@ -13,12 +13,12 @@ def type_simple():
         b = a
         print(f'{b = }')
         print(f'{id(a) = }, {id(b) = }')
-        return
 
         print('je modifie b'.center(60, '-'))
         b += 10
         print(f'{a = }, {b = }')
         print(f'{id(a) = }, {id(b) = }')
+        return
         
     def type_bool():
         print("booléen")
