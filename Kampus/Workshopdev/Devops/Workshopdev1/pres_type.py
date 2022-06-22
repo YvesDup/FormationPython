@@ -244,6 +244,7 @@ def type_avance():
         print("___"*20)
         for k, v in d.items():
             print(k, '->', v)
+        return 
 
         del d[2.01]
         v = d.pop(4)
@@ -258,8 +259,8 @@ def type_avance():
         """
         """
 
-    type_liste()
-    # type_dict()
+    # type_liste()
+    type_dict()
     # type_set()
     # type_tuple()
 
