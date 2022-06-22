@@ -169,7 +169,6 @@ def type_avance():
         l.remove(None) # l1[-1].remove(None)
         l.remove(20.0) # l1[-1].remove(20.0)
         print(l1)
-        return
 
         # copy
         print("copy")
