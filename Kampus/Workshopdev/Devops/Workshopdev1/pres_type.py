@@ -128,8 +128,7 @@ def type_avance():
         print(f'{l = }')
         l.extend('ABC')
         print(f'{l = }')
-        return 
-        """
+
         print("parcours de la liste")
         for item in l:
             print(item)
@@ -140,6 +139,7 @@ def type_avance():
             if isinstance(item, str):
                 print(item)
         print("---")
+
         print("possible mais moins efficace")
         for i in range(len(l)):
             print(l[i])
