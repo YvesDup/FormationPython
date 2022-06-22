@@ -178,7 +178,7 @@ Le `slicing` est un mécanisme qui permet d'extraire des sous-séquences d'une s
 + stop: qui indique la position de fin, exclue,
 + step: qui indique dans cet interval la fréquence des caractères conservés
 
-Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: `start:stop:step`. Par exemple la sous-chaine suivante va prendre à partir du 2° caractére, jusqu'a 5° inclus, 1 caractère sur 2.
+Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: `start:stop:step`. Par exemple la sous-chaine suivante sera produite à partir de 2° caractére, jusqu'a 5° inclus, 1 caractère sur 2 de la chaine `s`.
 ```py
     s = 'rodondindron'
     print(f'{s = }, {s[1:5:2] = }') # -> 'oo'
@@ -192,7 +192,11 @@ Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: 
 
 **Slicing suite (1/2)**
 
-Quand une des valeurs de l'intervalle est omise, la valeur retenue est alors `None`. La valeur par défaut pour le pas est `1`.
+Quand une des valeurs de l'intervalle est omise:
++ Si c'est `start` qui est omis, alors le début de chaine est la référence. 
++ Si c'est `stop` alors la fin de chaine est la référence. 
+
+La valeur par défaut pour le pas est `1`.
 
 Quelques exemples de slicing:
 
@@ -214,9 +218,9 @@ Comme pour les accès directs, des indices négatifs peuvent être utilisés dan
 + `s[::-1]`: la chaine `s` est inversée.
 + `s[-2:0:1]`: une chaine vide.
 
-Le mécanisme du slicing se fait via une classe `slice` qui peut utilisée via une instance à la place de la syntaxe `s[1:5:1]` comme ceci:
-+ `s[slice(1, 5, 1)]`
-+ `sl = slice(1, 5, 1); s[sl]`
+Le mécanisme du slicing se fait via une classe `slice` qui peut utilisée via un objet à la place de la syntaxe `s[1:5:1]` comme ceci:
++ `s[slice(1, 5, 1)]` ou, 
++ `sl = slice(1, 5, 1); s[sl]`.
 
 ---
 <style scoped> {
