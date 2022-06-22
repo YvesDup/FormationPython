@@ -102,7 +102,7 @@ def type_simple():
     # type_none()
     type_string()
 
-type_simple()
+# type_simple()
 
 
 
@@ -110,7 +110,6 @@ def type_avance():
     """
     """
     def type_liste():
-        """
         # liste
         print('liste')
         l = []
@@ -129,7 +128,8 @@ def type_avance():
         print(f'{l = }')
         l.extend('ABC')
         print(f'{l = }')
-
+        return 
+        """
         print("parcours de la liste")
         for item in l:
             print(item)
@@ -256,9 +256,9 @@ def type_avance():
         """
         """
 
-    # type_liste()
+    type_liste()
     # type_dict()
-    type_set()
-#    type_tuple()
+    # type_set()
+    # type_tuple()
 
-#type_avance()
+type_avance()
