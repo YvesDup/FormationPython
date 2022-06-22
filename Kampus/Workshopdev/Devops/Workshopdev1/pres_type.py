@@ -146,13 +146,13 @@ def type_avance():
         print("---")
 
         print("Inverser une liste")
-        linv = reversed(l)
+        linv = list(reversed(l))
         print(l[::-1], linv)
 
         print("Trier une liste")
         l1 = [10, 0, -5, True, 2.89, -1.2e-19]
         print(l1)
-        l1.sort(reverse=True)
+        l1.sort()
         print(l1)
         return
 
