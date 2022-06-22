@@ -93,7 +93,7 @@ def type_bool():
     bof = False
     print(f'{bot = }, {bof = }')
 ```
-les `bool` sont des variables **immuables**. Les 2 valeurs possibles sont des 'singletons', cad des valeurs uniques dns l'interpréteur Python.
+les `bool` sont des variables **immuables**. Les 2 valeurs possibles sont des 'singletons', cad des valeurs uniques dans l'interpréteur Python.
 
 ---
 ### Les nombres à virgule
