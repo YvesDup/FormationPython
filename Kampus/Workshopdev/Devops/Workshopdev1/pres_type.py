@@ -13,7 +13,8 @@ def type_simple():
         b = a
         print(f'{b = }')
         print(f'{id(a) = }, {id(b) = }')
-        
+        return
+
         print('je modifie b'.center(60, '-'))
         b += 10
         print(f'{a = }, {b = }')
@@ -89,14 +90,14 @@ def type_simple():
         sl = slice(2, 7, 2)
         print(f"10bis - {s[sl] = }")
 
-    # type_int()
+    type_int()
     # type_bool()
-    type_float()
+    # type_float()
     # type_cplx()
     # type_none()
     # type_string()
 
-# type_simple()
+type_simple()
 
 
 
@@ -255,4 +256,4 @@ def type_avance():
     type_set()
 #    type_tuple()
 
-type_avance()
+#type_avance()
