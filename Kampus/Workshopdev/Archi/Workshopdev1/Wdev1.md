@@ -231,7 +231,7 @@ Le mécanisme du slicing se fait via une classe `slice` qui peut utilisée via u
 #### Quelques méthodes sur les chaines
 
 * `s.count('a')` : compte les occurrences de 'a' sans s.
-* `s.split(sep)`: découpe une chaine via un sépateur 'sep' en produisant une liste de sous-chaîne. Par exemple `'rr xx zz'.split(' ')` produit `['rr', 'xx', 'zz']`
+* `s.split(sep)`: découpe une chaine via un sépateur 'sep' en produisant une liste de sous-chaînes. Par exemple `'rr xx zz'.split(' ')` produit `['rr', 'xx', 'zz']`
 * `s.find('xyz')`: cherche la positon de la chaine 'xyz' dans s.
 * `s.upper()`, `s.lower()`, `s.title()`: modifie la casse de la chaine.
 * `s.startswith('ab')`: indique si la chaine démarre avec la chaine 'ab'. Il existe aussi la méthode `endswith`.
