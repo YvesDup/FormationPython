@@ -56,9 +56,9 @@ def type_simple():
         print(f'{s3 = }')
         s4 = s1
         print(f'{s1 = }, {s4 = }')
-        s = 'René' * 10_000_000_000
+        s = 'René' * 10_000
         print(s)
-        return 
+
         print('h' in s1)
         print(s1 == s4)
         print(s1 is s4) # id(s1) == id(4)
@@ -66,6 +66,7 @@ def type_simple():
         print(f'{s1}, {s4}')
         print(f'{s4[0]=}', f'{s4[len(s4)-1] = }', f'{s4[-1] = }')
         print(s4[-len(s4)])
+        return
 
         print("slicing")
         start = 0
