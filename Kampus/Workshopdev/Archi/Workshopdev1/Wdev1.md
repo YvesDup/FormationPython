@@ -419,7 +419,7 @@ Les dictionnaires sont une structure de données qui contient des données sous 
 ```
 Les `dict` sont des variables **mutables**. Un dictionnaire n'est pas une séquence mais un tableau associatif.
 
-Les clès d'un dictionnaire sont hétéroclites en terme de type, chaque clé doit être d'un type **immutable**. Les valeurs peuvent être également de types différents. Les clès sont stockées sous forme de __hash code__.
+Les clès d'un dictionnaire sont hétéroclites en terme de type, chaque clé doit être d'un type **immutable**. Les valeurs peuvent être également de types différents. Les clès sont stockées sous forme de *_hash code_*.
 
 ---
 <style scoped> {
