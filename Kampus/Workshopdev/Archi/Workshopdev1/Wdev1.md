@@ -653,7 +653,7 @@ Ces conversions sont disponibles en Python et sont abondamment utilisées.
 }
 </style>
 
-** La suite des conversions**
+**La suite des conversions**
 
 + ensemble - Attention les doublons sont éléminés.
    + set(list)
