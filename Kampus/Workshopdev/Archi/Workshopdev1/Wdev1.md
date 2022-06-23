@@ -190,7 +190,7 @@ Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: 
 }
 </style>
 
-** le slicing suite (1/2)**
+**Le slicing suite (1/2)**
 
 Quand une des valeurs de l'intervalle est omise:
 + Si c'est `start` qui est omis, alors le début de chaine est la référence. 
@@ -210,7 +210,7 @@ Quelques exemples de slicing:
 }
 </style>
 
-** Le slicing suite (2/2)**
+**Le slicing suite (2/2)**
 
 Comme pour les accès directs, des indices négatifs peuvent être utilisés dans les valeurs du tryptique
 
