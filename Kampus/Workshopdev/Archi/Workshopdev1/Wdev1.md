@@ -635,11 +635,11 @@ L'expression `("vingt",)` correpond à un tuple avec 1 élément.
   font-size: 29px;
 }
 </style>
-### Conversions (cast) entre objets avancés
+### Les conversions (cast) entre objets avancés
 
 Ces conversions sont disponibles en Python et sont abondamment utilisées.
 
-+ tuple, liste
++ tuple ou liste.
    + tuple(list)            / list(tuple)
    + tuple(set)             / list(set)
    + tuple(dict)            / list(dict)
@@ -653,15 +653,15 @@ Ces conversions sont disponibles en Python et sont abondamment utilisées.
 }
 </style>
 
-**La suite des conversions**
+** La suite des conversions**
 
-+ ensemble - Attention les doublons sont éléminés
++ ensemble - Attention les doublons sont éléminés.
    + set(list)
    + set(tuple)
    + set(dict.values())
    + set(dict.items())
 
 
-+ dictionnaire - les éléments doivent contenir des couples (clé, valeur)
++ dictionnaire - les éléments doivent contenir des couples (clé, valeur).
     + dict(tuple)
     + dict(list)
