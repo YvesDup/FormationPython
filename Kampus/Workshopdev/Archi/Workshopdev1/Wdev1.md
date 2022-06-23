@@ -61,7 +61,7 @@ def type_int():
     ...
 ```
 Ici au moment de l'affectation `b = a`, a et b sont 2 **références** qui pointent vers la même zone mémoire.
-Les 'id' respectifs de chaque variable (ou objet) sont identiques
+Les 'id' respectifs de chaque variable (ou objet) sont identiques.
 
 ---
 <style scoped> {
@@ -124,7 +124,7 @@ Les `float` sont des variables **immuables**.
 Les `complex` sont des variables **immuables**.
 
 ---
-### la valeur nulle
+### La valeur nulle
 ```py
     def type_none():
         print("valeur nulle")
@@ -167,7 +167,7 @@ Les `str` sont des séquences. C'est à dire qu'il est possible de:
 + extraire des sous-chaines avec le mécanisme du `slicing`.
 
 ---
-#### le slicing
+#### Le slicing
 <style scoped> {
   font-size: 29px;
 }
@@ -190,7 +190,7 @@ Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: 
 }
 </style>
 
-**Slicing suite (1/2)**
+** le slicing suite (1/2)**
 
 Quand une des valeurs de l'intervalle est omise:
 + Si c'est `start` qui est omis, alors le début de chaine est la référence. 
@@ -210,7 +210,7 @@ Quelques exemples de slicing:
 }
 </style>
 
-**Slicing suite (2/2)**
+** Le slicing suite (2/2)**
 
 Comme pour les accès directs, des indices négatifs peuvent être utilisés dans les valeurs du tryptique
 
@@ -549,7 +549,7 @@ Les ensembles sont des objets **mutables**.
 </style>
 #### La gestion des ensembles
 
-Voici un exemple d'ensembles:
+Voici un exemple d'ensemble:
 
 ```py
         s1 = {10, 20, 40}
