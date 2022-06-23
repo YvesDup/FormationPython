@@ -563,7 +563,7 @@ Voici un exemple d'ensembles:
 ```
 + `s1.add` pour ajouter un élément.
 + `s1.remove` pour supprimer un élément.
-+ `80 in s1` pour savoir si `80`est dans s1.
++ `80 in s1` pour savoir si `80` est dans s1.
 
 Un ensemble est parcourable avec une instruction `for`. Il n'y pas d'accès direct à un élément de l'ensemble: `s1[0]` provoque une erreur.
 
@@ -637,7 +637,7 @@ L'expression `("vingt",)` correpond à un tuple avec 1 élément.
 </style>
 ### Conversions (cast) entre objets avancés
 
-Ces conversions sont disponibles en Python et sont abondemment utilisées.
+Ces conversions sont disponibles en Python et sont abondamment utilisées.
 
 + tuple, liste
    + tuple(list)            / list(tuple)
