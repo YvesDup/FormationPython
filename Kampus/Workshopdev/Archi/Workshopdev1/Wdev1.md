@@ -178,7 +178,7 @@ Le `slicing` est un mécanisme qui permet d'extraire des sous-séquences d'une s
 + stop: qui indique la position de fin, exclue,
 + step: qui indique dans cet interval la fréquence des caractères conservés
 
-Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: `start:stop:step`. Par exemple la sous-chaine suivante sera produite à partir de 2° caractére, jusqu'a 5° inclus, 1 caractère sur 2 de la chaine `s`.
+Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: `start:stop:step`. Par exemple la sous-chaine suivante sera produite à partir de 2° caractère, jusqu'a 5° inclus, en ne prenant que 1 caractère sur 2 de la chaine `s`.
 ```py
     s = 'rodondindron'
     print(f'{s = }, {s[1:5:2] = }') # -> 'oo'
