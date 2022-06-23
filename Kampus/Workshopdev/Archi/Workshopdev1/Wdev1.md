@@ -401,13 +401,12 @@ Dans la mesure où une liste peut contenir d'autres objets **mutables**, la copi
 
 ---
 <style scoped> {
-  font-size: 26px;
+  font-size: 25px;
 }
 </style>
 ### Les dictionnaires
 
-Les dictionnaires sont une structure de données qui contient des données sous la 
-forme d'une liste non ordonée de couple (clé, valeur).
+Les dictionnaires sont une structure de données qui contient des données sous la forme d'une liste non ordonnée de couple (clé, valeur).
 ```py
     def type_dict():
         # dictionnaire
@@ -420,7 +419,7 @@ forme d'une liste non ordonée de couple (clé, valeur).
 ```
 Les `dict` sont des variables **mutables**. Un dictionnaire n'est pas une séquence mais un tableau associatif.
 
-Les clès d'un dictionnaire sont hétéroclites en terme de type, chaque clé doit être d'un type **immutable**. Les valeurs peuvent être également de types différents.
+Les clès d'un dictionnaire sont hétéroclites en terme de type, chaque clé doit être d'un type **immutable**. Les valeurs peuvent être également de types différents. Les clès sont stockées sous forme de __hash code__.
 
 ---
 <style scoped> {
