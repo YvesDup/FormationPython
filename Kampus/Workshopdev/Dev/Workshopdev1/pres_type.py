@@ -13,12 +13,13 @@ def type_simple():
         b = a
         print(f'{b = }')
         print(f'{id(a) = }, {id(b) = }')
-        
+
         print('je modifie b'.center(60, '-'))
         b += 10
         print(f'{a = }, {b = }')
         print(f'{id(a) = }, {id(b) = }')
-        
+        return
+
     def type_bool():
         print("booléen")
         bot = True
@@ -33,6 +34,7 @@ def type_simple():
         print(f'{f2 = }')
         x = int(f)
         print(f'Conversion vers un entier: {x = }, {type(x) = }')
+        print(f'{round(f) = }')
 
     def type_cplx():
         print("complexe")
@@ -54,6 +56,9 @@ def type_simple():
         print(f'{s3 = }')
         s4 = s1
         print(f'{s1 = }, {s4 = }')
+        s = 'René' * 10_000
+        print(s)
+
         print('h' in s1)
         print(s1 == s4)
         print(s1 is s4) # id(s1) == id(4)
@@ -61,6 +66,7 @@ def type_simple():
         print(f'{s1}, {s4}')
         print(f'{s4[0]=}', f'{s4[len(s4)-1] = }', f'{s4[-1] = }')
         print(s4[-len(s4)])
+        return
 
         print("slicing")
         start = 0
@@ -91,10 +97,10 @@ def type_simple():
 
     # type_int()
     # type_bool()
-    type_float()
+    # type_float()
     # type_cplx()
     # type_none()
-    # type_string()
+    type_string()
 
 # type_simple()
 
@@ -134,21 +140,23 @@ def type_avance():
             if isinstance(item, str):
                 print(item)
         print("---")
+
         print("possible mais moins efficace")
         for i in range(len(l)):
             print(l[i])
         print("---")
 
         print("Inverser une liste")
-        print(l[::-1])
+        linv = list(reversed(l))
+        print(l[::-1], linv)
 
         print("Trier une liste")
         l1 = [10, 0, -5, True, 2.89, -1.2e-19]
         print(l1)
-        l1.sort(reverse=True)
+        l1.sort()
         print(l1)
-
         """
+
         print("append a list")
         l1 = [-5, -1.2e-19, 0, True, 2.89, 10]
         print(l1)
@@ -157,6 +165,7 @@ def type_avance():
         l1.append(l)
         print(l1)
         print("------", id(l1), id(l), id(l1[-1]))
+
         l.remove(None) # l1[-1].remove(None)
         l.remove(20.0) # l1[-1].remove(20.0)
         print(l1)
@@ -235,7 +244,7 @@ def type_avance():
         print("___"*20)
         for k, v in d.items():
             print(k, '->', v)
-        """
+
         del d[2.01]
         v = d.pop(4)
         print(v)
@@ -244,15 +253,14 @@ def type_avance():
         print(dd)
         d.update(dd) 
         print(d)
-        """
 
     def type_tuple():
         """
         """
 
     # type_liste()
-    # type_dict()
-    type_set()
-#    type_tuple()
+    type_dict()
+    # type_set()
+    # type_tuple()
 
 type_avance()

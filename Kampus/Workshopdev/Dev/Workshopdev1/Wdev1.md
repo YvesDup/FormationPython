@@ -61,7 +61,7 @@ def type_int():
     ...
 ```
 Ici au moment de l'affectation `b = a`, a et b sont 2 **références** qui pointent vers la même zone mémoire.
-Les 'id' respectifs de chaque variable (ou objet) sont identiques
+Les 'id' respectifs de chaque variable (ou objet) sont identiques.
 
 ---
 <style scoped> {
@@ -78,8 +78,8 @@ Je modifie `b`
     print(f'{id(a) = }, {id(b) =}')
 ```
 
-Les 'id' de chaque objets sont différents. il s'agit donc de 2 zones mémoires différentes. 
-Ce comportement est lié à une caractéristique associée au type (ici les `int`) qui se nomme: la **mutabilité** et sa négation, l' **immutabilité**.
+Les 'id' de chaque objet sont différents. il s'agit donc de 2 zones mémoires différentes.
+Ce comportement est lié à une caractéristique/propriété associée au type (ici les `int`) qui se nomme: la **mutabilité** et sa négation, l' **immutabilité**.
 
 Les `int` sont des variables **immutables** (ou **immuables**), cad que le contenu est constant. Toute modification du contenu entraine la mise en place d'une nouvelle zone mémoire.
 
@@ -124,7 +124,7 @@ Les `float` sont des variables **immuables**.
 Les `complex` sont des variables **immuables**.
 
 ---
-### la valeur nulle
+### La valeur nulle
 ```py
     def type_none():
         print("valeur nulle")
@@ -167,7 +167,7 @@ Les `str` sont des séquences. C'est à dire qu'il est possible de:
 + extraire des sous-chaines avec le mécanisme du `slicing`.
 
 ---
-#### le slicing
+#### Le slicing
 <style scoped> {
   font-size: 29px;
 }
@@ -178,7 +178,7 @@ Le `slicing` est un mécanisme qui permet d'extraire des sous-séquences d'une s
 + stop: qui indique la position de fin, exclue,
 + step: qui indique dans cet interval la fréquence des caractères conservés
 
-Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: `start:stop:step`. Par exemple la sous-chaine suivante sera produite à partir de 2° caractére, jusqu'a 5° inclus, 1 caractère sur 2 de la chaine `s`.
+Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: `start:stop:step`. Par exemple la sous-chaine suivante sera produite à partir de 2° caractère, jusqu'a 5° inclus, en ne prenant que 1 caractère sur 2 de la chaine `s`.
 ```py
     s = 'rodondindron'
     print(f'{s = }, {s[1:5:2] = }') # -> 'oo'
@@ -190,7 +190,7 @@ Ces 3 valeurs, dans cet ordre sont associées avec l'opérateur `:` comme suit: 
 }
 </style>
 
-**Slicing suite (1/2)**
+**Le slicing suite (1/2)**
 
 Quand une des valeurs de l'intervalle est omise:
 + Si c'est `start` qui est omis, alors le début de chaine est la référence. 
@@ -210,7 +210,7 @@ Quelques exemples de slicing:
 }
 </style>
 
-**Slicing suite (2/2)**
+**Le slicing suite (2/2)**
 
 Comme pour les accès directs, des indices négatifs peuvent être utilisés dans les valeurs du tryptique
 
@@ -401,13 +401,12 @@ Dans la mesure où une liste peut contenir d'autres objets **mutables**, la copi
 
 ---
 <style scoped> {
-  font-size: 26px;
+  font-size: 25px;
 }
 </style>
 ### Les dictionnaires
 
-Les dictionnaires sont une structure de données qui contient des données sous la 
-forme d'une liste non ordonée de couple (clé, valeur).
+Les dictionnaires sont une structure de données qui contient des données sous la forme d'une liste non ordonnée de couple (clé, valeur).
 ```py
     def type_dict():
         # dictionnaire
@@ -420,7 +419,7 @@ forme d'une liste non ordonée de couple (clé, valeur).
 ```
 Les `dict` sont des variables **mutables**. Un dictionnaire n'est pas une séquence mais un tableau associatif.
 
-Les clès d'un dictionnaire sont hétéroclites en terme de type, chaque clé doit être d'un type **immutable**. Les valeurs peuvent être également de types différents.
+Les clès d'un dictionnaire sont hétéroclites en terme de type, chaque clé doit être d'un type **immutable**. Les valeurs peuvent être également de types différents. Les clès sont stockées sous forme de _hash code_.
 
 ---
 <style scoped> {
@@ -550,7 +549,7 @@ Les ensembles sont des objets **mutables**.
 </style>
 #### La gestion des ensembles
 
-Voici un exemple d'ensembles:
+Voici un exemple d'ensemble:
 
 ```py
         s1 = {10, 20, 40}
@@ -564,7 +563,7 @@ Voici un exemple d'ensembles:
 ```
 + `s1.add` pour ajouter un élément.
 + `s1.remove` pour supprimer un élément.
-+ `80 in s1` pour savoir si `80`est dans s1.
++ `80 in s1` pour savoir si `80` est dans s1.
 
 Un ensemble est parcourable avec une instruction `for`. Il n'y pas d'accès direct à un élément de l'ensemble: `s1[0]` provoque une erreur.
 
@@ -636,11 +635,11 @@ L'expression `("vingt",)` correpond à un tuple avec 1 élément.
   font-size: 29px;
 }
 </style>
-### Conversions (cast) entre objets avancés
+### Les conversions (cast) entre objets avancés
 
-Ces conversions sont disponibles en Python et sont abondemment utilisées.
+Ces conversions sont disponibles en Python et sont abondamment utilisées.
 
-+ tuple, liste
++ tuple ou liste.
    + tuple(list)            / list(tuple)
    + tuple(set)             / list(set)
    + tuple(dict)            / list(dict)
@@ -656,13 +655,13 @@ Ces conversions sont disponibles en Python et sont abondemment utilisées.
 
 **La suite des conversions**
 
-+ ensemble - Attention les doublons sont éléminés
++ ensemble - Attention les doublons sont éléminés.
    + set(list)
    + set(tuple)
    + set(dict.values())
    + set(dict.items())
 
 
-+ dictionnaire - les éléments doivent contenir des couples (clé, valeur)
++ dictionnaire - les éléments doivent contenir des couples (clé, valeur).
     + dict(tuple)
     + dict(list)
