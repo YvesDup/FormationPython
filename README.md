@@ -2,5 +2,5 @@
 
 # Synchro ...
 
-+ run `python -m pip install autogitpush`
-+ run `autogitsuph --sleep 15` from the diretory to be synchronized
++ run `python -m pip install gitautopush`
++ run `gitautopush --sleep 15` from the diretory to be synchronized
