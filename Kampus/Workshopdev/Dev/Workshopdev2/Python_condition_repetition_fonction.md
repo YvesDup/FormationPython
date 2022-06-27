@@ -20,8 +20,10 @@ _
 
 Voici les thèmes abordés:
 
-* les branchements conditionnels et boucles.
-* les fonctions.
+* Les branchements conditionnels et boucles.
+* Les fonctions.
+* La documentation
+* Les notations en compréhension.
 
 ---
 <style scoped> {
@@ -415,5 +417,21 @@ except Exception as e:
 
 En python, toute fonction peut retourner plusieurs valeurs car elle renvoie un tuple
 Une fonction qui ne fait aucun appel à `return`, elle renvoie `None`
+
+
+---
+<style scoped> {
+  font-size: 27px;
+}
+</style>
+## La documentation
+
+
+---
+<style scoped> {
+  font-size: 27px;
+}
+</style>
+## Les notations en compréhension
 
 
