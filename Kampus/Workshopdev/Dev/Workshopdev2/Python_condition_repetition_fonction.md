@@ -345,7 +345,7 @@ def sample_kwargs(val1, val2, **kwargs):
         for k, v in kwargs.items():
             print(k, '->', v)
 
-    if 'debug' in kwargs:
+    if 'debug' in kwargs and kwargs['debug'] is True:
         print(val1, val2, val1+val2)
 
     return val1 + val2
