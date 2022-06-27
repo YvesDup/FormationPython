@@ -227,7 +227,7 @@ def test_calcul_suite():
     z = calcul(c=10, a=5, b=8)
     print(z)
 ```
-Dans ce dernier exemple, les arguments peuvent être passés avec le nom des paramètres formels, cad ceux de la définition de la fonction. Dans ce cas, le nom doit être indiqué pour tous. 
+Dans ce dernier exemple, les arguments peuvent être passés avec le nom des paramètres formels, cad ceux de la définition de la fonction. Dans ce cas, le nom doit être indiqué pour tous.
 
 ---
 <style scoped> {
