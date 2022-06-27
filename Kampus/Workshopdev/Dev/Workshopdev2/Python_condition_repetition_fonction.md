@@ -99,7 +99,7 @@ Chaque objet parcourable possède une méthode interne `__iter__` qui renvoie un
 Ce mécanisme fonctionne en 2 étapes:
 
 1. récupérer un itérateur sur l'objet en appelant la fonction *interne (native)* nommé `iter(<object>)`. 
-1. Ensuite on peut récupérer les éléments un par un via l'itérateur en appelant la fonction interne `next(<iterateur>)`. Quand il n'y a plus d'éléments, une erreur apparaît.
+1. Ensuite on peut récupérer les éléments un par un via l'itérateur en appelant la fonction interne `next(<iterateur>)`. Quand il n'y a plus d'élément, une erreur apparaît. Un itérateur est utilisable une et une seule fois.
 
 ```py
 l = [20, "Hello", True]
@@ -138,12 +138,10 @@ print(next(it)) # -> renvoie une erreur `StopIteration`
 </style>
 La clause `else` des boucles
 
-| `for` | `else` |
-|--------| ---- |
-| ![w:220](img/python-for-else.png) | ![w:220](img/python-while-else.png) |
-|
-
-**Régle:** si la boucle est complètement exécutée, alors le bloc du `else` est exécutée.  Si un `break` est rencontré, pas d'exécution de ce bloc `else`.
+| `for` | `while` | Commentaires |
+|--------| ---- | --- |
+| ![w:260](img/python-for-else.png) | ![w:220](img/python-while-else.png)
+| Si la boucle est complètement  |
 
 ---
 <style scoped> {
