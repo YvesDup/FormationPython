@@ -524,7 +524,7 @@ Le corps de la notation en compréhension peut contenir comme instruction:
 + une ou plusieurs boucles (Attention à la lisibité).
 + un test avec plusieurs conditions liées par des opérateurs.
 
-Les valeurs produites peuvent être de n'importe quel type, valeur simple ou élaborée
+Les valeurs produites peuvent être de n'importe quel type, valeur simple ou élaborée comme des tuples, listes ou autres objets.
 
 ```python
 # liste de tuple avec restriction 
@@ -533,6 +533,7 @@ l = [(item, item+2) for item in range(0, 100, 3) if item % 7 == 2]
 # Liste de tuple avec boucle imbriquée ou iterools.product
 l1 = [(a, b) for a in range(3) for b in 'ABC']
 l1i = [(a, b, c) for a, b, c in itertools.product(range(3), 'ABC', (True, False, None))]
+
 ```
 
 ---
@@ -540,6 +541,8 @@ l1i = [(a, b, c) for a, b, c in itertools.product(range(3), 'ABC', (True, False,
   font-size: 28px;
 }
 </style>
+
+Construction de dictionnaire
 
 ```py
 # dictionnaire simple 
@@ -551,7 +554,14 @@ d_inv = {v:k for k, v in d.items()}
 # dictionnaire à partir d'un dictionnaire avec une restriction
 d2 = {k:d[k] for k in d if k % 2 == 0}
 
+````
+
+Construction d'ensemble.
+
+```py
+
 # set à partir d'une série de chiffre - 7 valeurs prduites mais seules 4 conservées au niveau du set
 s = {x**2 for x in range(-3, 4, 1)}
+
 ```
 
