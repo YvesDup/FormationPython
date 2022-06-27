@@ -156,7 +156,7 @@ les fonctions constituent un enchainement d'instructions avec des données en en
 + données en entrée sont des paramètres ou arguments.
 + données en sortie sont les valeurs retournées.
 
-Une fonction doit être définie pour ensuite être exécutée. 
+Une fonction doit être définie pour ensuite être exécutée.
 
 ```py
 # definition de la fonction avec le mot-clé `def`
@@ -166,7 +166,7 @@ def exemple(a, b, c):
     a = (a+b)/c
     return a, a-1 
 
-# exécution de la fonction avec passage de paramètres et récupération du resultat
+# exécution de la fonction avec passage de paramètres et récupération du resultat dans la variable `ret`.
 ret = exemple(10, 20, 5)
 ```
 ---
@@ -175,7 +175,7 @@ ret = exemple(10, 20, 5)
 Les arguments permettent un lien entre la fonction appelante et la fonction appelée.
 
 * Les arguments indiqués dans la definition de la fonction sont appelés les **paramètres formels**. 
-* Les arguments passés à la fonction appelée sont appelées paramètres effectifs. Ceux sont souvent des variables de la fonction appelante (ou des parmètres formels)
+* Les arguments passés à la fonction appelée sont appelées paramètres effectifs. Ceux sont souvent des variables de la fonction appelante, ou des parmètres formels de la fonction en courante.
 
 ---
 <style scoped> {
@@ -184,7 +184,7 @@ Les arguments permettent un lien entre la fonction appelante et la fonction appe
 </style>
 ### Arguments positionnels
 
-cela correspond aux arguments obligatoires de la fonction
+Cela correspond aux arguments obligatoires de la fonction
 
 ```py
 def calcul(a, b ,c):
