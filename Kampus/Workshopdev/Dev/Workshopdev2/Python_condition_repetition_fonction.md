@@ -526,6 +526,8 @@ Le corps de la notation en compréhension peut contenir comme instruction:
 
 Les valeurs produites peuvent être de n'importe quel type, valeur simple ou élaborée comme des tuples, listes ou autres objets.
 
+Contruction de liste.
+
 ```python
 # liste de tuple avec restriction 
 l = [(item, item+2) for item in range(0, 100, 3) if item % 7 == 2]
@@ -542,7 +544,7 @@ l1i = [(a, b, c) for a, b, c in itertools.product(range(3), 'ABC', (True, False,
 }
 </style>
 
-Construction de dictionnaire
+Construction de dictionnaire.
 
 ```py
 # dictionnaire simple 
