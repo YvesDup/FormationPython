@@ -47,7 +47,7 @@ print(f'{keyword.kwlist = }')
 Attention, la liste des mots-clés n'est pas constituée uniquement par des instructions.
 
 ---
-### Les branchements conditionnelles
+### Les branchements conditionnels
 <style scoped> {
   font-size: 25px;
 }
