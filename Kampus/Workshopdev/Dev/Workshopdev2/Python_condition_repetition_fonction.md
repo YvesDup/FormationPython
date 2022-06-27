@@ -554,7 +554,7 @@ d_inv = {v:k for k, v in d.items()}
 # dictionnaire à partir d'un dictionnaire avec une restriction
 d2 = {k:d[k] for k in d if k % 2 == 0}
 
-````
+```
 
 Construction d'ensemble.
 
