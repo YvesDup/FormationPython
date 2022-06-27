@@ -33,24 +33,24 @@ Voici les thèmes abordés:
 ---
 ### Les structures conditionnelles
 <style scoped> {
-  font-size: 27px;
+  font-size: 26px;
 }
 </style>
 ```py
-if <condition>:
+if a > 10 :
   pass
-elif <autre_condition1>:
-  pass
-elif <autre_condition2>:
+elif a >= 5 and 1 == True:
+  ...
+elif a // 3 == 0 or a  :
   pass
 else:
-  pass
+  print("else ....")
 ```
 **A noter:** 
-* il n'y a pas d'instruction '__switch__' en python. 
+* il n'y a pas d'instruction '__switch__' en Python. Cependant depuis la version `3.10` une instruction `match <exp>: case` a été mise en place.
 * Il existe un opérateur ternaire: `a = x*10 if x > 10 else -1`.
 * les opérateurs logiques dans les conditions sont: `and`, `or` et `not`.
-* les opérateurs de comparaison sont standards, le `in` a été rajouté.
+* les opérateurs de comparaison sont standards, le `in` et le `is` ont été rajoutés.
 * la notation suivante est possible et acceptée: `0 <= x <= 10`.
 
 ---
