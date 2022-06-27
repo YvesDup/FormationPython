@@ -28,6 +28,26 @@ Voici les thèmes abordés:
   font-size: 26px;
 }
 </style>
+## Les branchements conditionnels et boucles
+
+---
+<style scoped> {
+  font-size: 26px;
+}
+</style>
+### Les branchements condiionnels
+
+---
+<style scoped> {
+  font-size: 26px;
+}
+</style>
+### Les boucles
+---
+<style scoped> {
+  font-size: 26px;
+}
+</style>
 ## Les fonctions
 
 les fonctions constituent un enchainement d'instructions avec des données en entrée et produisent un résultat qui peut être réutilisé.
