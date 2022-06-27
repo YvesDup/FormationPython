@@ -124,23 +124,10 @@ La clause `else` des boucles
 
 | `for` | `else` |
 |--------| ---- |
-| ![w:250](img/python-for-else.png) | ![w:150](img/python-while-else.png) |
+| ![w:200](img/python-for-else.png) | ![w:200](img/python-while-else.png) |
 |
 
 **Régle:** si la boucle est complètement exécutée, alors le bloc du `else` est exécutée.  Si un `break` est rencontré, pas d'exécution de ce bloc `else`.
-
-```py
-x = mystere
-for i in range(1, x+1):
-  print(i)
-  if i % 12 == 0:
-    break
-else:
-  print("pas de break, cool")
-```
-
-+ si `mystere` vaut 10, `'Pas de break, cool !!!` sera affiché
-+ si `mystere` vaut 100, `'Pas de break, cool !!!` ne sera pas affiché car quand `i` vaudra 12, l'instruction `break` sera exécutée.
 
 ---
 <style scoped> {
@@ -162,14 +149,13 @@ def exemple(a, b, c):
     """Ceci est une définition
     """
     a = (a+b)/c
-
     return a, a-1 
 
-# exécution de la fonction et récupération du resultat
+# exécution de la fonction avec passage de paramètres et récupération du resultat
 ret = exemple(10, 20, 5)
 ```
 ---
-## Les arguments
+### Les arguments
 
 Les arguments permettent un lien entre la fonction appelante et la fonction appelée.
 
@@ -185,7 +171,7 @@ Les arguments permettent un lien entre la fonction appelante et la fonction appe
 
 cela correspond aux arguments obligatoires de la fonction
 
-```py 
+```py
 def calcul(a, b ,c):
     """
     """
