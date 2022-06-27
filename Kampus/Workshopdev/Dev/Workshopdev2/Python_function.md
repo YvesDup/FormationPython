@@ -20,18 +20,29 @@ _
 
 Voici les thèmes abordés:
 
-* les branchements conditionels et boucles.
+* les branchements conditionnels et boucles.
 * les fonctions.
 
 ---
 <style scoped> {
-  font-size: 26px;
+  font-size: 25px;
 }
 </style>
 ## Les branchements conditionnels et boucles
 
+Il s'agit ici d'aborder les instructions Python qui permettent de mettre en place les alternatives et les boucles. 
+
+Ces 2 types d'instructions sont natives dans tous les langages de programmation. A noter, que l'instruction de branchement sans condition `goto` n'existe pas en Python. Donc il n'y a pas de notion d'étiquette dans ce langage. 
+
+```py
+import keyword
+
+print(f'{keyword.iskeyword('for') = }')
+print(f'keyword.kwlist = }')
+
+
 ---
-### Les structures conditionnelles
+### Les branchements conditionnelles
 <style scoped> {
   font-size: 26px;
 }
@@ -61,8 +72,8 @@ else:
 </style>
 Il existe 2 types de boucles en langage Python:
 
-+ l'instruction `for`: qui s'applique sur tous les objects parcourables ou itérables comme: 
-  + str,
++ l'instruction `for`: qui s'applique sur tous les objects parcourables ou itérables comme:
+  + str, bytes, bytearray,
   + liste, tuple, dict, set,
   + itérateur, générateur.
 
@@ -124,7 +135,7 @@ La clause `else` des boucles
 
 | `for` | `else` |
 |--------| ---- |
-| ![w:200](img/python-for-else.png) | ![w:200](img/python-while-else.png) |
+| ![w:220](img/python-for-else.png) | ![w:220](img/python-while-else.png) |
 |
 
 **Régle:** si la boucle est complètement exécutée, alors le bloc du `else` est exécutée.  Si un `break` est rencontré, pas d'exécution de ce bloc `else`.
