@@ -140,7 +140,7 @@ La clause `else` des boucles
 
 | `for` | `while` | Commentaires |
 |--------|----|---|
-| ![w:260](img/python-for-else.png) | ![w:220](img/python-while-else.png)| Si la boucle est complètement exécutée, alors le bloc du `else` est exécutée. Si un `break` est rencontré, pas d'exécution de ce bloc `else`|
+| ![w:310](img/python-for-else.png) | ![w:200](img/python-while-else.png)| Si la boucle est complètement exécutée, alors le bloc du `else` est exécutée. Si un `break` est rencontré, pas d'exécution de ce bloc `else`|
 |||
 
 
