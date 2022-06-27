@@ -25,7 +25,7 @@ Voici les thèmes abordés:
 
 ---
 <style scoped> {
-  font-size: 25px;
+  font-size: 27px;
 }
 </style>
 ## Les branchements conditionnels et boucles
@@ -37,14 +37,19 @@ Ces 2 types d'instructions sont natives dans tous les langages de programmation.
 ```py
 import keyword
 
-print(f'{keyword.iskeyword('for') = }')
-print(f'keyword.kwlist = }')
+print(f'{keyword.iskeyword("for") = }')
+print(f'{keyword.kwlist = }')
+ # -> keyword.kwlist = ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class',
+ # 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 
+ # 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 
+```
+Attention, la liste des mots-clés n'est pas constituée uniquement par des instructions.
 
 ---
 ### Les branchements conditionnelles
 <style scoped> {
-  font-size: 26px;
+  font-size: 25px;
 }
 </style>
 ```py
