@@ -139,9 +139,10 @@ print(next(it)) # -> renvoie une erreur `StopIteration`
 La clause `else` des boucles
 
 | `for` | `while` | Commentaires |
-|--------| ---- | --- |
-| ![w:260](img/python-for-else.png) | ![w:220](img/python-while-else.png)
-| Si la boucle est complètement  |
+|--------|----|---|
+| ![w:260](img/python-for-else.png) | ![w:220](img/python-while-else.png)| Si la boucle est complètement exécutée, alors le bloc du `else` est exécutée. Si un `break` est rencontré, pas d'exécution de ce bloc `else`|
+|||
+
 
 ---
 <style scoped> {
