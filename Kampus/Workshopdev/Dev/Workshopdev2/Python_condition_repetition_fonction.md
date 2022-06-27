@@ -301,6 +301,11 @@ param_def(10, c=0, b=0) # b <- 10, c <-0
 
 Dans le cadre des définitions de fonctions, ou de leurs appels, plusieurs expressions avec `*` sont possibles
 
+---
+<style scoped> {
+  font-size: 28px;
+}
+</style>
 #### Liste variable d'arguments
 
 Une fonction qui prend une liste variable d'arguments comme le `printf` en langage C
@@ -321,7 +326,11 @@ product(10, 20, 30, 40)  # ici args = (20, 30, 40)
 product('tti', 20) # ici args = (20,)
 product(10, 20, 30, val1=4)  # provoque une erreur
 ```
-
+---
+<style scoped> {
+  font-size: 28px;
+}
+</style>
 Il est aussi possible d'avoir un paramètre avec valeur par defaut dans ce genre de passage de paramètre,
 voir l'exemple qui suit:
 
@@ -332,8 +341,11 @@ def concat(*args, sep=';'):
 print(concat(1, 2, 3))
 print(concat("A", "B", sep='+'))
 ```
-
-
+---
+<style scoped> {
+  font-size: 26px;
+}
+</style>
 #### Arguments nommés
 
 Une fonction en Python peut être appelée avec des arguments nommés (keyword arguments)
@@ -343,7 +355,7 @@ qui ne sont pas ceux de la définition. Dans ce cas, ces paramètres sont récup
 def sample_kwargs(val1, val2, **kwargs):
     '''
     '''
-    if 'show_kwargs' in kwargs:
+    if 'show_kwargs' in kwargs and kwargs['show_kwargs'] is True:
         for k, v in kwargs.items():
             print(k, '->', v)
 
@@ -351,7 +363,15 @@ def sample_kwargs(val1, val2, **kwargs):
         print(val1, val2, val1+val2)
 
     return val1 + val2
+```
 
+---
+<style scoped> {
+  font-size: 26px;
+}
+</style>
+**Mise en oeuvre des arguments només**
+```py
 # peut s'utiliser comme suit:
 sample_kwargs(10, 20, debug=True)
 # sans le nommage 'debug'
@@ -365,6 +385,11 @@ sample_kwargs(val1=10, val2=10_000)
 
 ```
 
+---
+<style scoped> {
+  font-size: 26px;
+}
+</style>
 
 ### Paramètres spéciaux
 
@@ -382,6 +407,11 @@ def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
 
 où / et * sont facultatifs. S'ils sont utilisés, ces symboles indiquent par quel type de paramètre un argument peut être transmis à la fonction : position seule, position ou nommé, et seulement nommé. Les paramètres par mot-clé sont aussi appelés paramètres nommés.
 
+---
+<style scoped> {
+  font-size: 28px;
+}
+</style>
 Par exemple, écrire une fonction utilisable que par arguments nommés serait:
 
 ```python
@@ -399,6 +429,14 @@ test_kwargs_only(b=10, a=5)
 test_kwargs_only(a=2, b=50)
 ```
 
+----
+<style scoped> {
+  font-size: 28px;
+}
+</style>
+Par exemple, écrire une fonction utilisable que par arguments positionnels serait:
+
+
 ```python
 def test_positional_only(a, b, /):
     '''
@@ -413,6 +451,7 @@ except Exception as e:
 
 ```
 
+---
 ## les valeurs retournées
 
 En python, toute fonction peut retourner plusieurs valeurs car elle renvoie un tuple
