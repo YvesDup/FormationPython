@@ -31,18 +31,117 @@ Voici les thèmes abordés:
 ## Les branchements conditionnels et boucles
 
 ---
+### Les structures conditionnelles
 <style scoped> {
-  font-size: 26px;
+  font-size: 27px;
 }
 </style>
-### Les branchements condiionnels
+```py
+if <condition>:
+  pass
+elif <autre_condition1>:
+  pass
+elif <autre_condition2>:
+  pass
+else:
+  pass
+```
+**A noter:** 
+* il n'y a pas d'instruction '__switch__' en python. 
+* Il existe un opérateur ternaire: `a = x*10 if x > 10 else -1`.
+* les opérateurs logiques dans les conditions sont: `and`, `or` et `not`.
+* les opérateurs de comparaison sont standards, le `in` a été rajouté.
+* la notation suivante est possible et acceptée: `0 <= x <= 10`.
+
+---
+### Les répétitions
+<style scoped> {
+  font-size: 27px;
+}
+</style>
+Il existe 2 types de boucles en langage Python:
+
++ l'instruction `for`: qui s'applique sur tous les objects parcourables ou itérables comme: 
+  + str,
+  + liste, tuple, dict, set,
+  + itérateur, générateur.
+
+  ```py
+  for item in (10, 20, 'Hello'):
+      print(item)
+  print(item) # défini dans le bloc du `for`
+  ```
+Chaque objet parcourable possède une méthode interne `__iter__` qui renvoie un itérateur sur l'objet. Il suffit donc de vérifier que cette méthode est présente.
 
 ---
 <style scoped> {
-  font-size: 26px;
+  font-size: 27px;
 }
 </style>
-### Les boucles
+#### Mécanisme d'itération
+
+Ce mécanisme fonctionne en 2 étapes:
+
+1. récupérer un itérateur sur l'objet en appelant la fonction *interne (native)* nommé `iter(<object>)`. 
+1. Ensuite on peut récupérer les éléments un par un via l'itérateur en appelant la fonction interne `next(<iterateur>)`. Quand il n'y a plus d'éléments, une erreur apparaît.
+
+```py
+l = [20, "Hello", True]
+it = iter(l)
+print(it)
+print(next(it)) # -> 20
+print(next(it)) # -> 'Hello'
+print(next(it)) # -> True
+print(next(it)) # -> renvoie une erreur `StopIteration`
+
+```
+---
+<style scoped> {
+  font-size: 27px;
+}
+</style>
+
++ l'instruction `while`:
+  ```py
+  a = 10
+  while a >= 0:
+    print(a**2)
+    a -= 1
+  ```
+
++ les instructions `break`et `continue` existent en Python.
+  + le `break` interrompt la boucle. Si il y a plusieurs boucles imbriquées, cette instruction interrompt la boucle courante.
+  + le `continue` interrompt le traitement dans la boucle et retourne sur l'instruction `for`ou `while`.
+
++ il existe une clause `else` pour `for`et `while`
+
+---
+<style scoped> {
+  font-size: 27px;
+}
+</style>
+La clause `else` des boucles
+
+| `for` | `else` |
+|--------| ---- |
+| ![w:250](img/python-for-else.png) | ![w:150]((img/python-while-else.png) |
+|
+
+**Régle:** si la boucle est complètement exécutée, alors le bloc du `else` est exécutée.  Si un `break` est rencontré, pas d'exécution de ce bloc `else`.
+
+```py
+x = mystere
+for i in range(1, x+1):
+  print(i)
+  if i % 12 == 0:
+    break
+else:
+  print("pas de break, cool")
+```
+
++ si `mystere` vaut 10, `'Pas de break, cool !!!` sera affiché
++ si `mystere` vaut 100, `'Pas de break, cool !!!` ne sera pas affiché car quand `i` vaudra 12, l'instruction `break` sera exécutée.
+
 ---
 <style scoped> {
   font-size: 26px;
