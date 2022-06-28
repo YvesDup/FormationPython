@@ -10,13 +10,14 @@ def pres_except():
     except ZeroDivisionError as e:
         print(f'{type(e)} - {str(e)}')
         raise
+    """
     except Exception as e:
         print(f'{type(e)} - {str(e)}')
     except BaseException as e:
         print("baseException")
     else:
-        print("on passe ici qaud il n'y apas d'erreur")
-
+        print("on passe ici quand il n'y apas d'erreur")
+    """
     finally:
         print("on passe tout le temps la ....")
 
