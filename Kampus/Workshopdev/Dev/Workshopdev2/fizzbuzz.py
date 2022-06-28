@@ -12,6 +12,8 @@ def fizzbuzz(n):
             results.append('buzz')
         elif value % 3 == 0:
             results.append('fizz')
+        else:
+            results.append(value)
 
     return results
 
