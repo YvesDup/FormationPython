@@ -48,5 +48,5 @@ def analyse_texte_v2(*args):
     max_str = max(l, key=len)
     stralls = ''.join(l)
 
-    return min_str, max_str, len(strall) / len(l)
+    return min_str, max_str, len(stralls) / len(l)
 
