@@ -20,7 +20,7 @@ def analyse_texte(*args):
             if lg < lg_min:
                 lg_min = lg
                 pluscourte_chaine = arg
-            elif lg > lg_max:
+            if lg > lg_max:
                 lg_max = lg
                 pluslongue_chaine = arg
 
