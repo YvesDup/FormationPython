@@ -9,6 +9,7 @@ def pres_except():
         1/0
     except ZeroDivisionError as e:
         print(f'{type(e)} - {str(e)}')
+        raise
     except Exception as e:
         print(f'{type(e)} - {str(e)}')
     except BaseException as e:
