@@ -32,6 +32,7 @@ def analyse_texte(*args):
 def test_analyse_texte():
     """
     """
+    print(analyse_texte('hello', 2.234, 't'))
     assert analyse_texte('hello', 2.234, 't') == ('t', 'hello', 3.0)
 
 print(sys.version)
