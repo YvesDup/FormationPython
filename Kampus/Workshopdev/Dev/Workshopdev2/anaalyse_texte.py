@@ -6,7 +6,26 @@ def analyse_texte(*args):
     pluscourte_chaine = ""
     pluslongue_chaine = ""
     moyenne_longueur = 0.0
+    nb_chaines = 0
+    lg_total = 0
+    lg_max = -1
+    lg_min = sys.maxsize 
 
+    for arg in args:
+        if isinstance(arg, str):
+            lg = len(arg)
+            lg_total += lg
+            nb_chaines += 1
+
+            if lg < lg_min:
+                lg_min = lg
+                pluscourte_chaine = arg
+            elif lg > lg_max:
+                lg_max = lg
+                pluslongue_chaine = arg
+
+    if nb_chaines:
+        moyenne_longueur = lg_total / nb_chaines
 
     return pluscourte_chaine, pluslongue_chaine, moyenne_longueur
 
