@@ -37,3 +37,16 @@ def test_analyse_texte():
 
 print(sys.version)
 test_analyse_texte()
+
+
+
+def analyse_texte_v2(*args):
+    """
+    """
+    l = list(filter(lambda x: isinstance(x, str), args))
+    min_str = min(l, key=len)
+    max_str = max(l, key=len)
+    stralls = ''.join(l)
+
+    return min_str, max_str, len(strall) / len(l)
+
