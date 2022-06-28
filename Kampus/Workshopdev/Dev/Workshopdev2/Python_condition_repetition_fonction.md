@@ -127,11 +127,11 @@ print(next(it)) # -> renvoie une erreur `StopIteration`
     a -= 1
   ```
 
-+ les instructions `break`et `continue` existent en Python.
-  + le `break` interrompt la boucle. Si il y a plusieurs boucles imbriquées, cette instruction interrompt la boucle courante.
-  + le `continue` interrompt le traitement dans la boucle et retourne sur l'instruction `for`ou `while`.
+Les instructions `break` et `continue` existent en Python.
++ le `break` interrompt la boucle. Si il y a plusieurs boucles imbriquées, cette instruction interrompt la boucle courante.
++ le `continue` interrompt le traitement dans la boucle et retourne sur l'instruction `for`ou `while`.
 
-+ il existe une clause `else` pour `for`et `while`
+Il existe une clause `else` pour `for` et `while` dont voici le détail de la mise en oeuvre.
 
 ---
 <style scoped> {
@@ -174,10 +174,10 @@ ret = exemple(10, 20, 5)
 ---
 ### Les arguments
 
-Les arguments permettent un lien entre la fonction appelante et la fonction appelée.
+Les arguments font partis de la zone d'échange entre la fonction appelante et la fonction appelée.
 
-* Les arguments indiqués dans la definition de la fonction sont appelés les **paramètres formels**. 
-* Les arguments passés à la fonction appelée sont appelées paramètres effectifs. Ceux sont souvent des variables de la fonction appelante, ou des parmètres formels de la fonction en courante.
+* Les arguments indiqués dans la définition de la fonction sont appelés les **paramètres formels**. 
+* Les arguments passés à la fonction appelée sont appelés paramètres effectifs. Ceux sont souvent des variables de la fonction appelante, ou des paramètres formels de la fonction en cours.
 
 ---
 <style scoped> {
@@ -241,7 +241,7 @@ Dans ce dernier exemple, les arguments peuvent être passés avec le nom des par
 Il est possible de spécifier un paramètre formel (au niveau de la définition de la fonction) ayant une valeur par défaut.
 Si ce paramètre est omis lors de l'appel à cette fonction alors ce paramètre prendra comme valeur la valeur défaut indiquée. Ces paramètres sont aussi appelés paramètres **optionnels**.
 
-Les paramètres avec des valeurs défaut sont toujours positionnés en dernier dans la liste des paramètres formels.
+Les paramètres avec des valeurs 'défaut' sont toujours positionnés en dernier dans la liste des paramètres formels.
 
 ```py
 def format_heure(h, m, s):
@@ -370,7 +370,7 @@ def sample_kwargs(val1, val2, **kwargs):
   font-size: 26px;
 }
 </style>
-**Mise en oeuvre des arguments només**
+**Mise en oeuvre des arguments nommés**
 ```py
 # peut s'utiliser comme suit:
 sample_kwargs(10, 20, debug=True)
@@ -405,7 +405,7 @@ def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
 #        -- Positional only
 ```
 
-où / et * sont facultatifs. S'ils sont utilisés, ces symboles indiquent par quel type de paramètre un argument peut être transmis à la fonction : position seule, position ou nommé, et seulement nommé. Les paramètres par mot-clé sont aussi appelés paramètres nommés.
+où `/` et `*` sont facultatifs. S'ils sont utilisés, ces symboles indiquent sur quel type de paramètre un argument peut être transmis à la fonction : position seule, position ou nommé, et seulement nommé. Les paramètres par mot-clé sont aussi appelés paramètres nommés.
 
 ---
 <style scoped> {
@@ -452,10 +452,10 @@ except Exception as e:
 ```
 
 ---
-## les valeurs retournées
+### Les valeurs retournées
 
 En python, toute fonction peut retourner plusieurs valeurs car elle renvoie un tuple
-Une fonction qui ne fait aucun appel à `return`, elle renvoie `None`
+Une fonction qui ne fait aucun appel à `return`, elle renvoie `None`.
 
 
 ---
@@ -465,6 +465,55 @@ Une fonction qui ne fait aucun appel à `return`, elle renvoie `None`
 </style>
 ## La documentation
 
+Il existe 2 types de documentation en ligne pour Python:
++ les docstring,
++ les annotations de types.
+
+Le commentaire peuvent concourir à la documentation. En Python il existe 2 façons de positionner un commenataire:
+
++ le `#` sur une ligne qui permet de commenter
++ le `""" .... """` sur plusieurs lignes qui permet donc de mettre tout un bloc sous la forme de string.
+
+---
+<style scoped> {
+  font-size: 25px;
+}
+</style>
+### Les `docstring` 
+
+Ce système permet sous la forme d'une string """bbbb""" d'expliquer ce que fait un bloc de code. Ce commentaire, qui peut être normalisé se positionne au niveau de chaque:
++ fonction
++ classe
++ methode
+
+```py
+def equal(a, b):
+  """Fonction `equal` qui vérifie que `a` est égale à `b`
+  retourne un booléen
+  """
+  return a == b
+  ```
+
+  En tapant dans l'interpréteur la commande suivante:
+  `help(equal)` alors le détail de la fonction apparaît
+
+---
+<style scoped> {
+  font-size: 30px;
+}
+</style>
+### Les annotations de type
+
+Ce système sera étudié lors du prochain training. Cependant, il s'agit ici d'indiquer à titre informatif les types ou caractéristiques attendus pour les paramètres et les valeurs retournées. Par exemple:
+
+```py
+def calcul_bidon(a: int , b: int) -> int:
+  """ Ma docstring, bolobolo, bo, bolo
+  """
+  return int((a+b)/(a-b))
+
+```
+En tapant `help(equal)` dans l'interprêteur les annotations sont aussi indiquées en plus de la docstring.
 
 ---
 <style scoped> {
