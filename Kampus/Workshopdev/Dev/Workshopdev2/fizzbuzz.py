@@ -25,5 +25,6 @@ def test_fizzbuzz():
     assert fizzbuzz(3) ==  [1, 2, "fizz"]
     assert fizzbuzz(1000).count('fizzbuzz') == 1000//15
     assert fizzbuzz(1000)[32] == 'fizz'
+    print("tests ok !!")
 
 test_fizzbuzz()
