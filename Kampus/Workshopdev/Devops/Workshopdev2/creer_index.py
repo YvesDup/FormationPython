@@ -18,6 +18,8 @@ def creer_index(mots, min_occurence=1, debug=False):
 
     # filter
     if min_occurence > 1:
+        return {k:v for k, v in dmots if v > min_occurence}
+
         dd = {}
         for k, v in dmots.items():
             if v >= min_occurence:
