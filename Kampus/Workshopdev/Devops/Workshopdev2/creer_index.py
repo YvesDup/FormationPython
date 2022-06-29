@@ -19,7 +19,7 @@ def creer_index(mots, min_occurence=1, debug=False):
     # filter
     if min_occurence > 1:
         return {k:v for k, v in dmots.items() if v >= min_occurence}
-        # comme il y a un return avant ces lignes de sont jamais exécutées
+        # comme il y a un return ces lignes ci-dessous de sont jamais exécutées
         dd = {}
         for k, v in dmots.items():
             if v >= min_occurence:
