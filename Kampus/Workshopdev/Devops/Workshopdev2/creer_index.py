@@ -14,7 +14,7 @@ def creer_index(mots, min_occurence=1, debug=True):
         else:
             dmots[mot] = 1
         if debug:
-            print(mot)
+            print(f' {mot = } -> {dmots[mot] = }')
 
     return dmots
 
