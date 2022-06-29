@@ -7,7 +7,7 @@ def anagramme(words):
 	# emiliner les doublons de mots
 	for word in set(words):
 		# 1 - calculer son le mot 'triée' 
-		sorted_w = sorted(word)
+		sorted_w = tuple(sorted(word))
 	
 		# je mets à jour dans un dictionnaire
 		# donc la clé est le mot-trie
