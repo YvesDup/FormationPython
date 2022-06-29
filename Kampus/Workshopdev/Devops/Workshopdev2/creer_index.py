@@ -2,7 +2,7 @@ import os
 import sys
 
 
-def creer_index(mots, min_occurence=1, debug=True):
+def creer_index(mots, min_occurence=1, debug=False):
     """
     """
     dmots = {}
