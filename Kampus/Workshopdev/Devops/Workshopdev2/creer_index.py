@@ -2,13 +2,19 @@ import os
 import sys
 
 
-def creer_index(mots):
+def creer_index(mots, min_occurence=1, debug=True):
     """
     """
     dmots = {}
+    # key c'est le mot
+    # value est le nombre de fois ou le pot apparait
     for mot in mots.split():
-        print(mot)
-
+        if mot in dmots:
+            dmots[mot] += 1
+        else:
+            dmots[mot] = 1
+        if debug:
+            print(mot)
 
     return dmots
 
