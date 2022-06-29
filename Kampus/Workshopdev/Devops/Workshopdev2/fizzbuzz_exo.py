@@ -31,6 +31,3 @@ def test_fizzbuzz():
     print( res1000.count('buzz') == 200 - (count_fizzbuzz) )
 
 test_fizzbuzz()
-
-a = int(3.14)
-print(a)
