@@ -8,7 +8,7 @@ def anagramme(words):
 	for word in set(words):
 		# 1 - calculer son le mot 'triée' 
 		sorted_w = tuple(sorted(word))
-	
+
 		# je mets à jour dans un dictionnaire
 		# donc la clé est le mot-trie
 		# la valeur la liste des mots
@@ -31,7 +31,7 @@ def test_anagramme():
 	tests = ( # words														res
 			(("ecrue", "uni", "nue") , 									[]),
 			(("les", "sel", "sell"), 									[["les", "sel"]]),
-			(("line", "steres", "tresse", "tres", "lien", "restes"), 	[["lien", "line"], ["restes", "steres", "tresse"]])
+# 			(("line", "steres", "tresse", "tres", "lien", "restes"), 	[["lien", "line"], ["restes", "steres", "tresse"]])
 	)
 	for words, res in tests:
 		print(anagramme(words))
