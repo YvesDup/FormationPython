@@ -34,6 +34,7 @@ def test_anagramme():
 			(("line", "steres", "tresse", "tres", "lien", "restes"), 	[["lien", "line"], ["restes", "steres", "tresse"]])
 	)
 	for words, res in tests:
-		print(sorted(anagramme(words)) == res) 
+		print(anagramme(words))
+		print(anagramme(words) == res) 
 
 test_anagramme()
