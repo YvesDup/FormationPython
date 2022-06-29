@@ -16,6 +16,14 @@ def creer_index(mots, min_occurence=1, debug=True):
         if debug:
             print(f' {mot = } -> {dmots[mot] = }')
 
+    # filter
+    if min_occurence > 1:
+        dd = {}
+        for k, v in dmots.items():
+            if v >= min_occurence:
+                dd[k] = v
+        dmots = dd
+
     return dmots
 
 def test_creer_index():
