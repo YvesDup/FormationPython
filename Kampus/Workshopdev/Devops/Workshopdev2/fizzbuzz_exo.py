@@ -1,7 +1,7 @@
 import sys
 
 def fizzbuzz(n):
-    """
+    """n est un parametre formel
     """
     results = []
     for i in range(1, n+1):
@@ -18,7 +18,9 @@ def fizzbuzz(n):
 
 def test_fizzbuzz(): 
 
-    print(fizzbuzz(0) == [])
+    x = 0
+    # x est iun parametre effectif
+    print(fizzbuzz(x) == [])
     print(fizzbuzz(3) == [1, 2, 'fizz'])
     print(fizzbuzz(5) == [1, 2, 'fizz', 4, 'buzz'])
     print(fizzbuzz(15)[14] == 'fizzbuzz')
@@ -29,3 +31,6 @@ def test_fizzbuzz():
     print( res1000.count('buzz') == 200 - (count_fizzbuzz) )
 
 test_fizzbuzz()
+
+a = int(3.14)
+print(a)
