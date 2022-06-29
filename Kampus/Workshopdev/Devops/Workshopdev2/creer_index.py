@@ -6,8 +6,8 @@ def creer_index(mots):
     """
     """
     dmots = {}
-
-
+    for mot in mots.split():
+        print(mot)
 
 
     return dmots
