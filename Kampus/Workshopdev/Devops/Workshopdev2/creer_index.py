@@ -32,6 +32,7 @@ def test_creer_index():
     print(creer_index("") == {})
     print(creer_index("toto") == {"toto":1})
     print(creer_index("toto toto") == {"toto":2})
+    print(creer_index("toto toto", 3) == {})
 
 print(sys.version)
 print(os.getcwd())
