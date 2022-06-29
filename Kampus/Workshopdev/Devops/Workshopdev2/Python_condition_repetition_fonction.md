@@ -236,12 +236,10 @@ Dans ce dernier exemple, les arguments peuvent être passés avec le nom des par
   font-size: 25px;
 }
 </style>
-### Aguments avec valeurs par defaut
+### Arguments avec valeurs par defaut
 
 Il est possible de spécifier un paramètre formel (au niveau de la définition de la fonction) ayant une valeur par défaut.
 Si ce paramètre est omis lors de l'appel à cette fonction alors ce paramètre prendra comme valeur la valeur défaut indiquée. Ces paramètres sont aussi appelés paramètres **optionnels**.
-
-Les paramètres avec des valeurs 'défaut' sont toujours positionnés en dernier dans la liste des paramètres formels.
 
 ```py
 def format_heure(h, m, s):
@@ -258,9 +256,10 @@ print(format_heure(16, 8, 7)) # -> 16:08:07
 
 ---
 <style scoped> {
-  font-size: 28px;
+  font-size: 27px;
 }
 </style>
+
 Voici la même fonction avec un paramètre supplémentaire pour la gestion du séparateur. Si le séparateur en omis à l'exécution, alors le séparateur prendra comme valeur `":"`.
 
 ```py
@@ -272,16 +271,18 @@ def format_heure_sep(h, m, s, sep=":"):
     # format attendu "HHsepMMsepSS" 
     return "{0:02d}{3}{1:02d}{3}{2:02d}".format(h, m, s, sep)
 
-
 # ici sep n'est pas indiqué donc il prend la valeur ':'
 print(format_heure_sep(16, 8, 45)) # -> 16:08:45
 
 # ici sep vaut '-'
 print(format_heure_sep(16, 8, 7, "-")) # -> 16-08-07
 ```
+
+Les paramètres avec des valeurs 'défaut' sont toujours positionnés en dernier dans la liste des paramètres formels.
+
 ---
 <style scoped> {
-  font-size: 28px;
+  font-size: 29px;
 }
 </style>
 Précisions sur les paramètres optionnels
@@ -292,8 +293,9 @@ def param_def(a, b=10, c=-1):
 
 param_def(10) # b <- 10, c <- -1
 param_def(10, b=7) # b <- 7, c <- -1
-param_def(10, c=0) # b <- 10, c <-0 
-param_def(10, c=0, b=0) # b <- 10, c <-0 
+param_def(10, c=0) # b <- 10, c <- 0 
+param_def(10, c=0, b=0) # b <- 0, c <- 0 
+param_def(10, 20, 30) # a <- 10, b <- 20, c <- 30 
 ```
 
 ---
