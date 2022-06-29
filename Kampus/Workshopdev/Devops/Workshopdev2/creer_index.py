@@ -7,7 +7,7 @@ def creer_index(mots, min_occurence=1, debug=True):
     """
     dmots = {}
     # key c'est le mot
-    # value est le nombre de fois ou le pot apparait
+    # value est le nombre de fois ou le mot apparait
     for mot in mots.split():
         if mot in dmots:
             dmots[mot] += 1
