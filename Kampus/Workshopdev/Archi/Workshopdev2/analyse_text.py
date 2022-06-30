@@ -9,6 +9,7 @@ def analyse_texte(val, *args):
     court_mot = ''
     lg_total = 0
     nb_mots = 0
+
     args = (val,) + args # pour respecter l'ordre
     for arg in args:
         if isinstance(arg, str):
@@ -47,11 +48,12 @@ test_analyse_texte()
 
 def analyse_texte_v2(val, *args):
     args = (val,) + args # pour respecter l'ordre
+
     mots = tuple(map(lambda x: isinstance(x, str), args))
     if mots:
         court_mot = min(mots, key=len)
         long_mot = max(mots, key=len)
-        moyenne = "".join(mots) / len(mots)
+        moyenne = len("".join(mots)) / len(mots)
         return court_mot, long_mot, moyenne
 
     raise ValueError("pas de string :-(")
