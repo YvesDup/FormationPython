@@ -13,9 +13,12 @@ def analyse_texte(val, *args):
     for arg in args:
         if isinstance(arg, str):
             lg = len(arg)
+            # test si le plus court
             if lg < lg_min:
                 court_mot = arg
                 lg_min = lg
+
+            # test si le plus long
             if lg > lg_max:
                 long_mot = arg
                 lg_max = lg
