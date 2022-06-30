@@ -20,7 +20,7 @@ def anagramme(words):
 	res = []
 	for v in dwords.values():
 		if len(v) > 1:
-			res.append(v.sort())
+			res.append(sorted(v))
 
 	return res
 
