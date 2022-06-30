@@ -13,8 +13,9 @@ def anagramme(words):
 		# key is in dwords ?
 		if key not in dwords:
 			# key does not exist so
-			dwords[key] = []
-		dwords[key].append(word)
+			dwords[key] = [word]
+		else:
+			dwords[key].append(word)
 
 	# renvoie les values du dictionnaire si la longueur est supérieure à 1
 	res = []
@@ -31,6 +32,7 @@ def test_anagramme():
 	tests = ( # words														res
 			(("ecrue", "uni", "nue") , 									[]),
 			(("les", "sel", "sell"), 									[["les", "sel"]]),
+			(("les", "sel", "sel"), 									[["les", "sel"]]),
 			(("line", "steres", "tresse", "tres", "lien", "restes"), 	[["lien", "line"], ["restes", "steres", "tresse"]])
 	)
 	for words, res in tests:
