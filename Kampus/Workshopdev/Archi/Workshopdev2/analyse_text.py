@@ -4,6 +4,10 @@
 def analyse_texte(val, *args):
     """
     """
+    args += (val, )
+    for arg in args:
+        if isinstance(arg, str):
+            pass
 
 
     return "", "", 0.0
