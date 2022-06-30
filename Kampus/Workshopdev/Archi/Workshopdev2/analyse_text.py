@@ -22,6 +22,8 @@ def analyse_texte(val, *args):
             if lg > lg_max:
                 long_mot = arg
                 lg_max = lg
+
+            # conserve nombre de mots et longueur totale
             nb_mots += 1
             lg_total += lg
 
