@@ -18,12 +18,15 @@ def anagramme(words):
 			dwords[key].add(word)
 
 	# renvoie les values du dictionnaire si la longueur est supérieure à 1
+	"""
 	res = []
 	for v in dwords.values():
 		if len(v) > 1:
 			res.append(sorted(v))
 
 	return res
+	"""
+	return [sorted(v) for v in dwords.values() if len(v) > 1 ]
 
 
 def test_anagramme():
