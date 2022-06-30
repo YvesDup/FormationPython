@@ -5,7 +5,7 @@ def anagramme(words):
 	# le tri des lettres du mot et on va comparer avec le tri des lettres d'un autre mot
 	# creer un dictionnaire:
 	# key: le mot trié par lettre sous la forme: tuple(sorted(word))
-	# value: une liste de mots sous la forme [word1, word2, ...]
+	# value: une ensemble de mots sous la forme {word1, word2, ...} - l'ensemble ca evite les doublons
 	dwords = {}
 	for word in words:
 		key = tuple(sorted(word))
@@ -13,9 +13,9 @@ def anagramme(words):
 		# key is in dwords ?
 		if key not in dwords:
 			# key does not exist so
-			dwords[key] = [word]
+			dwords[key] = {word}
 		else:
-			dwords[key].append(word)
+			dwords[key].add(word)
 
 	# renvoie les values du dictionnaire si la longueur est supérieure à 1
 	res = []
