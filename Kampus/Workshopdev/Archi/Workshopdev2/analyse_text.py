@@ -39,6 +39,7 @@ def test_analyse_texte():
     )
 
     print(analyse_texte('hello', 2.234, 't') == ('t', 'hello', 3.0))
+    print(analyse_texte('ici', 'JE', 'assez', 13, 'salsifi', 'moutarde', -2.87, True) == ('JE', 'moutarde', 5.0))
 
 test_analyse_texte()
 
