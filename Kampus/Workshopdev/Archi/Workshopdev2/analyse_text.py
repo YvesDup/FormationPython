@@ -11,6 +11,11 @@ def analyse_texte(val, *args):
 def test_analyse_texte():
     """
     """
-    analyse_texte('hello', 2.234, 't') == 't', 'hello', 3.0
+    tests = (
+        (), 
+        ()
+    )
+
+    print(analyse_texte('hello', 2.234, 't') == 't', 'hello', 3.0)
 
 test_analyse_texte()
