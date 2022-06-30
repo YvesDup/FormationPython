@@ -4,7 +4,7 @@
 def analyse_texte(val, *args):
     """
     """
-    args += (val, )
+    args = (val,) + args # pour respecter l'ordre
     for arg in args:
         if isinstance(arg, str):
             pass
