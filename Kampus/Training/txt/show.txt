@@ -1,0 +1,10 @@
+Name: matplotlib
+Version: 3.5.2
+Summary: Python plotting package
+Home-page: https://matplotlib.org
+Author: John D. Hunter, Michael Droettboom
+Author-email: matplotlib-users@python.org
+License: PSF
+Location: /Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
+Requires: packaging, numpy, python-dateutil, pillow, kiwisolver, fonttools, pyparsing, cycler
+Required-by: 
