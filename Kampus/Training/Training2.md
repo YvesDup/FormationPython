@@ -446,11 +446,68 @@ Ici sont listés tous les cas concernant:
 }
 </style>
 ### Les linters
-Tous les IDE qui permettent la gestion des sources Python, proposent des extensions qui permettent de gérer tous ces points
-Parmi les plus utilisés, nous noterons
-+ black
-+ linter
-+ mypy
+
+Ces outils peuvent être installés et utilisés en ligne de commande via la commande `python -m pip install <outil>`
+La plupart des IDE (PyCharm, Spyder, VSCode) proposent aussi leur installation et exécution à travers des extensions
+
+Il existe plusieurs outils pour vérifier, relire et proposer des améliorations sur votre code, parmi les plus utilisés voici:
+
+* black
+* flake8
+* pylint
+* mypy
+* bandit
+* coverage
+
+---
+#### Black
+
+Cet outil est un formatteur de code Python, c'est à dire qu'il repère les lignes de code qui ne respectent les règles de la PEP8. Il propose alors une remise en forme.
+
+[La bibliothèque](https://pypi.org/project/black/)
+
+---
+#### Flake8
+
+Cet outil analyse le code d'un fichier Python, repère les lignes de code qui ne respectent pas la PEP8, et fait une analyse statique sur certains types d'anomalies comme:
+
+* élément non utilisés comme des variables, des paramètres, des bibliothèques
+* noms de fonctions non trouvés
+
+[La bibliothèque](https://pypi.org/project/flake8/)
+[La documentation](https://flake8.pycqa.org/en/latest/)
+
+---
+#### Pylint
+
+Cet outil reprend les vérifications de flake8 et ajoute d'autres partie autour des attributs, des erreurs de syntaxes, vérifient la documentation sur les fonctions, classes et méthodes.
+
+Le gros plus: Pylint repère les duplications de code ;-)
+
+[La bibliothèque](https://pypi.org/project/pylint/)
+[La documentation](https://pylint.pycqa.org/en/latest/)
+
+---
+#### Mypy
+
+Cet outil analyse les annotations de type mises en oeuvre sur les fonctions et vérifient statiquement si les parmètres passés correspondent aux types déclarés dans les annotations.
+
+[La bibliothèque](http://mypy-lang.org/)
+[La documentation](https://mypy.readthedocs.io/en/stable/)
+
+----
+#### Bandit
+
+Cet outil permet de rechercher des vulnerabilités sur le code Python
+
+[La documentation](https://bandit.readthedocs.io/en/latest/)
+
+----
+#### Coverage
+
+Cet outil permet de faire de la couverture de code, cest à dire de vérifier que toutes les parties d'un code sont bien utilisées.
+
+[La documentation](https://coverage.readthedocs.io)
 
 ---
 <style scoped> {
