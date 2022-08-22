@@ -1,0 +1,4 @@
+Traceback for <Task finished name='Task-2' coro=<sub_task() done, defined at /Users/yves/Desktop/Bugs/asyncio_gather.py:351> exception=KeyboardInterrupt()> (most recent call last):
+  File "/Users/yves/Desktop/Bugs/asyncio_gather.py", line 352, in sub_task
+    raise _ee()
+KeyboardInterrupt
