@@ -367,15 +367,15 @@ De manière générale, il est fortement recommandé, pour la gestion d'un proje
 
 Il suffit de créer un dossier dédié, de se positionner dans ce dossier et de:
 
-* lancer la commande `python -m venv . --prompt PACKAGE1` la mise en place
-  * depuis ce dossier, lancer le batch `Scripts\activate.bat` sous Windows
++ lancer la commande `python -m venv . --prompt PACKAGE1` la mise en place
+  + depuis ce dossier, lancer le batch `Scripts\activate.bat` sous Windows
 ou
-  * depuis ce dossier, lancer la commande `source ./bin/activate` sous Linux et Mac
+  + depuis ce dossier, lancer la commande `source ./bin/activate` sous Linux et Mac
 
 
 Vous êtes alors dans votre environnement virtuel, prêt à travailler tout en sachant que:
-+ la version de python installée correspond à celle du programme python (`python` ou `pip`) qui a créée l'environement virtuel
-+ votre installation est vierge de toute biblibiothèque externe préalablement installée (sauf si vous avez utilisé l'option `--system-site-packages`). 
+* la version de python installée correspond à celle du programme python (`python` ou `pip`) qui a créée l'environement virtuel
+* votre installation est vierge de toute biblibiothèque externe préalablement installée (sauf si vous avez utilisé l'option `--system-site-packages`). 
 
 ---
 <style scoped> {
