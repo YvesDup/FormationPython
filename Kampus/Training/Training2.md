@@ -443,6 +443,12 @@ def racine_carre(val: Union[int, float]) -> float:
 	return sqrt(val)
 ```
 
+---
+### La bibiothèque interne `typing`
+
+from typing import Union
+
+### La mise en oeuvre
 
 
 ---
