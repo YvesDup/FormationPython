@@ -354,9 +354,9 @@ Ce mode opératoire, en Python, permet de dédier une installation spécifique �
 
 Ainsi vous pouvez avoir 2 environnements spécifiques pour 2 versions de Python différentes.
 
-Autre cas  d'usage: certaines bibliothèques externes ne travaillent qu'avec qu'une et une seule version d'une autre bibliothèque externe. Or si cette dernière est uassi utilisée dans d'autres projets, vous risquez le conflit de version.
+Autre cas  d'usage: certaines bibliothèques externes ne travaillent qu'avec qu'une et une seule version d'une autre bibliothèque externe. Or si cette dernière est aussi utilisée dans d'autres projets, vous risquez le conflit de version.
 
-De manière générale, il est fortement recommandé, pour la gestion d'un projet, de mettre en place un environnement virtuel.
+De manière générale, il est fortement recommandé, pour la gestion d'un projet ou même d'un simple 'POC', de mettre en place un environnement virtuel.
 
 ---
 <style scoped> {
