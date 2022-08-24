@@ -443,16 +443,19 @@ def racine_carre(val: Union[int, float]) -> float:
 	return sqrt(val)
 ```
 
-Les annotations de type ont été introduites à partir de la version 3.8
+Les annotations de type ont été introduites à partir de la version 3.5
+
 ---
 ### La bibiothèque interne `typing`
 
 ```py
-from typing import Union
+from typing import Callable, Union, Typevar
 ```
 Cette bibliothèque contient les types élaborés revisités, les combinaisons, les alias qui seront utilisés pour définir les annotations. Par exemple:
-+ Tuple, Dict, List, Sequence, Collection
++ Tuple, Dict, List, Sequence, Collection, Callable, Generator, Coroutine
 + Option, Union, Any, 
++ TypeVar, Alias.
+
 ### La mise en oeuvre
 
 
