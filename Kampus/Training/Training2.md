@@ -430,7 +430,7 @@ Voir [Les environements virtuels](https://docs.python.org/fr/3.8/library/venv.ht
 </style>
 ## Les bonnes pratiques
 
-Les bonnes pratiques en Python constitue un ensemble de règles que les développeurs essaisent de respecter (c'est pas toujours facile ;-)). Lors des revues de codes, les développeurs y font très souvent références.
+Les bonnes pratiques en Python constitue un ensemble de règles que les développeurs essaisent de respecter (c'est pas toujours facile ;-)). Lors des revues de codes, les développeurs y font toujours références.
 
 ### La [PEP8](https://peps.python.org/pep-0008/)
 Les bonnes pratiques en Python sont résumées dans une document nommé PEP8 et donc voici un [résumé](https://python.sdv.univ-paris-diderot.fr/15_bonnes_pratiques/)
