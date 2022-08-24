@@ -432,8 +432,8 @@ Voici un exemple pour la fonction `racine_carre` vue dans le chapître sur les e
 from typing import Union
 
 def racine_carre(val: Union[int, float]) -> float:
-  """etc ....."""
-	if not isinstance(val, (int, float)):
+	"""etc ....."""
+  if not isinstance(val, (int, float)):
 		# leve l'exception TypeError et quitte racine_carre
 		raise TypeError('"val" doit être un nombre entier ou flottant')
 	if val < 0:
