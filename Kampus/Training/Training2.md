@@ -419,8 +419,8 @@ Voir [Les environements virtuels](https://docs.python.org/fr/3.8/library/venv.ht
   font-size: 22px;
 }
 </style>
-## Les bonnes pratiques
-## Les annotations de types
+## Les annotations de types: introduction
+
 
 
 ---
@@ -430,7 +430,7 @@ Voir [Les environements virtuels](https://docs.python.org/fr/3.8/library/venv.ht
 </style>
 ## Les bonnes pratiques
 
-Les bonnes pratiques en Python constitue un ensemble de règles que les développeurs s'attèlent à respecter (c'est pas toujours facile ;-)). 
+Les bonnes pratiques en Python constitue un ensemble de règles que les développeurs s'attèlent à respecter (c'est pas toujours facile ;-)).
 Lors des revues de codes, les développeurs y font toujours référence.
 
 ### La [PEP8](https://peps.python.org/pep-0008/)
