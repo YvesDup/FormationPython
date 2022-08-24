@@ -101,8 +101,8 @@ try:
 	z = u 
 	try:
 		a === 10
-    except ...:
-        pass
+  except ...:
+    pass
 except ...:
     pass
 ```
