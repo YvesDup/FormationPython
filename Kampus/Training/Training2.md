@@ -418,7 +418,8 @@ Voir [Les environements virtuels](https://docs.python.org/fr/3.8/library/venv.ht
 <style scoped> {
   font-size: 22px;
 }
-</style>## Les bonnes pratiques
+</style>
+## Les bonnes pratiques
 ## Les annotations de types
 
 
@@ -435,9 +436,9 @@ Les bonnes pratiques en Python constitue un ensemble de règles que les dévelop
 Les bonnes pratiques en Python sont résumées dans une document nommé PEP8 et donc voici un [résumé](https://python.sdv.univ-paris-diderot.fr/15_bonnes_pratiques/)
 (
 Ici sont listés tous les cas concernant:
-+ le nommage des variables, classes, fonctions, méthodes, constantes
-+ la ponctuation, les espaces, les blocs, les sauts de ligne
-+ la longeueur d'une ligne
++ le nommage des variables, classes, fonctions, méthodes, constantes,
++ la ponctuation, les espaces, les blocs, les sauts de ligne,
++ la longueur d'une ligne.
 
 
 ---
