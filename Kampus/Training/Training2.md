@@ -143,7 +143,7 @@ L'expression `as e` dans le bloc `except ...` permet de récupérer l'exception 
 </style>
 
 Une fois que l'exeption a été interceptée, c'est au programmeur de décider de la suite à donner: 
-+ soit le programme continue après un traitement spécifique ou pas
++ soit le programme continue après un traitement spécifique ou pas,
 + soit l'erreur est renvoyée à l'appelant en propageant l'erreur par la mise en place d'une instruction `raise` dans le bloc `except`. Dans ce cas, si aucune exception n'est indiquée après le `raise`, c'est l'exception est cours qui est transmise.
 
 **A noter:** dans le traitement d'une exception, un appel à `raise OtherException` est tout à fait possible. L'exception à l'origine de l'erreur, peut être préciser avec le mot `from` comme ceci:
@@ -158,7 +158,7 @@ except ArithmeticError as e:
 
 ### Le bloc `else`
 
-Ce bloc optionnel est appelé quand il n'y a pas eu d'exception levée.
+Ce bloc optionnel unique est appelé quand il n'y a pas eu d'exception levée.
 
 ---
 <style scoped> {
@@ -264,9 +264,9 @@ voir [Toutes les biliothèques](https://docs.python.org/fr/3.8/library/index.htm
 </style>
 ### Utiliser les bibliothèques externes
 
-Lorsque le programmeur se lance dans la réalisation d'un script, il arrive assez vite qu'il cherche des exemples sur Internet. Dans les exemples, très souvent l'utilisation de bibliothèques externes s'imposent. C'est ainsi que sa première installation se produit ...
+Lorsque le programmeur se lance dans la réalisation d'un script, il arrive assez vite qu'il cherche des exemples sur Internet ou en interrogeant ses collègues. Dans les exemples, très souvent l'utilisation de bibliothèques externes s'imposent.
 
-La majorité des bibliothèques se trouve dans [Python Package Installer (PyPi)](https://pypi.org/) qui est le principal dépôt où sont publiées les bibliothèques externes
+La majorité des bibliothèques se trouve dans [Python Package Installer (PyPi)](https://pypi.org/) qui est le principal dépôt où sont publiées les bibliothèques externes.
 
 #### Installer des bibliothèques
 
@@ -336,8 +336,8 @@ Voici une liste non exhaustive de commandes passées avec l'utilitaire **PIP**
 |Voir le détail d'une bibliothèque installée|```python3.8 -m pip show  matplotlib```|
 |Désinstallation d'une bibliothèque|```python3.8 -m pip uninstall matplotlib```|
 |Lister les bibliothèques installées|```python3.8 -m pip list```|
-|Préparer un fichier de requirements en listant les bibliothèques installées et leur version|```python3.8 -m pip freeze 2>./requirements.txt```|
-|Installation les bibliothèques à partir d'un fichier de requirements|```python3.8 -m pip install -e ./requirements.txt```|
+|Préparer un fichier texte en formatté listant les bibliothèques installées et leur version|```python3.8 -m pip freeze 2>./requirements.txt```|
+|Installation les bibliothèques à partir d'un fichier texte formatté|```python3.8 -m pip install -e ./requirements.txt```|
 |Examiner le détail d'une bibliothèques|```python3.8 -m pip show matplotlib```|
 
 ---
