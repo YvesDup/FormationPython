@@ -464,7 +464,9 @@ Il existe plusieurs outils pour vérifier, relire et proposer des améliorations
 ---
 #### Black
 
-Cet outil est un formatteur de code Python, c'est à dire qu'il repère les lignes de code qui ne respectent les règles de la PEP8. Il propose alors une remise en forme.
+Cet outil est un 'formatteur' de code Python, c'est à dire qu'il repère les lignes de code qui ne respectent les règles de la PEP8. Il propose alors une remise en forme.
+
+Attention, cet outil modifie votre code, uniquement sur la mise en forme.
 
 [La bibliothèque](https://pypi.org/project/black/)
 
@@ -473,8 +475,8 @@ Cet outil est un formatteur de code Python, c'est à dire qu'il repère les lign
 
 Cet outil analyse le code d'un fichier Python, repère les lignes de code qui ne respectent pas la PEP8, et fait une analyse statique sur certains types d'anomalies comme:
 
-* élément non utilisés comme des variables, des paramètres, des bibliothèques
-* noms de fonctions non trouvés
++ élément non utilisés comme des variables, des paramètres, des bibliothèques,
++ noms de fonctions non trouvés.
 
 [La bibliothèque](https://pypi.org/project/flake8/)
 [La documentation](https://flake8.pycqa.org/en/latest/)
@@ -507,7 +509,7 @@ Cet outil permet de rechercher des vulnerabilités sur le code Python
 ----
 #### Coverage
 
-Cet outil permet de faire de la couverture de code, cest à dire de vérifier que toutes les parties d'un code sont bien utilisées.
+Cet outil permet de faire de la couverture de code, cest à dire de vérifier que toutes les parties d'un code sont bien utilisées (nécessaires).
 
 [La documentation](https://coverage.readthedocs.io)
 
