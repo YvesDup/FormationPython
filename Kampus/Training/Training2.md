@@ -98,7 +98,7 @@ du mécanisme de gestion d'erreur.
 try:
 	a = 10
 	a += 'yo'
-	z = u 
+	z = u
 	try:
 		a === 10
   except ...:
@@ -107,7 +107,7 @@ except ...:
     pass
 ```
 
-Ici les 3 lignes du bloc `try` sont surveillées par le mécanisme d'erreur, ainsi que le bloc `try/except` imbriqué.
+Ici les 3 lignes du 1° bloc `try` sont surveillées par le mécanisme d'erreur, ainsi que le bloc `try/except` imbriqué.
 
 ---
 <style scoped> {
@@ -116,11 +116,11 @@ Ici les 3 lignes du bloc `try` sont surveillées par le mécanisme d'erreur, ain
 </style>
 #### Le bloc `except`
 
-Le bloc `except` sert à intercepter une erreur. Comme plusieurs blocs successifs sont possibles, l'ordre des blocs est important. 
+Ce bloc sert à intercepter une erreur. Comme plusieurs blocs successifs sont possibles, l'ordre des blocs est important.
 
-Les exceptions sont basées sur le mécanisme de l'héritage. L'exception de réfrence `BaseException` est celle la plus générique. Toutes les exceptions en Python dérivent de celle-ci. Donc en positionnant un bloc `except BaseException` en premier, toute exception, quelle soit spécifique ou pas sera interceptée.
+Les exceptions sont basées sur le mécanisme de l'héritage. L'exception de référence `BaseException` est la plus générique (classe mère ou de référence). Toutes les exceptions en Python dérivent de celle-ci. Donc en positionnant un bloc `except BaseException` en premier, toute exception, quelle soit très spécifique ou pas sera interceptée.
 
-Le positionnement de l'exception la 'plus générale' doit toujours être indiqué en dernier.
+L'exception la 'plus générale' doit toujours être positionnée en dernier.
 
 ```python
 import os
