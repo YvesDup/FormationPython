@@ -348,8 +348,8 @@ Voici une liste non exhaustive de commandes passées avec l'utilitaire **PIP**
 
 ## Les environnements virtuels
 
-Les environements virtuels en Python permettent de dédier une installation spécifique à un projet. C'est à dire:
-+ dédiée à une version de Python
+Ce mode opératoire, en Python, permet de dédier une installation spécifique à un projet. C'est à dire:
++ dédiée à une version de Python,
 + dédiée à une liste de bibliothèques externes (A terme installable via un fichier de requirements, issu de cette installation).
 
 Ainsi vous pouvez avoir 2 environnements spécifiques pour 2 versions de Python différentes.
