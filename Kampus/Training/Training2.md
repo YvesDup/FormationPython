@@ -421,6 +421,28 @@ Voir [Les environements virtuels](https://docs.python.org/fr/3.8/library/venv.ht
 </style>
 ## Les annotations de types: introduction
 
+Ce système permet d'indiquer à titre informatif, les 'types' ou 'regroupements de 'types' attendus pour:
++ les paramètres,
++ les valeurs retournées,
++ les variables.
+
+Voici un exemple pour la fonction `racine_carre` vue dans le chapître sur les exceptions.
+
+```python
+from typing import Union
+
+def racine_carre(val: Union[int, float]) -> float:
+  """etc ....."""
+	if not isinstance(val, (int, float)):
+		# leve l'exception TypeError et quitte racine_carre
+		raise TypeError('"val" doit être un nombre entier ou flottant')
+	if val < 0:
+		# leve l'exception ValueError et quitte racine_carre
+		raise ValueError('"val "doit être un nombre positif ou nul')
+
+	return sqrt(val)
+```
+
 
 
 ---
