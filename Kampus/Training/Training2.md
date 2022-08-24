@@ -374,7 +374,7 @@ ou
 
 
 Vous êtes alors dans votre environnement virtuel, prêt à travailler tout en sachant que:
-* la version de python installée correspond à celle du programme python (`python` ou `pip`) qui a créée l'environement virtuel
+* la version de python installée correspond à celle du programme python (`pythonX.Y -m pip` ou `pipX.Y`) qui a créé l'environnement virtuel,
 * votre installation est vierge de toute biblibiothèque externe préalablement installée (sauf si vous avez utilisé l'option `--system-site-packages`). 
 
 ---
