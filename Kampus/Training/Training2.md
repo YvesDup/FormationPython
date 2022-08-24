@@ -33,9 +33,9 @@ Voici les thèmes abordés:
 </style>
 ## La gestion des erreurs
 
-En python, la gestion des erreurs est basée sur le mécanisme des exceptions.Lorsqu'une erreur intervient, un message spécifique s'affiche en indiquant:
+En python, la gestion des erreurs est basée sur le mécanisme des exceptions. Lorsqu'une erreur intervient, un message spécifique s'affiche en indiquant:
 + le nom de l'erreur
-+ la localisation de l'erreur avec: 
++ la localisation de l'erreur avec:
   + un nom de fichier, un numéro de ligne et un nom de fonction
 + la liste de tous les appels des fonctions précédents l'erreur
 
@@ -65,7 +65,7 @@ Ici, dans notre exemple, le script python s'est arrêté. Cependant le programme
 
 ### Le mécanisme des exceptions
 
-Ce mécanisme est basé sur le tryptique de bloc `try, except, else`. Les 2 premiers blocs sont obligatoires. Il peut y avoir plusieurs blocs `except`, mais un seul bloc `try` et un seul bloc `else`. Voici un exemple:
+Ce mécanisme est basé sur le tryptique de bloc `try, except, else`. Les 2 premiers blocs sont obligatoires. Il peut y avoir plusieurs blocs `except`, mais un seul bloc `try` et un seul bloc `else`, toujours en dernière position. Voici un exemple:
 
 ```python
 try:
@@ -348,9 +348,9 @@ Voici une liste non exhaustive de commandes passées avec l'utilitaire **PIP**
 
 ## Les environnements virtuels
 
-les environements virtuels en Python permettent de dédier une installation spécifique à un projet. C'est à dire:
+Les environements virtuels en Python permettent de dédier une installation spécifique à un projet. C'est à dire:
 + dédiée à une version de Python
-+ dédié à une liste de bibliothèques externes (A terme installable via un fichier de requirements, issu de cette installation).
++ dédiée à une liste de bibliothèques externes (A terme installable via un fichier de requirements, issu de cette installation).
 
 Ainsi vous pouvez avoir 2 environnements spécifiques pour 2 versions de Python différentes.
 
