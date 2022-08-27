@@ -416,19 +416,20 @@ Voir [Les environements virtuels](https://docs.python.org/fr/3.8/library/venv.ht
 
 ---
 <style scoped> {
-  font-size: 22px;
+  font-size: 21px;
 }
 </style>
 ## Les annotations de types: introduction
 
 Ce système permet d'indiquer à titre informatif, les 'types' ou 'regroupements de 'types' attendus pour:
-+ les paramètres,
-+ les valeurs retournées,
-+ les variables.
++ les paramètres d'une fonction,
++ les valeurs retournées d'une fonction,
++ les variables locales et globales.
 
 Voici un exemple pour la fonction `racine_carre` vue dans le chapître sur les exceptions.
 
 ```python
+import logging
 from typing import Union
 
 def racine_carre(val: Union[int, float]) -> float:
@@ -452,9 +453,23 @@ Les annotations de type ont été introduites à partir de la version 3.5
 from typing import Callable, Union, Typevar
 ```
 Cette bibliothèque contient les types élaborés revisités, les combinaisons, les alias qui seront utilisés pour définir les annotations. Par exemple:
-+ Tuple, Dict, List, Sequence, Collection, Callable, Generator, Coroutine
-+ Option, Union, Any, 
-+ TypeVar, Alias.
++ Tuple, Dict, List, Sequence, Iterable, Collection, Callable, Generator, Coroutine
++ Option, Union, Any,
++ TypeVar, Alias de type.
+
+voir [la bibiothèque typing](https://docs.python.org/fr/3/library/typing.html)
+
+#### Exemples
+
+Voici quelques exemples 
+```python
+from typing import Collection
+def somme_des_chiffres(collec: Collection) -> float:
+  """Somme des nombres de la collection"""
+  return sum(item for item in collec if isinstance(item, (int, float)))
+```
+**A noter:**: 
+Les annotations sont stockées dans la variable interne `__annotations__` rattachée à la fonction.
 
 ### La mise en oeuvre
 
