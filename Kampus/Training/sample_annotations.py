@@ -2,7 +2,8 @@ import math
 import sys
 from typing import Union
 
-def racine_carre(val: Union[float, int]):
+def racine_carre(val: Union[float, int]) -> float:
+    """calcul de la racine carrée"""
     return math.sqrt(val)
 
 def main():
