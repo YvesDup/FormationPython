@@ -94,7 +94,7 @@ du mécanisme de gestion d'erreur.
 
 ```python
 try:
-  a = 10
+	a = 10
 	a += 'yo'
 	z = u
 	try:
