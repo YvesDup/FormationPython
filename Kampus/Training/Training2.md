@@ -69,19 +69,17 @@ Ce mécanisme est basé sur le tryptique de bloc `try, except, else`. Les 2 prem
 
 ```python
 try:
-	a = 10
-	b = "20"
-	a + b
-
+  a = 10
+  b = "20"
+  a + b
 except Erreur1:
-	print('Il y a soucis sur Erreur1')
+  print('Il y a soucis sur Erreur1')
 
 except Erreur2:
-	print('Il y a soucis sur Erreur2')
+  print('Il y a soucis sur Erreur2')
 
 else:
-	print('Pas d\'exception levée')
-
+  print('Pas d\'exception levée')
 ```
 
 ---
@@ -452,7 +450,7 @@ def racine_carre(val: Union[int, float]) -> float:
 ### La bibiothèque interne `typing`
 
 ```py
-from typing import Callable, Union, Typevar
+from typing import Callable, Union, TypeVar
 ```
 Cette bibliothèque contient les types élaborés renommés, les types génériques, les combinaisons, les alias de type ou des nouveaux types qui seront utilisés pour définir les annotations. Par exemple:
 + Tuple, Dict, List,
