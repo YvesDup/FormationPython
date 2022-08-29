@@ -144,7 +144,7 @@ Une fois que l'exeption a été interceptée, c'est au programmeur de décider d
 + soit le programme continue après un traitement spécifique ou pas,
 + soit l'erreur est renvoyée à l'appelant en propageant l'erreur par la mise en place d'une instruction `raise` dans le bloc `except`. Dans ce cas, si aucune exception n'est indiquée après le `raise`, c'est l'exception est cours qui est transmise.
 
-**A noter**: dans le traitement d'une exception, un appel à `raise OtherException` est tout à fait possible. L'exception à l'origine de l'erreur, peut être préciser avec le mot `from` comme ceci:
+**A noter**: dans le traitement d'une exception, un appel à `raise OtherException` est tout à fait possible. L'exception à l'origine de l'erreur, peut être précisée avec l'instruction `from` comme ceci:
 
 ```py
 try:
