@@ -447,6 +447,10 @@ def racine_carre(val: Union[int, float]) -> float:
 Les annotations de type ont été introduites à partir de la version 3.5
 
 ---
+<style scoped> {
+  font-size: 21px;
+}
+</style>
 ### La bibiothèque interne `typing`
 
 ```py
@@ -459,34 +463,32 @@ Cette bibliothèque contient les types élaborés revisités, les combinaisons, 
 
 voir [la bibiothèque typing](https://docs.python.org/fr/3/library/typing.html)
 
-#### Exemples
+#### Quelques exemples d'annotations
 
-Voici quelques exemples 
 ```python
 from typing import Collection
+
 def somme_des_chiffres(collec: Collection) -> float:
   """Somme des nombres de la collection"""
   return sum(item for item in collec if isinstance(item, (int, float)))
 ```
+
+---
+
 **A noter:**: 
 Les annotations sont stockées dans la variable interne `__annotations__` rattachée à la fonction.
 
-### La mise en oeuvre
-
-A parir de cette présentation, nous pourrons reprendre tous les exos précédents vus ensemble et positionner les annotations pour chaque fonction. 
 ---
 <style scoped> {
-  font-size: 24px;
+  font-size: 21px;
 }
 </style>
 ## Les bonnes pratiques
 
-Les bonnes pratiques en Python constitue un ensemble de règles que les développeurs s'attèlent à respecter (c'est pas toujours facile ;-)).
-Lors des revues de codes, les développeurs y font toujours référence.
+Les bonnes pratiques en Python constitue un ensemble de règles que les développeurs s'attèlent à respecter (c'est pas toujours facile ;-)). Lors des revues de codes, les développeurs y font toujours référence.
 
 ### La [PEP8](https://peps.python.org/pep-0008/)
 Les bonnes pratiques en Python sont résumées dans une document nommé PEP8 et donc voici un [résumé](https://python.sdv.univ-paris-diderot.fr/15_bonnes_pratiques/)
-(
 Ici sont listés tous les cas concernant:
 + le nommage des variables, classes, fonctions, méthodes, constantes,
 + la ponctuation, les espaces, les blocs, les sauts de ligne,
@@ -494,9 +496,9 @@ Ici sont listés tous les cas concernant:
 
 ### Les commentaires
 
-Les commentataires en Python se retrouvent principalement sous 2 formes:
-+ les `docstring` avec les trytiques de quotes `'''ceci est une docstring'''`,
-+ les commentaires standards avec le `#`.
+Les commentaires en Python se retrouvent principalement sous 2 formes:
++ les `docstring` avec les trytiques de quotes `'''ceci est une docstring'''` sur les fonctions, les classes, les méthodes.
++ les commentaires standards avec le `#` comme délimiteur de début.
 
 ---
 <style scoped> {
@@ -505,8 +507,7 @@ Les commentataires en Python se retrouvent principalement sous 2 formes:
 </style>
 ### Les linters
 
-Ces outils peuvent être installés et utilisés en ligne de commande via la commande `python -m pip install <outil>`
-La plupart des IDE (PyCharm, Spyder, VSCode) propose aussi leur installation et exécution à travers des extensions
+Ces outils peuvent être installés et utilisés en ligne de commande via la commande `python -m pip install <outil>`. La plupart des IDE (PyCharm, Spyder, VSCode) propose aussi leur installation et exécution à travers des extensions.
 
 Il existe plusieurs outils pour vérifier, relire et proposer des améliorations sur votre code, parmi les plus utilisés voici:
 
@@ -520,7 +521,7 @@ Il existe plusieurs outils pour vérifier, relire et proposer des améliorations
 ---
 #### Black
 
-Cet outil est un 'formatteur' de code Python, c'est à dire qu'il repère les lignes de code qui ne respectent les règles de la PEP8. Il propose alors une remise en forme.
+Cet outil est un 'formatteur' de code Python, c'est à dire qu'il repère les lignes de code qui ne respectent pas les règles de la PEP8. Il propose alors une remise en forme.
 
 Attention, cet outil modifie votre code, uniquement sur la mise en forme.
 
