@@ -318,7 +318,7 @@ Commands:
   help                        Show help for commands.
 ```
 
-voir [Installation de paquets](https://packaging.python.org/en/latest/tutorials/installing-packages/)
+voir [Installation de bibliothèques externes](https://packaging.python.org/en/latest/tutorials/installing-packages/)
 
 ---
 <style scoped> {
