@@ -338,7 +338,7 @@ Voici une liste non exhaustive de commandes passées avec l'utilitaire **PIP**
 |Lister les bibliothèques installées|```python3.8 -m pip list```|
 |Préparer un fichier texte en formaté listant les bibliothèques installées et leur version|```python3.8 -m pip freeze 2>./requirements.txt```|
 |Installation les bibliothèques à partir d'un fichier texte formaté|```python3.8 -m pip install -e ./requirements.txt```|
-|Examiner le détail d'une bibliothèques|```python3.8 -m pip show matplotlib```|
+|Examiner le détail d'une bibliothèque|```python3.8 -m pip show matplotlib```|
 
 ---
 <style scoped> {
