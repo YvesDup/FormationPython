@@ -9,7 +9,7 @@ def racine_carre(val: Union[float, int]) -> float:
 def main():
     print(racine_carre(10))
     print(racine_carre(10.169))
-    # print(racine_carre("10"))
+    print(racine_carre("10"))
 
 
 Number = Union[float, int] # alias
@@ -18,5 +18,5 @@ def minmax(serie: Union[List, Set, Tuple]) -> Tuple[Number, Number]:
     return min(serie), max(serie)
 
 if __name__ == '__main__':
+    print(minmax.__name__, '->', minmax.__annotations__, minmax.__doc__)    
     main()
-    print(minmax.__name__, '->', minmax.__annotations__, minmax.__doc__)
