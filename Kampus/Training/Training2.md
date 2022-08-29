@@ -146,7 +146,7 @@ Une fois que l'exeption a été interceptée, c'est au programmeur de décider d
 + soit le programme continue après un traitement spécifique ou pas,
 + soit l'erreur est renvoyée à l'appelant en propageant l'erreur par la mise en place d'une instruction `raise` dans le bloc `except`. Dans ce cas, si aucune exception n'est indiquée après le `raise`, c'est l'exception est cours qui est transmise.
 
-**A noter:**: dans le traitement d'une exception, un appel à `raise OtherException` est tout à fait possible. L'exception à l'origine de l'erreur, peut être préciser avec le mot `from` comme ceci:
+**A noter**: dans le traitement d'une exception, un appel à `raise OtherException` est tout à fait possible. L'exception à l'origine de l'erreur, peut être préciser avec le mot `from` comme ceci:
 
 ```py
 try:
@@ -254,7 +254,7 @@ import weakref
 import xml
 import zipfile
 ```
-**A noter:**: il y a autant de ligne que de bibliothèques. Les bibliothèques sont listées par ordre alphabétique
+**A noter**: il y a autant de ligne que de bibliothèques. Les bibliothèques sont listées par ordre alphabétique
 voir [Toutes les biliothèques](https://docs.python.org/fr/3.8/library/index.html)
 
 ---
@@ -421,7 +421,7 @@ Voir [Les environnements virtuels](https://docs.python.org/fr/3.8/library/venv.h
 
 Ce système permet d'indiquer à titre informatif, les 'types' ou 'regroupements de 'types' attendus pour:
 + les paramètres d'une fonction, d'une méthode,
-+ les valeurs retournées d'une fonction, d'une méthode
++ les valeurs retournées d'une fonction, d'une méthode,
 + les variables locales et globales, attributs d'objet, de classe.
 
 Voici un exemple pour la fonction `racine_carre` vue dans le chapître sur les exceptions.
@@ -442,7 +442,7 @@ def racine_carre(val: Union[int, float]) -> float:
 	return sqrt(val)
 ```
 
-**A noter:**: les annotations de type ont été introduites à partir de la version 3.5.
+**A noter**: les annotations de type ont été introduites à partir de la version 3.5.
 
 ---
 <style scoped> {
@@ -473,7 +473,7 @@ def somme_des_chiffres(collec: Collection) -> float:
 # Alias
 vector = List[float]
 ```
-**A noter:**: les annotations sont stockées dans la variable interne `__annotations__` rattachée à la fonction.
+**A noter**: les annotations sont stockées dans la variable interne `__annotations__` rattachée à la fonction.
 
 ---
 <style scoped> {
