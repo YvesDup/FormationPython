@@ -151,7 +151,7 @@ try:
 	1/0
 except ArithmeticError as e:
 	print(type(e), str(e))
-	raise MyOwnError from e # ici je propage l'erreur MyOwnError vers l'appelant
+	raise MyOwnError('...') from e # ici je propage l'erreur `MyOwnError` vers l'appelant avec une référence à  `ArithmeticError`
 ```
 
 ### Le bloc `else`
