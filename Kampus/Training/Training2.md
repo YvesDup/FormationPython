@@ -454,9 +454,9 @@ def racine_carre(val: Union[int, float]) -> float:
 ```py
 from typing import Callable, Union, Typevar
 ```
-Cette bibliothèque contient les types élaborés reommés, les types génériques, les alias de type ou des nouveaux types qui seront utilisés pour définir les annotations. Par exemple:
-+ Tuple, Dict, List, 
-Sequence, Iterable, Collection, Callable, Generator, Coroutine
+Cette bibliothèque contient les types élaborés reommés, les types génériques, les combinaisons, les alias de type ou des nouveaux types qui seront utilisés pour définir les annotations. Par exemple:
++ Tuple, Dict, List,
++ Sequence, Iterable, Collection, Callable, Generator, Coroutine
 + Option, Union, Any,
 + TypeVar, Alias de type.
 
