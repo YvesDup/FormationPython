@@ -1,10 +1,10 @@
 import sys
 
-def test():
+def test(diviseur=0):
     try: 
-        1/0
+        1/diviseur
     except ZeroDivisionError:
-        print('zero deivision error')
+        print('zero division error')
     except ValueError:
         print('autre')
     else:
