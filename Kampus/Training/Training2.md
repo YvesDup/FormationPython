@@ -111,7 +111,7 @@ Ici les 3 lignes du 1° bloc `try` sont surveillées par le mécanisme d'erreur,
 
 ---
 <style scoped> {
-  font-size: 23px;
+  font-size: 22px;
 }
 </style>
 #### Le bloc `except`
