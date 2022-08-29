@@ -150,7 +150,7 @@ Une fois que l'exeption a été interceptée, c'est au programmeur de décider d
 
 ```py
 try:
-    1/0
+	1/0
 except ArithmeticError as e:
 	print(type(e), str(e))
 	raise MyOwnError from e # ici je propage l'erreur MyError vers l'appelant
