@@ -1,3 +1,4 @@
+import math
 import sys
 
 def racine_carre(val):
