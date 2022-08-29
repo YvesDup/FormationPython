@@ -455,7 +455,7 @@ from typing import Callable, Union, TypeVar
 Cette bibliothèque contient les types élaborés renommés, les types génériques, les combinaisons, les alias de type ou des nouveaux types qui seront utilisés pour définir les annotations. Par exemple:
 + Tuple, Dict, List,
 + Sequence, Iterable, Collection, Callable, Generator, Coroutine, Iterator
-+ Option, Union, Any,
++ Optional, Union, Any,
 + TypeVar, Alias de type.
 
 Voir [la bibiothèque typing](https://docs.python.org/fr/3/library/typing.html)
