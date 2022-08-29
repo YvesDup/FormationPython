@@ -13,6 +13,7 @@ def test(diviseur=0):
 def main():
     test(0)
     test(10)
+    test('10')
 
 if __name__ == '__main__':
     main()
