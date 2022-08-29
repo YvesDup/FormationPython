@@ -1,12 +1,14 @@
 import sys
 
 def test(diviseur=0):
-    try: 
+    try:
         1/diviseur
     except ZeroDivisionError:
         print('zero division error')
     except TypeError:
-        print('autre')
+        print('autre error')
+    except Exception:
+        print("tout ce qui passe ....")
     else:
         print('no error')
 
