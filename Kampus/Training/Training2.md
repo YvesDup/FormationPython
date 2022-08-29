@@ -383,9 +383,7 @@ Vous êtes alors dans votre environnement virtuel, prêt à travailler tout en s
 }
 </style>
 
-Donc si vous avez besoin de partir d'une installation de Python avec des bibliothèques déjà préinstallées, vous devez ajouter le paramètre `--system-sites-packages`
-
-Par exemple dans votre installation de référence vous avez tous vos outils de tests (Pytest, mock)  et vos outils de documentations, mais qui ne feront pas partie de votre livrable.
+Donc si vous avez besoin de partir d'une installation de Python avec des bibliothèques déjà préinstallées, vous devez ajouter le paramètre `--system-sites-packages`. Par exemple, dans votre installation de référence vous avez tous vos outils de tests (Pytest, mock) et vos outils engendrant les documentations, ainsi ces éléments ne feront pas partie de votre livrable.
 
 Pour voir toutes les options possibles, tapez la commande: `python -m venv --help`
 
