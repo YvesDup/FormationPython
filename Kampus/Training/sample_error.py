@@ -5,7 +5,7 @@ def test(diviseur=0):
         1/diviseur
     except ZeroDivisionError:
         print('zero division error')
-    except ValueError:
+    except TypeError:
         print('autre')
     else:
         print('no error')
