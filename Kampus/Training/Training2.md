@@ -410,7 +410,7 @@ options:
 Once an environment has been created, you may wish to activate it, e.g. by sourcing an activate script in its bin directory.
 ```
 
-Voir [Les environements virtuels](https://docs.python.org/fr/3.8/library/venv.html)
+Voir [Les environnements virtuels](https://docs.python.org/fr/3.8/library/venv.html)
 
 ---
 <style scoped> {
