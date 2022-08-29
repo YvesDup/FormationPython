@@ -11,7 +11,8 @@ def test(diviseur=0):
         print('no error')
 
 def main():
-    test()
+    test(0)
+    test(10)
 
 if __name__ == '__main__':
     main()
