@@ -18,13 +18,13 @@ _
 
 # Training2
 
-Voici les thèmes abordés:
+Voici les thèmes abordés lors de ce 2° training:
 
 * La gestion des erreurs.
-* Les bibliohèques externes.
+* Les bibliothèques externes.
 * Les environnements virtuels.
 * Les annotations de types.
-* Les bonnes pratiques
+* Les bonnes pratiques.
 
 ---
 <style scoped> {
