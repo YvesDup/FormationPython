@@ -503,7 +503,7 @@ Les commentaires en Python s'utlisent principalement sous 2 formes:
 </style>
 ### Les linters
 
-Ces outils de contrôle de code peuvent être installés et utilisés en ligne de commande via la commande `python -m pip install <outil>`. La plupart des IDE (PyCharm, Spyder, VSCode) propose aussi leur installation et exécution (souvent automatqie) à travers des extensions.
+Ces outils de contrôle de code peuvent être installés et utilisés en ligne de commande via la commande `python -m pip install <outil>`. La plupart des IDE (PyCharm, Spyder, VSCode) propose aussi leur installation et exécution (souvent automatique) à travers des extensions. Ils sont appelable via un programme créé lors de l'installation.
 
 Il existe plusieurs outils pour vérifier, relire et proposer des améliorations sur votre code, parmi les plus utilisés voici:
 
