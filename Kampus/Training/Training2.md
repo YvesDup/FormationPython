@@ -517,7 +517,7 @@ Il existe plusieurs outils pour vérifier, relire et proposer des améliorations
 ---
 #### Black
 
-Cet outil est un 'formatteur' de code Python, c'est à dire qu'il repère les lignes de code qui ne respectent pas les règles de la PEP8. Il propose alors une remise en forme.
+Cet outil est un 'formateur' de code Python, c'est à dire qu'il repère les lignes de code qui ne respectent pas les règles de la PEP8. Il propose alors une remise en forme.
 
 Attention, cet outil modifie votre code, uniquement sur la mise en forme.
 
