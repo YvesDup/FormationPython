@@ -472,15 +472,12 @@ def somme_des_chiffres(collec: Collection) -> float:
   """Somme des nombres de la collection"""
   return sum(item for item in collec if isinstance(item, (int, float)))
 ```
-
----
-
 **A noter:**: 
 Les annotations sont stockées dans la variable interne `__annotations__` rattachée à la fonction.
 
 ---
 <style scoped> {
-  font-size: 21px;
+  font-size: 20px;
 }
 </style>
 ## Les bonnes pratiques
@@ -488,8 +485,7 @@ Les annotations sont stockées dans la variable interne `__annotations__` rattac
 Les bonnes pratiques en Python constitue un ensemble de règles que les développeurs s'attèlent à respecter (c'est pas toujours facile ;-)). Lors des revues de codes, les développeurs y font toujours référence.
 
 ### La [PEP8](https://peps.python.org/pep-0008/)
-Les bonnes pratiques en Python sont résumées dans une document nommé PEP8 et donc voici un [résumé](https://python.sdv.univ-paris-diderot.fr/15_bonnes_pratiques/)
-Ici sont listés tous les cas concernant:
+Les bonnes pratiques en Python sont résumées dans une document nommé PEP8 et donc voici un [résumé](https://python.sdv.univ-paris-diderot.fr/15_bonnes_pratiques/). Ici sont listés tous les cas concernant:
 + le nommage des variables, classes, fonctions, méthodes, constantes,
 + la ponctuation, les espaces, les blocs, les sauts de ligne,
 + la longueur d'une ligne.
@@ -507,7 +503,7 @@ Les commentaires en Python se retrouvent principalement sous 2 formes:
 </style>
 ### Les linters
 
-Ces outils peuvent être installés et utilisés en ligne de commande via la commande `python -m pip install <outil>`. La plupart des IDE (PyCharm, Spyder, VSCode) propose aussi leur installation et exécution à travers des extensions.
+Ces outils de contrôle de code peuvent être installés et utilisés en ligne de commande via la commande `python -m pip install <outil>`. La plupart des IDE (PyCharm, Spyder, VSCode) propose aussi leur installation et exécution (souvent automatqie) à travers des extensions.
 
 Il existe plusieurs outils pour vérifier, relire et proposer des améliorations sur votre code, parmi les plus utilisés voici:
 
@@ -572,31 +568,30 @@ Cet outil permet de faire de la couverture de code, cest à dire de vérifier qu
 
 ---
 <style scoped> {
-  font-size: 24px;
+  font-size: 17px;
 }
 </style>
 ### Le Zen de Python
 
 Exécuter la ligne suivante ```python3.8 -c 'import this'```
 
-```
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren't special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you're Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it's a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
-```
+* Explicit is better than implicit.
+* Simple is better than complex.
+* Complex is better than * complicated.
+* Flat is better than nested.
+* Sparse is better than dense.
+* Readability counts.
+* Special cases aren't special * enough to break the rules.
+* Although practicality beats purity.
+* Errors should never pass silently.
+* Unless explicitly silenced.
+* In the face of ambiguity, refuse the temptation to guess.
+* There should be one-- and preferably only one --obvious way to do it.
+* Although that way may not be obvious at first unless you're Dutch.
+* Now is better than never.
+* Although never is often better than *right* now.
+* If the implementation is hard to explain, it's a bad idea.
+* If the implementation is easy to explain, it may be a good idea.
+* Namespaces are one honking great idea -- let's do more of those!
+
 
