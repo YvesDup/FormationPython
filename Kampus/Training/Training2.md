@@ -420,9 +420,9 @@ Voir [Les environements virtuels](https://docs.python.org/fr/3.8/library/venv.ht
 ## Les annotations de types: introduction
 
 Ce système permet d'indiquer à titre informatif, les 'types' ou 'regroupements de 'types' attendus pour:
-+ les paramètres d'une fonction,
-+ les valeurs retournées d'une fonction,
-+ les variables locales et globales.
++ les paramètres d'une fonction, d'une méthode,
++ les valeurs retournées d'une fonction, d'une méthode
++ les variables locales et globales, attributs d'objet, de classe.
 
 Voici un exemple pour la fonction `racine_carre` vue dans le chapître sur les exceptions.
 
