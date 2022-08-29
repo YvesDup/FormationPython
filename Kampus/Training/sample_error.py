@@ -1,5 +1,7 @@
 import sys
 
+import matplotlib
+
 def test(diviseur=0):
     try:
         1/diviseur
