@@ -18,5 +18,5 @@ def minmax(serie: Union[List, Set, Tuple]) -> Tuple[Number, Number]:
     return min(serie), max(serie)
 
 if __name__ == '__main__':
-    print(minmax.__name__, '->', minmax.__annotations__, minmax.__doc__)    
+    print(minmax.__name__, '->', minmax.__annotations__, minmax.__doc__)   
     main()
