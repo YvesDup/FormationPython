@@ -1,7 +1,8 @@
 import math
 import sys
+from typing import Union
 
-def racine_carre(val):
+def racine_carre(val: Union[float, int]):
     return math.sqrt(val)
 
 def main():
