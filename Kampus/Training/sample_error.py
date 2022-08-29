@@ -7,6 +7,7 @@ def test(diviseur=0):
         print('zero division error')
     except TypeError:
         print('autre error')
+        raise
     except Exception:
         print("tout ce qui passe ....")
     else:
