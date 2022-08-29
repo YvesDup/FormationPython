@@ -96,15 +96,15 @@ du mécanisme de gestion d'erreur.
 
 ```python
 try:
-	a = 10
+  a = 10
 	a += 'yo'
 	z = u
 	try:
 		a === 10
-  except ...:
-    pass
+	except ...:
+		pass
 except ...:
-    pass
+		pass
 ```
 
 Ici les 3 lignes du 1° bloc `try` sont surveillées par le mécanisme d'erreur, ainsi que le bloc `try/except` imbriqué.
