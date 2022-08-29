@@ -45,7 +45,7 @@ Traceback (most recent call last):
     move(n, 'A', 'B', 'C')
   File "C:\Users\robert\Desktop\hanoi_towers.py", line 5, in move
     move(disk-1, _from, _aux, _to)
-  File "C:\Users\robert\Desktop\haÒnoi_towers.py", line 5, in move
+  File "C:\Users\robert\Desktop\hanoi_towers.py", line 5, in move
     move(disk-1, _from, _aux, _to)
   File "C:\Users\robert\Desktop\hanoi_towers.py", line 7, in move
     uu
