@@ -555,14 +555,14 @@ Cet outil analyse les annotations de type mises en oeuvre et vérifient statique
 ----
 #### Bandit
 
-Cet outil permet de rechercher des vulnerabilités sur le code Python
+Cet outil permet de rechercher des vulnérabilités sur le code Python.
 
 [La documentation](https://bandit.readthedocs.io/en/latest/)
 
 ----
 #### Coverage
 
-Cet outil permet de faire de la couverture de code, cest à dire de vérifier que toutes les parties d'un code sont bien utilisées (nécessaires).
+Cet outil permet de faire de la couverture de code, c'est à dire de vérifier que toutes les parties d'un code sont bien utilisées (nécessaires).
 
 [La documentation](https://coverage.readthedocs.io)
 
@@ -594,4 +594,9 @@ Exécuter la ligne suivante ```python3.8 -c 'import this'```
 * If the implementation is easy to explain, it may be a good idea.
 * Namespaces are one honking great idea -- let's do more of those!
 
+---
+## Des questions ......
 
+
+* A jeudi et vendredi pour la programmation Objet en Python 
+* Bonne fin de journée
