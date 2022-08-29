@@ -336,8 +336,8 @@ Voici une liste non exhaustive de commandes passées avec l'utilitaire **PIP**
 |Voir le détail d'une bibliothèque installée|```python3.8 -m pip show  matplotlib```|
 |Désinstallation d'une bibliothèque|```python3.8 -m pip uninstall matplotlib```|
 |Lister les bibliothèques installées|```python3.8 -m pip list```|
-|Préparer un fichier texte en formatté listant les bibliothèques installées et leur version|```python3.8 -m pip freeze 2>./requirements.txt```|
-|Installation les bibliothèques à partir d'un fichier texte formatté|```python3.8 -m pip install -e ./requirements.txt```|
+|Préparer un fichier texte en formaté listant les bibliothèques installées et leur version|```python3.8 -m pip freeze 2>./requirements.txt```|
+|Installation les bibliothèques à partir d'un fichier texte formaté|```python3.8 -m pip install -e ./requirements.txt```|
 |Examiner le détail d'une bibliothèques|```python3.8 -m pip show matplotlib```|
 
 ---
