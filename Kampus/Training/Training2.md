@@ -446,7 +446,7 @@ def racine_carre(val: Union[int, float]) -> float:
 
 ---
 <style scoped> {
-  font-size: 21px;
+  font-size: 20px;
 }
 </style>
 ### La bibiothèque interne `typing`
@@ -454,12 +454,13 @@ def racine_carre(val: Union[int, float]) -> float:
 ```py
 from typing import Callable, Union, Typevar
 ```
-Cette bibliothèque contient les types élaborés revisités, les combinaisons, les alias qui seront utilisés pour définir les annotations. Par exemple:
-+ Tuple, Dict, List, Sequence, Iterable, Collection, Callable, Generator, Coroutine
+Cette bibliothèque contient les types élaborés reommés, les types génériques, les alias de type ou des nouveaux types qui seront utilisés pour définir les annotations. Par exemple:
++ Tuple, Dict, List, 
+Sequence, Iterable, Collection, Callable, Generator, Coroutine
 + Option, Union, Any,
 + TypeVar, Alias de type.
 
-voir [la bibiothèque typing](https://docs.python.org/fr/3/library/typing.html)
+Voir [la bibiothèque typing](https://docs.python.org/fr/3/library/typing.html)
 
 #### Quelques exemples d'annotations
 
@@ -469,9 +470,10 @@ from typing import Collection
 def somme_des_chiffres(collec: Collection) -> float:
   """Somme des nombres de la collection"""
   return sum(item for item in collec if isinstance(item, (int, float)))
+# Alias
+vector = List[float]
 ```
-**A noter:**: 
-Les annotations sont stockées dans la variable interne `__annotations__` rattachée à la fonction.
+**A noter:**: les annotations sont stockées dans la variable interne `__annotations__` rattachée à la fonction.
 
 ---
 <style scoped> {
