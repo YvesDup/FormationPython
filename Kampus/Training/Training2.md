@@ -350,7 +350,7 @@ Voici une liste non exhaustive de commandes passées avec l'utilitaire **PIP**
 
 Ce mode opératoire, en Python, permet de dédier une installation spécifique à un projet. C'est à dire:
 + dédiée à une version de Python,
-+ dédiée à une liste de bibliothèques externes (A terme installables via un fichier texte formaté et la commande `pip install -e ...`, issu de cette installation).
++ dédiée à une liste de bibliothèques externes, par exemple à partir d'un fichier texte formaté produit par la commande `pip install -e ...`.
 
 Ainsi vous pouvez avoir 2 environnements spécifiques pour 2 versions de Python différentes.
 
