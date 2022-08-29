@@ -375,7 +375,7 @@ ou
 
 Vous êtes alors dans votre environnement virtuel, prêt à travailler tout en sachant que:
 * la version de python installée correspond à celle du programme python (`pythonX.Y -m venv`) qui a créé l'environnement virtuel,
-* votre installation est vierge de toute biblibiothèque externe préalablement installée (sauf si vous avez utilisé l'option `--system-site-packages`). 
+* votre installation est vierge de toute biblibiothèque externe préalablement installée (sauf si vous avez utilisé l'option `--system-site-packages`).
 
 ---
 <style scoped> {
