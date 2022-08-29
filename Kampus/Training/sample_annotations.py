@@ -9,7 +9,7 @@ def racine_carre(val: Union[float, int]) -> float:
 def main():
     print(racine_carre(10))
     print(racine_carre(10.169))
-    print(racine_carre("10"))
+    # print(racine_carre("10"))
 
 
 Number = Union[float, int] # alias
