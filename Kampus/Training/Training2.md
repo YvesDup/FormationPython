@@ -493,8 +493,8 @@ Les bonnes pratiques en Python sont résumées dans une document nommé PEP8 et 
 ### Les commentaires
 
 Les commentaires en Python s'utlisent principalement sous 2 formes:
-+ les `docstring` avec les trytiques de quotes `'''ceci est une docstring'''` sur les fonctions, les classes, les méthodes.
-+ les commentaires standards avec le `#` comme délimiteur de début.
++ les commentaires en bloc, les `docstring` avec les trytiques de quotes `"""ceci est une docstring"""` sur les fonctions, les classes, les méthodes,
++ les commentaires de ligne, avec le `#` comme délimiteur de début.
 
 ---
 <style scoped> {
