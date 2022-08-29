@@ -427,11 +427,11 @@ Ce système permet d'indiquer à titre informatif, les 'types' ou 'regroupements
 Voici un exemple pour la fonction `racine_carre` vue dans le chapître sur les exceptions.
 
 ```python
-import logging
 from typing import Union
 
 def racine_carre(val: Union[int, float]) -> float:
-	"""etc ....."""
+	"""initialement: `def racine_carre(val):`
+  etc ....."""
   if not isinstance(val, (int, float)):
 		# leve l'exception TypeError et quitte racine_carre
 		raise TypeError('"val" doit être un nombre entier ou flottant')
@@ -442,7 +442,7 @@ def racine_carre(val: Union[int, float]) -> float:
 	return sqrt(val)
 ```
 
-Les annotations de type ont été introduites à partir de la version 3.5
+**A noter:** Les annotations de type ont été introduites à partir de la version 3.5
 
 ---
 <style scoped> {
