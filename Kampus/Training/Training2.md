@@ -528,7 +528,7 @@ Attention, cet outil modifie votre code, uniquement sur la mise en forme.
 
 Cet outil analyse le code d'un fichier Python, repère les lignes de code qui ne respectent pas la PEP8, et fait une analyse statique sur certains types d'anomalies comme:
 
-+ élément non utilisés comme des variables, des paramètres, des bibliothèques,
++ éléments non utilisés comme des variables, des paramètres, des bibliothèques,
 + noms de fonctions non trouvés.
 
 [La bibliothèque](https://pypi.org/project/flake8/)
@@ -537,7 +537,7 @@ Cet outil analyse le code d'un fichier Python, repère les lignes de code qui ne
 ---
 #### Pylint
 
-Cet outil reprend les vérifications de flake8 et ajoute d'autres partie autour des attributs, des erreurs de syntaxes, vérifient la documentation sur les fonctions, classes et méthodes.
+Cet outil reprend les vérifications de flake8 et en ajoute d'autres autour des attributs, des erreurs de syntaxes, vérifient la documentation sur les fonctions, classes et méthodes.
 
 Le gros plus: Pylint repère les duplications de code ;-)
 
@@ -547,7 +547,7 @@ Le gros plus: Pylint repère les duplications de code ;-)
 ---
 #### Mypy
 
-Cet outil analyse les annotations de type mises en oeuvre sur les fonctions et vérifient statiquement si les parmètres passés correspondent aux types déclarés dans les annotations.
+Cet outil analyse les annotations de type mises en oeuvre et vérifient statiquement si les paramètres passés, les valeurs retournées, correspondent aux types déclarés dans les annotations.
 
 [La bibliothèque](http://mypy-lang.org/)
 [La documentation](https://mypy.readthedocs.io/en/stable/)
