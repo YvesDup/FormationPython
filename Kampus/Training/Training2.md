@@ -473,7 +473,7 @@ Les annotations sont stockées dans la variable interne `__annotations__` rattac
 
 ### La mise en oeuvre
 
-
+A parir de cette présentation, nous pourrons reprendre tous les exos précédents vus ensemble et positionner les annotations pour chaque fonction. 
 ---
 <style scoped> {
   font-size: 24px;
@@ -492,6 +492,11 @@ Ici sont listés tous les cas concernant:
 + la ponctuation, les espaces, les blocs, les sauts de ligne,
 + la longueur d'une ligne.
 
+### Les commentaires
+
+Les commentataires en Python se retrouvent principalement sous 2 formes:
++ les `docstring` avec les trytiques de quotes `'''ceci est une docstring'''`,
++ les commentaires standards avec le `#`.
 
 ---
 <style scoped> {
