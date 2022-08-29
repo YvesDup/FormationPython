@@ -1,7 +1,14 @@
 import sys
 
 def test():
-    1/0
+    try: 
+        1/0
+    except ZeroDivisionError:
+        print('zero deivision error')
+    except ValueError:
+        print('autre')
+    else:
+        print('no error')
 
 def main():
     test()
