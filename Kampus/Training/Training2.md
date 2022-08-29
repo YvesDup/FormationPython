@@ -151,7 +151,7 @@ try:
 	1/0
 except ArithmeticError as e:
 	print(type(e), str(e))
-	raise MyOwnError from e # ici je propage l'erreur MyError vers l'appelant
+	raise MyOwnError from e # ici je propage l'erreur MyOwnError vers l'appelant
 ```
 
 ### Le bloc `else`
@@ -165,7 +165,7 @@ Ce bloc optionnel unique est appelé quand il n'y a pas eu d'exception levée.
 </style>
 ### Lever une exception
 
-La levée d'exception se fait par l'appel à l'instruction `raise` suivie par un objet dont la classe correspond à l'erreur. Toute exception en Python est du format **XxxxxxxxError**, comme par exemple:
+La levée d'exception se fait par l'appel à l'instruction `raise`, suivi par un objet dont la classe correspond à l'erreur. Toute exception en Python est du format **XxxxxxxxError**, comme par exemple:
 
 + ValueError
 + TypeError
@@ -268,10 +268,10 @@ La majorité des bibliothèques se trouve dans [Python Package Installer (PyPi)]
 
 #### Installer des bibliothèques
 
-L'outil principal fourni par Python s'appelle `pip` pour Package Installer for Python
+L'outil principal fourni par Python s'appelle `pip` pour 'Package Installer for Python'.
 Il peut être invoque de 2 façons:
 + via la commande `pip`
-+ via l'appel  à l'interpréteur python `python -m pip`
++ via l'appel à l'interpréteur python `python -m pip`
 
 ---
 <style scoped> {
@@ -348,9 +348,9 @@ Voici une liste non exhaustive de commandes passées avec l'utilitaire **PIP**
 
 Ce mode opératoire, en Python, permet de dédier une installation spécifique à un projet. C'est à dire:
 + dédiée à une version de Python,
-+ dédiée à une liste de bibliothèques externes, par exemple à partir d'un fichier texte formaté produit par la commande `pip install -e ...`.
++ dédiée à une liste de bibliothèques externes, par exemple à partir d'un fichier texte formaté produit par la commande `pip install freeze`.
 
-Ainsi vous pouvez avoir 2 environnements spécifiques pour 2 versions de Python différentes.
+Ainsi vous pouvez avoir 2 environnements dédiés pour 2 versions de Python différentes.
 
 Autre cas d'usage: certaines bibliothèques externes ne travaillent qu'avec qu'une et une seule version d'une autre bibliothèque externe. Or si cette dernière est aussi utilisée dans d'autres projets, vous risquez le conflit de version.
 
@@ -417,7 +417,7 @@ Voir [Les environnements virtuels](https://docs.python.org/fr/3.8/library/venv.h
 </style>
 ## Les annotations de types: introduction
 
-Ce système permet d'indiquer à titre informatif, les 'types' ou 'regroupements de 'types' attendus pour:
+Ce système permet d'indiquer à titre **informatif**, les 'types' ou 'regroupements de 'types' attendus pour:
 + les paramètres d'une fonction, d'une méthode,
 + les valeurs retournées d'une fonction, d'une méthode,
 + les variables locales et globales, attributs d'objet, de classe.
@@ -440,7 +440,7 @@ def racine_carre(val: Union[int, float]) -> float:
 	return sqrt(val)
 ```
 
-**A noter**: les annotations de type ont été introduites à partir de la version 3.5.
+**A noter**: les annotations de type ont été introduites à partir de la version 3.5 de Python.
 
 ---
 <style scoped> {
