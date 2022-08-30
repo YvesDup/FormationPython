@@ -1,5 +1,5 @@
-import math
-import sys
+#import math
+#import sys
 from typing import Union, List, Set, Tuple
 
 def racine_carre(val: Union[float, int]) -> float:
@@ -7,6 +7,7 @@ def racine_carre(val: Union[float, int]) -> float:
     return math.sqrt(val)
 
 def main():
+    """nothing"""
     print(racine_carre(10))
     print(racine_carre(10.169))
     print(racine_carre("10"))
