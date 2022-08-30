@@ -1,6 +1,6 @@
 import sys
 
-# import matplotlib
+#import matplotlib
 
 def test(diviseur=0):
     try:
