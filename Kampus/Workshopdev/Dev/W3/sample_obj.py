@@ -32,3 +32,8 @@ print(f'{t = }, {t.val =}')
 print(f"{t.carre() = } vs {Test.carre(t) = }")
 print(t.records)
 print(vars(t))
+try:
+    t.essai_ajout = 10
+    print(t.essai_ajout)
+except Exception as e:
+    print(e)
