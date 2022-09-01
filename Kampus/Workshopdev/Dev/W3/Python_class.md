@@ -194,13 +194,15 @@ class Test:
         """
         """
         Test.cpt += 1
-````
+```
 
 ---
 <style scoped> {
   font-size: 22px;
 }
 </style>
+
+Voici l'ajout d'une méthode statique.
 
 ```py
     # le self est absent
@@ -363,7 +365,7 @@ print(D.__mro__)
   font-size: 24px;
 }
 </style>
-### Dynamicité des attributs
+### Dynamicité des attributs: mécanisme interne, première approche
 
 Il existe 4 fonctions internes en python qui permettent de savoir si un attribut ou une méthode existe dans un objet:
 
