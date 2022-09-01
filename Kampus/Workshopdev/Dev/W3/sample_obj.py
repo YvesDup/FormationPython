@@ -1,7 +1,8 @@
 
 
 class Obj:
-    pass
+    """Presentation d'un objet simple"""
+    # pass
 
 
 o = Obj()
