@@ -142,14 +142,12 @@ Ces méthodes sont également appelées lors du formatage de chaine via l'opéra
 
 ---
 <style scoped> {
-  font-size: 22px;
+  font-size: 24px;
 }
 </style>
 ## Portée des variables et methodes.
 
-En Python, tous les attributs et méthodes d'un objet sont **publiques**. La notion d'attribut (et de méthode) privée est gérée par une **bonne pratique ou conventio** par la mise en place d'un préfixe `_` sur le nom des attributs ou méthodes. 
-
-**Attention:** il n'y a pas de mécanisme de blocage, de contrôle par rapport à cette convention entre developpeur Python.
+En Python, tous les attributs et méthodes d'un objet sont **publiques**. La notion d'attribut (et de méthode) privée est gérée par une **bonne pratique ou convention entre éveloppeurs** par la mise en place d'un préfixe `_` sur le nom des attributs ou méthodes.
 
 ```py
 class Obj:
@@ -163,9 +161,19 @@ class Obj:
 o = Obj('Yves', 57)
 print(f"{o._name = } et {o.get_name() = })
 ```
+Dans cet exemple, les attributs `_name`et `_val` sont privées. Dans ce cas `o._name = 10` est possible mais sera considéré comme 'ne respectant pas les bonnes pratiques`en Python.
+
+---
+<style scoped> {
+  font-size: 24px;
+}
+</style>
+
+**Attention:** il n'y a pas de mécanisme de blocage, de contrôle par rapport à cette convention entre developpeur Python.
+
 
 Un attribut contenant un `__` comme préfix dans son nom, n'est plus accessible depuis l'exterieur de l'objet. Par exemple, si on ajoute dans la methode `__init__` l'instruction `self.__uuid = str(uuid.uuid4())`.
-* L'accès à  `o.__uuidd` engendre une erreur.
+L'accès en consultation ou modification à l'attribut  `o.__uuidd` engendre une erreur.
 
 ---
 <style scoped> {
