@@ -19,7 +19,7 @@ _
   font-size: 22px;
 }
 </style>
-## les fonctions internes `dir` et `vars`
+### les fonctions internes `dir` et `vars`
 
 
 Un objet en `Python` est toujours l'instance, un exemplaire d'une classe. `1` est une instance de la classe `int`, `'hello world'` est un exemplaire de la classe `str`.
@@ -69,7 +69,8 @@ Ici pour chaque objet `Test` créé, un dictionnaire contenant les attributs est
   font-size: 22px;
 }
 </style>
-## L'attribut de classe: `__slots__`
+
+### L'attribut de classe: `__slots__`
 
 Il est possible de supprimer ce dictionnaire en définissant ce nom interne `__slots__` et en lui attribuant le nom des attributs de la classe sous la forme d'un `tuple` de `str`
 
@@ -89,7 +90,13 @@ class Test:
 
 ```
 
-Ainsi, la possiblilité de 'jouer' dynamiquement avec des attributs qui ne sont pas listés dans la variable `__slots__`ne sera plus possible. 
+---
+<style scoped> {
+  font-size: 22px;
+}
+</style>
+
+Ainsi, la possiblilité de '*jouer*' dynamiquement avec des attributs qui ne sont pas listés dans la variable `__slots__`ne sera plus possible.
 De plus, l'entrée `__dict__` étant supprimée (voir la fonction interne `dir())`, l'occupation mémoire de chaque objet sera réduite.
 
 Cependant, l'ajout dynmique pourra encore possible, si une entrée '__dict__' est ajoutée au `__slots__` comme suit: 
@@ -98,8 +105,8 @@ Cependant, l'ajout dynmique pourra encore possible, si une entrée '__dict__' es
 		__slots__ = ("_x", "_d", "__dict__")
 ```
 
-A noter:
+**A noter**:
 
-* La directive `__slots__` supprime le `__dict__` de la structure interne de la classe et de l'objet.
+* La directive `__slots__` supprime le `__dict__` de la structure interne de l'objet.
 * Le `__slots__' n'est pas hérité comme toute variable statique,
 * Quand une classe est définie à partie d'une classe qui contient `__slots__`, aucune attribut n'est hérité.
