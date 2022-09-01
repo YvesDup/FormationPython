@@ -6,7 +6,8 @@ import sys
 class Parallelo:
     """Class Parallelo - exo20"""
     def __init__(self, pc, gc, angle):
-        pass
+        if not (0 < pc < gc):
+            return ValueError("0 < pc < gc n'est pas valide !!!")
 
     def __str__(self) -> str:
         return f"str {hex(id(self))}"
