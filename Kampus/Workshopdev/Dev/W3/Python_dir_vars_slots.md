@@ -1,4 +1,22 @@
-=== les fonctions internes `dir` et `vars`, le nom interne `__slots__`
+---
+marp: true
+theme: gaia
+paginate: true
+_paginate: false
+header: ![w:150](img/logo_kampus.png)
+footer: (c) yduprat@gmail.com
+---
+# Formation Python - ![h:100 w:280](img/logo_bnc.png)
+
+Juin/Septembre 2022
+
+_
+
+![h:250](https://www.python.org/static/community_logos/python-logo-generic.svg)
+
+---
+
+## les fonctions internes `dir` et `vars`, le nom interne `__slots__`
 
 
 Un objet en `Python` est toujours l'instance, un exemplaire d'une classe. 1 est une instance de la classe `int`, 'hello world' est un exemplaire de la classe `str`.
@@ -31,13 +49,15 @@ et un objet de classe Test
 	t = Test(10)
 ```
 
-+ En exécutant `vars(t)`, on obtient toutes les attributs de l'objet. 
++ En exécutant `vars(t)`, on obtient toutes les attributs de l'objet.
 + En exécutant `dir(t)` on obient les infos de `dir(Test)` + celles de `vars(t)`:
 + au final, `assert set(dir(t)) == (set(dir(t.__class__)) | set(vars(t))`)
 
 Ici pour chaque objet `Test` créé, un dictionnaire contenant les attributs est présent. C'est ce dictionnaire qui permet de 'jouer' dynamiquement avec les attributs
 
-==== nom interne `__slots__`
+---
+
+## L'attribut de classe: `__slots__`
 
 Il est possible de supprimer ce dictionnaire en définissant ce nom interne `__slots__` et en lui attribuant le nom des attributs de la classe sous la forme d'un `tuple` de `str`
 
