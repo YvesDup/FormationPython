@@ -13,9 +13,13 @@ class Obj:
   def get_name(self) -> str:
     return self._name # appel à un attribut privé pour une méthode publique
 
+  def get_uuid(self):
+    return self.__uuid 
+
 o = Obj('Yves', 57)
 print(f"{o._name = } et {o.get_name() = }")
 try:
-    print(o.__uuid)
+    print(f'{o.get_uuid() = }')
+    print(f'{o.__uuid = }')
 except Exception as e:
     print(e)
