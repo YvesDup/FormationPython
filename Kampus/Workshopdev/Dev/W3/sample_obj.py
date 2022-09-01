@@ -39,3 +39,6 @@ except Exception as e:
     print(e)
 else:
     print(vars(t))
+
+del t.val
+print(vars(t))
