@@ -31,6 +31,8 @@ except Exception as e:
 
 t = Test(10)
 print(f'{t}, {t.val =}')
+l = [t, t]
+print(l)
 
 print(f"{t.carre() = } vs {Test.carre(t) = }")
 print(t.records)
