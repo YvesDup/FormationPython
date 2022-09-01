@@ -12,6 +12,12 @@ class B(A): # j'hérite de A
 class C(B): # j'hérite de B
     pass
 
+class D: # j'hérite de B
+    pass
+
+class E(C, D):
+    pass
+
 print(B.__mro__)
 # renvoie un tuple qui contient toutes les classes héritées
 # directement ou via les classes héritées intermédiaires
@@ -20,3 +26,5 @@ print(B.__mro__)
 print(C.__bases__)
 # Renvoie un tuple qui contient les classes parentes
 # ('class B',)
+
+print(E.__bases__)
