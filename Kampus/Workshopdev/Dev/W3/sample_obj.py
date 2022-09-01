@@ -15,6 +15,8 @@ class Test:
     """Classe avec arametre"""
     def __init__(self, val):
         self.val = val
+        self.test = False
+        self.records = {}
 
     def carre(self):
         return self.val ** 2
