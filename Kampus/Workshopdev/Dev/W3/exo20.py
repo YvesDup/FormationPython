@@ -1,7 +1,6 @@
 """Class parallelo - exo20"""
 import math
 import sys
-from xml.dom.pulldom import parseString
 
 
 class Parallelo:
@@ -28,3 +27,7 @@ def test_parallelo():
         print(p, p.surface(), p.perimetre())
     except Exception as e :
         print(e)
+
+if __name__ == "__main__":
+    print(sys.version)
+    test_parallelo()
