@@ -6,9 +6,11 @@ import sys
 class Parallelo:
     """Class Parallelo - exo20"""
     def __init__(self, pc, gc, angle):
-        if 
+        for x in (pc, gc, angle):
+            if not isinstance(x ,(int, float)):
+                raise TypeError(f'{x} must be an integer or a float')
         if not (0 < pc < gc):
-            return ValueError("0 < pc < gc n'est pas valide !!!")
+            raise ValueError("0 < pc < gc n'est pas valide !!!")
 
             self.pc = pc 
             self.gc = gc
