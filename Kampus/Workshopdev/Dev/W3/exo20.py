@@ -56,7 +56,7 @@ def test_parallelo():
 
     try:
         p = Parallelo(10, 20, 90)
-        print(p, p.surface(), p.perimetre())
+        print(p, "surface = ",p.surface(), "perimetre = ", p.perimetre())
     except Exception as e :
         print(e)
 
