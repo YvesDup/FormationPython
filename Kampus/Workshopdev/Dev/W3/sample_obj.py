@@ -37,3 +37,5 @@ try:
     print(t.essai_ajout)
 except Exception as e:
     print(e)
+else:
+    print(vars(t))
