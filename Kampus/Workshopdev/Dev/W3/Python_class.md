@@ -3,11 +3,12 @@ marp: true
 theme: gaia
 paginate: true
 _paginate: false
-header: ![h:80 w:120](https://www.humancoders.com/assets/logo-hc-1200-1dab1fe6aa8d823e5f0053c25d036f30608350345f3ef4f33221aa7f19328cfa.png)
+header: ![w:150](img/logo_kampus.png)
 footer: (c) yduprat@gmail.com
 ---
+# Formation Python - ![h:100 w:280](img/logo_bnc.png)
 
-Juillet 2022
+Juin/Septembre 2022
 
 _
 
@@ -20,7 +21,7 @@ _
 </style>
 # Classe en Python
 
-Cela correspond à un regroupement de données et de fonctions qui manipulent ces données.
+Cette notion, correspond à un regroupement de données et de fonctions qui manipulent ces données.
 Les données de la classe sont appelées attributs. Les fonctions sont appelées méthodes
 
 Voici un exemple simple:
