@@ -22,4 +22,4 @@ except Exception as e:
     print(type(e), str(e))
 
 t = Test(10)
-print(t)
+print(f'{t = }, {t.val =}')
