@@ -4,6 +4,9 @@ import sys
 
 
 class Parallelo:
+    # variable de classe 
+    val = None
+
     """Class Parallelo - exo20"""
     def __init__(self, pc, gc, angle):
         for param in (pc, gc, angle):
@@ -15,9 +18,14 @@ class Parallelo:
         if not (45 <= angle <= 90):
             raise ValueError('angle doit etre compris entre 45 et 90')
 
+        # depuis les parametres reçus
         self.pc = pc 
         self.gc = gc
-        self.angle = anglesys.getrec
+        self.angle = angle
+
+        # localement pour plutard
+        self.val = None
+
 
     # formatage de chaine 
     def __str__(self) -> str:
@@ -48,6 +56,9 @@ class Parallelo:
     def surface(self) -> float:
         return self.pc * self.gc * math.sin(math.radians(self.angle))
 
+    def ajoute(self):
+        self.yves = 10
+
 def test_parallelo():
     """fonction de test"""
     try:
@@ -69,6 +80,10 @@ def test_parallelo():
     print(f"{p == Parallelo(10, 20, 60) = }")
 
 
+    # attribut d'instance pour p 
+    p.test = 10 
+    #  attribut de classe 
+    Parallelo.test = 10
     l = [p, Parallelo(5, 10, 75), p, Parallelo(30, 50, 80)]
     print(l)
     l.sort()
