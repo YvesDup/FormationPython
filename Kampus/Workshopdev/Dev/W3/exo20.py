@@ -21,10 +21,10 @@ class Parallelo:
 
     # formatage de chaine 
     def __str__(self) -> str:
-        return f"str {hex(id(self))}"
+        return f"<{self.__class__.__name__}:{self.pc}/{self.gc}/{self.angle}>"
 
     def __repr__(self) -> str:
-        return f"repr {hex(id(self))}"
+        return self.__str__().upper() 
 
     # opertauer de comparaison
     def __eq__(self, other) -> bool:
