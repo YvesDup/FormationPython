@@ -1,4 +1,4 @@
-
+""" Presntation des objets en python"""
 
 class Obj:
     """Presentation d'un objet simple"""
