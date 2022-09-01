@@ -17,6 +17,8 @@ class Test:
         self.val = val
         self.test = False
         self.records = {}
+        self._private = 10
+        self.__super_private = None 
 
     def carre(self):
         return self.val ** 2
@@ -50,3 +52,4 @@ else:
 
 del t.val
 print(vars(t))
+print(f"{t._private = }")
