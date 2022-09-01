@@ -1,3 +1,4 @@
+import sys
 import uuid
 
 x = str(uuid.uuid4())
@@ -14,3 +15,4 @@ class Obj:
 o = Obj('Yves', 57)
 print(f"{o._name = } et {o.get_name() = }")
 print(o.__uuid)
+print(sys.path)
