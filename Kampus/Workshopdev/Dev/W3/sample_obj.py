@@ -30,3 +30,4 @@ t = Test(10)
 print(f'{t = }, {t.val =}')
 
 print(f"{t.carre() = } vs {Test.carre(t) = }")
+print(t.records)
