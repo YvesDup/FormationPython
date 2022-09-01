@@ -1,4 +1,5 @@
 """Class parallelo - exo20"""
+import gc
 import math
 import sys
 
@@ -19,12 +20,23 @@ class Parallelo:
         self.gc = gc
         self.angle = angle
 
+    # formatage de chaine 
     def __str__(self) -> str:
         return f"str {hex(id(self))}"
 
     def __repr__(self) -> str:
         return f"repr {hex(id(self))}"
 
+    # opertauer de comparaison
+    def __eq__(self, other) -> bool:
+        return self.pc == other.pc\
+            and self.gc == other.gc\
+            and self.angle == other.angle
+
+    def __ne__(self, other) -> bool:
+        return not self.__eq__(other)
+
+    # fonctionel
     def perimetre(self) -> float:
         return 2 * (self.pc + self.gc)
 
