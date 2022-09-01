@@ -30,7 +30,7 @@ except Exception as e:
     print(type(e), str(e))
 
 t = Test(10)
-print(f'{t!a = }, {t.val =}')
+print(f'{t}, {t.val =}')
 
 print(f"{t.carre() = } vs {Test.carre(t) = }")
 print(t.records)
