@@ -21,7 +21,6 @@ class Test:
     def carre(self):
         return self.val ** 2
 
-
     def __str__(self) -> str:
         return f"[{self.__class__.__name__}:val={self.val}]"
 
