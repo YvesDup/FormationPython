@@ -26,5 +26,5 @@ def test_parallelo():
     try:
         p = Parallelo(10, 20, 60)
         print(p, p.surface(), p.surface())
-    except:
-        parseString
+    except Exception as e :
+        print(e)
