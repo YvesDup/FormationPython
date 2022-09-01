@@ -53,3 +53,4 @@ else:
 del t.val
 print(vars(t))
 print(f"{t._private = }")
+print(f"{t.__super_private = }")
