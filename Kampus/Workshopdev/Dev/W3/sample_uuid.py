@@ -8,7 +8,7 @@ class Obj:
     self._name = name
     self._val = val 
 
-def get_name(self) -> str:
+  def get_name(self) -> str:
     return self._name # appel à un attribut privé pour une méthode publique
 
 o = Obj('Yves', 57)
