@@ -26,7 +26,6 @@ class Parallelo:
         # localement pour plutard
         self.val = None
 
-
     # formatage de chaine 
     def __str__(self) -> str:
         return f"<{self.__class__.__name__}:{self.pc}/{self.gc}/{self.angle}>"
