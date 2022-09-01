@@ -24,6 +24,9 @@ class Test:
     def __str__(self) -> str:
         return f"[{self.__class__.__name__}:val={self.val}]"
 
+    def __repr__(self) -> str:
+        return self.__str__().upper()
+
 try:
     t = Test() # ne fonctionne pas car un paramètre positionnel
 except Exception as e:
