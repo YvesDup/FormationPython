@@ -4,7 +4,7 @@ import sys
 from xml.dom.pulldom import parseString
 
 
-class parallelo:
+class Parallelo:
     """Class Parallelo - exo20"""
     def __init__(self, pc, gc, angle):
         pass
