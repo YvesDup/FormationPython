@@ -16,6 +16,5 @@ o = Obj('Yves', 57)
 print(f"{o._name = } et {o.get_name() = }")
 try:
     print(o.__uuid)
-except:
-    ...
-print(sys.path)
+except Exception as e:
+    print(e)
