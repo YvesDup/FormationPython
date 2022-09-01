@@ -242,6 +242,8 @@ t = Test(10)
 print(t)
 ```
 
+**A noter**: Les variables et méthodes statiques ne sont pas héritées.
+
 ---
 <style scoped> {
   font-size: 22px;
