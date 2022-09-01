@@ -31,3 +31,4 @@ print(f'{t = }, {t.val =}')
 
 print(f"{t.carre() = } vs {Test.carre(t) = }")
 print(t.records)
+print(vars(t))
