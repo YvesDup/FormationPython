@@ -147,7 +147,7 @@ Ces méthodes sont également appelées lors du formatage de chaine via l'opéra
 </style>
 ## Portée des variables et methodes.
 
-En Python, les attributs et méthodes d'un objet sint **publiques**. La notion d'attribut (et de méthode) privée est gérée par la mise en place sous forme d'un préfixe sur le nom des attrinuts ou méthodes. 
+En Python, tous les attributs et méthodes d'un objet sont **publiques**. La notion d'attribut (et de méthode) privée est gérée par une **bonne pratique ou conventio** par la mise en place d'un préfixe `_` sur le nom des attributs ou méthodes. 
 
 **Attention:** il n'y a pas de mécanisme de blocage, de contrôle par rapport à cette convention entre developpeur Python.
 
@@ -164,7 +164,7 @@ o = Obj('Yves', 57)
 print(f"{o._name = } et {o.get_name() = })
 ```
 
-Un attrinut contenant un `__` comme préfix de son nom, n'est accessible depuis l'exterieur de l'objet. Par exemple, si on ajoute dans la methode `__init__` l'instruction `self.__uuid = str(uuid.uuid4())`.
+Un attribut contenant un `__` comme préfix dans son nom, n'est plus accessible depuis l'exterieur de l'objet. Par exemple, si on ajoute dans la methode `__init__` l'instruction `self.__uuid = str(uuid.uuid4())`.
 * L'accès à  `o.__uuidd` engendre une erreur.
 
 ---
