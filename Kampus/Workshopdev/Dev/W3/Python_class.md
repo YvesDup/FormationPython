@@ -375,7 +375,7 @@ Il existe 4 fonctions internes en python qui permettent de savoir si un attribut
 + `delattr` qui supprime un attribut et sa valeur: `delattr(obj, 'cpt')` équivalent à `del obj.cpt`.
 
 Ces fonctions travaillent sur le stockage interne des attributs dans la variable interne de chaque obejt: `__dict__`.  `getattr(o, 'val')` est équivalent à `o.__dict__['val']`
-**A noter**: la dynamicté des attributs (et méthodes) se joue sur chaque instance d'un objet.
+**A noter**: la dynamicité des attributs (et méthodes) se joue sur chaque instance d'un objet.
 
 ---
 <style scoped> {
