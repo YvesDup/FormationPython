@@ -61,6 +61,8 @@ def test_parallelo():
     except Exception as e :
         print(e)
 
+    print(f"{p == Parallelo(10, 20, 60) = }")
+
 if __name__ == "__main__":
     print(sys.version)
     test_parallelo()
