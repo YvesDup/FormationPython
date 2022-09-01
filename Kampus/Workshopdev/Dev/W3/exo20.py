@@ -17,7 +17,7 @@ class Parallelo:
 
         self.pc = pc 
         self.gc = gc
-        self.angle = angle
+        self.angle = anglesys.getrec
 
     # formatage de chaine 
     def __str__(self) -> str:
@@ -37,6 +37,8 @@ class Parallelo:
 
     def __lt__(self, other) -> bool:
         """lt"""
+        if not isinstance(other, self.__class__):
+            raise TypeError("Other n'est pas un Parallelo...")
         return self.surface() < other.surface()
 
     # fonctionel
