@@ -23,6 +23,9 @@ class Test:
     def carre(self):
         return self.val ** 2
 
+    def show_super_private(self):
+        return self.__super_private
+
     def __str__(self) -> str:
         return f"[{self.__class__.__name__}:val={self.val}]"
 
@@ -53,4 +56,5 @@ else:
 del t.val
 print(vars(t))
 print(f"{t._private = }")
+print(t.show_super_private()) 
 print(f"{t.__super_private = }")
