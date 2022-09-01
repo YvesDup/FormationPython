@@ -56,11 +56,17 @@ def test_parallelo():
 
     try:
         p = Parallelo(10, 20, 90)
-        print(p, "surface = ",p.surface(), "perimetre = ", p.perimetre())
+        print(p, "surface = ",p.surface(), ", perimetre = ", p.perimetre())
     except Exception as e :
         print(e)
 
     print(f"{p == Parallelo(10, 20, 60) = }")
+
+
+    l = [p, Parallelo(5, 10, 75), p, Parallelo(30, 50, 80)]
+    print(l)
+    l.sort()
+    print(l)
 
 if __name__ == "__main__":
     print(sys.version)
