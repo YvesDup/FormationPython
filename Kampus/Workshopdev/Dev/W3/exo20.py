@@ -7,14 +7,14 @@ class Parallelo:
     """Class Parallelo - exo20"""
     def __init__(self, pc, gc, angle):
         for param in (pc, gc, angle):
-            if not isinstance(param ,(int, float)):
+            if not isinstance(param , (int, float)):
                 raise TypeError(f'{param} must be an integer or a float')
         if not (0 < pc < gc):
             raise ValueError("0 < pc < gc n'est pas valide !!!")
 
-            self.pc = pc 
-            self.gc = gc
-            self.angle = angle
+        self.pc = pc 
+        self.gc = gc
+        self.angle = angle
 
     def __str__(self) -> str:
         return f"str {hex(id(self))}"
