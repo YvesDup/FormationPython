@@ -1,5 +1,4 @@
 """Class parallelo - exo20"""
-import gc
 import math
 import sys
 
@@ -41,7 +40,7 @@ class Parallelo:
         return 2 * (self.pc + self.gc)
 
     def surface(self) -> float:
-        return 0.1
+        return self.pc * self.gc * math.sin(math.radians(self.angle))
 
 def test_parallelo():
     """fonction de test"""
@@ -54,9 +53,9 @@ def test_parallelo():
         p = Parallelo(10, 20, 30, 40)
     except Exception as e :
         print(e)
-    
+
     try:
-        p = Parallelo(10, 20, 60)
+        p = Parallelo(10, 20, 90)
         print(p, p.surface(), p.perimetre())
     except Exception as e :
         print(e)
