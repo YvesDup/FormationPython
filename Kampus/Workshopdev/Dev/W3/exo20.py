@@ -10,10 +10,10 @@ class Parallelo:
         pass
 
     def __str__(self) -> str:
-        return f"{str hex(id(self)))}""
+        return f"{str hex(id(self))}"
 
     def __repr__(self) -> str:
-        return f"{repr hex(id(self)))}"
+        return f"{repr hex(id(self))}"
 
     def perimetre(self) -> float:
         return 0.0
