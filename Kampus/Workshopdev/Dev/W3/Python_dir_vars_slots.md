@@ -15,11 +15,14 @@ _
 ![h:250](https://www.python.org/static/community_logos/python-logo-generic.svg)
 
 ---
+<style scoped> {
+  font-size: 22px;
+}
+</style>
+## les fonctions internes `dir` et `vars`
 
-## les fonctions internes `dir` et `vars`, le nom interne `__slots__`
 
-
-Un objet en `Python` est toujours l'instance, un exemplaire d'une classe. 1 est une instance de la classe `int`, 'hello world' est un exemplaire de la classe `str`.
+Un objet en `Python` est toujours l'instance, un exemplaire d'une classe. `1` est une instance de la classe `int`, `'hello world'` est un exemplaire de la classe `str`.
 La classe décrit les attributs et méthodes qui seront attachés à chaque objet.
 
 La fonction interne `dir` peut s'appliquer soit sur une classe, soit sur un objet de cette classe. Voici une classe Test:
@@ -39,24 +42,33 @@ class Test:
 		pass
 ```
 
-en exécutant `dir(Test)`, on obtient une liste qui contient:
+---
+<style scoped> {
+  font-size: 22px;
+}
+</style>
+En exécutant `dir(Test)`, on obtient une liste qui contient:
 * toutes les méthodes de la classe, y compris celles héritées
 * tous les noms interne de la classe: `__class__`, `__doc__`, `__dict__`, `__module__`, `__weakref__`
 * toutes les variables statiques de la classe: `a_st` 
 
 et un objet de classe Test
 ```py
-	t = Test(10)
+t = Test(10)
+dir(t)
 ```
 
-+ En exécutant `vars(t)`, on obtient toutes les attributs de l'objet.
-+ En exécutant `dir(t)` on obient les infos de `dir(Test)` + celles de `vars(t)`:
++ en exécutant `vars(t)`, on obtient toutes les attributs de l'objet.
++ en exécutant `dir(t)` on obient les infos de `dir(Test)` + celles de `vars(t)`,
 + au final, `assert set(dir(t)) == (set(dir(t.__class__)) | set(vars(t))`)
 
-Ici pour chaque objet `Test` créé, un dictionnaire contenant les attributs est présent. C'est ce dictionnaire qui permet de 'jouer' dynamiquement avec les attributs
+Ici pour chaque objet `Test` créé, un dictionnaire contenant les attributs est présent. C'est ce dictionnaire qui permet de '*jouer*' dynamiquement avec les attributs
 
 ---
-
+<style scoped> {
+  font-size: 22px;
+}
+</style>
 ## L'attribut de classe: `__slots__`
 
 Il est possible de supprimer ce dictionnaire en définissant ce nom interne `__slots__` et en lui attribuant le nom des attributs de la classe sous la forme d'un `tuple` de `str`
