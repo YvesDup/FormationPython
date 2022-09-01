@@ -87,8 +87,8 @@ class Test:
 	def __init__(self, x: int):
 		self._x = x
 		self._d = {}
-
 ```
+Ainsi, la possiblilité de '*jouer*' dynamiquement avec des attributs qui ne sont pas listés dans la variable `__slots__`ne sera plus possible.
 
 ---
 <style scoped> {
@@ -96,7 +96,6 @@ class Test:
 }
 </style>
 
-Ainsi, la possiblilité de '*jouer*' dynamiquement avec des attributs qui ne sont pas listés dans la variable `__slots__`ne sera plus possible.
 De plus, l'entrée `__dict__` étant supprimée (voir la fonction interne `dir())`, l'occupation mémoire de chaque objet sera réduite.
 
 Cependant, l'ajout dynmique pourra encore possible, si une entrée '__dict__' est ajoutée au `__slots__` comme suit: 
