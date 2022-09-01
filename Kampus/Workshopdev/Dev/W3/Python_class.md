@@ -161,7 +161,7 @@ class Obj:
 o = Obj('Yves', 57)
 print(f"{o._name = } et {o.get_name() = })
 ```
-Dans cet exemple, les attributs `_name`et `_val` sont privées. Dans ce cas `o._name = 10` est possible mais sera considéré comme 'ne respectant pas les bonnes pratiques`en Python.
+Dans cet exemple, les attributs `_name`et `_val` sont privés. Dans ce cas `o._name = 10` est possible mais sera considéré comme 'ne respectant pas les bonnes pratiques' en Python.
 
 ---
 <style scoped> {
@@ -171,9 +171,20 @@ Dans cet exemple, les attributs `_name`et `_val` sont privées. Dans ce cas `o._
 
 **Attention:** il n'y a pas de mécanisme de blocage, de contrôle par rapport à cette convention entre developpeur Python.
 
+Un attribut contenant un `__` comme préfix dans son nom, n'est plus accessible depuis l'exterieur de l'objet. 
+Par exemple, si on ajoute un attribut `__uuid`dans le `__init__` comme suit:
 
-Un attribut contenant un `__` comme préfix dans son nom, n'est plus accessible depuis l'exterieur de l'objet. Par exemple, si on ajoute dans la methode `__init__` l'instruction `self.__uuid = str(uuid.uuid4())`.
-L'accès en consultation ou modification à l'attribut  `o.__uuidd` engendre une erreur.
+```py
+import uuid
+  ...
+  def __init__(self, ...):
+    self.__uuid = = str(uuid.uuid4())
+...
+
+print(o.__uuid) # provoque une erreur
+```
+
+L'accès en consultation ou modification à l'attribut  `o.__uuidd` engendre une erreur car il est préfixé par `__`.
 
 ---
 <style scoped> {
