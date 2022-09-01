@@ -15,10 +15,10 @@ class Parallelo:
         return f"repr {hex(id(self))}"
 
     def perimetre(self) -> float:
-        return 0.0
+        return 0.3333
 
     def surface(self) -> float:
-        return 0.0
+        return 0.1
 
 def test_parallelo():
     """fonction de test"""
