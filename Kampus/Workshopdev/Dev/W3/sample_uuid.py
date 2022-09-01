@@ -7,7 +7,8 @@ print(x)
 class Obj:
   def __init__(self, name, val):
     self._name = name
-    self._val = val 
+    self._val = val
+    self.__uuid = str(uuid.uuid4())
 
   def get_name(self) -> str:
     return self._name # appel à un attribut privé pour une méthode publique
