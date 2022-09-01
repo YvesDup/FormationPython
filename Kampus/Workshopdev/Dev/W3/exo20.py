@@ -35,6 +35,10 @@ class Parallelo:
     def __ne__(self, other) -> bool:
         return not self.__eq__(other)
 
+    def __lt__(self, other) -> bool:
+        """lt"""
+        return self.surface() < other.surface()
+
     # fonctionel
     def perimetre(self) -> float:
         return 2 * (self.pc + self.gc)
