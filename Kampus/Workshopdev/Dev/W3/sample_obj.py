@@ -16,6 +16,9 @@ class Test:
     def __init__(self, val):
         self.val = val
 
+    def carre(self):
+        return self.val ** 2
+
 try:
     t = Test() # ne fonctionne pas car un paramètre positionnel
 except Exception as e:
@@ -23,3 +26,4 @@ except Exception as e:
 
 t = Test(10)
 print(f'{t = }, {t.val =}')
+print(f"{t.carre() = }")
