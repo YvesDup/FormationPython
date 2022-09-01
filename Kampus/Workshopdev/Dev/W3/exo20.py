@@ -24,7 +24,7 @@ class Parallelo:
 def test_parallelo():
     """fonction de test"""
     try:
-        p = parallelo(10, 20, 60)
+        p = Parallelo(10, 20, 60)
         print(p, p.surface(), p.surface())
     except:
         parseString
