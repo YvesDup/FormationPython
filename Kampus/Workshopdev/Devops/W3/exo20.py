@@ -6,7 +6,7 @@ class Parallelo:
 
     def __init__(self, p_cote, g_cote, angle):
         # controle sur les types entrants
-        for pos, param in enumerate((p_cote, g_cote, angle)):
+        for pos, param in enumerate((p_cote, g_cote, angle), 1):
             if not isinstance(param, (int, float)):
                 raise TypeError(f"{param!r} du paramètre #{pos} de type {type(param)} doit être un entier ou un réel !!")
 
