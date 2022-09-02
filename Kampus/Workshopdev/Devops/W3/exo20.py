@@ -5,13 +5,17 @@ import sys
 class Parallelo:
 
     def __init__(self, p_cote, g_cote, angle):
+        # controle sur les types entrants
         for param in (p_cote, g_cote, angle):
             if not isinstance(param, (int, float)):
                 raise TypeError("param doit être un entier ou un réel !!")
 
+        # controle sur les valeurs admises
         if not (0 < p_cote < g_cote):
             raise ValueError("petit cote doit etre positif et plus petit que grand coté !!")
 
+        if not ( 45 < angle <= 90):
+            raise valueError("")
     # conversion en string
     def __str__(self) -> str:
         return "STR"
