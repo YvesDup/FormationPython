@@ -17,4 +17,5 @@ class C(B):
 print(C.__mro__)
 print(C.__bases__)
 
-print(C.toto)
+c = C()
+print(c.toto)
