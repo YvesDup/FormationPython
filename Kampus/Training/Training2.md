@@ -564,6 +564,10 @@ Cet outil permet de faire de la couverture de code, c'est à dire de vérifier q
 
 [La documentation](https://coverage.readthedocs.io)
 
+#### Les linters dans vscode
+
+[Réglages des linters](https://code.visualstudio.com/docs/python/linting#_general-linting-settings)
+
 ---
 <style scoped> {
   font-size: 17px;
