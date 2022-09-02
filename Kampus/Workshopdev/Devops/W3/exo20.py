@@ -22,10 +22,10 @@ class Parallelo:
         self.angle = angle
     # conversion en string
     def __str__(self) -> str:
-        return "STR"
+        return "PARALLELO STR"
 
     def __repr__(self) -> str:
-        return "REPR"
+        return "PARALLELO REPR"
 
     # metodes fonctionnelles
     def perimetre(self) -> float:
