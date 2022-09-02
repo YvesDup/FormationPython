@@ -44,8 +44,23 @@ class Parallelo:
 
 def test_parellelo():
     """Test la classe Pärallelo"""
+    jeux_essais_init = (
+                (10, 10, "10"),
+                (10, "20", 10),
+                ("5", 20, 40),
+                (30, 20, 15),
+                (-10, 10, 20),
+                (10, -30, 20),
+                (10, 76, 112),
+                )
+    for pc, gc, angle in jeux_essais_init:
+        try:
+            t = Parallelo(pc, gc, angle)
+        except (TypeError, ValueError) as e:
+            print(e)
+        else:
+            print(pc, gc, angle, "ne plante pas")
 
-    t = Parallelo(10, 90, "angle")
     print(t.poly(1))
 
 if __name__ == "__main__":
