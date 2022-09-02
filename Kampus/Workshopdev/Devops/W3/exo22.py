@@ -10,7 +10,7 @@ class Losange(exo20.Parallelo):
 
 def test_losange():
     """Losange Test"""
-    l = Losange()
+    l = Losange(50, 65)
     print(l)
 
 if __name__ == "__main__":
