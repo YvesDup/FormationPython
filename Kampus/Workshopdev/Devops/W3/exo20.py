@@ -9,6 +9,9 @@ class Parallelo:
             if not isinstance(param, (int, float)):
                 raise TypeError("param doit être un entier ou un réel !!")
 
+        if not (0 < p_cote < g_cote):
+            raise ValueError("petit cote doit etre positif et plus petit que grand coté !!")
+
     # conversion en string
     def __str__(self) -> str:
         return "STR"
