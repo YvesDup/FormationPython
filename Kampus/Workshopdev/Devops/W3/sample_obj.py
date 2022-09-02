@@ -44,4 +44,8 @@ del t.cube
 print(f'3-{vars(t) = }')
 print('moyenne = ', t.calcul_moyenne())
 print(f'4-{vars(t) = }')
+try:
+    t['xx'] = 1000
+except Exception  as e:
+    print(e)
 
