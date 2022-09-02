@@ -20,7 +20,8 @@ class Test:
 
     def calcul_moyenne(self) -> float:
         """ma premiere methode"""
-        return self.val ** 3
+        self.cube = self.val ** 3 
+        return self.cube
 
 try:
     t = Test() # ne fonctionne pas car un paramètre positionnel
@@ -36,3 +37,4 @@ t = Test(10)
 print(f'{t = } - {t.val = }')
 print('moyenne = ', t.calcul_moyenne())
 print('moyenne = ', Test.calcul_moyenne(t)) # genre d'creiture TRES RARE
+print(f'{vars(t) = }')
