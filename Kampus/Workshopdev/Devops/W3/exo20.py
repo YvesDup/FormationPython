@@ -4,7 +4,7 @@ import sys
 
 class Parallelo:
 
-    def __init__(self, ...):
+    def __init__(self, a):
         pass
 
     # conversion en string
