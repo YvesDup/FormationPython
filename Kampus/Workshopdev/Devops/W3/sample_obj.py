@@ -8,4 +8,4 @@ print(f'{o1 is o2 =}')
 
 l = [o1]
 l.append(o2)
-print(l)
+print(l, o1 in l)
