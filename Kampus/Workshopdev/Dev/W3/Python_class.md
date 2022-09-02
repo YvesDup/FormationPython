@@ -108,7 +108,6 @@ print(a.val, "et", a.nom)
 Les attributs d'un objet en python peuvent être gérés de manière dynamique. Cad que l'attribut d'un objet python peut être supprimé, modifié ou ajouté à n'importe quel moment
 
 ```python
-
 # sur l'objet précédemment crée
 a = Obj(10, 'cerise')
 
@@ -130,16 +129,17 @@ print(vars(a))
 </style>
 ## Méthodes spéciales de mise en forme
 
-En Python, certaines méthodes permettent de représenter les objets sous forme de chaine de caractères: 
+En Python, certaines méthodes permettent de représenter les objets sous forme de chaine de caractères:
 
 + `__str__`: appelée lors du traitement de chaine de caractères et de l'affichage
 + `__repr__`: appelée lors de la mise en forme d'objet sous forme de composition: par exemple des objets inclus dans une liste
 
 Ces méthodes sont également appelées lors du formatage de chaine via l'opérateur `!`, à travers la fonction `.format` ou le `f""`:
-
-* {"ee"!s}
-* {"ee"!r}
-
+```py
+x = 'yves'
+print(f'{x!s}') # yves
+print(f'{x!r}') # `yves`
+```
 ---
 <style scoped> {
   font-size: 24px;
@@ -171,7 +171,7 @@ Dans cet exemple, les attributs `_name`et `_val` sont privés. Dans ce cas `o._n
 
 **Attention:** il n'y a pas de mécanisme de blocage, de contrôle par rapport à cette convention entre developpeur Python.
 
-Un attribut contenant un `__` comme préfix dans son nom, n'est plus accessible depuis l'exterieur de l'objet. 
+Un attribut contenant un `__` comme préfix dans son nom, n'est plus accessible depuis l'exterieur de l'objet.
 Par exemple, si on ajoute un attribut `__uuid`dans le `__init__` comme suit:
 
 ```py
