@@ -19,7 +19,7 @@ class Test:
         self.val = val
 
     def __str__(self) -> str:
-        return f"[Test:{self.val = }]" 
+        return f"[Test:{self.val = }]"
 
     def calcul_moyenne(self) -> float:
         """ma premiere methode"""
@@ -53,4 +53,7 @@ except Exception  as e:
     print(e)
     t.__dict__['xx'] = 10
     print(f'5-{vars(t) = }')
+
+l = [t, t]
+print(l)
 
