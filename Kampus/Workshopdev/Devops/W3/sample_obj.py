@@ -28,3 +28,4 @@ except Exception as e:
     print(e)
 t = Test(10)
 print(f'{t = } - {t.val = }')
+print('moyenne = ', t.calcul_moyenne())
