@@ -37,7 +37,7 @@ except Exception as e:
     print(e)
 
 t = Test(10)
-print(f'{(str(t) = } - {t.val = }')
+print(f'{str(t) = } - {t.val = }')
 print('moyenne = ', t.calcul_moyenne())
 print('moyenne = ', Test.calcul_moyenne(t)) # genre d'creiture TRES RARE
 print(f'1-{vars(t) = }')
