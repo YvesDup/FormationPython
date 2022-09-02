@@ -62,8 +62,8 @@ def test_parellelo():
             print(pc, gc, angle, "ne plante pas")
 
     p = Parallelo(20, 40, 90)
-    assert  t.surface() == 800
-    print(t.poly(1))
+    assert p.surface() == 800
+    print(p.poly(1))
 
 if __name__ == "__main__":
     print(sys.version)
