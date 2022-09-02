@@ -8,7 +8,7 @@ class Parallelo:
         # controle sur les types entrants
         for param in (p_cote, g_cote, angle):
             if not isinstance(param, (int, float)):
-                raise TypeError("param doit être un entier ou un réel !!")
+                raise TypeError(f"{param!r} doit être un entier ou un réel !!")
 
         # controle sur les valeurs admises
         if not (0 < p_cote < g_cote):
