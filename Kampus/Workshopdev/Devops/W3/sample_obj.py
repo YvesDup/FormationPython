@@ -57,6 +57,6 @@ except Exception  as e:
     t.__dict__['xx'] = 10
     print(f'5-{vars(t) = }')
 
-l = [t, t]
+l = [t, t, Test(25), Test(-19)]
 print(l)
 
