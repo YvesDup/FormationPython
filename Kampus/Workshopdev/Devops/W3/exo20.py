@@ -16,6 +16,10 @@ class Parallelo:
 
         if not ( 45 < angle <= 90):
             raise ValueError("Angle entre 45 et 90 ° compris")
+
+        self.p_cote = p_cote
+        self.g_cote = g_cote
+        self 
     # conversion en string
     def __str__(self) -> str:
         return "STR"
@@ -41,7 +45,7 @@ class Parallelo:
 def test_parellelo():
     """Test la classe Pärallelo"""
 
-    t = Parallelo(10)
+    t = Parallelo(10, 90, "angle")
     print(t.poly(1))
 
 if __name__ == "__main__":
