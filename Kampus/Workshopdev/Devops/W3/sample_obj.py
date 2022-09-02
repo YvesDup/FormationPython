@@ -21,6 +21,9 @@ class Test:
     def __str__(self) -> str:
         return f"[Test:{self.val = }]"
 
+    def __repr__(self) -> str:
+        return self.__str__().upper()
+
     def calcul_moyenne(self) -> float:
         """ma premiere methode"""
         self.cube = self.val ** 3 
