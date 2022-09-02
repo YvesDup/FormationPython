@@ -138,7 +138,7 @@ Ces méthodes sont également appelées lors du formatage de chaine via l'opéra
 ```py
 x = 'yves'
 print(f'{x!s}') # yves
-print(f'{x!r}') # `yves`
+print(f'{x!r}') # 'yves'
 ```
 ---
 <style scoped> {
