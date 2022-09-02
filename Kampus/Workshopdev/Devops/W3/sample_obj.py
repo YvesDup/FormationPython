@@ -22,4 +22,4 @@ try:
 except Exception as e:
     print(e)
 t = Test(10)
-print(t)
+print(f'{t = } - {t.val = }')
