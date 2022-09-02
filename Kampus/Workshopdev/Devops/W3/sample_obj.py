@@ -37,9 +37,11 @@ t = Test(10)
 print(f'{t = } - {t.val = }')
 print('moyenne = ', t.calcul_moyenne())
 print('moyenne = ', Test.calcul_moyenne(t)) # genre d'creiture TRES RARE
-print(f'{vars(t) = }')
+print(f'1-{vars(t) = }')
 t.localisation = 'chicoutimi'
-print(f'{vars(t) = }')
+print(f'2-{vars(t) = }')
 del t.cube
-print(f'{vars(t) = }')
+print(f'3-{vars(t) = }')
+print('moyenne = ', t.calcul_moyenne())
+print(f'4-{vars(t) = }')
 
