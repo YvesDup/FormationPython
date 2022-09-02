@@ -6,9 +6,9 @@ class Parallelo:
 
     def __init__(self, p_cote, g_cote, angle):
         # controle sur les types entrants
-        for param in (p_cote, g_cote, angle):
+        for pos, param in enumerate((p_cote, g_cote, angle)):
             if not isinstance(param, (int, float)):
-                raise TypeError(f"{param!r} doit être un entier ou un réel !!")
+                raise TypeError(f"{param!r} du paramètre #{pos} de type {type(param)} doit être un entier ou un réel !!")
 
         # controle sur les valeurs admises
         if not (0 < p_cote < g_cote):
@@ -45,8 +45,8 @@ class Parallelo:
 def test_parellelo():
     """Test la classe Pärallelo"""
     jeux_essais_init = (
-                (10, 10, "10"),
-                (10, "20", 10),
+                (20, 50, "10"),
+                (10, "20", 90),
                 ("5", 20, 40),
                 (30, 20, 15),
                 (-10, 10, 20),
