@@ -19,7 +19,7 @@ class Parallelo:
 
         self.p_cote = p_cote
         self.g_cote = g_cote
-        self 
+        self.angle = angle
     # conversion en string
     def __str__(self) -> str:
         return "STR"
