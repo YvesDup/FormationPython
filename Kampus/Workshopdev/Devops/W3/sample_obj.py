@@ -27,7 +27,7 @@ try:
 except Exception as e:
     print(e)
 
-    try:
+try:
     t = Test(10, 20) # ne fonctionne pas car 2 paramètres positionnels
 except Exception as e:
     print(e)
