@@ -35,4 +35,4 @@ except Exception as e:
 t = Test(10)
 print(f'{t = } - {t.val = }')
 print('moyenne = ', t.calcul_moyenne())
-print('moyenne = ', Test.calcul_moyenne(t))
+print('moyenne = ', Test.calcul_moyenne(t)) # genre d'creiture TRES RARE
