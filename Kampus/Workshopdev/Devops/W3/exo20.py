@@ -28,11 +28,12 @@ class Parallelo:
 
     def poly(self, z):
         return "poly2"
-        
+
 def test_parellelo():
     """Test la classe Pärallelo"""
 
-    t = Parallelo(...)
+    t = Parallelo(10)
+    print(t.poly(1))
 
 if __name__ == "__main__":
     print(sys.version)
