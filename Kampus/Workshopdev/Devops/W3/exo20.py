@@ -4,8 +4,10 @@ import sys
 
 class Parallelo:
 
-    def __init__(self, a):
-        pass
+    def __init__(self, p_cote, g_cote, angle):
+        for param in (p_cote, g_cote, angle):
+            if not isinstance(param, (int, float)):
+                raise TypeError("param doit être un entier ou un réel !!")
 
     # conversion en string
     def __str__(self) -> str:
