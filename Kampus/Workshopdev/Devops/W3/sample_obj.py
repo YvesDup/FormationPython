@@ -18,7 +18,7 @@ class Test:
         self.test = False
         self.records = {}
         self._private = 10
-        self.__super_private = None 
+        self.__super_private = None
 
     def carre(self):
         return self.val ** 2
