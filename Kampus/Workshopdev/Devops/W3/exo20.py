@@ -15,7 +15,7 @@ class Parallelo:
             raise ValueError("petit cote doit etre positif et plus petit que grand coté !!")
 
         if not ( 45 < angle <= 90):
-            raise ValueError("Angle entre 45 et 90 ° compris")
+            raise ValueError("Angle entre 45 et 90° compris")
 
         self.p_cote = p_cote
         self.g_cote = g_cote
@@ -34,7 +34,7 @@ class Parallelo:
     def surface(self) -> float:
         """math.radians(degrees) convertit un angfle en degre vers du radians
         math.son(angle_en_radians) ..."""
-        return 0.0
+        return self.p_cote * self.g_cote * math.sin(math.radians(self.angle))
 
     def poly(self, x, y):
         return "poly1"
@@ -61,6 +61,8 @@ def test_parellelo():
         else:
             print(pc, gc, angle, "ne plante pas")
 
+    p = Parallelo(20, 40, 90)
+    assert  t.surface() == 800
     print(t.poly(1))
 
 if __name__ == "__main__":
