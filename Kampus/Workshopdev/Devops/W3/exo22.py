@@ -10,3 +10,7 @@ def test_losange():
     """Losange Test"""
     l = Losange()
     print(l)
+
+if __name__ == "__main__":
+    print(sys.version)
+    test_losange() 
