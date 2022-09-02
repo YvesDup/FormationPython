@@ -48,4 +48,7 @@ try:
     t['xx'] = 1000
 except Exception  as e:
     print(e)
+    t.__dict__['xx'] = 10
+    print(f'5-{vars(t) = }')
+
 
