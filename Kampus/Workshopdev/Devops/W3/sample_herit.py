@@ -8,7 +8,7 @@ print(A.__bases__)
 
 
 class B(A):
-    def __init__(self, *args):
+    def __init__(self, *args, **kwargs):
         self.toto = 10
 
 class C(B):
