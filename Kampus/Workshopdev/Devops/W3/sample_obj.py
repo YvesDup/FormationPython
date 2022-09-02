@@ -13,9 +13,14 @@ def class_obj():
     print(l, o1 in l)
 
 class Test:
-
+    """Ma premiere classe """
     def __init__(self, val):
+        """init"""
         self.val = val
+
+    def calcul_moyenne(self):
+        """ma premiere methode"""
+        return self.val ** 3
 
 try:
     t = Test() # ne fonctionne pas car un paramètre positionnel
