@@ -17,6 +17,9 @@ class Test:
     def __init__(self, val):
         self.val = val
 
-t = Test() # ne fonctionne pas car un paramètre positionnel
+try:
+    t = Test() # ne fonctionne pas car un paramètre positionnel
+except Exception as e:
+    print(e)
 t = Test(10)
 print(t)
