@@ -23,6 +23,12 @@ class Parallelo:
         math.son(angle_en_radians) ..."""
         return 0.0
 
+    def poly(self, x, y):
+        return "poly1"
+
+    def poly(self, z):
+        return "poly2"
+        
 def test_parellelo():
     """Test la classe Pärallelo"""
 
