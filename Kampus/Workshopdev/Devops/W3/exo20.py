@@ -11,7 +11,7 @@ class Parallelo:
                 raise TypeError(f"{param!r} du paramètre #{pos} de type {type(param)} doit être un entier ou un réel !!")
 
         # controle sur les valeurs admises
-        if not (0 < p_cote < g_cote):
+        if not (0 < p_cote <= g_cote):
             raise ValueError("petit cote doit etre positif et plus petit que grand coté !!")
 
         if not ( 45 < angle <= 90):
