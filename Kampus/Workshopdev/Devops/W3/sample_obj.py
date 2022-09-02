@@ -38,3 +38,6 @@ print(f'{t = } - {t.val = }')
 print('moyenne = ', t.calcul_moyenne())
 print('moyenne = ', Test.calcul_moyenne(t)) # genre d'creiture TRES RARE
 print(f'{vars(t) = }')
+t.localisation = 'chicoutimi'
+print(f'{vars(t) = }')
+
