@@ -358,7 +358,7 @@ De manière générale, il est fortement recommandé, pour un nouveau projet ou 
 
 ---
 <style scoped> {
-  font-size: 26px;
+  font-size: 24px;
 }
 </style>
 ### Mode opératoire
