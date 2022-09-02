@@ -18,7 +18,7 @@ class Test:
         """init"""
         self.val = val
 
-    def calcul_moyenne(self):
+    def calcul_moyenne(self) -> float:
         """ma premiere methode"""
         return self.val ** 3
 
@@ -29,3 +29,4 @@ except Exception as e:
 t = Test(10)
 print(f'{t = } - {t.val = }')
 print('moyenne = ', t.calcul_moyenne())
+print('moyenne = ', Test.calcul_moyenne(t))
