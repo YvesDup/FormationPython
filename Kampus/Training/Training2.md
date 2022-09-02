@@ -370,6 +370,7 @@ Il suffit de créer un dossier dédié, de se positionner dans ce dossier et de:
 ou
   + depuis ce dossier, lancer la commande `source ./bin/activate` sous Linux et Mac
 
+**Attention**: Sous Mac et Linux, le paramètre `--copies` est à rajouter lors de façon à ce qu'une copie des fichiers exécutables soit effectué dans le dossier `./bin`, plutôt que des liens symboliques.
 
 Vous êtes alors dans votre environnement virtuel, prêt à travailler tout en sachant que:
 * la version de python installée correspond à celle du programme python (`pythonX.Y -m venv`) qui a créé l'environnement virtuel,
