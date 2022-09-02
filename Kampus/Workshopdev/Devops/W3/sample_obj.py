@@ -40,4 +40,6 @@ print('moyenne = ', Test.calcul_moyenne(t)) # genre d'creiture TRES RARE
 print(f'{vars(t) = }')
 t.localisation = 'chicoutimi'
 print(f'{vars(t) = }')
+del t.cube
+print(f'{vars(t) = }')
 
