@@ -21,6 +21,9 @@ def test_losange():
     l = Losange(50, 65)
     print(l)
 
+    ll = [l, exo20.Parallelo(20, 30, 75)]
+    print(ll)
+
 if __name__ == "__main__":
     print(sys.version)
     test_losange() 
