@@ -26,6 +26,12 @@ try:
     t = Test() # ne fonctionne pas car un paramètre positionnel
 except Exception as e:
     print(e)
+
+    try:
+    t = Test(10, 20) # ne fonctionne pas car 2 paramètres positionnels
+except Exception as e:
+    print(e)
+
 t = Test(10)
 print(f'{t = } - {t.val = }')
 print('moyenne = ', t.calcul_moyenne())
