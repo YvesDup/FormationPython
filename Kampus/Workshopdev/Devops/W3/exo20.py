@@ -15,7 +15,7 @@ class Parallelo:
             raise ValueError("petit cote doit etre positif et plus petit que grand coté !!")
 
         if not ( 45 < angle <= 90):
-            raise valueError("")
+            raise ValueError("Angle entre 45 et 90 ° compris")
     # conversion en string
     def __str__(self) -> str:
         return "STR"
