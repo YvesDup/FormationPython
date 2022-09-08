@@ -45,7 +45,7 @@ class Parallelo:
     # pour le tri
     def __lt__(self, other) -> bool:
         """lt"""
-        if not isinstance(other, Parallelo): \
+        if not isinstance(other, Parallelo): \ # Parallelo vs self.__class__
             # or not issubclass(self.__class__, Parallelo):
             raise TypeError("Other n'est pas un Parallelo...")
         return self.surface() < other.surface()
