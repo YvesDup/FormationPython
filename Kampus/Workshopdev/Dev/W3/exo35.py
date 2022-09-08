@@ -49,7 +49,7 @@ def creer_index_defaultdict(phrase: str, occurrence: int=1) -> Dict[str, int]:
 
 def test_creer_index():
     """test creer_index"""
-    for func in (creer_index, creer_index_defaultdict):
+    for func in (creer_index, creer_index_defaultdict, creer_index_counter):
         print(func.__name__)
         # partie 1
         try:
