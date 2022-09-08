@@ -25,6 +25,7 @@ print(f'{fibo2(20) = }')
 print(f'{fibo2(40) = }')
 
 print('++++'*10)
+
 @functools.cache
 def fibo3(n):
     if n < 2:
@@ -35,3 +36,5 @@ def fibo3(n):
 print(f'{fibo3(10) = }')
 print(f'{fibo3(20) = }')
 print(f'{fibo3(40) = }')
+
+print('Yves', msg)
