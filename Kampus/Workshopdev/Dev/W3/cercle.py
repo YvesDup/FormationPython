@@ -1,3 +1,10 @@
+"""module cercle"""
+import math
+from typing import Union
+
+Number = Union[float, int]
+
+
 class Cercle:
     """class Cercle"""
     def __init__(self, rayon: Number):
