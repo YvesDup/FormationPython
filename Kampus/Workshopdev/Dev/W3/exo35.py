@@ -8,7 +8,6 @@ def creer_index(phrase: str, occurrence: int=1) -> Dict[str, int]:
         raise TypeError('"phrase" doit être une string')
 
     dmots = {}
-
     for mot in phrase.split():
         if mot in dmots:
             dmots[mot] += 1
