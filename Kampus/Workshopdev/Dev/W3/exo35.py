@@ -10,6 +10,7 @@ def creer_index(phrase: str) -> Dict[str, int]:
 def test_creer_index():
     """test c reer_index"""
     assert creer_index("") == {}
+    assert creer_index("hello") == {'hello':1}
     print("Done")
 
 test_creer_index()
