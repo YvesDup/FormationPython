@@ -7,4 +7,4 @@ def fibo(n):
     
     return fibo(n-1 + fibo(n-2)
 
-print(f'{fibo(10} = ')
+print(f'{fibo(10) = }')
