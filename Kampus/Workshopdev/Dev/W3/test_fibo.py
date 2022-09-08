@@ -9,7 +9,7 @@ def fibo(n):
 
 print(f'{fibo(10) = }')
 print(f'{fibo(20) = }')
-print(f'{fibo(40) = }')
+#print(f'{fibo(40) = }')
 print('++++'*10)
 d = {} 
 def fibo2(n):
@@ -37,4 +37,5 @@ print(f'{fibo3(10) = }')
 print(f'{fibo3(20) = }')
 print(f'{fibo3(40) = }')
 
+msg = 'hello'
 print('Yves', msg)
