@@ -1,9 +1,9 @@
 """module sphere"""
-import cercle
+import class_cercle
 
-class Sphere(cercle.Cercle):
+class Sphere(class_cercle.Cercle):
     """class sphere en detail"""
-    def __init__(self, rayon: cercle.Number):
+    def __init__(self, rayon: class_cercle.Number):
         super().__init__(rayon)
 
     def surface(self) -> float:
