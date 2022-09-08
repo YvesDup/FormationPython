@@ -4,7 +4,6 @@ from typing import Union
 
 Number = Union[float, int]
 
-
 class Cercle:
     """class Cercle"""
     def __init__(self, rayon: Number):
@@ -16,11 +15,11 @@ class Cercle:
     def __repr__(self) -> str:
         return f"<{self.__str__()}>"
 
-    def perimetre(self) -> Number:
+    def perimetre(self) -> float:
         """xxx"""
         return 2 * self._rayon * math.pi
 
-    def surface(self) -> Number:
+    def surface(self) -> float:
         """yyy"""
         return (self._rayon ** 2) * math.pi
 
