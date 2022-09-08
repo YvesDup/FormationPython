@@ -38,7 +38,6 @@ def creer_index_defaultdict(phrase: str, occurrence: int=1) -> Dict[str, int]:
 
 def test_creer_index():
     """test creer_index"""
-        assert creer_index({}) == {}
     for func in (creer_index, creer_index_defaultdict):
         # partie 1
         try:
