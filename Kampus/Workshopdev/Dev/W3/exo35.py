@@ -43,6 +43,7 @@ def test_creer_index():
     except Exception:
         assert False
     assert creer_index(s, 3) == {'ami': 4, 'ton': 3}
+    assert creer_index(s, 8) == {}
 
     print("Done")
 
