@@ -33,7 +33,7 @@ class Parallelo:
     def __repr__(self) -> str:
         return self.__str__().upper() 
 
-    # opertauer de comparaison
+    # operateur de comparaison
     def __eq__(self, other) -> bool:
         return self.pc == other.pc\
             and self.gc == other.gc\
@@ -42,6 +42,7 @@ class Parallelo:
     def __ne__(self, other) -> bool:
         return not self.__eq__(other)
 
+    # pour le tri
     def __lt__(self, other) -> bool:
         """lt"""
         if not isinstance(other, self.__class__):
