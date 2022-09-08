@@ -6,8 +6,8 @@ class Sphere(class_cercle.Cercle):
     def __init__(self, rayon: class_cercle.Number):
         super().__init__(rayon)
 
-    # def surface(self) -> float:
-    #     return 0.0
+    def surface(self) -> float:
+        return 0.0
 
 def test_sphere():
     """test sphere"""
