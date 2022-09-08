@@ -2,7 +2,7 @@
 
 from typing import Dict
 
-def creer_index(phrase: str) -> Dict[str, int]:
+def creer_index(phrase: str, occurence: int=1) -> Dict[str, int]:
     if not isinstance(phrase, str):
         raise TypeError('"phrase" doit être une string')
 
@@ -14,10 +14,15 @@ def creer_index(phrase: str) -> Dict[str, int]:
         else:
             dmots[mot] = 1
 
+    if occurence > 1:
+        # filtrer 
+        return dmots
+
     return dmots
 
 def test_creer_index():
     """test creer_index"""
+    # partie 1
     try:
         assert creer_index({}) == {}
     except Exception as e:
@@ -30,6 +35,8 @@ def test_creer_index():
     d = {'ami': 4, 'ton': 3, 'est': 2, 'de': 1, 'un': 1, 'mon': 1, 'et': 1, 'tonton': 1}
     assert creer_index(s) == d
 
+    # partie 2
+    assert creer_index(s, 3) == {'ami': 4, 'ton': 3}
 
     print("Done")
 
