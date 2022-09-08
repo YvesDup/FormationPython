@@ -47,6 +47,6 @@ printf('coucou')
 print('hello', 'yv', sep='\t')
 
 
-print(f'{functools.reduce(lambda x, y: x*y, [1, 2, 3, 4, 5]) = }')
+print(f'{functools.reduce(lambda x, y: x*(y*10), [1, 2, 3, 4, 5]) = }')
 
 
