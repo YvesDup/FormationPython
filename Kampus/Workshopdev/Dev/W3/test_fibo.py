@@ -9,3 +9,4 @@ def fibo(n):
 
 print(f'{fibo(10) = }')
 print(f'{fibo(20) = }')
+print(f'{fibo(30) = }')
