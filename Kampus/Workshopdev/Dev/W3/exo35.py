@@ -9,7 +9,10 @@ def creer_index(phrase: str) -> Dict[str, int]:
     dmots = {}
 
     for mot in phrase.split():
-        dmots[mot] = 1
+        if mot in dmots:
+            dmots[mot] += 1
+        else:
+            dmots[mot] = 1
 
     return dmots
 
