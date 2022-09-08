@@ -25,6 +25,7 @@ def test_creer_index():
     assert creer_index("") == {}
     assert creer_index("hello") == {'hello':1}
     assert creer_index("hello hello") == {'hello':2}
+    assert creer_index("hello hello Bob") == {'hello':2, 'Bob':1}
 
     print("Done")
 
