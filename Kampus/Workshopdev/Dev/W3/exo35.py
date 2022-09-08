@@ -5,6 +5,9 @@ from typing import Dict
 def creer_index(phrase: str) -> Dict[str, int]:
     d = {}
 
+    for mot in phrase.split():
+        pass
+
     return d
 
 def test_creer_index():
