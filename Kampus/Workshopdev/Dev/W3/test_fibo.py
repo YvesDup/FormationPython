@@ -44,4 +44,5 @@ printf = functools.partial(print, 'yves')
 print(type(printf))
 printf('hello')
 printf('coucou')
-print('hello', 'yv')
+print('hello', 'yv', sep='\t')
+
