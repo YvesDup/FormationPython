@@ -21,6 +21,8 @@ def test_creer_index():
         assert isinstance(e, TypeError)
     assert creer_index("") == {}
     assert creer_index("hello") == {'hello':1}
+    assert creer_index("hello hello") == {'hello':2}
+
     print("Done")
 
 test_creer_index()
