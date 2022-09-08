@@ -57,8 +57,10 @@ del t.val
 print(vars(t))
 print(f"{t._private = }")
 print(t.show_super_private()) 
-print(f"{t.__super_private = }")
-
+try:
+    print(f"{t.__super_private = }")
+except Exception as e:
+    print(e)
 
 import math
 from typing import Union
