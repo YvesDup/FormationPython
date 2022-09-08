@@ -30,10 +30,11 @@ def test_all():
     print(l)
     l.sort()
     print(l)
+    print(Losange.__mro__)
+    print(l1.__class__.__mro__)
 
 if __name__ == '__main__':
     print(sys.version)
     test_losange()
     test_rectangle()
     test_all()
-    print(Losange.__mro__)
