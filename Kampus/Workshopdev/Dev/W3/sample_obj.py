@@ -61,9 +61,3 @@ try:
     print(f"{t.__super_private = }")
 except Exception as e:
     print(e)
-
-import math
-from typing import Union
-
-Number = Union[float, int]
-
