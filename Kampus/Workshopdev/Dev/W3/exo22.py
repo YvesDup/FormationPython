@@ -28,6 +28,8 @@ def test_all():
     l1 = Losange(100, 75)
     l = [Rectangle(30, 60), r1, l1, r2, Losange(10, 55)]
     print(l)
+    l.sort()
+    print(l)
 
 if __name__ == '__main__':
     print(sys.version)
