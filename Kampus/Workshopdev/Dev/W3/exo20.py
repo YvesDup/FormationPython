@@ -5,7 +5,7 @@ import sys
 
 class Parallelo:
     # variable de classe
-    int: val = None
+    val = 0
 
     """Class Parallelo - exo20"""
     def __init__(self, pc, gc, angle):
