@@ -3,6 +3,7 @@
 from typing import Dict
 
 def creer_index(phrase: str, occurrence: int=1) -> Dict[str, int]:
+    """creer l'index des mots d'une phrase"""
     if not isinstance(phrase, str):
         raise TypeError('"phrase" doit être une string')
 
@@ -15,7 +16,7 @@ def creer_index(phrase: str, occurrence: int=1) -> Dict[str, int]:
             dmots[mot] = 1
 
     if occurrence > 1:
-        # filtrer 
+        # filtrer
         return { k:v for k, v in dmots.items() if v >= occurrence}
 
     return dmots
