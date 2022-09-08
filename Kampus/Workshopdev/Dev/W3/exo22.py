@@ -27,7 +27,10 @@ def test_all():
     r2 = r1
     l1 = losange(100, 75)
     l = [Rectangle(30, 60), r1, l1, r2, Losange(10, 55)]
+    print(l)
+
 if __name__ == '__main__':
     print(sys.version)
     test_losange()
     test_rectangle()
+    test_all()
