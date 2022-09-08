@@ -12,7 +12,7 @@ class Parallelo:
         for param in (pc, gc, angle):
             if not isinstance(param , (int, float)):
                 raise TypeError(f'{param} doit être un entier ou un float')
-        if not (0 < pc < gc):
+        if not (0 < pc <= gc):
             raise ValueError("0 < pc < gc n'est pas valide !!!")
 
         if not (45 <= angle <= 90):
