@@ -36,6 +36,12 @@ def test_creer_index():
     assert creer_index(s) == d
 
     # partie 2
+    try:
+        assert creer_index(s, "") == {}
+    except TypeError:
+        pass
+    except Exception:
+        assert False
     assert creer_index(s, 3) == {'ami': 4, 'ton': 3}
 
     print("Done")
