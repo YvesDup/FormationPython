@@ -36,3 +36,4 @@ if __name__ == '__main__':
     test_losange()
     test_rectangle()
     test_all()
+    print(Losange.__mro__)
