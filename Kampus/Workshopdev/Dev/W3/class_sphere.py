@@ -13,5 +13,6 @@ def test_sphere():
     """test sphere"""
     s1 = Sphere(10)
     print(s1)
+    print(f'{s1.surface() = }')
 
 test_sphere()
