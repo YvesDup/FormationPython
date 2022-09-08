@@ -38,28 +38,30 @@ def creer_index_defaultdict(phrase: str, occurrence: int=1) -> Dict[str, int]:
 
 def test_creer_index():
     """test creer_index"""
-    # partie 1
-    try:
         assert creer_index({}) == {}
-    except Exception as e:
-        assert isinstance(e, TypeError)
-    assert creer_index("") == {}
-    assert creer_index("hello") == {'hello':1}
-    assert creer_index("hello hello") == {'hello':2}
-    assert creer_index("hello hello Bob") == {'hello':2, 'Bob':1}
-    s = "ton tonton est ton ami et un ami de ton ami est mon ami"
-    d = {'ami': 4, 'ton': 3, 'est': 2, 'de': 1, 'un': 1, 'mon': 1, 'et': 1, 'tonton': 1}
-    assert creer_index(s) == d
+    for func in (creer_index, creer_index_defaultdict):
+        # partie 1
+        try:
+            assert func({}) == {}
+        except Exception as e:
+            assert isinstance(e, TypeError)
+        assert func("") == {}
+        assert func("hello") == {'hello':1}
+        assert func("hello hello") == {'hello':2}
+        assert func("hello hello Bob") == {'hello':2, 'Bob':1}
+        s = "ton tonton est ton ami et un ami de ton ami est mon ami"
+        d = {'ami': 4, 'ton': 3, 'est': 2, 'de': 1, 'un': 1, 'mon': 1, 'et': 1, 'tonton': 1}
+        assert func(s) == d
 
-    # partie 2
-    try:
-        assert creer_index(s, "") == {}
-    except TypeError:
-        pass
-    except Exception:
-        assert False
-    assert creer_index(s, 3) == {'ami': 4, 'ton': 3}
-    assert creer_index(s, 8) == {}
+        # partie 2
+        try:
+            assert func(s, "") == {}
+        except TypeError:
+            pass
+        except Exception:
+            assert False
+        assert func(s, 3) == {'ami': 4, 'ton': 3}
+        assert func(s, 8) == {}
 
     print("Done")
 
