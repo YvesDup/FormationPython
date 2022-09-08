@@ -17,9 +17,11 @@ class Cercle:
         return f"<{self.__str__()}>"
 
     def perimetre(self) -> Number:
+        """xxx"""
         return 2 * self._rayon * math.pi
 
     def surface(self) -> Number:
+        """yyy"""
         return (self._rayon ** 2) * math.pi
 
 def test_cercle():
