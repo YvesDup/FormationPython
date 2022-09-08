@@ -31,7 +31,8 @@ def test_all():
     l.sort()
     print(l)
     print(Losange.__mro__)
-    print(l1.__class__.__mro__)
+    print(f'{l1.__class__.__mro__ = }')
+    print(f'{l1.__class__.__bases__ = }')
 
 if __name__ == '__main__':
     print(sys.version)
