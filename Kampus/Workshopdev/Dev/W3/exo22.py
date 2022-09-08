@@ -5,7 +5,7 @@ import exo20 as parallelo
 class Losange(parallelo.Parallelo):
     """class Losange"""
     def __init__(self, cote, angle):
-        pass
+        super().__init__(cote, cote, angle)
 
 def test_losange():
     """
@@ -14,7 +14,7 @@ def test_losange():
 class Rectangle(parallelo.Parallelo):
     """"""
     def __init__(self, p_cote, g_cote):
-        pass
+        parallelo.Parallelo.__init__(self, p_cote, g_cote, 90)
 
 def test_rectangle():
     """
