@@ -39,3 +39,6 @@ print(f'{fibo3(40) = }')
 
 msg = 'hello'
 print('Yves', msg)
+
+printf = functools.partial(print, 'yves')
+print(type(printf))
