@@ -42,3 +42,5 @@ print('Yves', msg)
 
 printf = functools.partial(print, 'yves')
 print(type(printf))
+printf('hello')
+printf('coucou')
