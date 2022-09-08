@@ -1,4 +1,4 @@
-
+import functools
 
 
 def fibo(n):
