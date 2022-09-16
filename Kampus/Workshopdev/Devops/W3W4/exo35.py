@@ -1,5 +1,3 @@
-from this import d
-
 
 def creer_index(phrase: str, occurrence_mini: int=1) -> dict:
     """
