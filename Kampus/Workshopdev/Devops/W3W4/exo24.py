@@ -23,7 +23,7 @@ def test_carre():
     for cls in (Carre0, Carre1, Carre2):
         try:
             c = cls(30)
-            print(c, f'{cls.__mro__ = }, {cls.__bases__}')
+            print(c, f'{cls.__mro__ = }, {cls.__bases__ = }')
         except Exception as e:
             print(f'class {cls.__name__!a} -> {e}')
 
