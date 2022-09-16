@@ -1,9 +1,12 @@
-def creer_index(phrase: str, occurence_mini: int=1) -> dict:
+def creer_index(phrase: str, occurrence_mini: int=1) -> dict:
     """
     """
     d = {}
     for mot in phrase.split():
         pass
+
+    if occurrence_mini > 1:
+        return {k: v for k, v in d.items() if v > occurrence_mini}
 
     return d
 
