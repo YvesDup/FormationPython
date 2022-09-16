@@ -13,7 +13,7 @@ class Obj:
         self._val = val
 
     def get_name(self) -> str:
-      """ ohoh"""
+        """ ohoh"""
         return self._name # appel à un attribut privé pour une méthode publique
 
 o = Obj('Yves', 57)
