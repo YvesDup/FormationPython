@@ -49,5 +49,4 @@ def test_cercle():
     l1.sort()
     print(l1)
 
-
-test_cercle()
+# test_cercle()
