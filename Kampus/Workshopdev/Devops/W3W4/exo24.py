@@ -24,6 +24,6 @@ def test_carre():
             c = cls(30)
             print(c)
         except Exception as e:
-            print(e)
+            print(f'class {cls.__name__!a} -> {e}')
 
 test_carre()
