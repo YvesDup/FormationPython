@@ -9,7 +9,7 @@ class Sphere(class_cercle.Cercle):
         super().__init__(rayon)
 
     def surface(self) -> float:
-        return 4 * self.rayon**2 * math.pi 
+        return 4 * self._rayon**2 * math.pi 
 
 def test_sphere():
     """rrr
