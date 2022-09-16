@@ -1,9 +1,15 @@
+"""La sphere"""
+import math
+
 import class_cercle
 
 class Sphere(class_cercle.Cercle):
     """class Sphere"""
     def __init__(self, rayon: class_cercle.Number):
         super().__init__(rayon)
+
+    def surface(self) -> float:
+        return 4 * self.rayon**2 * math.pi 
 
 def test_sphere():
     """rrr
