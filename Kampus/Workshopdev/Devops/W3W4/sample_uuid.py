@@ -5,7 +5,9 @@ x = str(uuid.uuid4())
 print(x)
 
 class Obj:
+  """ """
   def __init__(self, name, val):
+    """ """
     self._name = name
     self._val = val
 
