@@ -21,7 +21,7 @@ def test_carre():
     """
     """
     def __str__(self) -> str:
-        return f'Carre {self.p_cote}'
+        return f'{self.__class__.__name__} {self.p_cote}'
 
     for cls in (Carre0, Carre1, Carre2):
         try:
