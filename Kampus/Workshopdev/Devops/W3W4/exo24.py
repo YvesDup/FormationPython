@@ -24,7 +24,7 @@ def test_carre():
         try:
             c = cls(30)
             print(c, f'{cls.__mro__ = }, {cls.__bases__ = }')
-            print(vars(c), print(hasattr(c, '__dict__'))
+            print(vars(c), c.__dict__)
         except Exception as e:
             print(f'class {cls.__name__!a} -> {e}')
 
