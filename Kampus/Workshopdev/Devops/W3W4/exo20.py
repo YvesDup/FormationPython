@@ -23,6 +23,7 @@ class Parallelo:
 
     # conversion en string
     def __str__(self) -> str:
+        # f"{self.__class__.__Name__}/{self.p_cote}/{self.g_cote}/{self.angle}"
         return "PARALLELO STR"
 
     def __repr__(self) -> str:
