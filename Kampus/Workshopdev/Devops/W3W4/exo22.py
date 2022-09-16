@@ -23,7 +23,7 @@ def test_losange():
     ll = [l, exo20.Parallelo(20, 30, 75)]
     print(ll)
 
-class Carre(exo20.Parallelo):
+class Rectangle(exo20.Parallelo):
     """class Carre herits from Parallelo"""
 
     def __init__(self, p_cote, g_cote):
@@ -32,10 +32,11 @@ class Carre(exo20.Parallelo):
 
     # conversion en string
     def __str__(self) -> str:
-        return f"CARRE {self.p_cote}, {self.g_cote}"
+        return f"Rectangle {self.p_cote}, {self.g_cote}"
 
     def __repr__(self) -> str:
-        return self.__str__()
+        return self.__str__().upper()
+
 if __name__ == "__main__":
     print(sys.version)
     test_losange() 
