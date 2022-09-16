@@ -27,7 +27,7 @@ class ObjUUid(Obj):
     """"""
     def __init__(self, name, val):
         """bolobolo"""
-        super().__init__(self, name, val)
+        super().__init__(name, val)
         self.__uuid = str(uuid.uuid4())
 
     def get_uuid(self) -> str:
