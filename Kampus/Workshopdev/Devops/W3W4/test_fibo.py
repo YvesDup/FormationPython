@@ -11,11 +11,11 @@ start = time.time()
 print(f'{fibo(10) = }')
 print(f'{fibo(20) = }')
 print(f'{fibo(38) = }')
-t = start - time.time()
+t = time.time() - start
 print(f'temps passé est: {t:.4f}')
 print('++++'*10)
 
-
+exit()
 
 
 
