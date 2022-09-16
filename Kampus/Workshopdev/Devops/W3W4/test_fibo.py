@@ -25,7 +25,7 @@ def fibo2(n):
     d[n] = fibo2(n-1) + fibo2(n-2)
     return d[n]
 
-t = time.time()
+start = time.time()
 print(f'{fibo2(10) = }')
 print(f'{fibo2(20) = }')
 print(f'{fibo2(37) = }')
