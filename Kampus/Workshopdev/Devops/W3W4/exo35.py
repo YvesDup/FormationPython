@@ -15,6 +15,7 @@ def test_creer_index():
     """
 
     assert creer_index("") == {}
+    assert creer_index("", 10) == {}
     print("all tests done !!!")
 
 if __name__ == '__main__':
