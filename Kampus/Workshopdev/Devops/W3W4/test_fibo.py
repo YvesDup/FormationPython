@@ -16,26 +16,24 @@ t = time.time() - start
 print(f'temps passé est: {t:.4f}')
 print('++++'*10)
 
-exit()
-
-
-
-
-
 d = {} 
 def fibo2(n):
     if n < 2:
         return 1
     if n in d:
         return d[n]
-    d[n] = fibo2(n-1) + fibo2(n-2) 
+    d[n] = fibo2(n-1) + fibo2(n-2)
     return d[n]
+
 t = time.time()
 print(f'{fibo2(10) = }')
 print(f'{fibo2(20) = }')
-print(f'{fibo2(40) = }')
-
+print(f'{fibo2(37) = }')
+t = time.time() - start
+print(f'temps passé est: {t:.4f}')
 print('++++'*10)
+exit()
+
 
 @functools.cache
 def fibo3(n):
