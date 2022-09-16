@@ -24,8 +24,8 @@ class Cercle:
         return (self._rayon ** 2) * math.pi
 
     # operator de comparaison
-    def __lt__(self, other) -> bool:
-        if isinstance(other, Cercle)
+    def __lt__(self, other: Union["Cercle", int, float]) -> bool:
+        if isinstance(other, Cercle):
             return self._rayon < other._rayon
         elif isinstance(other, (int, float)):
             return self._rayon < other
