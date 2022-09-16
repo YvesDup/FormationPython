@@ -49,4 +49,7 @@ def test_cercle():
     l1.sort()
     print(l1)
 
+print('---'*20)
+print(f'name: {__name__!a} from {__file__!a}')
+print('---'*20)
 # test_cercle()
