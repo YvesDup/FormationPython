@@ -25,7 +25,11 @@ class Cercle:
 
     # operator de comparaison
     def __lt__(self, other) -> bool:
-        return self._rayon < other._rayon
+        if isinstance(other, Cercle)
+            return self._rayon < other._rayon
+        elif isinstance(other, (int, float)):
+            return self._rayon < other
+        raise TypeError("other must a Cercle, an int or a float")
 
 def test_cercle():
     """Test un cercle
