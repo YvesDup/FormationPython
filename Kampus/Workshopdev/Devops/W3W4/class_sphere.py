@@ -21,7 +21,7 @@ def test_sphere():
     s1 =Sphere(100)
     print(s1)
     print(f'{s1.perimetre() = } - {s1.surface() = } / {class_cercle.Cercle.surface(s1) = }')
-    l1 = [s1, class_cercle.Cercle(5), class_cercle.Cercle(8)]
+    l1 = [class_cercle.Cercle(5), s1, class_cercle.Cercle(8)]
     print(l1)
     l1.sort(reverse=True)
     print(l1)
