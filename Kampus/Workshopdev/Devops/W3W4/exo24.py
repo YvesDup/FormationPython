@@ -19,6 +19,11 @@ class Carre2(exo22.Rectangle):
 def test_carre():
     """
     """
-    ...
+    for cls in (Carre0, Carre1, Carre2):
+        try:
+            c = cls(30)
+            print(c)
+        except Exception as e:
+            print(e)
 
 test_carre()
