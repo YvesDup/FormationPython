@@ -26,5 +26,7 @@ def test_sphere():
     l1.sort(reverse=True)
     print(l1)
 
+print('+++'*20)
 print(f'name: {__name__!a} from {__file__!a}')
+print('+++'*20)
 test_sphere()
