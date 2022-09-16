@@ -30,7 +30,7 @@ class ObjUUid(Obj):
         self.__uuid = str(uuid.uuid4())
 
     def get_uuid(self) -> str:
-      """bolobolo"""
+        """bolobolo"""
         return self.__uuid
 
 o = ObjUUid('Yves', 57)
