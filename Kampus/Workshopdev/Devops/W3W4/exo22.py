@@ -45,8 +45,6 @@ def test_Rectangle():
 
     ll = [r, exo20.Parallelo(20, 30, 75), Losange(50, 75)]
     print(ll)
-    ll.sort()
-    print(ll)
 
 if __name__ == "__main__":
     print(sys.version)
