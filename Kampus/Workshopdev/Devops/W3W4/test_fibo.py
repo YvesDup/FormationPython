@@ -11,7 +11,7 @@ def fibo(n):
 start = time.time()
 print(f'{fibo(10) = }')
 print(f'{fibo(20) = }')
-print(f'{fibo(37) = }')
+# print(f'{fibo(37) = }')
 t = time.time() - start
 print(f'temps passé est: {t:.4f}')
 print('++++'*10)
@@ -31,6 +31,7 @@ print(f'{fibo2(20) = }')
 print(f'{fibo2(37) = }')
 t = time.time() - start
 print(f'temps passé est: {t:.4f}')
+print(d)
 print('++++'*10)
 exit()
 
