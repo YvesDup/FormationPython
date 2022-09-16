@@ -42,7 +42,7 @@ def test_cercle():
     print(f'{c1 < 1 = }')
     try:
         print(f'{1 < c1 = }')
-    except Exception as e:
+    except TypeError as e:
         print(e)
 
     print(l1)
