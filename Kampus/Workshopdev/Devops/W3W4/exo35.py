@@ -1,3 +1,6 @@
+from this import d
+
+
 def creer_index(phrase: str, occurrence_mini: int=1) -> dict:
     """
     """
@@ -27,6 +30,13 @@ def test_creer_index():
     assert creer_index("hello bye") == {"hello": 1, "bye": 1}
     assert creer_index("hello hello") == {"hello": 2}
     assert creer_index("", 10) == {}
+    s = "ton tonton est ton ami et un ami de ton ami est mon ami"
+    d1 = {'ami': 4, 'ton': 3, 'est': 2, 'de': 1, 'un': 1, 'mon': 1, 'et': 1, 'tonton': 1}
+    d2  ={'ami': 4, 'ton': 3}
+    assert creer_index(s) == d1
+    assert creer_index(s, 3) == d2
+
+
     print("all tests done !!!")
 
 if __name__ == '__main__':
