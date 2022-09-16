@@ -27,6 +27,8 @@ class Rectangle(exo20.Parallelo):
     """class Carre herits from Parallelo"""
 
     def __init__(self, p_cote, g_cote):
+        if not (p_cote < g_cote):
+            raise ValueError("petit coté < grand cote")
         super().__init__(p_cote, g_cote, 90)
 
     # conversion en string
