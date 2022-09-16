@@ -6,7 +6,9 @@ import class_cercle
 class Sphere(class_cercle.Cercle):
     """class Sphere"""
     def __init__(self, rayon: class_cercle.Number):
+        print(vars(self))
         super().__init__(rayon)
+        print(vars(self))
 
     def surface(self) -> float:
         return 4 * self._rayon**2 * math.pi 
