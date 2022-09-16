@@ -1,7 +1,7 @@
 """La sphere"""
 import math
 
-import class_cercle as cc
+import class_cercle as cc # cc est un alias
 
 class Sphere(cc.Cercle):
     """class Sphere"""
