@@ -4,12 +4,9 @@ import time
 def fibo(n):
     if n < 2:
         return 1
-
     return fibo(n-1) + fibo(n-2)
 
-
-
-
+# fibo(4) = fibo(3) + fibo(2) ** fibo(3) = fibo(2) + fiba(1)
 
 start = time.time()
 print(f'{fibo(10) = }')
