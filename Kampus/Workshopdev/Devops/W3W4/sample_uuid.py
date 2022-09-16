@@ -24,6 +24,7 @@ print(f"{o._name = } et {o.get_name() = }")
 
 
 class ObjUUid(Obj):
+    """"""
     def __init__(self, name, val):
         """bolobolo"""
         super().__init__(self, name, val)
