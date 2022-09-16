@@ -49,15 +49,14 @@ print(f'{fibo3(20) = }')
 print(f'{fibo3(40) = }')
 t = time.time() - start
 print(f'temps passé est: {t:.6f}')
-exit()
 
 msg = 'hello'
 print('Yves', msg)
 
-printf = functools.partial(print, 'yves')
-print(type(printf))
-printf('hello')
-printf('coucou')
+printyves = functools.partial(print, 'yves')
+print(type(printyves))
+printyves('hello')
+printyves('coucou')
 print('hello', 'yv', sep='\t')
 
 
