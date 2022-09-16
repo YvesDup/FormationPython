@@ -16,7 +16,7 @@ def test_sphere():
     """
     s1 =Sphere(100)
     print(s1)
-    print(f'{s1.perimetre() = } - {s1.surface() = } / {class_cercle.surface(s1) = }')
+    print(f'{s1.perimetre() = } - {s1.surface() = } / {class_cercle.Cercle.surface(s1) = }')
 
 
 test_sphere()
