@@ -10,7 +10,7 @@ def creer_index(phrase: str, occurrence_mini: int=1) -> dict:
 
     return d
 
-def creer_index(phrase: str, occurrence_mini: int=1) -> dict:
+def creer_index1(phrase: str, occurrence_mini: int=1) -> dict:
     """
     """
     pass
