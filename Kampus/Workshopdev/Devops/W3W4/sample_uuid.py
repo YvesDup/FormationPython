@@ -25,11 +25,13 @@ print(f"{o._name = } et {o.get_name() = }")
 
 class ObjUUid(Obj):
     def __init__(self, name, val):
+      """bolobolo"""
         super().__init__(self, name, val)
         self.__uuid = str(uuid.uuid4())
 
-    def get_uuid(self):
-        return self.__uuid 
+    def get_uuid(self) -> str:
+      """bolobolo"""
+        return self.__uuid
 
 o = ObjUUid('Yves', 57)
 print(f"{o._name = } et {o.get_name() = }")
