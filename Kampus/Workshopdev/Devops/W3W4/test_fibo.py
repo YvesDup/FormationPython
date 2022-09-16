@@ -1,5 +1,5 @@
 import functools
-
+import time
 
 def fibo(n):
     if n < 2:
@@ -7,10 +7,20 @@ def fibo(n):
 
     return fibo(n-1) + fibo(n-2)
 
+start = time.time()
 print(f'{fibo(10) = }')
 print(f'{fibo(20) = }')
-#print(f'{fibo(40) = }')
+print(f'{fibo(38) = }')
+t = start - time.time()
+print(f'temps passé est: {t:.4f}')
 print('++++'*10)
+
+
+
+
+
+
+
 d = {} 
 def fibo2(n):
     if n < 2:
@@ -19,7 +29,7 @@ def fibo2(n):
         return d[n]
     d[n] = fibo2(n-1) + fibo2(n-2) 
     return d[n]
-
+t = time.time()
 print(f'{fibo2(10) = }')
 print(f'{fibo2(20) = }')
 print(f'{fibo2(40) = }')
