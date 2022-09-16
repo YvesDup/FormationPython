@@ -48,7 +48,7 @@ print(f'{fibo3(10) = }')
 print(f'{fibo3(20) = }')
 print(f'{fibo3(40) = }')
 t = time.time() - start
-print(f'temps passé est: {t:.4f}')
+print(f'temps passé est: {t:.6f}')
 exit()
 
 msg = 'hello'
