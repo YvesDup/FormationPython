@@ -2,7 +2,7 @@
 import math
 from typing import Union
 
-Number = Union[float, int]
+Number = Union[float, int] # en 3.10 float | int
 
 class Cercle:
     """class Cercle"""
