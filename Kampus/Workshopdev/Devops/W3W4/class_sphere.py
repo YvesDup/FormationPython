@@ -29,4 +29,6 @@ def test_sphere():
 print('+++'*20)
 print(f'name: {__name__!a} from {__file__!a}')
 print('+++'*20)
-test_sphere()
+
+if __name__ == '__main__':
+    test_sphere()
