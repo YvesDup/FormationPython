@@ -9,6 +9,8 @@ class Sphere(class_cercle.Cercle):
         print(vars(self))
         super().__init__(rayon)
         print(vars(self))
+        self._bidon = None
+        print(vars(self))
 
     def surface(self) -> float:
         return 4 * self._rayon**2 * math.pi 
