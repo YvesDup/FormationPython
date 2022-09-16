@@ -31,6 +31,9 @@ class Cercle:
             return self._rayon < other
         raise TypeError("other must a Cercle, an int or a float")
 
+    def __int__() -> int:
+        return self._rayon
+
 def test_cercle():
     """Test un cercle
     """
