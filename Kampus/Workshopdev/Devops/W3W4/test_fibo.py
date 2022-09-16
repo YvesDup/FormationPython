@@ -34,7 +34,6 @@ t = time.time() - start
 print(f'temps passé est: {t:.4f}')
 print(d)
 print('++++'*10)
-exit()
 
 
 @functools.cache
@@ -44,9 +43,13 @@ def fibo3(n):
 
     return fibo3(n-1) + fibo3(n-2)
 
+start = time.time()
 print(f'{fibo3(10) = }')
 print(f'{fibo3(20) = }')
 print(f'{fibo3(40) = }')
+t = time.time() - start
+print(f'temps passé est: {t:.4f}')
+exit()
 
 msg = 'hello'
 print('Yves', msg)
