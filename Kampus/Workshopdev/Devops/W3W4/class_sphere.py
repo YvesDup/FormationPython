@@ -10,5 +10,7 @@ def test_sphere():
     """
     s1 =Sphere(100)
     print(s1)
+    print(f'{s1.perimetre() = } - {s1.surface() = }')
+
 
 test_sphere()
