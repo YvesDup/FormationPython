@@ -41,7 +41,7 @@ def test_cercle():
     c1 = Cercle(10)
     print(f'{c1!s} - {c1!r}')
     print(f'{c1.perimetre() = } - {c1.surface() = }')
-    l1 = [c1, Cercle(5), Cercle(8)]
+    l1 = [c1, Cercle(5), Cercle(8), 10]
     print(f'{c1 < Cercle(30) = }')
     print(f'{c1 < 1 = }')
     try:
