@@ -1,4 +1,4 @@
-def creer_index(phrase: str) -> dict:
+def creer_index(phrase: str, occurence_mini: int=1) -> dict:
     """
     """
     d = {}
