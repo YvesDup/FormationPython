@@ -3,7 +3,10 @@ def creer_index(phrase: str, occurrence_mini: int=1) -> dict:
     """
     d = {}
     for mot in phrase.split():
-        pass
+        if mot in d:
+            d[mot] += 1
+        else:
+            d[mot] = 1
 
     if occurrence_mini > 1:
         return {k: v for k, v in d.items() if v >= occurrence_mini}
@@ -13,7 +16,7 @@ def creer_index(phrase: str, occurrence_mini: int=1) -> dict:
 def creer_index1(phrase: str, occurrence_mini: int=1) -> dict:
     """
     """
-    
+
     pass
 def test_creer_index():
     """
