@@ -417,10 +417,7 @@ Description:
 
 * `__base__`: classe.__base__ renvoie la classe parente 
 
-* `__annotations__` : classe.__annotations__ ou objet.__annotations__ Renvoie les annotations de la classe interrogée
-
 * `__doc__` : classe.__doc__ ou objet.__doc__ Renvoie la docstring de la classe interrogée
-
 * `__dict__` : classe.__dict__ Renvoie un dictionnaire des méthodes, variables statiques de la classe
 
 * `__dict__` : objet.__dict__ Renvoie un dictionnaire des méthodes et attributs disponibles pour l'objet
@@ -428,6 +425,10 @@ Description:
 * `__class__` : objet.__class__ permet de connaître à partir de quelle classe l'objet a été créé
 
 * `__module__` : Permet de connaître le nom du module dans lequel est codée une fonction ou une classe.
+
+
+* `__annotations__` : fonction.__annotations__ Renvoie les annotations de la fonction en référence
+
 
 ---
 <style scoped> {
