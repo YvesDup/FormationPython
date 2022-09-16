@@ -30,5 +30,4 @@ def test_cercle():
     print(f'{c1!s} - {c1!r}')
     print(f'{c1.perimetre() = } - {c1.surface() = }')
 
-if __name__ == '__main__':
-    test_cercle()
+test_cercle()
