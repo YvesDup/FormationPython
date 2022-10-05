@@ -79,7 +79,9 @@ Le test pour vérifier qu'une exception est bien levée se fait via avec un gest
 
 Ce regroupement de tests se fait dans une classe dédiée `unittest.TestCase` qui permet le lancement de tous les tests unitaires inclus. Dans l'exemple initial, il y a donc 3 tests unitaires pour la classe de regroupement `TestStringMethods`.
 
-Un fichier de test unitaire Python peut contenir plusieurs instances de classes `unittest.TestCase` 
+Un fichier de test unitaire Python peut contenir plusieurs instances de classes `unittest.TestCase`.
+
+Il existe une classe de regroupement dédiée au tests unitaires de module asynchrone: `IsolatedAsyncioTestCase`
 
 ### Le lancement des tests
 
@@ -109,9 +111,20 @@ Avant l'exécution de chaque test unitaire, il est possible d'appeler une foncti
 + `setUp`, toujours appélé mais s'il est échoue, le test n'est pas exécuté.
 + `tearDown`, toujours appelé même si le test échoue, sauf si le `setUp` échoue.
 
+Il est possible de rajouter des fonctions (avec paramètre) via la méthode `addCleanup` qui seront appelées de manière inversée (LIFO) après le `tearDown` ou le `setUp`s'il échoue. Ces fonctions sont en réalité appelé par la méthode `doCleanup`, qui d'ailleurs peut être invoqué à n'importe quel moment. 
+
+Pour la préparation et la clôture de tests asynchrones, 2 méthodes dédiées existent et se comportent identiquement à celles déjà présentées, à savoir:
+
++ `asyncSetUp`
++ `asyncTearDown`
+
 ### Les compléments
 
 Le module `unittest.mock` permet de position des `mock` pour les tests unitaires afin de pouvoir rejouer un comportements d'une fonction ou d'une classe.
+Sont proposées 2 classes:
++ `Mock`
++ `MagicMock`
++ 'AsyncMock'
 
 ## La bibliothèque `Pytest`
 
@@ -119,5 +132,5 @@ Le module `unittest.mock` permet de position des `mock` pour les tests unitaires
 ## Annexe
 
 [La bibliothèque interne `unittest`](https://docs.python.org/3.10/library/unittest.html#unittest.TestCase)
-
+[La bibliothèque interne `unittest.Mock`](https://docs.python.org/3.8/library/unittest.mock.html)
 [la bibiothèque `pytest`](https://docs.pytest.org/en/7.1.x/)
