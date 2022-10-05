@@ -38,7 +38,7 @@ class TestSetupFail(unittest.TestCase):
     def tearDown(self):
         print("tearDown done !!")
 
-"""
+
 class TestComplete(unittest.TestCase):
     def setUp(self):
         super().setUp()
@@ -53,7 +53,6 @@ class TestComplete(unittest.TestCase):
 
     def tearDown(self):
         print("tearDown ok")
-"""
 
 if __name__ == '__main__':
     unittest.main()
