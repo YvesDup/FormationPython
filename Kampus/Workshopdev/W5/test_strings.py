@@ -65,7 +65,7 @@ class MyTestCase(unittest.TestCase):
                      "not supported in this python version")
     def test_format(self):
         # Tests that work for only a certain version of the library.
-        pass
+        self.assertTrue(1)
 
     @unittest.skipUnless(sys.platform.startswith("win"), "requires Windows")
     def test_windows_support(self):
