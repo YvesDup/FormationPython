@@ -81,7 +81,7 @@ python test_scripts.py
   font-size: 20px;
 }
 </style>
-### La définition d'un test unitaire
+### La définition d'un test unitaire.
 
 #### cas général.
 
@@ -106,7 +106,7 @@ Ici, sont fournis via l'instance de cette classe quelques méthodes de vérifica
   font-size: 22px;
 }
 </style>
-#### Tester les exceptions
+#### Tester les exceptions.
 
 Le methode (ou test) pour vérifier qu'une exception est bien levée se fait via avec un gestionnaire de contexte comme suit:
 ```py
@@ -126,7 +126,7 @@ Le methode (ou test) pour vérifier qu'une exception est bien levée se fait via
 }
 </style>
 
-### Le regroupement de tests
+### Le regroupement de tests.
 
 Ce regroupement de tests se fait dans une classe dédiée `unittest.TestCase` qui permet le lancement de tous les tests unitaires inclus. Dans l'exemple initial, il y a donc 3 tests unitaires pour la classe de regroupement `TestStringMethods` dérivée de `unittest.TestCase`.
 
@@ -139,7 +139,7 @@ Il existe une classe de regroupement dédiée au tests unitaires de module async
   font-size: 25px;
 }
 </style>
-### Le lancement des tests
+### Le lancement des tests.
 
 Le lancement des tests peut se faire en ligne de commande avec l'exécution du scrip contenant les regroupements de tests, ou via l'appel au module `unittest` avec le paramètre `-m`. 
 Cela permet de lancer les tests plus finement. Voici quelques options:
@@ -167,7 +167,7 @@ python -m unittest -h
 }
 </style>
 
-### L'environnement des des tests
+### L'environnement des des tests.
 
 Avant l'exécution de chaque test unitaire, il est possible d'appeler une fonction de préparation, et après l'exécution de chaque test, une fonction de clôture. Ces 2 fonctions correspondent à 2 méthodes de la classe `unittest.TestCase`:
 
@@ -188,7 +188,7 @@ Pour la préparation et la clôture de tests asynchrones, 2 méthodes dédiées 
 </style>
 ### Et encore ....
 
-#### L'exécution conditionnelle des tests
+#### L'exécution conditionnelle des tests.
 
 Contextuellement, certains tests unitaires (ou regroupement de tests) peuvent être volontairement ignorés lors de leur lancement, comme par exemple:
 + Version de python inappropriée, OS d'exécution non ciblé
@@ -219,11 +219,12 @@ class MyTestCase(unittest.TestCase):
   font-size: 21px;
 }
 </style>
-#### La gestion des signaux
+#### La gestion des signaux.
 
-Ce module prend en compte la gestion des signaux en particulier les cas de **Ctrl+C**. [voir le chapitre dédié](https://docs.python.org/3.8/library/unittest.html#signal-handling)
+Ce module prend en compte la gestion des signaux et en particulier les cas de **Ctrl+C**. [voir le chapitre dédié](https://docs.python.org/3.8/library/unittest.html#signal-handling)
 
-#### Les mocks
+#### Les mocks.
+
 Le module `unittest.mock` permet d'utiliser des `mock` dans les tests unitaires afin de simuler une fonction ou d'une classe sans pour autant les définir complétement.
 
 Sont proposées principalement 3 classes:
@@ -248,7 +249,7 @@ print(o.test, ",", hasattr(o, 'u')) #  10, True
   font-size: 25px;
 }
 </style>
-## Annexe
+## Annexes.
 
 [La bibliothèque interne `unittest`](https://docs.python.org/3.10/library/unittest.html#unittest.TestCase)
 [La bibliothèque interne `unittest.Mock`](https://docs.python.org/3.8/library/unittest.mock.html)
