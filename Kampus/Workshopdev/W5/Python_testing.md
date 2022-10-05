@@ -1,3 +1,24 @@
+---
+marp: true
+theme: gaia
+paginate: true
+_paginate: false
+header: ![w:150](img/logo_kampus.png)
+footer: (c) yduprat@gmail.com
+---
+# Formation Python - ![h:100 w:280](img/logo_bnc.png)
+
+Juin/Septembre 2022
+
+_
+
+![h:250](https://www.python.org/static/community_logos/python-logo-generic.svg)
+
+---
+<style scoped> {
+  font-size: 22px;
+}
+</style>
 # Les tests unitaires en Python
 
 Les tests unitaires en Python se font à travers des bibliothèques dédiées. 
