@@ -18,7 +18,7 @@ class TestStringMethods(unittest.TestCase):
 
 class TestStringImmutable(unittest.TestCase):
     def test_immutable(self):
-        self.assertTrue(1)
+        self.assertTrue(1 > 0)
 
 
 class TestSetupFail(unittest.TestCase):
