@@ -20,7 +20,7 @@ class TestCercleInit(unittest.TestCase):
 
     def test_bad_value_param(self):
         """ test la creatiion d'un cercle sans parametre"""
-        with self.assertRaises(TypeError):
+        with self.assertRaises(ValueError):
             class_cercle.Cercle(-23.9)
 
     def test_good_param(self):
