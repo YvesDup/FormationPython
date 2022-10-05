@@ -67,7 +67,7 @@ class MyTestCase(unittest.TestCase):
         # Tests that work for only a certain version of the library.
         self.assertTrue(1)
 
-    @unittest.skipIf('totolib' in sys.modules, '`totolib` not imported')
+    @unittest.skipIf('totolib' not in sys.modules, '`totolib` not imported')
     def test_library(self):
         self.assertEqual(totolib.fct(10), 10)
 
