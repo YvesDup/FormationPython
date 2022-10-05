@@ -8,7 +8,7 @@ class Cercle:
     """class Cercle"""
     def __init__(self, rayon: Number):
         """init"""
-        if not isinstance(rayon, Number):
+        if not isinstance(rayon, (float, int)):
             raise TypeError("")
         if rayon <= 0.0:
             raise ValueError("")
