@@ -213,11 +213,15 @@ class MyTestCase(unittest.TestCase):
 
 ---
 <style scoped> {
-  font-size: 24px;
+  font-size: 21px;
 }
 </style>
+#### La gestion des signaux
+
+Ce module prend en compte la gestion des signaux en particulier les cas de **Ctrl+C**. [voir le chapitre dédié](https://docs.python.org/3.8/library/unittest.html#signal-handling)
+
 #### Les mocks
-Le module `unittest.mock` permet d'utiliser des `mock` dans les tests unitaires afin de simuler les comportements d'une fonction ou d'une classe sans pour autant les définir complémtement.
+Le module `unittest.mock` permet d'utiliser des `mock` dans les tests unitaires afin de simuler une fonction ou d'une classe sans pour autant les définir complétement.
 
 Sont proposées principalement 3 classes:
 + `Mock`
