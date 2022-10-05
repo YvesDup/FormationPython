@@ -15,11 +15,12 @@ def analyse_texte_v1(text: str, *args):
 
     minstr, maxstr, sumstr = all_strs[0], all_strs[0], len(all_strs[0])
     for st in all_strs[1:]:
-        if len(st) < len(minstr):
+        lg = len(st)
+        if lg < len(minstr):
             minstr = st
-        elif len(st) > len(maxstr):
+        elif lg > len(maxstr):
             maxstr = st
-        sumstr += len(st)
+        sumstr += lg
 
     return minstr, maxstr, sumstr/len(all_strs)
 
