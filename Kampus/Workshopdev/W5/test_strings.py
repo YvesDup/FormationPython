@@ -18,7 +18,7 @@ class TestStringMethods(unittest.TestCase):
 
 class TestStringImmutable(unittest.TestCase):
     def test_immutable(self):
-        self.assertTrue(True)
+        self.assertTrue(1)
 
 
 class TestSetupFail(unittest.TestCase):
@@ -46,7 +46,7 @@ class TestComplete(unittest.TestCase):
 
     def test_run_ko(self):
         print("test_run ko")
-        self.assertTrue(0)
+        self.assertTrue(0 == 1)
 
     def tearDown(self):
         print("tearDown ok")
