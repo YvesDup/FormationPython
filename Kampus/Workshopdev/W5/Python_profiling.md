@@ -1,3 +1,25 @@
+---
+marp: true
+theme: gaia
+paginate: true
+_paginate: false
+header: ![w:150](img/logo_kampus.png)
+footer: (c) yduprat@gmail.com
+---
+# Formation Python - ![h:100 w:280](img/logo_bnc.png)
+
+Juin/Septembre 2022
+
+_
+
+![h:250](https://www.python.org/static/community_logos/python-logo-generic.svg)
+
+---
+<style scoped> {
+  font-size: 26px;
+}
+</style>
+
 # Mesurer les performances
 
 En programmation, il y a 2 domaines sur lesquels peuvent se faire les mesures de performance:
@@ -7,6 +29,11 @@ En programmation, il y a 2 domaines sur lesquels peuvent se faire les mesures de
 
 ces 2 points peuvent être traités dès la mise en place des tests unitaires et/ou lors des phases de tests d'intégration. Quand ils sont mis en place à ce stade du développement, ils peuvent servir de mesures de référence
 
+---
+<style scoped> {
+  font-size: 21px;
+}
+</style>
 ## Observer le temps de traitement d'une fonction, d'un script
 
 Il existe plusieurs moyens pour mesurer le temps de traitement d'une fonction, d'un script
@@ -14,20 +41,25 @@ Il existe plusieurs moyens pour mesurer le temps de traitement d'une fonction, d
 * faire une mesure locale avec 2 prises de temps entourant la partie de code, directement ou via un décorateur, un context manager
 
 * utiliser des outils plus élaborés comme:
-    - la bibliothèque interne `timeit`:  <https://docs.python.org/fr/3/library/timeit.html>
-    - la bibliothèque interne `profile` (ou cProfile): <https://docs.python.org/3/library/profile.html>
+    - la bibliothèque interne [`timeit`](https://docs.python.org/fr/3/library/timeit.html)
+    - la bibliothèque interne [`profile / cProfile`](https://docs.python.org/3/library/profile.html)
     - des bibliothèques externes comme:
-        + pyperf: <https://pyperf.readthedocs.io/en/latest>
-        + vprof: <https://pythonrepo.com/repo/nvdv-vprof-python-monitoring>
-        + line_profiler: <https://coderzcolumn.com/tutorials/python/line-profiler-line-by-line-profiling-of-python-code>
+        + [pyperf](https://pyperf.readthedocs.io/en/latest)
+        + [vprof](https://pythonrepo.com/repo/nvdv-vprof-python-monitoring)
+        + [line_profiler](https://coderzcolumn.com/tutorials/python/line-profiler-line-by-line-profiling-of-python-code)
 
-+Note:
+**A noter** :
 
-La bibliothèque interne `profile` produit des fichiers d'extension .prof (.cprof) qui peuvent être lus et analysés par la bibliothèque interne `pstats`, ou des outils externes comme 'snakeviz', 'graphviz'  (Installation parfois laborieuse en fonction de l'OS)
+La bibliothèque interne `profile` produit des fichiers d'extension .prof (.cprof) qui peuvent être lus et analysés par la bibliothèque interne `pstats`, ou des outils externes comme **'snakeviz'**.
 
-voir aussi: <https://docs.microsoft.com/fr-fr/visualstudio/python/profiling-python-code-in-visual-studio?view=vs-2019>
+[Voir ici la mise en oeuvre sous vscode](https://docs.microsoft.com/fr-fr/visualstudio/python/profiling-python-code-in-visual-studio?view=vs-2019)
 
-==== Observer l'occupation mémoire d'un objet, d'une structure de données
+---
+<style scoped> {
+  font-size: 26px;
+}
+</style>
+### Observer l'occupation mémoire d'un objet, d'une structure de données
 
 Pour regarder l'occupation mémoire d'un script et des structures de données, il existe plusieurs outils:
 
@@ -37,6 +69,11 @@ Pour regarder l'occupation mémoire d'un script et des structures de données, i
     + memory_profiler: <https://pypi.org/project/memory-profiler/>, <https://coderzcolumn.com/tutorials/python/how-to-profile-memory-usage-in-python-using-memory-profiler>
     + pympler: <https://pympler.readthedocs.io/en/latest/>
 
+---
+<style scoped> {
+  font-size: 22px;
+}
+</style>
 ### Annexe1
 ```python
 import sys
