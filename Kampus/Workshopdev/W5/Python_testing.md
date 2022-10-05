@@ -16,28 +16,38 @@ _
 
 ---
 <style scoped> {
-  font-size: 22px;
+  font-size: 26px;
 }
 </style>
 # Les tests unitaires en Python
 
-Les tests unitaires en Python se font à travers des bibliothèques dédiées. 
-Un framework de test `unittest` est fourni en standard en Python, mais il existe d'autres bibliothèques externes (donc à installer), comme:
+Les tests unitaires en Python se font à travers des bibliothèques dédiées. Un framework de test `unittest` est fourni en standard en Python, mais il existe d'autres bibliothèques externes (donc à installer), comme:
 
 + pytest (qui sait jouer des tests `unittest`)
 + nose2
 + doctest
 
+---
+<style scoped> {
+  font-size: 27px;
+}
+</style>
 ## La bibliothèque interne `unittest``
 
 Cette bibliothèque, qui s'inspire de **JUnit**, comprend 4 parties principales:
 
-+ le jeu de test (préparation et finalisation)
-+ le test unitaire
++ l'environnement du test (préparation et finalisation)
++ la définiton du test unitaire
 + le regroupement de tests unitaires à exécuter ensemble
 + le lancement des tests
 
-Voici un exemple:
+---
+<style scoped> {
+  font-size: 21px;
+}
+</style>
+
+Voici un premier exemple simple:
 ```py
 import unittest
 
@@ -66,11 +76,13 @@ La vérification se fait en exécutant ce script comme suit:
 python test_scripts.py
 ```
 
-### Le test unitaire
+### La définition d'un test unitaire
 
-La validité d'un test unitaire dans ce module est basée sur la fonction interne `assert` qui a été encapsulée dans la classe de regroupement des tests unitaires.
+Ici il s'agit de tester via une méthode contenant un jeu d'instruction restreint,  que le résultat produit est conforme aux attentes.
 
-Ici, sont fournis via l'instance de cette classe les méthodes de tests dont voici une liste non exaustive:
+La validité de ce bout de code dans ce module est basée sur la fonction interne `assert` qui a été encapsulée dans la classe de regroupement des tests unitaires.
+
+Ici, sont fournis via l'instance de cette classe les méthodes de vérification dont voici une liste non exhaustive:
 
 | assertion | exemple |
 | --------------- | ------- |
