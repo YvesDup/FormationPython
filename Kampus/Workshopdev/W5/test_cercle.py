@@ -9,22 +9,22 @@ class TestCercleInit(unittest.TestCase):
             class_cercle.Cercle()
 
     def test_too_many_params(self):
-        """ test la creatiion d'un cercle sans parametre"""
+        """ test la creatiion d'un cercle avec trop de parametres"""
         with self.assertRaises(TypeError):
             class_cercle.Cercle(10, 20)
 
     def test_bad_type_param(self):
-        """ test la creatiion d'un cercle sans parametre"""
+        """ test la creatiion d'un cercle avec mauvais type de parametre"""
         with self.assertRaises(TypeError):
             class_cercle.Cercle([])
 
     def test_bad_value_param(self):
-        """ test la creatiion d'un cercle sans parametre"""
+        """ test la creatiion d'un cercle avec valeur inappropriée"""
         with self.assertRaises(ValueError):
             class_cercle.Cercle(-23.9)
 
     def test_good_param(self):
-        """ test la creatiion d'un cercle sans parametre"""
+        """ test la creatiion d'un cercle avec bonne valeur"""
         try:
             c = class_cercle.Cercle(10.5)
         except:
