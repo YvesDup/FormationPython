@@ -159,7 +159,7 @@ python -m unittest -h
 
 ---
 <style scoped> {
-  font-size: 25px;
+  font-size: 23px;
 }
 </style>
 
@@ -167,16 +167,22 @@ python -m unittest -h
 
 Avant l'exécution de chaque test unitaire, il est possible d'appeler une fonction de préparation et après l'exécution de chaque test, une fonction de clôture est appelable également. Ces 2 fonctions correspondent à 2 méthodes de la classe `unittest.TestCase`:
 
-+ `setUp`, toujours appélé mais s'il est échoue, le test n'est pas exécuté.
-+ `tearDown`, toujours appelé même si le test échoue, sauf si le `setUp` échoue.
++ avant:  `setUp`, toujours appélé mais si elle est échoue, le test n'est pas exécuté.
++ après: `tearDown`, toujours appelé même si le test échoue, sauf si le `setUp` échoue.
 
-Il est possible de rajouter des fonctions (avec paramètre) via la méthode `addCleanup` qui seront appelées de manière inversée (LIFO) après le `tearDown` ou le `setUp`s'il échoue. Ces fonctions sont en réalité appelé par la méthode `doCleanup`, qui d'ailleurs peut être invoqué à n'importe quel moment. 
+Il est possible de rajouter des fonctions (avec paramètres) via la méthode `addCleanup` qui seront appelées de manière inversée à leur ajout(LIFO) après le `tearDown` ou le `setUp`s'il échoue.
+Ces fonctions sont en réalité appelé par la méthode `doCleanup`, qui d'ailleurs peut être invoqué à n'importe quel moment. 
 
 Pour la préparation et la clôture de tests asynchrones, 2 méthodes dédiées existent et se comportent identiquement à celles déjà présentées, à savoir:
 
 + `asyncSetUp`
 + `asyncTearDown`
 
+---
+<style scoped> {
+  font-size: 25px;
+}
+</style>
 ### Les compléments
 
 Le module `unittest.mock` permet de position des `mock` pour les tests unitaires afin de pouvoir rejouer un comportements d'une fonction ou d'une classe.
