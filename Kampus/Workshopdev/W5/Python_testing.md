@@ -19,7 +19,7 @@ _
   font-size: 26px;
 }
 </style>
-# Les tests unitaires en Python
+# Les tests unitaires en Python.
 
 Les tests unitaires en Python se font à travers des bibliothèques dédiées. Un framework de test `unittest` est fourni en standard en Python, mais il existe d'autres bibliothèques externes (donc à installer), comme:
 
@@ -32,14 +32,14 @@ Les tests unitaires en Python se font à travers des bibliothèques dédiées. U
   font-size: 27px;
 }
 </style>
-## La bibliothèque interne `unittest``
+## La bibliothèque interne `unittest`.
 
 Cette bibliothèque, qui s'inspire de **JUnit**, comprend 4 parties principales:
 
-+ l'environnement du test (préparation et finalisation)
-+ la définiton du test unitaire
-+ le regroupement de tests unitaires à exécuter ensemble
-+ le lancement des tests
++ l'environnement du test (préparation et finalisation),
++ la définiton du test unitaire,
++ le regroupement de tests unitaires à exécuter ensemble,
++ le lancement des tests.
 
 ---
 <style scoped> {
@@ -70,23 +70,24 @@ class TestStringMethods(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 ```
-Cet exemple est enregistré dans le fichier test_strings.py
-La vérification se fait en exécutant ce script comme suit:
+Cet exemple est enregistré dans le fichier test_strings.py. La vérification se fait en exécutant ce script comme suit:
+
 ```zh
 python test_scripts.py
 ```
 
 ---
 <style scoped> {
-  font-size: 21px;
+  font-size: 20px;
 }
 </style>
-
 ### La définition d'un test unitaire
 
-Ici il s'agit de tester via une méthode contenant un jeu d'instruction restreint, que le résultat produit est conforme aux attentes. La validité de cette méthode se fait via la fonction interne `assert` qui a été encapsulée dans la classe de regroupement des tests unitaires.
+#### cas général.
 
-Ici, sont fournis via l'instance de cette classe les méthodes de vérification dont voici une liste non exhaustive:
+Ici il s'agit de tester, via une méthode que la fonction ou la méthode testée produit le résultat attendu. La vérification se fait via la fonction interne `assert` qui a été encapsulée dans la classe de regroupement des tests unitaires.
+
+Ici, sont fournis via l'instance de cette classe quelques méthodes de vérification dont voici une liste non exhaustive:
 
 | assertion | exemple |
 | --------------- | ------- |
@@ -105,7 +106,9 @@ Ici, sont fournis via l'instance de cette classe les méthodes de vérification 
   font-size: 22px;
 }
 </style>
-Le test pour vérifier qu'une exception est bien levée se fait via avec un gestion de contexte comme suit:
+#### Tester les exceptions
+
+Le methode (ou test) pour vérifier qu'une exception est bien levée se fait via avec un gestionnaire de contexte comme suit:
 ```py
     ...
     def test_catch_error(self):
@@ -125,11 +128,11 @@ Le test pour vérifier qu'une exception est bien levée se fait via avec un gest
 
 ### Le regroupement de tests
 
-Ce regroupement de tests se fait dans une classe dédiée `unittest.TestCase` qui permet le lancement de tous les tests unitaires inclus. Dans l'exemple initial, il y a donc 3 tests unitaires pour la classe de regroupement `TestStringMethods`.
+Ce regroupement de tests se fait dans une classe dédiée `unittest.TestCase` qui permet le lancement de tous les tests unitaires inclus. Dans l'exemple initial, il y a donc 3 tests unitaires pour la classe de regroupement `TestStringMethods` dérivée de `unittest.TestCase`.
 
 Un fichier de test unitaire Python peut contenir plusieurs instances de classes `unittest.TestCase`.
 
-Il existe une classe de regroupement dédiée au tests unitaires de module asynchrone: `IsolatedAsyncioTestCase`
+Il existe une classe de regroupement dédiée au tests unitaires de module asynchrone: `IsolatedAsyncioTestCase`.
 
 ---
 <style scoped> {
@@ -138,7 +141,8 @@ Il existe une classe de regroupement dédiée au tests unitaires de module async
 </style>
 ### Le lancement des tests
 
-Le lancement des tests peut se faire en ligne de commande avec l'appel au module `unittest` via le lancement de l'interpréteur avec l'option `-m`. Cela permet de lancer les tests avec plus de possibilités que globalement. Voici quelques options:
+Le lancement des tests peut se faire en ligne de commande avec l'exécution du scrip contenant les regroupements de tests, ou via l'appel au module `unittest` avec le paramètre `-m`. 
+Cela permet de lancer les tests plus finement. Voici quelques options:
 
 ```zh
 echo 2 fichiers avec tous les regroupements de tests
@@ -163,15 +167,14 @@ python -m unittest -h
 }
 </style>
 
-### La préparation des tests
+### L'environnement des des tests
 
-Avant l'exécution de chaque test unitaire, il est possible d'appeler une fonction de préparation et après l'exécution de chaque test, une fonction de clôture est appelable également. Ces 2 fonctions correspondent à 2 méthodes de la classe `unittest.TestCase`:
+Avant l'exécution de chaque test unitaire, il est possible d'appeler une fonction de préparation, et après l'exécution de chaque test, une fonction de clôture. Ces 2 fonctions correspondent à 2 méthodes de la classe `unittest.TestCase`:
 
 + avant:  `setUp`, toujours appélé mais si elle est échoue, le test n'est pas exécuté.
 + après: `tearDown`, toujours appelé même si le test échoue, sauf si le `setUp` échoue.
 
-Il est possible de rajouter des fonctions (avec paramètres) via la méthode `addCleanup` qui seront appelées de manière inversée à leur ajout(LIFO) après le `tearDown` ou le `setUp`s'il échoue.
-Ces fonctions sont en réalité appelées par la méthode `doCleanups`, qui d'ailleurs peut être invoquée à n'importe quel moment. 
+Il est possible de rajouter des fonctions (avec paramètres) via la méthode `addCleanup` qui seront appelées de manière inversée à leur ajout(LIFO) après le `tearDown` ou le `setUp`s'il échoue. Ces fonctions sont en réalité appelées par la méthode `doCleanups`, qui d'ailleurs peut être invoquée à n'importe quel moment.
 
 Pour la préparation et la clôture de tests asynchrones, 2 méthodes dédiées existent et se comportent comme celles présentées en programmation synchrone, à savoir:
 
@@ -187,11 +190,11 @@ Pour la préparation et la clôture de tests asynchrones, 2 méthodes dédiées 
 
 #### L'exécution conditionnelle des tests
 
-Contextuellement certains tests unitaires (ou regroupement de tests) peuvent être volontairement ignorés lors de leur lancement, comme par exemple:
+Contextuellement, certains tests unitaires (ou regroupement de tests) peuvent être volontairement ignorés lors de leur lancement, comme par exemple:
 + Version de python inappropriée, OS d'exécution non ciblé
 + Absence d'une bibliothèque, test non valide
 
-La non exécution du test est signalée par l'utilisation du décorateur `@unittest.skip` et ses autres formes.
+La non exécution du test est signalée par l'utilisation du décorateur `@unittest.skip` et ses autres formes. Par exemple:
 
 ```py
 class MyTestCase(unittest.TestCase):
