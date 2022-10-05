@@ -28,7 +28,7 @@ class TestCercleInit(unittest.TestCase):
         c = None
         try:
             c = class_cercle.Cercle(10.5)
-        except:
+        except Exception:
             self.fail()
         else:
             self.assertIsNotNone(c)
