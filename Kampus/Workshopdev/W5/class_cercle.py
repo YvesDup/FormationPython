@@ -7,11 +7,11 @@ Number = Union[float, int] # en 3.10 float | int
 class Cercle:
     """class Cercle"""
     def __init__(self, rayon: Number):
+        """init"""
         if not isinstance(rayon, Number):
-            raise TypeError()
+            raise TypeError("")
         if rayon <= 0.0:
-            raise ValueError()
-            
+            raise ValueError("")
         self._rayon = rayon
 
     def __str__(self) -> str:
