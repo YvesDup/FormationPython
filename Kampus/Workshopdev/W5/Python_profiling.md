@@ -66,8 +66,9 @@ Pour regarder l'occupation mémoire d'un script et des structures de données, i
 * (ne pas) utiliser la fonction interne `sys.getsizeof` 
 * utiliser sa propre fonction: voir la fonction `getsize` proposée en Annexe1
 * utiliser des bibliothèques externes comme:
-    + memory_profiler: <https://pypi.org/project/memory-profiler/>, <https://coderzcolumn.com/tutorials/python/how-to-profile-memory-usage-in-python-using-memory-profiler>
-    + pympler: <https://pympler.readthedocs.io/en/latest/>
+    + [memory_profiler](https://pypi.org/project/memory-profiler/),
+    + [Modop 'memory_profiler'](https://coderzcolumn.com/tutorials/python/how-to-profile-memory-usage-in-python-using-memory-profiler)
+    + [pympler](https://pympler.readthedocs.io/en/latest/)
 
 ---
 <style scoped> {
