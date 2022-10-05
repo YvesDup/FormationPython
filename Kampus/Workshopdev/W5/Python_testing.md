@@ -43,7 +43,7 @@ Cette bibliothèque, qui s'inspire de **JUnit**, comprend 4 parties principales:
 
 ---
 <style scoped> {
-  font-size: 21px;
+  font-size: 20px;
 }
 </style>
 
@@ -76,11 +76,15 @@ La vérification se fait en exécutant ce script comme suit:
 python test_scripts.py
 ```
 
+---
+<style scoped> {
+  font-size: 21px;
+}
+</style>
+
 ### La définition d'un test unitaire
 
-Ici il s'agit de tester via une méthode contenant un jeu d'instruction restreint,  que le résultat produit est conforme aux attentes.
-
-La validité de ce bout de code dans ce module est basée sur la fonction interne `assert` qui a été encapsulée dans la classe de regroupement des tests unitaires.
+Ici il s'agit de tester via une méthode contenant un jeu d'instruction restreint, que le résultat produit est conforme aux attentes. La validité de cette méthode se fait via la fonction interne `assert` qui a été encapsulée dans la classe de regroupement des tests unitaires.
 
 Ici, sont fournis via l'instance de cette classe les méthodes de vérification dont voici une liste non exhaustive:
 
@@ -96,9 +100,14 @@ Ici, sont fournis via l'instance de cette classe les méthodes de vérification 
 | self.assertSequenceEqual| st.assertSequenceEqual([10], (10,))|
 | self.assertDictEqual |self.assertDictEqual({1:"1", 2:"2", 3:"3"}, dict(((2, "2"), (3, "3"), (1, "1"))))|
 
+---
+<style scoped> {
+  font-size: 22px;
+}
+</style>
 Le test pour vérifier qu'une exception est bien levée se fait via avec un gestion de contexte comme suit:
 ```py
-...
+    ...
     def test_catch_error(self):
 
         with self.assertRaises(TypeError) as cm:
@@ -106,8 +115,14 @@ Le test pour vérifier qu'une exception est bien levée se fait via avec un gest
 
         with self.assertRaisesRegex(TypeError, 'list indices'):
             ['hello', 10]["10"]
-...
+    ...
 ```
+---
+<style scoped> {
+  font-size: 26px;
+}
+</style>
+
 ### Le regroupement de tests
 
 Ce regroupement de tests se fait dans une classe dédiée `unittest.TestCase` qui permet le lancement de tous les tests unitaires inclus. Dans l'exemple initial, il y a donc 3 tests unitaires pour la classe de regroupement `TestStringMethods`.
@@ -116,6 +131,11 @@ Un fichier de test unitaire Python peut contenir plusieurs instances de classes 
 
 Il existe une classe de regroupement dédiée au tests unitaires de module asynchrone: `IsolatedAsyncioTestCase`
 
+---
+<style scoped> {
+  font-size: 25px;
+}
+</style>
 ### Le lancement des tests
 
 Le lancement des tests peut se faire en ligne de commande avec l'appel au module `unittest` via le lancement de l'interpréteur avec l'option `-m`. Cela permet de lancer les tests avec plus de possibilités que globalement. Voici quelques options:
@@ -136,6 +156,12 @@ python -m unittest -v -k upper test_string
 echo Les autres options possibles
 python -m unittest -h
 ```
+
+---
+<style scoped> {
+  font-size: 25px;
+}
+</style>
 
 ### La préparation des tests
 
