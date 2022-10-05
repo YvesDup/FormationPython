@@ -16,6 +16,7 @@ class TestStringMethods(unittest.TestCase):
         with self.assertRaises(TypeError):
             s.split(2)
 
+"""
 class TestStringImmutable(unittest.TestCase):
     def test_immutable(self):
         self.assertTrue(1 > 0)
@@ -50,6 +51,7 @@ class TestComplete(unittest.TestCase):
 
     def tearDown(self):
         print("tearDown ok")
+"""
 
 if __name__ == '__main__':
     unittest.main()
