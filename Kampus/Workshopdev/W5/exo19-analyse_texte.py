@@ -60,12 +60,12 @@ def mesure_analyse_text(fct, datas):
     mesure = time.time() - start
     print(f"{mesure:.04f} pour {n} executions pour {fct.__name__}")
 
-    
+
 # test_analyse_text()
 datas = ("ESSAIS", 1,"TESTS",2.34, True, "U", [1, 2.78, "TT"])*25
 if len(sys.argv) == 2:
     import cProfile
-    cProfile.run('mesure_analyse_text(analyse_texte_v1, datas)', 'analyse-local.cprof')
+    cProfile.run('mesure_analyse_text(analyse_texte_v1, datas)') # , 'analyse-local.cprof')
 else:
     # test_analyse_text()
     mesure_analyse_text(analyse_texte_v1, datas)
