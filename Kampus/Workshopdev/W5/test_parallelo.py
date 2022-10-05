@@ -3,7 +3,7 @@ import unittest
 
 import exo20 as parallelo
 
-class TestParalleloInit(unittest.TetstCase):
+class TestParalleloInit(unittest.TestCase):
     """Test de la methode __init__ de la classe"""
     def test_not_enough_param(self):
         pass
@@ -23,7 +23,7 @@ class TestParalleloInit(unittest.TetstCase):
 
     def test_bad_value_param(self):
         with self.assertRaises(ValueError):
-            parallelo.Parallelo(-100, 20, 50")
+            parallelo.Parallelo(-100, 20, 50)
 
         with self.assertRaises(ValueError):
             parallelo.Parallelo(-10, -5, 50)
