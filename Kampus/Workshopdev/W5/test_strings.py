@@ -22,7 +22,7 @@ class TestStringImmutable(unittest.TestCase):
     def test_immutable(self):
         self.assertTrue(1 > 0)
 
-"""
+
 class TestSetupFail(unittest.TestCase):
     def setUp(self):
         super().setUp()
@@ -38,6 +38,7 @@ class TestSetupFail(unittest.TestCase):
     def tearDown(self):
         print("tearDown done !!")
 
+"""
 class TestComplete(unittest.TestCase):
     def setUp(self):
         super().setUp()
