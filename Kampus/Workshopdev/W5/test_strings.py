@@ -67,6 +67,10 @@ class MyTestCase(unittest.TestCase):
         # Tests that work for only a certain version of the library.
         self.assertTrue(1)
 
+    @unittest.skipIf('totolib' in sys.modules, '`totolib` not imported')
+    def test_library(self):
+        self.assertEqual(totolib.fct(10), 10)
+
     @unittest.skipUnless(sys.platform.startswith("win"), "requires Windows")
     def test_windows_support(self):
         pass
