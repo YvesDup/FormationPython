@@ -2,4 +2,7 @@
 # 1 - Créer un environement virtuel python -m venv -h  ()
 # 2 - Installer cette bibliothèque externe 'snakeviz' dans le venv
 # 3 - Executer notre profiler dans le venv et produire le fichier resultat si vous n'en avez pas déja
-# 4 - lancer snakeviz dans le venv avec comme paramètre le fichier résultat
+# 4 - lancer snakeviz dans le venv avec comme paramètre le 
+# 
+# 
+# fichier résultat
