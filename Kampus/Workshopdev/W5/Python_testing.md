@@ -167,7 +167,7 @@ python -m unittest -h
 }
 </style>
 
-### L'environnement des des tests.
+### L'environnement des tests.
 
 Avant l'exécution de chaque test unitaire, il est possible d'appeler une fonction de préparation, et après l'exécution de chaque test, une fonction de clôture. Ces 2 fonctions correspondent à 2 méthodes de la classe `unittest.TestCase`:
 
