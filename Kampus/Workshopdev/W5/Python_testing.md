@@ -171,29 +171,76 @@ Avant l'exécution de chaque test unitaire, il est possible d'appeler une foncti
 + après: `tearDown`, toujours appelé même si le test échoue, sauf si le `setUp` échoue.
 
 Il est possible de rajouter des fonctions (avec paramètres) via la méthode `addCleanup` qui seront appelées de manière inversée à leur ajout(LIFO) après le `tearDown` ou le `setUp`s'il échoue.
-Ces fonctions sont en réalité appelé par la méthode `doCleanup`, qui d'ailleurs peut être invoqué à n'importe quel moment. 
+Ces fonctions sont en réalité appelées par la méthode `doCleanups`, qui d'ailleurs peut être invoquée à n'importe quel moment. 
 
-Pour la préparation et la clôture de tests asynchrones, 2 méthodes dédiées existent et se comportent identiquement à celles déjà présentées, à savoir:
+Pour la préparation et la clôture de tests asynchrones, 2 méthodes dédiées existent et se comportent comme celles présentées en programmation synchrone, à savoir:
 
-+ `asyncSetUp`
-+ `asyncTearDown`
++ avant: `asyncSetUp`
++ après: `asyncTearDown`
+
+---
+<style scoped> {
+  font-size: 21px;
+}
+</style>
+### Et encore ....
+
+#### L'exécution conditionnelle des tests
+
+Contextuellement certains tests unitaires (ou regroupement de tests) peuvent être volontairement ignorés lors de leur lancement, comme par exemple:
++ Version de python inappropriée, OS d'exécution non ciblé
++ Absence d'une bibliothèque, test non valide
+
+La non exécution du test est signalée par l'utilisation du décorateur `@unittest.skip` et ses autres formes.
+
+```py
+class MyTestCase(unittest.TestCase):
+
+    @unittest.skip("demonstrating skipping")
+    def test_nothing(self):
+        self.fail("shouldn't happen")
+
+    @unittest.skipIf(sys.version_info[:2] < (3, 10),
+                     "not supported in this python version")
+    def test_format(self):
+        # Tests that work for only a certain version of the library.
+        pass
+
+    @unittest.skipUnless(sys.platform.startswith("win"), "requires Windows")
+    def test_windows_support(self):
+        pass
+```
+
+---
+<style scoped> {
+  font-size: 24px;
+}
+</style>
+#### Les mocks
+Le module `unittest.mock` permet d'utiliser des `mock` dans les tests unitaires afin de simuler les comportements d'une fonction ou d'une classe sans pour autant les définir complémtement.
+
+Sont proposées principalement 3 classes:
++ `Mock`
++ `MagicMock`
++ `AsyncMock`
+
+Voici un exemple simple de mock:
+```py
+m = unittest.MagicMock(return_value=3)
+print(m()) # 3 
+e = unittest.Mock(side_effect=TypeError('must be an integer'))
+e() # raise a TypeError exception
+o = Mock()
+o.test = 10
+print(o.test, ",", hasattr(o, 'u')) #  10, True
+```
+
 
 ---
 <style scoped> {
   font-size: 25px;
 }
 </style>
-### Les compléments
-
-Le module `unittest.mock` permet de position des `mock` pour les tests unitaires afin de pouvoir rejouer un comportements d'une fonction ou d'une classe.
-Sont proposées 2 classes:
-+ `Mock`
-+ `MagicMock`
-+ 'AsyncMock'
-
-## La bibliothèque `Pytest`
-
-
 ## Annexe
 
 [La bibliothèque interne `unittest`](https://docs.python.org/3.10/library/unittest.html#unittest.TestCase)
