@@ -27,7 +27,7 @@ class TestCercleInit(unittest.TestCase):
         """ test la creatiion d'un cercle sans parametre"""
         try:
             c = class_cercle.Cercle(10.5)
-        execpt:
+        except:
             self.fail()
 
 
