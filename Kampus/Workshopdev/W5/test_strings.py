@@ -14,7 +14,7 @@ class TestStringMethods(unittest.TestCase):
         s = 'hello world'
         self.assertEqual(s.split(), ['hello', 'world'])
         # check that s.split fails when the separator is not a string
-        with self.assertRaises(TypeError):
+        with self.assertRaises(ValueError):
             s.split(2)
 
 """
