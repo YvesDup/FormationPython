@@ -25,11 +25,9 @@ class TestCercleInit(unittest.TestCase):
 
     def test_good_param(self):
         """ test la creatiion d'un cercle avec bonne valeur"""
-        try:
-            c = class_cercle.Cercle(10.5)
-        except:
-            self.fail()
-
+        c = None
+        c = class_cercle.Cercle(10.5)
+        self.assertIsNotNone(c)
 
 
 if __name__ == '__main__':
