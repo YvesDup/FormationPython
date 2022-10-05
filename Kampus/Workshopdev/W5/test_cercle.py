@@ -3,6 +3,8 @@ import unittest
 import class_cercle
 
 class TestCercleInit(unittest.TestCase):
+    """test la methode __init__ de `class_cercle.Cercle`"""
+
     def test_noparam(self):
         """ test la creatiion d'un cercle sans parametre"""
         with self.assertRaises(TypeError):
