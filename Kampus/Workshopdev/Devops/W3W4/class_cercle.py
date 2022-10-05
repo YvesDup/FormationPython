@@ -52,6 +52,12 @@ def test_cercle():
     print(l1)
     l1.sort()
     print(l1)
+    l1 *= 2
+    l1.insert(len(l1)//2,-110)
+    print(l1)
+    l1.sort(key=int, reverse=True)
+    print(l1)
+
 
 print('---'*20)
 print(f'name: {__name__!a} from {__file__!a}')
