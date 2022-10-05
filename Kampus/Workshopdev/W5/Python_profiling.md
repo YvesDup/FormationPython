@@ -20,7 +20,7 @@ _
 }
 </style>
 
-# Mesurer les performances
+# Mesurer les performances.
 
 En programmation, il y a 2 domaines sur lesquels peuvent se faire les mesures de performance:
 
@@ -34,7 +34,7 @@ ces 2 points peuvent être traités dès la mise en place des tests unitaires et
   font-size: 21px;
 }
 </style>
-## Observer le temps de traitement d'une fonction, d'un script
+## Observer le temps de traitement d'une fonction, d'un script.
 
 Il existe plusieurs moyens pour mesurer le temps de traitement d'une fonction, d'un script
 
@@ -59,7 +59,7 @@ La bibliothèque interne `profile` produit des fichiers d'extension .prof (.cpro
   font-size: 26px;
 }
 </style>
-### Observer l'occupation mémoire d'un objet, d'une structure de données
+### Observer l'occupation mémoire d'un objet, d'une structure de données.
 
 Pour regarder l'occupation mémoire d'un script et des structures de données, il existe plusieurs outils:
 
@@ -75,7 +75,8 @@ Pour regarder l'occupation mémoire d'un script et des structures de données, i
   font-size: 22px;
 }
 </style>
-### Annexe1
+### Annexe.
+
 ```python
 import sys
 from numbers import Number
