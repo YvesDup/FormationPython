@@ -1,4 +1,5 @@
-# reprendre la classe Parallelo et mettre en place un TestCase sur la creation de l'objet méthode __init__
+# reprendre la classe Parallelo et mettre en place un TestCase sur
+# la creation de l'objet méthode __init__
 import unittest
 
 import exo20 as parallelo
